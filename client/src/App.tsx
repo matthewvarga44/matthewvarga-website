@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Coaching from "./pages/Coaching";
 import BookConsultation from "./pages/BookConsultation";
 import About from "./pages/About";
+import FAQ from "./pages/FAQ";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
         <Placeholder title="Resources" />
       </Route>
       <Route path="/about" component={About} />
+      <Route path="/faq" component={FAQ} />
       <Route path="/contact">
         <Placeholder title="Contact" />
       </Route>

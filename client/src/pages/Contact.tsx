@@ -231,7 +231,7 @@ export default function Contact() {
                   href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-gold hover:bg-gold/90 text-slate-900 font-bold py-3 px-8 rounded-lg transition-colors duration-200"
+                  className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Schedule Free Consultation
                 </a>

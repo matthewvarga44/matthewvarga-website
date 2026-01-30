@@ -9,6 +9,7 @@ import Coaching from "./pages/Coaching";
 import BookConsultation from "./pages/BookConsultation";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
+import Resources from "./pages/Resources";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -17,9 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/coaching" component={Coaching} />
       <Route path="/book-consultation" component={BookConsultation} />
-      <Route path="/resources">
-        <Placeholder title="Resources" />
-      </Route>
+      <Route path="/resources" component={Resources} />
       <Route path="/about" component={About} />
       <Route path="/faq" component={FAQ} />
       <Route path="/contact">

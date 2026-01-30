@@ -19,17 +19,17 @@ export default function Home() {
         <div className="container relative z-10 grid gap-12 md:grid-cols-2 md:items-center">
           <div className="space-y-8">
             <div className="inline-block rounded-full bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary">
-              Real Estate Mastery Program
+              Retire with Rentals
             </div>
             <h1 className="font-heading text-5xl font-extrabold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl leading-tight">
-              Build <span className="text-secondary">Lasting Wealth</span>. Quit Your 9-5.
+              Retire with <span className="text-secondary">Rentals</span>. Build Your Legacy.
             </h1>
             <p className="max-w-[600px] text-lg text-primary-foreground/90 md:text-xl leading-relaxed font-light">
-              Join 300+ real estate investors learning the proven strategies I used to build a $5M+ portfolio and achieve financial freedom in my 30s.
+              Join 300+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $5M+ portfolio and achieve financial freedom in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
-                Join Real Estate Mastery
+                Join Retire with Rentals
               </Button>
               <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
                 Learn More
@@ -100,8 +100,8 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
           <div className="mx-auto max-w-3xl mb-16">
-            <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-8">
-              From 9-5 to <span className="text-secondary">Financial Freedom</span>
+              <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-8">
+              From 9-5 to <span className="text-secondary">Rental Income Freedom</span>
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed mb-6">
               I spent years working a corporate job, feeling trapped by the daily grind. Then I discovered the power of real estate investing. By focusing on buy-and-hold strategies and Airbnb investments, I built a $5 million portfolio in less than 5 years—all while traveling the world with my family.
@@ -111,18 +111,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-3">
             <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
               <div className="h-3 bg-secondary w-full"></div>
               <CardHeader>
                 <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
                   <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                 </div>
-                <CardTitle className="text-xl font-bold text-primary">Buy & Hold Strategy</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Long-Term Rentals</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Learn the proven buy-and-hold approach that builds long-term wealth through rental income and property appreciation.
+                  Master the buy-and-hold strategy that builds steady passive income through rental properties and long-term appreciation.
                 </p>
               </CardContent>
             </Card>
@@ -133,11 +133,11 @@ export default function Home() {
                 <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
                   <TrendingUp className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl font-bold text-primary">Airbnb Mastery</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Airbnb & Short-Term</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Discover how to generate high returns through short-term rentals and build a scalable Airbnb investment business.
+                  Generate premium returns through short-term rentals and build a scalable Airbnb investment portfolio.
                 </p>
               </CardContent>
             </Card>
@@ -148,11 +148,11 @@ export default function Home() {
                 <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
                   <Users className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl font-bold text-primary">Thriving Community</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Exclusive Community</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Join a network of 300+ serious investors committed to financial freedom. Share deals, ask questions, and grow together.
+                  Network with 300+ serious investors committed to retirement through real estate. Share deals, strategies, and support.
                 </p>
               </CardContent>
             </Card>
@@ -163,13 +163,13 @@ export default function Home() {
       {/* Real Estate Mastery Program Section */}
       <section className="bg-primary text-primary-foreground py-20 md:py-32">
         <div className="container">
-          <div className="mx-auto max-w-4xl">
+            <div className="mx-auto max-w-4xl">
             <div className="text-center mb-16">
               <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-                Real Estate <span className="text-secondary">Mastery Program</span>
+                <span className="text-secondary">Retire with Rentals</span> Program
               </h2>
               <p className="text-xl text-primary-foreground/90 leading-relaxed">
-                A comprehensive, community-driven program designed to help you build a profitable real estate portfolio and achieve financial freedom.
+                A comprehensive, community-driven program designed to help you build a profitable rental portfolio and retire on your terms.
               </p>
             </div>
 
@@ -232,30 +232,30 @@ export default function Home() {
             </div>
 
             <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">Why Join?</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <p className="text-primary-foreground/90 leading-relaxed">
-                    <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $5M+ portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-primary-foreground/90 leading-relaxed">
-                    <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors who are all working toward financial freedom. Share deals, ask questions, and grow together.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-primary-foreground/90 leading-relaxed">
-                    <span className="font-bold text-secondary">Actionable Strategies:</span> No fluff. Every session focuses on practical, implementable strategies you can use immediately.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-primary-foreground/90 leading-relaxed">
-                    <span className="font-bold text-secondary">Lifetime Access:</span> Access to all recorded sessions and resources. Learn at your own pace.
-                  </p>
+                <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">Why Retire with Rentals?</h3>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="text-primary-foreground/90 leading-relaxed">
+                      <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $5M+ rental portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-primary-foreground/90 leading-relaxed">
+                      <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors committed to retirement through rentals. Share deals, strategies, and support.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-primary-foreground/90 leading-relaxed">
+                      <span className="font-bold text-secondary">Actionable Strategies:</span> No fluff. Every session focuses on practical rental strategies you can implement immediately.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-primary-foreground/90 leading-relaxed">
+                      <span className="font-bold text-secondary">Lifetime Access:</span> Access to all recorded sessions and resources. Learn at your own pace, forever.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -263,13 +263,13 @@ export default function Home() {
       {/* Featured Resources Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
               <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-4">
-                Free <span className="text-secondary">Resources</span>
+                Free <span className="text-secondary">Rental Resources</span>
               </h2>
               <p className="text-lg text-foreground/70">
-                Start your real estate journey with these hand-picked tools and guides.
+                Start building your rental portfolio with these hand-picked tools and guides.
               </p>
             </div>
             <Link href="/resources">
@@ -318,7 +318,7 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-primary/5">
         <div className="container">
           <h2 className="font-heading text-4xl font-bold tracking-tight text-center text-primary sm:text-5xl mb-16">
-            Success Stories from <span className="text-secondary">Program Members</span>
+            Success Stories from <span className="text-secondary">Retire with Rentals Members</span>
           </h2>
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -374,10 +374,10 @@ export default function Home() {
             
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
-                Ready to Build <span className="text-secondary">Your Wealth?</span>
+                Ready to <span className="text-secondary">Retire with Rentals?</span>
               </h2>
               <p className="text-lg text-primary-foreground/90 mb-10 leading-relaxed">
-                Join 300+ investors in the Real Estate Mastery program. Limited spots available. Enrollment closes when we hit capacity.
+                Join 300+ investors in the Retire with Rentals program. Limited spots available. Enrollment closes when we hit capacity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">

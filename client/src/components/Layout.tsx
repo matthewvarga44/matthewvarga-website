@@ -21,7 +21,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3">
+            <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
             <span className="font-heading text-2xl font-bold text-primary tracking-tight">
               MATTHEW<span className="text-secondary">VARGA</span>
             </span>
@@ -56,8 +57,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-8 mt-8">
-                  <Link href="/" className="font-heading text-2xl font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
-                    MATTHEW<span className="text-secondary">VARGA</span>
+                  <Link href="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
+                    <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
+                    <span className="font-heading text-2xl font-bold text-primary">
+                      MATTHEW<span className="text-secondary">VARGA</span>
+                    </span>
                   </Link>
                   <nav className="flex flex-col gap-4">
                     {navItems.map((item) => (
@@ -92,8 +96,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-primary text-primary-foreground py-12 md:py-16">
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-1">
-            <Link href="/" className="font-heading text-2xl font-bold text-white tracking-tight mb-4 block">
-              MATTHEW<span className="text-secondary">VARGA</span>
+            <Link href="/" className="flex items-center space-x-3 mb-4">
+              <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
+              <span className="font-heading text-2xl font-bold text-white tracking-tight">
+                MATTHEW<span className="text-secondary">VARGA</span>
+              </span>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Empowering professionals to achieve their goals through strategic coaching and actionable resources.

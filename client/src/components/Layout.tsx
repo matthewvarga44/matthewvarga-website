@@ -120,6 +120,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Podcast</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Blog</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Newsletter</a></li>
+              <li><Link href="/faq" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">FAQ</Link></li>
             </ul>
           </div>
           

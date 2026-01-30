@@ -10,6 +10,7 @@ import BookConsultation from "./pages/BookConsultation";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Resources from "./pages/Resources";
+import Contact from "./pages/Contact";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -21,9 +22,7 @@ function Router() {
       <Route path="/resources" component={Resources} />
       <Route path="/about" component={About} />
       <Route path="/faq" component={FAQ} />
-      <Route path="/contact">
-        <Placeholder title="Contact" />
-      </Route>
+      <Route path="/contact" component={Contact} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

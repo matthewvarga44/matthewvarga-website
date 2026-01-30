@@ -275,6 +275,95 @@ export default function Resources() {
         </div>
       </section>
 
+      {/* YouTube Videos Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-slate-50 to-white">
+        <div className="container">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-secondary/20 px-4 py-2 rounded-full mb-6">
+                <span className="text-secondary font-semibold">Video Resources</span>
+              </div>
+              <h2 className="font-heading text-4xl font-bold text-primary mb-4">
+                Learn From My Top Videos
+              </h2>
+              <p className="text-xl text-foreground/80">
+                Watch my most popular real estate and investing strategies that have helped thousands of people build wealth
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Video 1 */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200">
+                <div className="relative w-full pt-[56.25%] bg-slate-900">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/XNMyLH0sdiM"
+                    title="YouTube video 1"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-primary mb-2">Real Estate Strategy</h3>
+                  <p className="text-foreground/70 text-sm">Discover proven strategies to build wealth through real estate investing</p>
+                </div>
+              </div>
+
+              {/* Video 2 */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200">
+                <div className="relative w-full pt-[56.25%] bg-slate-900">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/L5Qa-hiI8Ek"
+                    title="YouTube video 2"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-primary mb-2">Investment Tips</h3>
+                  <p className="text-foreground/70 text-sm">Learn actionable tips to maximize your investment returns and build passive income</p>
+                </div>
+              </div>
+
+              {/* Video 3 */}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200">
+                <div className="relative w-full pt-[56.25%] bg-slate-900">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/djDUHu4xLiY"
+                    title="YouTube video 3"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-primary mb-2">Financial Freedom</h3>
+                  <p className="text-foreground/70 text-sm">Explore the path to financial independence and early retirement through smart investing</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-foreground/70 mb-6">
+                Want more in-depth content? Subscribe to my YouTube channel for weekly real estate and investing tips
+              </p>
+              <a
+                href="https://www.youtube.com/@MatthewVarga"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-200"
+              >
+                Subscribe on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">

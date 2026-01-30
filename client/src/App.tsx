@@ -13,6 +13,7 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import MastermindApplication from "./pages/MastermindApplication";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/apply-mastermind" component={MastermindApplication} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

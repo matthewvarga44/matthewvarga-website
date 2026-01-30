@@ -14,7 +14,18 @@ interface BlogPostData {
   content: string;
   slug?: string;
   relatedPosts: Array<{ title: string; slug: string }>;
+  disclaimer?: 'tax' | 'financial' | 'investment' | 'legal' | 'none';
 }
+
+const getDisclaimerText = (type: string): string => {
+  const disclaimers: Record<string, string> = {
+    tax: "⚠️ Tax Disclaimer: This content is for educational purposes only and should not be considered tax advice. Tax laws are complex and vary by jurisdiction. Please consult with a qualified tax professional or CPA before making any tax-related decisions based on this information.",
+    financial: "⚠️ Financial Disclaimer: This content is for educational purposes only and should not be considered financial advice. Past performance does not guarantee future results. Please consult with a qualified financial advisor before making investment decisions.",
+    investment: "⚠️ Investment Disclaimer: This content is for educational purposes only and should not be considered investment advice. Real estate investing involves risk, including potential loss of principal. Please consult with a qualified investment advisor and conduct your own due diligence before making investment decisions.",
+    legal: "⚠️ Legal Disclaimer: This content is for educational purposes only and should not be considered legal advice. Real estate laws vary by jurisdiction. Please consult with a qualified attorney in your area before entering into any contracts or legal agreements."
+  };
+  return disclaimers[type] || '';
+};
 
 const enhanceContent = (html: string): string => {
   let enhanced = html;
@@ -63,6 +74,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     readTime: "8 min read",
     image: "/images/blog-airbnb-arbitrage.jpg",
     author: "Matthew Varga",
+    disclaimer: "investment",
     content: `
 <h2>What is Airbnb Arbitrage?</h2>
 <p>Airbnb arbitrage is the practice of renting a property long-term and then listing it on Airbnb for short-term rentals at a higher rate. The difference between your long-term rental cost and short-term rental income is your profit. It's a strategy that requires no capital investment in property ownership, just smart execution.</p>
@@ -149,12 +161,13 @@ const blogPostsData: Record<string, BlogPostData> = {
   },
   "real-estate-market-2026": {
     title: "Real Estate Market Analysis: 2026 Opportunities in Secondary Markets",
-    excerpt: "Secondary markets are generating unprecedented returns for savvy investors. I break down the data and reveal the three metrics that predict market growth.",
+    excerpt: "Secondary markets are generating unprecedented returns for savvy investors. I break down the data, show you where to look, and reveal the three metrics that predict market growth before it happens.",
     category: "Market Insights",
     date: "January 25, 2026",
     readTime: "10 min read",
     image: "/images/blog-market-analysis.jpg",
     author: "Matthew Varga",
+    disclaimer: "investment",
     content: `
 <h2>The Secondary Market Opportunity</h2>
 <p>While everyone is focused on major metros like New York, Los Angeles, and San Francisco, smart investors are quietly building wealth in secondary markets. These are mid-sized cities with strong economic fundamentals but less competition and lower entry costs.</p>
@@ -223,12 +236,13 @@ const blogPostsData: Record<string, BlogPostData> = {
   },
   "seller-financing-deals": {
     title: "Seller Financing 101: How to Close Deals Without Bank Approval",
-    excerpt: "Seller financing unlocks deals that traditional lenders won't touch. Learn how to structure deals and close transactions faster.",
+    excerpt: "Seller financing unlocks deals that traditional lenders won't touch. Learn how to structure deals, negotiate terms, and close transactions faster while building wealth through creative financing.",
     category: "Investment Strategy",
     date: "January 22, 2026",
     readTime: "9 min read",
     image: "/images/blog-seller-financing.jpg",
     author: "Matthew Varga",
+    disclaimer: "legal",
     content: `
 <h2>What is Seller Financing?</h2>
 <p>Seller financing is when the property owner acts as the lender instead of a traditional bank. You make payments directly to the seller over an agreed-upon period. It's one of the most powerful tools in a real estate investor's toolkit.</p>
@@ -375,12 +389,13 @@ const blogPostsData: Record<string, BlogPostData> = {
   },
   "1031-exchange-guide": {
     title: "The 1031 Exchange: Tax-Free Real Estate Wealth Building",
-    excerpt: "A 1031 exchange is one of the most powerful wealth-building tools available to real estate investors.",
+    excerpt: "A 1031 exchange (named after Section 1031 of the IRS tax code) allows you to sell a property and reinvest the proceeds into another property without paying capital gains taxes—as long as you follow specific rules.",
     category: "Tax Strategy",
     date: "January 16, 2026",
     readTime: "8 min read",
     image: "/images/blog-1031-exchange.jpg",
     author: "Matthew Varga",
+    disclaimer: "tax",
     content: `
 <h2>What is a 1031 Exchange?</h2>
 <p>A 1031 exchange (named after Section 1031 of the IRS tax code) allows you to sell a property and reinvest the proceeds into another property without paying capital gains taxes—as long as you follow specific rules.</p>
@@ -538,6 +553,7 @@ newBlogPosts.forEach((post) => {
     image: post.image,
     author: "Matthew Varga",
     content: post.content,
+    disclaimer: (post.disclaimer as 'tax' | 'financial' | 'investment' | 'legal' | 'none' | undefined),
     relatedPosts: [
       { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
       { title: "Real Estate Market Analysis", slug: "real-estate-market-2026" }
@@ -618,6 +634,15 @@ export default function BlogPost() {
                 dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }}
                 className="text-slate-700 leading-relaxed space-y-6"
               />
+              
+              {/* Disclaimer Box */}
+              {post.disclaimer && post.disclaimer !== 'none' && (
+                <div className="my-12 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-500">
+                  <p className="text-amber-900 text-sm m-0">
+                    {getDisclaimerText(post.disclaimer)}
+                  </p>
+                </div>
+              )}
               
               {/* Visual Callout Box */}
               <div className="my-12 p-8 bg-gradient-to-r from-gold/10 to-slate-100 rounded-2xl border-l-4 border-gold">

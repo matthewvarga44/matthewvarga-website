@@ -289,6 +289,19 @@ export default function Coaching() {
           </div>
         </div>
       </section>
+
+      {/* Disclaimer Section */}
+      <section className="py-12 px-4 bg-amber-50 border-t border-amber-200">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="p-6 bg-white rounded-lg border border-amber-200">
+              <p className="text-sm text-amber-900 m-0">
+                <span className="font-bold">Disclaimer:</span> This coaching program is for educational purposes only and should not be considered financial, investment, tax, or legal advice. Real estate investing and alternative business models involve risk. Please consult with qualified professionals before making investment decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

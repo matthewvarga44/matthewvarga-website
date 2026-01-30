@@ -8,6 +8,7 @@ export const newBlogPosts = [
     image: "/images/blog-short-term-rentals.jpg",
     date: "2024-01-25",
     readTime: "8 min read",
+    disclaimer: "investment",
     content: `
 # Short-Term Rental Secrets: Maximizing Your Airbnb Revenue
 
@@ -261,6 +262,7 @@ Real estate investing is not get-rich-quick. It's a disciplined approach to buil
     image: "/images/blog-cash-flow-strategies.jpg",
     date: "2024-01-10",
     readTime: "9 min read",
+    disclaimer: "financial",
     content: `
 # Cash Flow Strategies: Generating Passive Income From Real Estate
 
@@ -354,6 +356,7 @@ Cash flow is the foundation of real estate wealth. Focus on acquiring properties
     image: "/images/blog-market-analysis.jpg",
     date: "2024-01-05",
     readTime: "11 min read",
+    disclaimer: "investment",
     content: `
 # Market Analysis for Real Estate Investors: Finding the Best Markets
 
@@ -449,6 +452,7 @@ Market analysis is not complex, but it is systematic. Analyze population growth,
     image: "/images/blog-renovation-strategy.jpg",
     date: "2024-01-02",
     readTime: "10 min read",
+    disclaimer: "investment",
     content: `
 # Renovation and Flipping Strategy: Turning Distressed Properties Into Profits
 
@@ -623,6 +627,7 @@ The best deals come through relationships, not public listings. Invest time buil
     image: "/images/blog-tax-strategies.jpg",
     date: "2023-12-22",
     readTime: "9 min read",
+    disclaimer: "tax",
     content: `
 # Tax Optimization Strategies for Real Estate Investors
 
@@ -716,6 +721,7 @@ Real estate offers unique tax advantages: depreciation, deductible expenses, 103
     image: "/images/blog-scaling-portfolio.jpg",
     date: "2023-12-15",
     readTime: "10 min read",
+    disclaimer: "investment",
     content: `
 # Scaling Your Real Estate Portfolio: From One Property to Ten
 
@@ -805,6 +811,7 @@ Scaling a real estate portfolio requires systems, disciplined acquisition strate
     image: "/images/blog-financial-freedom.jpg",
     date: "2023-12-08",
     readTime: "12 min read",
+    disclaimer: "financial",
     content: `
 # Achieving Financial Freedom Through Real Estate: The Complete Roadmap
 

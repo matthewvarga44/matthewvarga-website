@@ -96,18 +96,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About / Mission Section */}
+      {/* About / Mission Section - My Story */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
           <div className="mx-auto max-w-3xl mb-16">
               <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-8">
-              From 9-5 to <span className="text-secondary">Rental Income Freedom</span>
+              From Foreclosure to <span className="text-secondary">Financial Freedom</span>
             </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              I spent years working a corporate job, feeling trapped by the daily grind. Then I discovered the power of real estate investing. By focusing on buy-and-hold strategies and Airbnb investments, I built a $5 million portfolio in less than 5 years—all while traveling the world with my family.
-            </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              Now, I'm on a mission to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies. This isn't about quick flips or risky moves. It's about playing the long game and building passive income streams that give you freedom.
+            
+            <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+              <div>
+                <h3 className="font-bold text-primary text-xl mb-3">Overcoming Early Challenges</h3>
+                <p>
+                  My journey began with significant financial struggles. In the 90s, my mom was laid off, and we faced incredibly tough times. Our home was foreclosed on, utilities were shut off, and at one point, we had no hot water. We had to boil water in a kettle just to take a bath. These experiences were painful and humbling, but they ignited a fierce determination in me. I realized the importance of understanding money and vowed to never be in that position again.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="font-bold text-primary text-xl mb-3">Building a Strong Foundation</h3>
+                <p>
+                  With this newfound drive, I embarked on a career in the financial sector. Over the next decade, I worked in banking, becoming a Certified Financial Planner, Mortgage Broker, and Real Estate Agent. Each role provided valuable insights, but my true passion was real estate. Over the past ten years, I invested in properties and built a portfolio of 14 units worth $10 million—a journey of learning, growth, and perseverance.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="font-bold text-primary text-xl mb-3">Reaching Financial Independence</h3>
+                <p>
+                  Retiring in my 30s as a multi-millionaire was a dream come true. It wasn't just about the money; it was about the freedom to live life on my own terms. That's when I discovered the potential of Airbnb. In less than a year, I built an Airbnb business that brought in multiple six figures, proving that with the right approach, anyone can achieve similar success.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="font-bold text-primary text-xl mb-3">Embracing Life's Adventures</h3>
+                <p>
+                  Financial freedom opened up a world of possibilities. I quit my job twice to backpack around the world, exploring more than 40 countries. I've run with the bulls in Spain, scuba dived with sharks, flown in a Red Bull stunt plane, skydived, and climbed mountains. These adventures have reinforced my belief in the power of financial freedom. It's about creating unforgettable experiences and living life to the fullest.
+                </p>
+              </div>
+            </div>
+            
+            <p className="text-lg text-foreground/80 leading-relaxed mt-8 pt-8 border-t border-secondary/20">
+              Now, I'm on a mission to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies. This isn't about quick flips or risky moves. It's about playing the long game and building passive income streams that give you freedom—just like I did.
             </p>
           </div>
 

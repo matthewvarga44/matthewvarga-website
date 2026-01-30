@@ -286,19 +286,15 @@ export default function Resources() {
               These free resources are just the beginning. Join Retire with Rentals to get personalized coaching, expert calls, accountability groups, and a community of 300+ investors all working toward financial freedom.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/faq">
-                <a>
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                    Learn More About the Program
-                  </Button>
-                </a>
+                <Link href="/faq">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
+                  Learn More About the Program
+                </Button>
               </Link>
               <Link href="/book-consultation">
-                <a>
-                  <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                    Schedule Free Consultation
-                  </Button>
-                </a>
+                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                  Schedule Free Consultation
+                </Button>
               </Link>
             </div>
           </div>

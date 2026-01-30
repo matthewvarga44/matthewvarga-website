@@ -674,14 +674,21 @@ export default function BlogPost() {
                 <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
                   Join the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio. Get personalized guidance from someone who has been where you are.
                 </p>
-                <a
-                  href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  Schedule Free Consultation
-                </a>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/apply-mastermind">
+                    <button className="inline-block bg-gold hover:bg-gold/90 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                      Apply to Join the Mastermind
+                    </button>
+                  </Link>
+                  <a
+                    href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  >
+                    Schedule Free Consultation
+                  </a>
+                </div>
               </div>
             </div>
           </div>

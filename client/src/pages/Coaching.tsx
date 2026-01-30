@@ -250,9 +250,11 @@ export default function Coaching() {
                 </p>
               </div>
 
-              <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
-                Enroll Now - Limited Spots
-              </Button>
+              <Link href="/apply-mastermind">
+                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
+                  Apply Now - Limited Spots
+                </Button>
+              </Link>
 
               <p className="text-center text-sm text-foreground/60 mt-6">
                 Only 300 members allowed. Spots are filling up fast. Once we reach capacity, enrollment closes.
@@ -273,15 +275,15 @@ export default function Coaching() {
               Join 300+ investors building wealth through real estate and alternative business models. Limited spots available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
-              Enroll Now
-            </Button>
+            <Link href="/apply-mastermind">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
+                Apply to Join
+              </Button>
+            </Link>
             <Link href="/book-consultation">
-              <a>
-                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                  Schedule Consultation
-                </Button>
-              </a>
+              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                Schedule Consultation
+              </Button>
             </Link>
             </div>
           </div>

@@ -356,15 +356,15 @@ export default function About() {
               Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
-                Join Retire with Rentals
-              </Button>
+              <Link href="/apply-mastermind">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
+                  Apply to Join the Mastermind
+                </Button>
+              </Link>
               <Link href="/book-consultation">
-                <a>
-                  <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                    Schedule Consultation
-                  </Button>
-                </a>
+                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                  Schedule Consultation
+                </Button>
               </Link>
             </div>
           </div>

@@ -55,9 +55,9 @@ export default function Home() {
           </div>
           <div className="relative mx-auto w-full max-w-[500px] lg:max-w-[600px]">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary/20">
-              {/* Placeholder for Matthew's photo */}
+              {/* Matthew's professional photo */}
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="/images/matthew-hero.jpg" 
                 alt="Matthew Varga" 
                 className="h-full w-full object-cover"
               />

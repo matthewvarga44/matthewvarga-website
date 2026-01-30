@@ -5,13 +5,28 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-
+import Placeholder from "./pages/Placeholder";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
+      <Route path="/" component={Home} />
+      <Route path="/coaching">
+        <Placeholder title="Coaching Programs" />
+      </Route>
+      <Route path="/resources">
+        <Placeholder title="Resources" />
+      </Route>
+      <Route path="/about">
+        <Placeholder title="About Matthew" />
+      </Route>
+      <Route path="/contact">
+        <Placeholder title="Contact" />
+      </Route>
+      <Route path="/community">
+        <Placeholder title="Community" />
+      </Route>
+      <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>

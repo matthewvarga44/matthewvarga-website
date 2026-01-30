@@ -15,6 +15,44 @@ interface BlogPostData {
   relatedPosts: Array<{ title: string; slug: string }>;
 }
 
+const enhanceContent = (html: string): string => {
+  let enhanced = html;
+  const iconMap: Record<string, string> = {
+    "What is": "❓",
+    "Why I": "💡",
+    "The Numbers": "📊",
+    "The Step-by-Step": "🎯",
+    "The Real Challenges": "⚠️",
+    "How to Maximize": "📈",
+    "Is": "✅",
+    "The Bottom Line": "🎁",
+    "The Secondary Market": "🌟",
+    "Why Secondary Markets": "🚀",
+    "The Three Metrics": "📐",
+    "Top Secondary Markets": "🗺️",
+    "Seller Financing": "💰",
+    "How to Structure": "🏗️",
+    "Common Mistakes": "❌",
+    "Automation Tools": "⚙️",
+    "1031 Exchange": "🔄",
+    "Tax Benefits": "💵",
+    "From Foreclosure": "📖"
+  };
+  enhanced = enhanced.replace(/<h2>(.*?)<\/h2>/g, (match, content) => {
+    for (const [key, icon] of Object.entries(iconMap)) {
+      if (content.includes(key)) {
+        return `<h2 class="flex items-center gap-3 mt-8 mb-4"><span class="text-2xl">${icon}</span><span>${content}</span></h2>`;
+      }
+    }
+    return `<h2 class="flex items-center gap-3 mt-8 mb-4"><span class="text-2xl">📝</span><span>${content}</span></h2>`;
+  });
+  enhanced = enhanced.replace(/<ul>/g, '<ul class="space-y-3 pl-4 my-4">');
+  enhanced = enhanced.replace(/<li>/g, '<li class="flex items-start gap-3"><span class="text-gold font-bold text-lg">▸</span><span class="text-slate-700">');
+  enhanced = enhanced.replace(/<\/li>/g, '</span></li>');
+  enhanced = enhanced.replace(/<p><strong>(.*?)<\/strong>(.*?)<\/p>/g, '<p class="bg-slate-50 p-4 rounded-lg border-l-4 border-gold my-4"><strong class="text-slate-900 font-bold">$1</strong>$2</p>');
+  return enhanced;
+};
+
 const blogPostsData: Record<string, BlogPostData> = {
   "airbnb-arbitrage-strategy": {
     title: "The Airbnb Arbitrage Strategy: How I Generate $22,000/Month Without Owning Property",
@@ -558,7 +596,7 @@ export default function BlogPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none mb-12">
               <div
-                dangerouslySetInnerHTML={{ __html: post.content }}
+                dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }}
                 className="text-slate-700 leading-relaxed space-y-6"
               />
               

@@ -1,4 +1,4 @@
-import { Calendar, ArrowLeft, Share2, ArrowRight } from "lucide-react";
+import { Calendar, ArrowLeft, Share2, ArrowRight, CheckCircle2, TrendingUp, Home, DollarSign, Zap, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link, useParams } from "wouter";
 
@@ -11,6 +11,7 @@ interface BlogPostData {
   image: string;
   author: string;
   content: string;
+  slug?: string;
   relatedPosts: Array<{ title: string; slug: string }>;
 }
 
@@ -560,30 +561,62 @@ export default function BlogPost() {
                 dangerouslySetInnerHTML={{ __html: post.content }}
                 className="text-slate-700 leading-relaxed space-y-6"
               />
+              
+              {/* Visual Callout Box */}
+              <div className="my-12 p-8 bg-gradient-to-r from-gold/10 to-slate-100 rounded-2xl border-l-4 border-gold">
+                <div className="flex items-start gap-4">
+                  <TrendingUp className="w-8 h-8 text-gold flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">Key Takeaway</h4>
+                    <p className="text-slate-700 m-0">
+                      {post.slug === "airbnb-arbitrage-strategy" && "Airbnb arbitrage generates higher returns than traditional rentals when executed with proper systems and operational discipline."}
+                      {post.slug === "real-estate-market-2026" && "Secondary markets offer the best risk-adjusted returns for investors willing to move early and build systems before saturation."}
+                      {post.slug === "seller-financing-deals" && "Seller financing unlocks deals that traditional lenders won't touch, enabling faster closings and more flexible terms."}
+                      {post.slug === "property-management-automation" && "Automation systems can reduce management time by 75% while improving tenant satisfaction and reducing costs."}
+                      {post.slug === "1031-exchange-guide" && "1031 exchanges allow you to defer taxes indefinitely while continuously upgrading your portfolio to higher-value properties."}
+                      {post.slug === "my-real-estate-journey" && "Building wealth through real estate is a marathon, not a sprint. Systems and leverage are the keys to exponential growth."}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Share Section */}
             <div className="border-t border-b border-slate-200 py-8 my-12">
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <span className="font-semibold text-slate-900">Share this post:</span>
-                <button className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition-colors">
-                  <Share2 className="w-4 h-4" />
-                  Share
-                </button>
+                <div className="flex gap-3">
+                  <button className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition-colors">
+                    <Share2 className="w-4 h-4" />
+                    Share
+                  </button>
+                  <button className="flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-lg transition-colors font-medium">
+                    LinkedIn
+                  </button>
+                  <button className="flex items-center gap-2 bg-sky-50 hover:bg-sky-100 text-sky-700 px-4 py-2 rounded-lg transition-colors font-medium">
+                    Twitter
+                  </button>
+                </div>
               </div>
             </div>
 
             {/* Related Posts */}
             <div className="mt-16">
-              <h3 className="text-2xl font-bold text-slate-900 mb-8">Related Posts</h3>
+              <div className="flex items-center gap-3 mb-8">
+                <BookOpen className="w-6 h-6 text-gold" />
+                <h3 className="text-2xl font-bold text-slate-900">Related Posts</h3>
+              </div>
               <div className="grid gap-6 md:grid-cols-2">
                 {post.relatedPosts.map((relatedPost) => (
                   <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`}>
-                    <div className="group p-6 border border-slate-200 rounded-xl hover:border-gold hover:shadow-lg transition-all cursor-pointer">
-                      <h4 className="font-bold text-slate-900 group-hover:text-gold transition-colors mb-2">
-                        {relatedPost.title}
-                      </h4>
-                      <div className="flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+                    <div className="group p-6 border border-slate-200 rounded-xl hover:border-gold hover:shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br hover:from-gold/5 hover:to-transparent">
+                      <div className="flex items-start gap-3 mb-3">
+                        <ArrowRight className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                        <h4 className="font-bold text-slate-900 group-hover:text-gold transition-colors">
+                          {relatedPost.title}
+                        </h4>
+                      </div>
+                      <div className="flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all ml-8">
                         Read More <ArrowRight className="w-4 h-4" />
                       </div>
                     </div>
@@ -593,19 +626,25 @@ export default function BlogPost() {
             </div>
 
             {/* CTA Section */}
-            <div className="mt-16 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center text-white">
-              <h3 className="text-3xl font-bold mb-4">Ready to Build Your Real Estate Portfolio?</h3>
-              <p className="text-lg text-slate-300 mb-8">
-                Join the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio.
-              </p>
-              <a
-                href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Schedule Free Consultation
-              </a>
+            <div className="mt-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gold/10 rounded-full -mr-20 -mt-20"></div>
+              <div className="relative z-10">
+                <div className="flex justify-center mb-4">
+                  <Zap className="w-8 h-8 text-gold" />
+                </div>
+                <h3 className="text-3xl font-bold mb-4">Ready to Build Your Real Estate Portfolio?</h3>
+                <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+                  Join the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio. Get personalized guidance from someone who has been where you are.
+                </p>
+                <a
+                  href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                  Schedule Free Consultation
+                </a>
+              </div>
             </div>
           </div>
         </section>

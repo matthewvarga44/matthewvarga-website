@@ -44,9 +44,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </a>
               </Link>
             ))}
-            <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-6">
-              Get Started
-            </Button>
+            <Link href="/book-consultation">
+              <a>
+                <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-6">
+                  Get Started
+                </Button>
+              </a>
+            </Link>
           </nav>
 
           {/* Mobile Navigation */}
@@ -83,12 +87,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         </a>
                       </Link>
                     ))}
-                    <Button 
-                      className="bg-secondary hover:bg-secondary/90 text-white font-bold w-full mt-4"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Get Started
-                    </Button>
+                    <Link href="/book-consultation">
+                      <a onClick={() => setIsMobileMenuOpen(false)}>
+                        <Button 
+                          className="bg-secondary hover:bg-secondary/90 text-white font-bold w-full mt-4"
+                        >
+                          Get Started
+                        </Button>
+                      </a>
+                    </Link>
                   </nav>
                 </div>
               </SheetContent>

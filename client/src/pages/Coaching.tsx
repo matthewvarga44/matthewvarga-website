@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Users, Calendar, BookOpen, Handshake, Target, TrendingUp, Zap, Award, Network, DollarSign } from "lucide-react";
 import Layout from "@/components/Layout";
+import { Link } from "wouter";
 
 export default function Coaching() {
   const benefits = [
@@ -80,12 +81,16 @@ export default function Coaching() {
               Join an exclusive community of ambitious investors and entrepreneurs committed to building wealth through real estate and alternative business models. Get access to proven strategies, expert guidance, and a network of like-minded peers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                Join the Mastermind
-              </Button>
-              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                Schedule a Call
-              </Button>
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
+              Join the Mastermind
+            </Button>
+            <Link href="/book-consultation">
+              <a>
+                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                  Schedule Consultation
+                </Button>
+              </a>
+            </Link>
             </div>
           </div>
         </div>
@@ -245,7 +250,7 @@ export default function Coaching() {
                 </p>
               </div>
 
-              <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
+              <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
                 Enroll Now - Limited Spots
               </Button>
 
@@ -268,12 +273,16 @@ export default function Coaching() {
               Join 300+ investors building wealth through real estate and alternative business models. Limited spots available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                Enroll Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                Schedule a Call
-              </Button>
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
+              Enroll Now
+            </Button>
+            <Link href="/book-consultation">
+              <a>
+                <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                  Schedule Consultation
+                </Button>
+              </a>
+            </Link>
             </div>
           </div>
         </div>

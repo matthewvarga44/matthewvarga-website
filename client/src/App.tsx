@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Coaching from "./pages/Coaching";
+import BookConsultation from "./pages/BookConsultation";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -13,6 +14,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/coaching" component={Coaching} />
+      <Route path="/book-consultation" component={BookConsultation} />
       <Route path="/resources">
         <Placeholder title="Resources" />
       </Route>

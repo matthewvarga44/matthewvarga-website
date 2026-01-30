@@ -1,15 +1,15 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, BarChart, BookOpen, CheckCircle, Users } from "lucide-react";
+import { ArrowRight, BarChart3, TrendingUp, Users } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-background py-20 md:py-32">
-        <div className="absolute inset-0 z-0 opacity-10">
+      {/* Hero Section - Luxury Dark Background */}
+      <section className="relative overflow-hidden bg-primary text-primary-foreground py-24 md:py-40">
+        <div className="absolute inset-0 opacity-5">
           <img 
             src="/images/hero-bg.jpg" 
             alt="Background pattern" 
@@ -17,218 +17,295 @@ export default function Home() {
           />
         </div>
         <div className="container relative z-10 grid gap-12 md:grid-cols-2 md:items-center">
-          <div className="space-y-6">
-            <div className="inline-block rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold text-secondary">
-              Professional Coaching & Consulting
+          <div className="space-y-8">
+            <div className="inline-block rounded-full bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary">
+              Real Estate Mastery Program
             </div>
-            <h1 className="font-heading text-4xl font-extrabold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-              Unlock Your <span className="text-secondary">Potential</span>. Achieve More.
+            <h1 className="font-heading text-5xl font-extrabold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl leading-tight">
+              Build <span className="text-secondary">Lasting Wealth</span>. Quit Your 9-5.
             </h1>
-            <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl leading-relaxed">
-              I help ambitious professionals and entrepreneurs break through barriers, optimize their performance, and build a life of freedom and impact.
+            <p className="max-w-[600px] text-lg text-primary-foreground/90 md:text-xl leading-relaxed font-light">
+              Join 300+ real estate investors learning the proven strategies I used to build a $5M+ portfolio and achieve financial freedom in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/20 transition-all hover:translate-y-[-2px]">
-                Start Your Journey
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
+                Join Real Estate Mastery
               </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold text-lg px-8 h-14 rounded-full">
+              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
                 Learn More
               </Button>
             </div>
             
-            <div className="pt-8 flex items-center gap-4 text-sm text-muted-foreground">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="h-8 w-8 rounded-full border-2 border-background bg-gray-200 overflow-hidden">
-                    <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" />
-                  </div>
-                ))}
+            <div className="pt-8 flex items-center gap-6 text-sm text-primary-foreground/80">
+              <div className="space-y-1">
+                <p className="font-bold text-secondary">$5M+</p>
+                <p className="text-xs uppercase tracking-wide">Real Estate Portfolio</p>
               </div>
-              <p>Trusted by 500+ professionals</p>
+              <div className="w-px h-12 bg-secondary/30"></div>
+              <div className="space-y-1">
+                <p className="font-bold text-secondary">300</p>
+                <p className="text-xs uppercase tracking-wide">Program Members</p>
+              </div>
+              <div className="w-px h-12 bg-secondary/30"></div>
+              <div className="space-y-1">
+                <p className="font-bold text-secondary">30s</p>
+                <p className="text-xs uppercase tracking-wide">Retired & Traveling</p>
+              </div>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-[500px] lg:max-w-[600px]">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
-              {/* Placeholder for Matthew's photo - using a professional placeholder for now */}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary/20">
+              {/* Placeholder for Matthew's photo */}
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                 alt="Matthew Varga" 
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
-              <div className="absolute bottom-0 left-0 p-8 text-white">
-                <p className="font-heading text-2xl font-bold">Matthew Varga</p>
-                <p className="text-white/80">Executive Coach & Consultant</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-8 text-primary-foreground">
+                <p className="font-heading text-3xl font-bold">Matthew Varga</p>
+                <p className="text-secondary font-semibold">Real Estate Investor & Coach</p>
+                <p className="text-primary-foreground/80 text-sm mt-2">Retired in my 30s • $5M+ Portfolio • Airbnb Specialist</p>
               </div>
-            </div>
-            
-            {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 md:bottom-12 md:-left-12 md:right-auto bg-white p-6 rounded-xl shadow-xl max-w-[260px] border border-gray-100 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 fill-mode-forwards">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                  <BarChart className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500 font-semibold uppercase">Results</p>
-                  <p className="font-bold text-primary">Proven Strategy</p>
-                </div>
-              </div>
-              <p className="text-sm text-gray-600">
-                "Matthew's coaching transformed my business approach completely."
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Social Proof / Stats */}
-      <section className="border-y bg-muted/30 py-12">
+      <section className="border-y bg-white py-16 md:py-20">
         <div className="container">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-center">
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-primary">15+</h3>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Years Experience</p>
+              <h3 className="text-4xl font-extrabold text-secondary">$5M+</h3>
+              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Real Estate Owned</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-primary">500+</h3>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Clients Coached</p>
+              <h3 className="text-4xl font-extrabold text-secondary">300+</h3>
+              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Program Members</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-primary">50k+</h3>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Community Members</p>
+              <h3 className="text-4xl font-extrabold text-secondary">700K+</h3>
+              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">YouTube Followers</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-primary">100%</h3>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Commitment</p>
+              <h3 className="text-4xl font-extrabold text-secondary">5 Yrs</h3>
+              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">To Build Portfolio</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* About / Mission Section */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-white">
         <div className="container">
-          <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl md:text-5xl mb-6">
-              More Than Just Coaching. <br/>A Partnership for <span className="text-secondary">Growth</span>.
+          <div className="mx-auto max-w-3xl mb-16">
+            <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-8">
+              From 9-5 to <span className="text-secondary">Financial Freedom</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I believe that true success isn't just about financial gain—it's about creating a life of freedom, purpose, and impact. My mission is to provide you with the tools, strategies, and accountability you need to turn your vision into reality.
+            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+              I spent years working a corporate job, feeling trapped by the daily grind. Then I discovered the power of real estate investing. By focusing on buy-and-hold strategies and Airbnb investments, I built a $5 million portfolio in less than 5 years—all while traveling the world with my family.
+            </p>
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              Now, I'm on a mission to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies. This isn't about quick flips or risky moves. It's about playing the long game and building passive income streams that give you freedom.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
-              <div className="h-2 bg-secondary w-full"></div>
+              <div className="h-3 bg-secondary w-full"></div>
               <CardHeader>
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <img src="/images/coaching-icon.png" alt="Coaching" className="h-8 w-8 object-contain" />
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
+                  <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                 </div>
-                <CardTitle className="text-xl font-bold">Strategic Coaching</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Buy & Hold Strategy</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Personalized 1-on-1 and group coaching programs designed to help you identify blind spots, set clear goals, and execute with precision.
+                <p className="text-foreground/70">
+                  Learn the proven buy-and-hold approach that builds long-term wealth through rental income and property appreciation.
                 </p>
               </CardContent>
-              <CardFooter>
-                <Link href="/coaching">
-                  <a className="flex items-center text-secondary font-bold hover:underline">
-                    Explore Programs <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Link>
-              </CardFooter>
             </Card>
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
-              <div className="h-2 bg-secondary w-full"></div>
+              <div className="h-3 bg-secondary w-full"></div>
               <CardHeader>
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <img src="/images/resources-icon.png" alt="Resources" className="h-8 w-8 object-contain" />
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
+                  <TrendingUp className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl font-bold">Actionable Resources</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Airbnb Mastery</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Access a library of practical tools, templates, and guides that you can implement immediately to see tangible results in your business.
+                <p className="text-foreground/70">
+                  Discover how to generate high returns through short-term rentals and build a scalable Airbnb investment business.
                 </p>
               </CardContent>
-              <CardFooter>
-                <Link href="/resources">
-                  <a className="flex items-center text-secondary font-bold hover:underline">
-                    Get Free Tools <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Link>
-              </CardFooter>
             </Card>
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
-              <div className="h-2 bg-secondary w-full"></div>
+              <div className="h-3 bg-secondary w-full"></div>
               <CardHeader>
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <img src="/images/community-icon.png" alt="Community" className="h-8 w-8 object-contain" />
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
+                  <Users className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl font-bold">Thriving Community</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Thriving Community</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Join a network of like-minded professionals who are committed to growth. Share insights, get feedback, and grow together.
+                <p className="text-foreground/70">
+                  Join a network of 300+ serious investors committed to financial freedom. Share deals, ask questions, and grow together.
                 </p>
               </CardContent>
-              <CardFooter>
-                <Link href="/community">
-                  <a className="flex items-center text-secondary font-bold hover:underline">
-                    Join the Tribe <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Link>
-              </CardFooter>
             </Card>
           </div>
         </div>
       </section>
 
+      {/* Real Estate Mastery Program Section */}
+      <section className="bg-primary text-primary-foreground py-20 md:py-32">
+        <div className="container">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+                Real Estate <span className="text-secondary">Mastery Program</span>
+              </h2>
+              <p className="text-xl text-primary-foreground/90 leading-relaxed">
+                A comprehensive, community-driven program designed to help you build a profitable real estate portfolio and achieve financial freedom.
+              </p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 mb-12">
+              <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
+                <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">What's Included</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Weekly live coaching sessions with me",
+                    "Access to exclusive real estate deals",
+                    "Property analysis templates & tools",
+                    "Airbnb investment strategies",
+                    "Market analysis & trends",
+                    "Private community forum",
+                    "Deal evaluation framework",
+                    "Tax & financing strategies"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="h-6 w-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-secondary font-bold text-sm">✓</span>
+                      </div>
+                      <span className="text-primary-foreground/90">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-secondary/10 border-2 border-secondary rounded-2xl p-8">
+                <div className="text-center mb-8">
+                  <p className="text-primary-foreground/80 text-sm uppercase tracking-widest font-semibold mb-2">Annual Investment</p>
+                  <h3 className="font-heading text-5xl font-bold text-secondary mb-2">$3,000</h3>
+                  <p className="text-primary-foreground/80">/year</p>
+                </div>
+                
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Monthly Cost</span>
+                    <span className="font-bold">$250</span>
+                  </div>
+                  <div className="h-px bg-secondary/20"></div>
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Program Members</span>
+                    <span className="font-bold">300 (Capped)</span>
+                  </div>
+                  <div className="h-px bg-secondary/20"></div>
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Access Duration</span>
+                    <span className="font-bold">12 Months</span>
+                  </div>
+                </div>
+
+                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
+                  Join Now - Limited Spots
+                </Button>
+                
+                <p className="text-center text-primary-foreground/60 text-sm mt-6">
+                  Only 300 members allowed. Spots are filling up fast.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
+              <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">Why Join?</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $5M+ portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors who are all working toward financial freedom. Share deals, ask questions, and grow together.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Actionable Strategies:</span> No fluff. Every session focuses on practical, implementable strategies you can use immediately.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Lifetime Access:</span> Access to all recorded sessions and resources. Learn at your own pace.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Resources Section */}
-      <section className="bg-primary py-20 md:py-32 text-white">
+      <section className="py-20 md:py-32 bg-white">
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
-              <h2 className="font-heading text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
-                Start With These <span className="text-secondary">Free Resources</span>
+              <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-4">
+                Free <span className="text-secondary">Resources</span>
               </h2>
-              <p className="text-blue-100 text-lg">
-                Don't know where to begin? These hand-picked tools are the perfect starting point for your journey.
+              <p className="text-lg text-foreground/70">
+                Start your real estate journey with these hand-picked tools and guides.
               </p>
             </div>
-            <Button variant="outline" className="border-white text-primary hover:bg-white hover:text-primary font-bold">
-              View All Resources
-            </Button>
+            <Link href="/resources">
+              <a>
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold">
+                  View All Resources
+                </Button>
+              </a>
+            </Link>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "The 7-Day Focus Challenge",
-                desc: "A step-by-step guide to reclaiming your time and focusing on what truly matters.",
+                title: "Real Estate Investing Checklist",
+                desc: "The complete checklist I use before buying any property. Covers financing, inspections, and due diligence.",
+                tag: "Checklist"
+              },
+              {
+                title: "Airbnb Financial Breakdown",
+                desc: "Real numbers from my Airbnb properties. See exactly how much you can make from short-term rentals.",
                 tag: "Guide"
               },
               {
-                title: "Strategic Planning Template",
-                desc: "The exact spreadsheet I use to plan my year, quarter, and week for maximum productivity.",
-                tag: "Template"
-              },
-              {
-                title: "Deal Analysis Calculator",
-                desc: "Evaluate opportunities quickly and confidently with this plug-and-play calculator.",
+                title: "Property Analysis Calculator",
+                desc: "The spreadsheet I use to evaluate every deal. Plug in numbers and get instant ROI calculations.",
                 tag: "Tool"
               }
             ].map((item, i) => (
-              <div key={i} className="group relative overflow-hidden rounded-2xl bg-white/5 p-8 hover:bg-white/10 transition-colors border border-white/10">
-                <div className="mb-4 inline-block rounded-full bg-secondary/20 px-3 py-1 text-xs font-semibold text-secondary">
+              <div key={i} className="group relative overflow-hidden rounded-2xl bg-white border border-primary/10 p-8 hover:border-secondary/50 hover:shadow-lg transition-all">
+                <div className="mb-4 inline-block rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
                   {item.tag}
                 </div>
-                <h3 className="mb-3 font-heading text-xl font-bold">{item.title}</h3>
-                <p className="mb-6 text-blue-100/80">{item.desc}</p>
-                <a href="#" className="inline-flex items-center font-bold text-secondary hover:text-white transition-colors">
+                <h3 className="mb-3 font-heading text-xl font-bold text-primary">{item.title}</h3>
+                <p className="mb-6 text-foreground/70">{item.desc}</p>
+                <a href="#" className="inline-flex items-center font-bold text-secondary hover:text-primary transition-colors">
                   Download Now <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
@@ -238,31 +315,31 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 md:py-32 bg-muted/30">
+      <section className="py-20 md:py-32 bg-primary/5">
         <div className="container">
-          <h2 className="font-heading text-3xl font-bold tracking-tight text-center text-primary sm:text-4xl md:text-5xl mb-16">
-            Success Stories
+          <h2 className="font-heading text-4xl font-bold tracking-tight text-center text-primary sm:text-5xl mb-16">
+            Success Stories from <span className="text-secondary">Program Members</span>
           </h2>
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                name: "Sarah Jenkins",
-                role: "Real Estate Investor",
-                quote: "Matthew's coaching gave me the clarity I needed to scale my portfolio from 2 to 10 units in just 18 months. The accountability was a game-changer."
+                name: "Sarah Chen",
+                role: "First-Time Investor",
+                quote: "Matthew's strategies helped me buy my first rental property. I'm now generating $2,500/month in passive income."
               },
               {
-                name: "David Chen",
-                role: "Tech Entrepreneur",
-                quote: "I was burnt out and overwhelmed. Matthew helped me restructure my business operations so I could work less and earn more. I finally have my weekends back!"
+                name: "David Rodriguez",
+                role: "Airbnb Investor",
+                quote: "The Airbnb breakdown was eye-opening. I scaled from 1 to 3 properties in 18 months. Game changer."
               },
               {
                 name: "Jessica Williams",
-                role: "Small Business Owner",
-                quote: "The resources and community Matthew has built are incredible. I've met my business partners and best friends through this network."
+                role: "Real Estate Investor",
+                quote: "The community alone is worth it. I've met my business partners and best friends through this program."
               }
             ].map((testimonial, i) => (
-              <Card key={i} className="border-none shadow-sm">
+              <Card key={i} className="border-none shadow-lg">
                 <CardContent className="pt-8">
                   <div className="mb-4 flex text-secondary">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -271,14 +348,14 @@ export default function Home() {
                       </svg>
                     ))}
                   </div>
-                  <p className="mb-6 text-muted-foreground italic">"{testimonial.quote}"</p>
+                  <p className="mb-6 text-foreground/70 italic">"{testimonial.quote}"</p>
                   <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-gray-200 overflow-hidden">
-                      <img src={`https://i.pravatar.cc/100?img=${i + 20}`} alt={testimonial.name} />
+                    <div className="h-10 w-10 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                      {testimonial.name.charAt(0)}
                     </div>
                     <div>
                       <p className="font-bold text-primary text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-muted-foreground">{testimonial.role}</p>
+                      <p className="text-xs text-foreground/60">{testimonial.role}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -289,28 +366,30 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container">
-          <div className="rounded-3xl bg-primary px-6 py-16 md:px-16 md:py-24 text-center relative overflow-hidden">
-            {/* Abstract shapes */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/20 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+          <div className="rounded-3xl bg-gradient-to-br from-secondary/20 to-secondary/5 px-6 py-16 md:px-16 md:py-24 text-center relative overflow-hidden border border-secondary/30">
+            <div className="absolute top-0 left-0 w-64 h-64 bg-secondary/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
             
             <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl mb-6">
-                Ready to Take the Next Step?
+              <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
+                Ready to Build <span className="text-secondary">Your Wealth?</span>
               </h2>
-              <p className="text-lg text-blue-100 mb-10 leading-relaxed">
-                Whether you're just starting out or looking to scale to the next level, I have a program that fits your needs. Let's build your future together.
+              <p className="text-lg text-primary-foreground/90 mb-10 leading-relaxed">
+                Join 300+ investors in the Real Estate Mastery program. Limited spots available. Enrollment closes when we hit capacity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/20">
-                  Work With Me
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
+                  Enroll Now
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-primary hover:bg-white hover:text-primary font-bold text-lg px-8 h-14 rounded-full bg-transparent text-white">
-                  Contact Me
+                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-bold text-lg px-8 h-14 rounded-full">
+                  Schedule a Call
                 </Button>
               </div>
+              <p className="text-sm text-primary-foreground/70 mt-8">
+                Questions? <a href="mailto:contact@matthewvarga.com" className="text-secondary hover:underline font-bold">Email me directly</a>
+              </p>
             </div>
           </div>
         </div>

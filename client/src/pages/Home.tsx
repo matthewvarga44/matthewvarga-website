@@ -28,9 +28,11 @@ export default function Home() {
               Join 300+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]" onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}>
-                Join Retire with Rentals
-              </Button>
+              <Link href="/apply-mastermind">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
+                  Apply to Join the Mastermind
+                </Button>
+              </Link>
               <Link href="/book-consultation">
               <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
                 Schedule Consultation
@@ -251,9 +253,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
-                  Join Now - Limited Spots
-                </Button>
+                <Link href="/apply-mastermind">
+                  <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
+                    Apply Now - Limited Spots
+                  </Button>
+                </Link>
                 
                 <p className="text-center text-primary-foreground/60 text-sm mt-6">
                   Only 300 members allowed. Spots are filling up fast.
@@ -408,12 +412,16 @@ export default function Home() {
                 Join 300+ investors in the Retire with Rentals program. Limited spots available. Enrollment closes when we hit capacity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                  Enroll Now
-                </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-bold text-lg px-8 h-14 rounded-full">
-                  Schedule a Call
-                </Button>
+                <Link href="/apply-mastermind">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
+                    Apply to Join
+                  </Button>
+                </Link>
+                <Link href="/book-consultation">
+                  <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-bold text-lg px-8 h-14 rounded-full">
+                    Schedule a Call
+                  </Button>
+                </Link>
               </div>
               <p className="text-sm text-primary-foreground/70 mt-8">
                 Questions? <a href="mailto:contact@matthewvarga.com" className="text-secondary hover:underline font-bold">Email me directly</a>

@@ -11,6 +11,8 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -23,6 +25,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/faq" component={FAQ} />
       <Route path="/contact" component={Contact} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

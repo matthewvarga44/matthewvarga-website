@@ -21,35 +21,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center space-x-2">
-              <span className="font-heading text-2xl font-bold text-primary tracking-tight">
-                MATTHEW<span className="text-secondary">VARGA</span>
-              </span>
-            </a>
+          <Link href="/" className="flex items-center space-x-2">
+            <span className="font-heading text-2xl font-bold text-primary tracking-tight">
+              MATTHEW<span className="text-secondary">VARGA</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className={`text-sm font-medium transition-colors hover:text-secondary ${
-                    location === item.href
-                      ? "text-primary font-bold"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  {item.label}
-                </a>
+              <Link key={item.href} href={item.href} className={`text-sm font-medium transition-colors hover:text-secondary ${
+                location === item.href
+                  ? "text-primary font-bold"
+                  : "text-muted-foreground"
+              }`}>
+                {item.label}
               </Link>
             ))}
-            <Link href="/book-consultation">
-              <a>
-                <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-6">
-                  Get Started
-                </Button>
-              </a>
+            <Link href="/book-consultation" asChild>
+              <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-6">
+                Get Started
+              </Button>
             </Link>
           </nav>
 
@@ -64,37 +56,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-8 mt-8">
-                  <Link href="/">
-                    <a 
-                      className="font-heading text-2xl font-bold text-primary"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      MATTHEW<span className="text-secondary">VARGA</span>
-                    </a>
+                  <Link href="/" className="font-heading text-2xl font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+                    MATTHEW<span className="text-secondary">VARGA</span>
                   </Link>
                   <nav className="flex flex-col gap-4">
                     {navItems.map((item) => (
-                      <Link key={item.href} href={item.href}>
-                        <a
-                          className={`text-lg font-medium transition-colors hover:text-secondary ${
-                            location === item.href
-                              ? "text-primary font-bold"
-                              : "text-muted-foreground"
-                          }`}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {item.label}
-                        </a>
+                      <Link key={item.href} href={item.href} className={`text-lg font-medium transition-colors hover:text-secondary ${
+                        location === item.href
+                          ? "text-primary font-bold"
+                          : "text-muted-foreground"
+                      }`} onClick={() => setIsMobileMenuOpen(false)}>
+                        {item.label}
                       </Link>
                     ))}
-                    <Link href="/book-consultation">
-                      <a onClick={() => setIsMobileMenuOpen(false)}>
-                        <Button 
-                          className="bg-secondary hover:bg-secondary/90 text-white font-bold w-full mt-4"
-                        >
-                          Get Started
-                        </Button>
-                      </a>
+                    <Link href="/book-consultation" asChild>
+                      <Button 
+                        className="bg-secondary hover:bg-secondary/90 text-white font-bold w-full mt-4"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        Get Started
+                      </Button>
                     </Link>
                   </nav>
                 </div>
@@ -111,10 +92,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-primary text-primary-foreground py-12 md:py-16">
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-1">
-            <Link href="/">
-              <a className="font-heading text-2xl font-bold text-white tracking-tight mb-4 block">
-                MATTHEW<span className="text-secondary">VARGA</span>
-              </a>
+            <Link href="/" className="font-heading text-2xl font-bold text-white tracking-tight mb-4 block">
+              MATTHEW<span className="text-secondary">VARGA</span>
             </Link>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Empowering professionals to achieve their goals through strategic coaching and actionable resources.
@@ -126,10 +105,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ul className="space-y-2">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href}>
-                    <a className="text-primary-foreground/80 hover:text-white transition-colors text-sm">
-                      {item.label}
-                    </a>
+                  <Link href={item.href} className="text-primary-foreground/80 hover:text-white transition-colors text-sm">
+                    {item.label}
                   </Link>
                 </li>
               ))}

@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Coaching from "./pages/Coaching";
 import BookConsultation from "./pages/BookConsultation";
+import About from "./pages/About";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -18,9 +19,7 @@ function Router() {
       <Route path="/resources">
         <Placeholder title="Resources" />
       </Route>
-      <Route path="/about">
-        <Placeholder title="About Matthew" />
-      </Route>
+      <Route path="/about" component={About} />
       <Route path="/contact">
         <Placeholder title="Contact" />
       </Route>

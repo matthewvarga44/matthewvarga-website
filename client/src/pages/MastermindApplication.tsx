@@ -5,8 +5,8 @@ import { ArrowRight, CheckCircle2, Lock } from "lucide-react";
 import Layout from "@/components/Layout";
 import emailjs from "@emailjs/browser";
 
-// Initialize EmailJS
-emailjs.init("SERVICE_ID_PLACEHOLDER");
+// Initialize EmailJS with your Public Key
+emailjs.init("CaatlYPF8IfCclFX2");
 
 export default function MastermindApplication() {
   const [formData, setFormData] = useState<{
@@ -97,16 +97,23 @@ Submitted at: ${new Date().toLocaleString()}
 
       // Send email using EmailJS
       const response = await emailjs.send(
-        "SERVICE_ID_PLACEHOLDER",
-        "TEMPLATE_ID_PLACEHOLDER",
+        "service_e4hf1vi",
+        "4bl9zun",
         {
-          to_email: "Matthew.p.varga@gmail.com",
+          to_email: "matthew.p.varga@gmail.com",
           from_email: formData.email,
           from_name: formData.fullName,
           subject: "Mastermind Application Form",
-          message: emailContent,
           reply_to: formData.email,
-          coachingNeeds: formData.coachingNeeds.join(", "),
+          phone: formData.phone,
+          currentInvestments: formData.currentInvestments,
+          investmentCapital: formData.investmentCapital,
+          coachingNeeds: formData.coachingNeeds.join("\n• "),
+          investmentGoals: formData.investmentGoals,
+          whyJoin: formData.whyJoin,
+          experience: formData.experience,
+          timeCommitment: formData.timeCommitment,
+          submitted_at: new Date().toLocaleString()
         }
       );
 

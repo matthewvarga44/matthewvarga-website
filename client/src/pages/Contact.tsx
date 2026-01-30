@@ -25,7 +25,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:matthew@matthewvarga.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:matthew.p.varga@gmail.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
   };

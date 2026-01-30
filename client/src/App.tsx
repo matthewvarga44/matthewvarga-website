@@ -5,15 +5,14 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Coaching from "./pages/Coaching";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/coaching">
-        <Placeholder title="Coaching Programs" />
-      </Route>
+      <Route path="/coaching" component={Coaching} />
       <Route path="/resources">
         <Placeholder title="Resources" />
       </Route>

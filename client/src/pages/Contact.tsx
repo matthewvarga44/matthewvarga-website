@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MessageSquare, Instagram, Youtube, BookOpen } from "lucide-react";
+import { Mail, MessageSquare, Instagram, Youtube, BookOpen, Music, Twitter, Linkedin } from "lucide-react";
 import Layout from "@/components/Layout";
 
 export default function Contact() {
@@ -36,18 +36,42 @@ export default function Contact() {
       icon: Instagram,
       url: "https://www.instagram.com/matthew_varga/",
       color: "hover:text-pink-500",
+      description: "Daily tips & lifestyle updates",
     },
     {
       name: "YouTube",
       icon: Youtube,
       url: "https://www.youtube.com/@MatthewVarga",
       color: "hover:text-red-500",
+      description: "In-depth real estate strategies",
+    },
+    {
+      name: "TikTok",
+      icon: Music,
+      url: "https://www.tiktok.com/@matthewpvarga",
+      color: "hover:text-black",
+      description: "Quick real estate tips & trends",
+    },
+    {
+      name: "Twitter",
+      icon: Twitter,
+      url: "https://x.com/matthew_varga",
+      color: "hover:text-blue-400",
+      description: "Market insights & daily updates",
+    },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/matthewpvarga/",
+      color: "hover:text-blue-600",
+      description: "Professional insights & articles",
     },
     {
       name: "Teachable",
       icon: BookOpen,
       url: "https://matthew-varga-real-estate.teachable.com/",
       color: "hover:text-blue-500",
+      description: "Coaching programs & courses",
     },
   ];
 
@@ -173,7 +197,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
@@ -182,18 +206,16 @@ export default function Contact() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-slate-700/50 hover:bg-slate-700 rounded-2xl p-8 text-center transition-all duration-300 border border-slate-600 hover:border-gold"
+                    className="group block bg-slate-700/50 hover:bg-slate-700 rounded-2xl p-8 text-center transition-all duration-300 border border-slate-600 hover:border-gold no-underline"
                   >
                     <Icon className={`w-16 h-16 mx-auto mb-4 text-slate-300 group-hover:text-gold transition-colors duration-300 ${social.color}`} />
                     <h3 className="text-2xl font-bold mb-2">{social.name}</h3>
                     <p className="text-slate-400 mb-4">
-                      {social.name === "Instagram" && "Daily tips & lifestyle updates"}
-                      {social.name === "YouTube" && "In-depth real estate strategies"}
-                      {social.name === "Teachable" && "Coaching programs & courses"}
+                      {social.description}
                     </p>
-                    <span className="inline-block bg-gold text-slate-900 font-bold py-2 px-6 rounded-lg group-hover:bg-gold/90 transition-colors duration-200">
+                    <div className="inline-block bg-gold text-slate-900 font-bold py-2 px-6 rounded-lg group-hover:bg-gold/90 transition-colors duration-200">
                       Follow →
-                    </span>
+                    </div>
                   </a>
                 );
               })}

@@ -9,13 +9,24 @@ import emailjs from "@emailjs/browser";
 emailjs.init("SERVICE_ID_PLACEHOLDER");
 
 export default function MastermindApplication() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    fullName: string;
+    email: string;
+    phone: string;
+    currentInvestments: string;
+    investmentCapital: string;
+    coachingNeeds: string[];
+    investmentGoals: string;
+    whyJoin: string;
+    experience: string;
+    timeCommitment: string;
+  }>({
     fullName: "",
     email: "",
     phone: "",
     currentInvestments: "",
     investmentCapital: "",
-    courseAffordability: "",
+    coachingNeeds: [],
     investmentGoals: "",
     whyJoin: "",
     experience: "",
@@ -31,6 +42,16 @@ export default function MastermindApplication() {
     setFormData((prev) => ({
       ...prev,
       [name]: value,
+    }));
+  };
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      coachingNeeds: checked
+        ? [...prev.coachingNeeds, value]
+        : prev.coachingNeeds.filter((item) => item !== value),
     }));
   };
 
@@ -54,7 +75,10 @@ INVESTMENT BACKGROUND
 =====================
 Current Properties: ${formData.currentInvestments}
 Available Capital: ${formData.investmentCapital}
-Can Afford Course ($3,000/year): ${formData.courseAffordability}
+
+COACHING PROGRAM INTERESTS
+==========================
+${formData.coachingNeeds.map((need) => `• ${need}`).join("\n")}
 
 GOALS & MOTIVATION
 ==================
@@ -82,6 +106,7 @@ Submitted at: ${new Date().toLocaleString()}
           subject: "Mastermind Application Form",
           message: emailContent,
           reply_to: formData.email,
+          coachingNeeds: formData.coachingNeeds.join(", "),
         }
       );
 
@@ -93,7 +118,7 @@ Submitted at: ${new Date().toLocaleString()}
           phone: "",
           currentInvestments: "",
           investmentCapital: "",
-          courseAffordability: "",
+          coachingNeeds: [] as string[],
           investmentGoals: "",
           whyJoin: "",
           experience: "",
@@ -319,22 +344,34 @@ Submitted at: ${new Date().toLocaleString()}
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Can you afford the $3,000/year ($250/month) program investment? *
+                    <label className="block text-sm font-medium text-foreground mb-3">
+                      What are you most looking for in a real estate coaching program? * (Select all that apply)
                     </label>
-                    <select
-                      name="courseAffordability"
-                      value={formData.courseAffordability}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="yes-easily">Yes, easily</option>
-                      <option value="yes-comfortable">Yes, it's comfortable</option>
-                      <option value="yes-stretch">Yes, but it's a stretch</option>
-                      <option value="no">No, not at this time</option>
-                    </select>
+                    <div className="space-y-3">
+                      {[
+                        "Personalized one-on-one coaching and accountability",
+                        "Access to a community of like-minded investors",
+                        "Specific strategies (Airbnb arbitrage, seller financing, etc.)",
+                        "Deal sourcing and partnership opportunities",
+                        "Tax optimization and financial planning guidance",
+                        "Scaling from single properties to a portfolio",
+                        "Passive income generation strategies",
+                        "Networking with experienced real estate professionals",
+                        "Templates, checklists, and operational systems",
+                        "Ongoing support and mentorship",
+                      ].map((option: string) => (
+                        <label key={option} className="flex items-center space-x-3 cursor-pointer">
+                          <input
+                            type="checkbox"
+                            value={option}
+                            checked={formData.coachingNeeds.includes(option)}
+                            onChange={handleCheckboxChange}
+                            className="w-4 h-4 rounded border-border text-secondary focus:ring-secondary/50"
+                          />
+                          <span className="text-sm text-foreground">{option}</span>
+                        </label>
+                      ))}
+                    </div>
                   </div>
                 </div>
 

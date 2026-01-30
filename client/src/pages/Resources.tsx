@@ -1,29 +1,10 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, FileText, Calculator, CheckCircle, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
-import DownloadModal from "@/components/DownloadModal";
 
 export default function Resources() {
-  const [downloadModal, setDownloadModal] = useState<{
-    isOpen: boolean;
-    resourceTitle: string;
-    downloadUrl: string;
-  }>({
-    isOpen: false,
-    resourceTitle: "",
-    downloadUrl: "",
-  });
-
-  const handleDownloadClick = (title: string, url: string) => {
-    setDownloadModal({
-      isOpen: true,
-      resourceTitle: title,
-      downloadUrl: url,
-    });
-  };
 
   const resources = [
     {
@@ -231,13 +212,18 @@ export default function Resources() {
                         </ul>
                       </div>
 
-                      <Button
-                        className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold rounded-full"
-                        onClick={() => handleDownloadClick(resource.title, resource.downloadUrl)}
+                      <a
+                        href={resource.downloadUrl}
+                        download
+                        className="w-full"
                       >
-                        <Download className="h-4 w-4 mr-2" />
-                        Download Free
-                      </Button>
+                        <Button
+                          className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold rounded-full"
+                        >
+                          <Download className="h-4 w-4 mr-2" />
+                          Download Free
+                        </Button>
+                      </a>
                     </CardContent>
                   </Card>
                 ))}
@@ -435,15 +421,6 @@ export default function Resources() {
         </div>
       </section>
 
-      {/* Download Modal */}
-      <DownloadModal
-        isOpen={downloadModal.isOpen}
-        onClose={() =>
-          setDownloadModal({ ...downloadModal, isOpen: false })
-        }
-        resourceTitle={downloadModal.resourceTitle}
-        downloadUrl={downloadModal.downloadUrl}
-      />
     </Layout>
   );
 }

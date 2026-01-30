@@ -4,7 +4,7 @@ const router = Router();
 
 // Flodesk API configuration
 const FLODESK_API_KEY = process.env.FLODESK_API_KEY || "fd_key_d3f394f36ead41478dc335bb9057aa43.BMoQyTeqB6S1cEwZZnhmMz6vpLajgiTi2M3XW3juIUnLV9ZdrmRth7g0IbuVWX9riJsgOSVXnFljGVtWBtGdos8SS8l8rvAhAeIJkWrd2PJshtajkOTroRE4WJ1PRQvpr2ExdyOkNz76D226ZTXIGUAVK36dohrHuFcRByZ3EmIhstFVi1nnjZiFEGtE8M5Q";
-const FLODESK_AUDIENCE_ID = process.env.FLODESK_AUDIENCE_ID || "616db0c9a89c5d166a4890bd";
+const FLODESK_AUDIENCE_ID = process.env.FLODESK_AUDIENCE_ID || "697cb771ebd66145dc6f64ca";
 
 interface SubscribeRequest {
   email: string;

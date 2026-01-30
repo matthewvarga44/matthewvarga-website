@@ -1,6 +1,7 @@
 import { Calendar, ArrowLeft, Share2, ArrowRight, CheckCircle2, TrendingUp, Home, DollarSign, Zap, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link, useParams } from "wouter";
+import { newBlogPosts } from "@/lib/blogPostsNew";
 
 interface BlogPostData {
   title: string;
@@ -525,6 +526,24 @@ const blogPostsData: Record<string, BlogPostData> = {
     ]
   }
 };
+
+// Add new blog posts to the data
+newBlogPosts.forEach((post) => {
+  blogPostsData[post.slug] = {
+    title: post.title,
+    excerpt: post.excerpt,
+    category: post.category,
+    date: post.date,
+    readTime: post.readTime,
+    image: post.image,
+    author: "Matthew Varga",
+    content: post.content,
+    relatedPosts: [
+      { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
+      { title: "Real Estate Market Analysis", slug: "real-estate-market-2026" }
+    ]
+  };
+});
 
 export default function BlogPost() {
   const params = useParams();

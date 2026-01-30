@@ -1,6 +1,7 @@
 import { Calendar, ArrowRight, Tag } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
+import { newBlogPosts } from "@/lib/blogPostsNew";
 
 interface BlogPost {
   id: string;
@@ -77,7 +78,22 @@ export default function Blog() {
     }
   ];
 
-  const categories = ["All", "Airbnb Strategy", "Market Insights", "Investment Strategy", "Operations", "Tax Strategy", "Personal Story"];
+  // Combine original and new blog posts
+  const allBlogPosts: BlogPost[] = [
+    ...blogPosts,
+    ...newBlogPosts.map((post) => ({
+      id: post.id,
+      title: post.title,
+      excerpt: post.excerpt,
+      category: post.category,
+      date: post.date,
+      readTime: post.readTime,
+      image: post.image,
+      slug: post.slug,
+    })),
+  ];
+
+  const categories = ["All", "Airbnb Strategy", "Market Insights", "Investment Strategy", "Operations", "Tax Strategy", "Personal Story", "Real Estate Investing", "Airbnb Strategy", "Property Management", "Cash Flow", "Market Analysis", "Flipping", "Networking", "Portfolio Growth", "Financial Freedom"];
 
   return (
     <Layout>
@@ -112,7 +128,7 @@ export default function Blog() {
 
             {/* Blog Grid */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {blogPosts.map((post) => (
+              {allBlogPosts.map((post) => (
                 <Link key={post.id} href={`/blog/${post.slug}`}>
                   <div className="group h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gold transition-all duration-300 cursor-pointer">
                     {/* Image */}

@@ -119,13 +119,21 @@ function DialogContent({
     [isComposing, onEscapeKeyDown]
   );
 
-  // Check if children contains a DialogTitle
+  // Check if children contains a DialogTitle or DialogHeader with DialogTitle
+  const checkForTitle = React.useCallback((child: any): boolean => {
+    if (!React.isValidElement(child)) return false;
+    if (child.type === DialogTitle) return true;
+    const childProps = (child as any).props;
+    if (childProps?.children) {
+      return React.Children.toArray(childProps.children).some(checkForTitle);
+    }
+    return false;
+  }, []);
+
   React.useEffect(() => {
-    const hasDialogTitle = React.Children.toArray(children).some(
-      (child) => React.isValidElement(child) && child.type === DialogTitle
-    );
-    setHasTitle(hasDialogTitle);
-  }, [children]);
+    const titleExists = React.Children.toArray(children).some(checkForTitle);
+    setHasTitle(titleExists);
+  }, [children, checkForTitle]);
 
   return (
     <DialogPortal data-slot="dialog-portal">

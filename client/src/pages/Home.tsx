@@ -32,12 +32,10 @@ export default function Home() {
                 Join Retire with Rentals
               </Button>
               <Link href="/book-consultation">
-                <a>
-                  <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
-                    Schedule Consultation
-                  </Button>
-                </a>
-              </Link>
+              <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full">
+                Schedule Consultation
+              </Button>
+            </Link>
             </div>
             
             <div className="pt-8 flex items-center gap-6 text-sm text-primary-foreground/80">
@@ -305,11 +303,9 @@ export default function Home() {
               </p>
             </div>
             <Link href="/resources">
-              <a>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold">
-                  View All Resources
-                </Button>
-              </a>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold">
+                View All Resources
+              </Button>
             </Link>
           </div>
 

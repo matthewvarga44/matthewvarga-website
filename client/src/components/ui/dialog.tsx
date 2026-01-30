@@ -99,6 +99,7 @@ function DialogContent({
   showCloseButton?: boolean;
 }) {
   const { isComposing } = useDialogComposition();
+  const [hasTitle, setHasTitle] = React.useState(false);
 
   const handleEscapeKeyDown = React.useCallback(
     (e: KeyboardEvent) => {
@@ -118,6 +119,14 @@ function DialogContent({
     [isComposing, onEscapeKeyDown]
   );
 
+  // Check if children contains a DialogTitle
+  React.useEffect(() => {
+    const hasDialogTitle = React.Children.toArray(children).some(
+      (child) => React.isValidElement(child) && child.type === DialogTitle
+    );
+    setHasTitle(hasDialogTitle);
+  }, [children]);
+
   return (
     <DialogPortal data-slot="dialog-portal">
       <DialogOverlay />
@@ -130,6 +139,11 @@ function DialogContent({
         onEscapeKeyDown={handleEscapeKeyDown}
         {...props}
       >
+        {!hasTitle && (
+          <DialogPrimitive.Title className="sr-only">
+            Dialog
+          </DialogPrimitive.Title>
+        )}
         {children}
         {showCloseButton && (
           <DialogPrimitive.Close

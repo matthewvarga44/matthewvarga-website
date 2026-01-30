@@ -25,7 +25,7 @@ export default function Home() {
               Retire with <span className="text-secondary">Rentals</span>. Build Your Legacy.
             </h1>
             <p className="max-w-[600px] text-lg text-primary-foreground/90 md:text-xl leading-relaxed font-light">
-              Join 300+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $5M+ portfolio and achieve financial freedom in my 30s.
+              Join 300+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
@@ -38,7 +38,7 @@ export default function Home() {
             
             <div className="pt-8 flex items-center gap-6 text-sm text-primary-foreground/80">
               <div className="space-y-1">
-                <p className="font-bold text-secondary">$5M+</p>
+                <p className="font-bold text-secondary">$10M+</p>
                 <p className="text-xs uppercase tracking-wide">Real Estate Portfolio</p>
               </div>
               <div className="w-px h-12 bg-secondary/30"></div>
@@ -65,7 +65,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 p-8 text-primary-foreground">
                 <p className="font-heading text-3xl font-bold">Matthew Varga</p>
                 <p className="text-secondary font-semibold">Real Estate Investor & Coach</p>
-                <p className="text-primary-foreground/80 text-sm mt-2">Retired in my 30s • $5M+ Portfolio • Airbnb Specialist</p>
+                <p className="text-primary-foreground/80 text-sm mt-2">Retired in my 30s • $10M+ Portfolio • Airbnb Specialist</p>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-center">
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-secondary">$5M+</h3>
+              <h3 className="text-4xl font-extrabold text-secondary">$10M+</h3>
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Real Estate Owned</p>
             </div>
             <div className="space-y-2">
@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $5M+ rental portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
+                      <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $10M+ rental portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
                     </p>
                   </div>
                   <div>

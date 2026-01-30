@@ -116,7 +116,7 @@ export default function About() {
             <div className="relative mx-auto w-full max-w-[400px]">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary/20">
                 <img 
-                  src="/images/matthew-hero.jpg" 
+                  src="/images/matthew-about.jpg" 
                   alt="Matthew Varga" 
                   className="h-full w-full object-cover"
                 />

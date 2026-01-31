@@ -786,7 +786,7 @@ export default function BlogPost() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/apply-mastermind">
-                    <button className="inline-block bg-gold hover:bg-gold/90 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <button className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
                       Apply to Join the Mastermind
                     </button>
                   </Link>

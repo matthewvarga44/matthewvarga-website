@@ -60,8 +60,8 @@ export function ManusDialog({
           ) : null}
 
           {/* Title and subtitle */}
-          <DialogTitle className={title ? "text-xl font-semibold text-[#34322d] leading-[26px] tracking-[-0.44px]" : "sr-only"}>
-            {title || "Dialog"}
+          <DialogTitle className="text-xl font-semibold text-[#34322d] leading-[26px] tracking-[-0.44px]">
+            {title || "Login"}
           </DialogTitle>
           <DialogDescription className="text-sm text-[#858481] leading-5 tracking-[-0.154px]">
             Please login with Manus to continue

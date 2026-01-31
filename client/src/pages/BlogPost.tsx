@@ -983,12 +983,13 @@ const blogPostsData: Record<string, BlogPostData> = {
 
 export default function BlogPost() {
   // Scroll to top when component mounts or slug changes
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
   const params = useParams();
   const slug = params.slug as string;
+  
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+  
   const post = blogPostsData[slug];
 
   if (!post) {

@@ -85,9 +85,9 @@ export default function DownloadModal({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
-        <DialogHeader className={!success ? "" : "sr-only"}>
-          <DialogTitle className={!success ? "text-2xl font-bold text-primary" : ""}>
-            {!success ? "Get Your Free Resource" : "Success"}
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-bold text-primary">
+            {!success ? "Get Your Free Resource" : "Download Resource"}
           </DialogTitle>
         </DialogHeader>
         {!success ? (

@@ -95,7 +95,7 @@ export default function Home() {
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Program Members</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-secondary">700K+</h3>
+              <h3 className="text-4xl font-extrabold text-secondary">1M+</h3>
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">YouTube Followers</p>
             </div>
             <div className="space-y-2">

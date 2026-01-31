@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, TrendingUp, Users, Award, Briefcase, Home } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
+import { PhotoGallery } from "@/components/PhotoGallery";
 
 export default function About() {
   // Scroll to top when component mounts
@@ -136,6 +137,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery - Lifestyle & Freedom */}
+      <PhotoGallery />
 
       {/* Professional Credentials */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">

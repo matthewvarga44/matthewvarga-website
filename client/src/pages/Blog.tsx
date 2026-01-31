@@ -94,6 +94,36 @@ export default function Blog() {
       readTime: "9 min read",
       image: "/images/blog-networking.jpg",
       slug: "real-estate-networking"
+    },
+    {
+      id: "14",
+      title: "Real Estate Tax Optimization: Legal Strategies to Minimize Your Tax Burden",
+      excerpt: "Discover tax strategies that wealthy investors use to legally minimize their tax burden. Learn about deductions, depreciation, entity structures, and advanced tactics.",
+      category: "Tax Strategy",
+      date: "January 8, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-tax-optimization.jpg",
+      slug: "real-estate-tax-optimization"
+    },
+    {
+      id: "15",
+      title: "Portfolio Scaling: From One Property to Ten Properties and Beyond",
+      excerpt: "Learn the exact systems and strategies to scale from 1 property to 10+ properties. Discover financing strategies, property management systems, and the metrics that matter.",
+      category: "Portfolio Growth",
+      date: "January 12, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-portfolio-scaling.jpg",
+      slug: "portfolio-scaling"
+    },
+    {
+      id: "16",
+      title: "Financial Freedom Through Real Estate: The Complete Roadmap",
+      excerpt: "The step-by-step roadmap to achieve financial freedom through real estate investing. Learn the exact milestones, timelines, and strategies used by successful investors.",
+      category: "Financial Freedom",
+      date: "January 15, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-financial-freedom.jpg",
+      slug: "financial-freedom-real-estate"
     }
   ];
 

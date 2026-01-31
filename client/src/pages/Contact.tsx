@@ -1,8 +1,14 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare, Instagram, Youtube, BookOpen, Music, Twitter, Linkedin } from "lucide-react";
 import Layout from "@/components/Layout";
 
 export default function Contact() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",

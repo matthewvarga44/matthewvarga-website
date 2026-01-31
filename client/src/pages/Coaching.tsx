@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Users, Calendar, BookOpen, Handshake, Target, TrendingUp, Zap, Award, Network, DollarSign } from "lucide-react";
@@ -5,6 +6,11 @@ import Layout from "@/components/Layout";
 import { Link } from "wouter";
 
 export default function Coaching() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const benefits = [
     {
       icon: <Users className="h-8 w-8" />,

@@ -1,10 +1,16 @@
-import Layout from "@/components/Layout";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BarChart3, TrendingUp, Users } from "lucide-react";
 import { Link } from "wouter";
+import Layout from "@/components/Layout";
 
 export default function Home() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <Layout>
       {/* Hero Section - Luxury Dark Background */}

@@ -1,4 +1,5 @@
 import { Calendar, ArrowLeft, Share2, ArrowRight, CheckCircle2, TrendingUp, Home, DollarSign, Zap, BookOpen } from "lucide-react";
+import React from "react";
 import Layout from "@/components/Layout";
 import { Link, useParams } from "wouter";
 
@@ -981,6 +982,11 @@ const blogPostsData: Record<string, BlogPostData> = {
 
 
 export default function BlogPost() {
+  // Scroll to top when component mounts or slug changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const params = useParams();
   const slug = params.slug as string;
   const post = blogPostsData[slug];

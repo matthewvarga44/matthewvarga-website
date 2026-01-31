@@ -126,7 +126,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <ul className="space-y-2">
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Free Guide</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Podcast</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Blog</a></li>
+              <li><Link href="/blog" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Blog</Link></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Newsletter</a></li>
               <li><Link href="/faq" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">FAQ</Link></li>
             </ul>

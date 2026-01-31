@@ -18,6 +18,16 @@ export default function Blog() {
   const [currentPage, setCurrentPage] = React.useState(1);
   const postsPerPage = 10;
   
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  // Scroll to top when page changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+  
   const blogPosts: BlogPost[] = [
     {
       id: "1",
@@ -244,7 +254,10 @@ export default function Blog() {
             {totalPages > 1 && (
               <div className="mt-12 flex justify-center items-center gap-2">
                 <button
-                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                  onClick={() => {
+                    setCurrentPage(Math.max(1, currentPage - 1));
+                    window.scrollTo(0, 0);
+                  }}
                   disabled={currentPage === 1}
                   className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -255,7 +268,10 @@ export default function Blog() {
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}
-                      onClick={() => setCurrentPage(page)}
+                      onClick={() => {
+                        setCurrentPage(page);
+                        window.scrollTo(0, 0);
+                      }}
                       className={`px-3 py-2 rounded-lg font-semibold transition-colors ${
                         currentPage === page
                           ? "bg-gold text-slate-900"
@@ -268,7 +284,10 @@ export default function Blog() {
                 </div>
                 
                 <button
-                  onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                  onClick={() => {
+                    setCurrentPage(Math.min(totalPages, currentPage + 1));
+                    window.scrollTo(0, 0);
+                  }}
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >

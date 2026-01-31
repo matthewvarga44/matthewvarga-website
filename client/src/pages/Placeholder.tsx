@@ -1,8 +1,14 @@
-import Layout from "@/components/Layout";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import Layout from "@/components/Layout";
 
 export default function Placeholder({ title }: { title: string }) {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <Layout>
       <div className="container py-20 md:py-32 text-center">

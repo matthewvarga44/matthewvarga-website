@@ -1,13 +1,19 @@
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown, HelpCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
-import { useState } from "react";
 
 export default function FAQ() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [openItems, setOpenItems] = useState<number[]>([]);
 
+  
   const toggleItem = (index: number) => {
     setOpenItems(prev =>
       prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]

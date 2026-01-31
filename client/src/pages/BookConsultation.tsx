@@ -1,9 +1,15 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Clock, Users, TrendingUp, Award } from "lucide-react";
 import Layout from "@/components/Layout";
 
 export default function BookConsultation() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const calendlyUrl = "https://calendly.com/matthew-p-varga/15-minute-coaching-introduction";
   const teachableUrl = "https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call";
 

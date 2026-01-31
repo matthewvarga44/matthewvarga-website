@@ -3,30 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, Lock } from "lucide-react";
 import Layout from "@/components/Layout";
-import emailjs from "@emailjs/browser";
-
-// Initialize EmailJS with your Public Key
-emailjs.init("CaatlYPF8IfCclFX2");
 
 export default function MastermindApplication() {
-  const [formData, setFormData] = useState<{
-    fullName: string;
-    email: string;
-    phone: string;
-    currentInvestments: string;
-    investmentCapital: string;
-    coachingNeeds: string[];
-    investmentGoals: string;
-    whyJoin: string;
-    experience: string;
-    timeCommitment: string;
-  }>({
+  const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     currentInvestments: "",
     investmentCapital: "",
-    coachingNeeds: [],
+    coachingNeeds: [] as string[],
     investmentGoals: "",
     whyJoin: "",
     experience: "",
@@ -37,7 +22,7 @@ export default function MastermindApplication() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -57,67 +42,78 @@ export default function MastermindApplication() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    // Validate essential fields
+    if (!formData.fullName || !formData.email || !formData.phone) {
+      setError("Please enter your name, email, and phone number.");
+      return;
+    }
+    
     setIsSubmitting(true);
     setError("");
 
     try {
-      // Format the email content
+      // Prepare the email content
       const emailContent = `
 NEW MASTERMIND APPLICATION
 
+═══════════════════════════════════════════════════════════════
+
 APPLICANT INFORMATION
-=====================
+─────────────────────
 Name: ${formData.fullName}
 Email: ${formData.email}
 Phone: ${formData.phone}
 
-INVESTMENT BACKGROUND
-=====================
-Current Properties: ${formData.currentInvestments}
-Available Capital: ${formData.investmentCapital}
+═══════════════════════════════════════════════════════════════
 
-COACHING PROGRAM INTERESTS
-==========================
-${formData.coachingNeeds.map((need) => `• ${need}`).join("\n")}
+INVESTMENT BACKGROUND
+──────────────────────
+Current Properties/Investments: ${formData.currentInvestments || "Not specified"}
+Available Investment Capital: ${formData.investmentCapital || "Not specified"}
+
+═══════════════════════════════════════════════════════════════
+
+COACHING INTERESTS
+──────────────────────────
+${formData.coachingNeeds.length > 0 ? formData.coachingNeeds.map(need => `• ${need}`).join('\n') : "Not specified"}
+
+═══════════════════════════════════════════════════════════════
 
 GOALS & MOTIVATION
-==================
+──────────────────
 Investment Goals:
-${formData.investmentGoals}
+${formData.investmentGoals || "Not specified"}
 
 Why Join Mastermind:
-${formData.whyJoin}
+${formData.whyJoin || "Not specified"}
 
-Experience Level: ${formData.experience}
-Time Commitment: ${formData.timeCommitment} per week
+═══════════════════════════════════════════════════════════════
 
----
-Submitted at: ${new Date().toLocaleString()}
-      `;
+EXPERIENCE & COMMITMENT
+──────────────────────
+Experience Level: ${formData.experience || "Not specified"}
+Time Commitment per Week: ${formData.timeCommitment || "Not specified"}
 
-      // Send email using EmailJS
-      const response = await emailjs.send(
-        "service_e4hf1vi",
-        "4bl9zun",
-        {
-          to_email: "matthew.p.varga@gmail.com",
-          from_email: formData.email,
-          from_name: formData.fullName,
-          subject: "Mastermind Application Form",
-          reply_to: formData.email,
-          phone: formData.phone,
-          currentInvestments: formData.currentInvestments,
-          investmentCapital: formData.investmentCapital,
-          coachingNeeds: formData.coachingNeeds.join("\n• "),
-          investmentGoals: formData.investmentGoals,
-          whyJoin: formData.whyJoin,
-          experience: formData.experience,
-          timeCommitment: formData.timeCommitment,
-          submitted_at: new Date().toLocaleString()
-        }
-      );
+═══════════════════════════════════════════════════════════════
 
-      if (response.status === 200) {
+Submitted: ${new Date().toLocaleString()}
+`;
+
+      // Send email using Formspree
+      const response = await fetch("https://formspree.io/f/xyzpkwdq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.fullName,
+          message: emailContent,
+        }),
+      });
+
+      if (response.ok) {
         setSubmitted(true);
         setFormData({
           fullName: "",
@@ -125,12 +121,14 @@ Submitted at: ${new Date().toLocaleString()}
           phone: "",
           currentInvestments: "",
           investmentCapital: "",
-          coachingNeeds: [] as string[],
+          coachingNeeds: [],
           investmentGoals: "",
           whyJoin: "",
           experience: "",
           timeCommitment: "",
         });
+      } else {
+        setError("Failed to submit application. Please try again.");
       }
     } catch (err) {
       console.error("Error submitting form:", err);
@@ -312,73 +310,62 @@ Submitted at: ${new Date().toLocaleString()}
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      How many properties do you currently own or have invested in? *
+                      How many properties/investments do you currently own?
                     </label>
-                    <select
+                    <input
+                      type="text"
                       name="currentInvestments"
                       value={formData.currentInvestments}
                       onChange={handleChange}
-                      required
                       className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="none">None - I'm just starting</option>
-                      <option value="1">1 property</option>
-                      <option value="2-3">2-3 properties</option>
-                      <option value="4-5">4-5 properties</option>
-                      <option value="6plus">6+ properties</option>
-                    </select>
+                      placeholder="e.g., None, 1, 2-3, 4-5, 6+, etc."
+                    />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Do you have capital available to invest in real estate? *
+                      What is your available investment capital?
                     </label>
-                    <select
+                    <input
+                      type="text"
                       name="investmentCapital"
                       value={formData.investmentCapital}
                       onChange={handleChange}
-                      required
                       className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="under25k">Under $25,000</option>
-                      <option value="25k-50k">$25,000 - $50,000</option>
-                      <option value="50k-100k">$50,000 - $100,000</option>
-                      <option value="100k-250k">$100,000 - $250,000</option>
-                      <option value="250kplus">$250,000+</option>
-                    </select>
+                      placeholder="e.g., Under $25k, $25k-$50k, $50k-$100k, $100k-$250k, $250k+, etc."
+                    />
                   </div>
+                </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-3">
-                      What are you most looking for in a real estate coaching program? * (Select all that apply)
-                    </label>
-                    <div className="space-y-3">
-                      {[
-                        "Personalized one-on-one coaching and accountability",
-                        "Access to a community of like-minded investors",
-                        "Specific strategies (Airbnb arbitrage, seller financing, etc.)",
-                        "Deal sourcing and partnership opportunities",
-                        "Tax optimization and financial planning guidance",
-                        "Scaling from single properties to a portfolio",
-                        "Passive income generation strategies",
-                        "Networking with experienced real estate professionals",
-                        "Templates, checklists, and operational systems",
-                        "Ongoing support and mentorship",
-                      ].map((option: string) => (
-                        <label key={option} className="flex items-center space-x-3 cursor-pointer">
-                          <input
-                            type="checkbox"
-                            value={option}
-                            checked={formData.coachingNeeds.includes(option)}
-                            onChange={handleCheckboxChange}
-                            className="w-4 h-4 rounded border-border text-secondary focus:ring-secondary/50"
-                          />
-                          <span className="text-sm text-foreground">{option}</span>
-                        </label>
-                      ))}
-                    </div>
+                {/* Coaching Interests */}
+                <div className="space-y-4 pt-6 border-t">
+                  <h3 className="font-heading text-lg font-bold text-primary">What are you most looking for in a coaching program?</h3>
+                  <p className="text-sm text-foreground/70">Select all that apply</p>
+
+                  <div className="space-y-3">
+                    {[
+                      "Personalized one-on-one coaching and accountability",
+                      "Access to a community of like-minded investors",
+                      "Specific strategies (Airbnb arbitrage, seller financing, etc.)",
+                      "Deal sourcing and partnership opportunities",
+                      "Tax optimization and financial planning guidance",
+                      "Scaling from single properties to a portfolio",
+                      "Passive income generation strategies",
+                      "Networking with experienced real estate professionals",
+                      "Templates, checklists, and operational systems",
+                      "Ongoing support and mentorship",
+                    ].map((need) => (
+                      <label key={need} className="flex items-center space-x-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          value={need}
+                          checked={formData.coachingNeeds.includes(need)}
+                          onChange={handleCheckboxChange}
+                          className="w-4 h-4 rounded border-border text-secondary focus:ring-secondary/50"
+                        />
+                        <span className="text-sm text-foreground">{need}</span>
+                      </label>
+                    ))}
                   </div>
                 </div>
 
@@ -388,82 +375,75 @@ Submitted at: ${new Date().toLocaleString()}
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      What are your real estate investment goals? *
+                      What are your real estate investment goals?
                     </label>
                     <textarea
                       name="investmentGoals"
                       value={formData.investmentGoals}
                       onChange={handleChange}
-                      required
-                      rows={4}
-                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
+                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 min-h-24"
                       placeholder="E.g., Build a portfolio of 10 rental properties, generate $10k/month passive income, retire in 5 years, etc."
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Why do you want to join the Mastermind? *
+                      Why do you want to join the Mastermind?
                     </label>
                     <textarea
                       name="whyJoin"
                       value={formData.whyJoin}
                       onChange={handleChange}
-                      required
-                      rows={4}
-                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
+                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 min-h-24"
                       placeholder="What specific challenges are you facing? What do you hope to gain from the community?"
+                    />
+                  </div>
+                </div>
+
+                {/* Experience & Commitment */}
+                <div className="space-y-4 pt-6 border-t">
+                  <h3 className="font-heading text-lg font-bold text-primary">Experience & Commitment</h3>
+
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">
+                      What's your real estate experience level?
+                    </label>
+                    <input
+                      type="text"
+                      name="experience"
+                      value={formData.experience}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
+                      placeholder="e.g., Beginner, Intermediate, Advanced, Expert, etc."
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      What's your real estate experience level? *
+                      How much time can you commit to the mastermind weekly?
                     </label>
-                    <select
-                      name="experience"
-                      value={formData.experience}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="beginner">Beginner - Just learning</option>
-                      <option value="intermediate">Intermediate - Some deals done</option>
-                      <option value="advanced">Advanced - Multiple properties</option>
-                      <option value="expert">Expert - Scaling operations</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      How much time can you commit to the mastermind weekly? *
-                    </label>
-                    <select
+                    <input
+                      type="text"
                       name="timeCommitment"
                       value={formData.timeCommitment}
                       onChange={handleChange}
-                      required
                       className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="1-2hours">1-2 hours</option>
-                      <option value="2-5hours">2-5 hours</option>
-                      <option value="5-10hours">5-10 hours</option>
-                      <option value="10plus">10+ hours</option>
-                    </select>
+                      placeholder="e.g., 1-2 hours, 2-5 hours, 5-10 hours, 10+ hours, etc."
+                    />
                   </div>
                 </div>
 
-                {/* Submit */}
-                <div className="pt-6 border-t">
-                  <p className="text-sm text-foreground/60 mb-6">
-                    By submitting this application, you agree that I may contact you to discuss your fit for the mastermind group.
-                  </p>
+                {/* Disclaimer */}
+                <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-sm text-amber-900 pt-6 border-t">
+                  By submitting this application, you agree that I may contact you to discuss your fit for the mastermind group.
+                </div>
+
+                {/* Submit Button */}
+                <div className="pt-6">
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-12 rounded-full"
+                    className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 h-12 rounded-lg"
                   >
                     {isSubmitting ? "Submitting..." : "Submit Application"}
                   </Button>
@@ -471,18 +451,6 @@ Submitted at: ${new Date().toLocaleString()}
               </form>
             </CardContent>
           </Card>
-
-          {/* Setup Instructions */}
-          <div className="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-lg">
-            <h3 className="font-bold text-blue-900 mb-2">📧 Email Setup Required</h3>
-            <p className="text-sm text-blue-800">
-              To enable email delivery of applications, you'll need to set up EmailJS. Visit{" "}
-              <a href="https://www.emailjs.com" target="_blank" rel="noopener noreferrer" className="underline font-semibold">
-                emailjs.com
-              </a>
-              , create a free account, and replace the SERVICE_ID_PLACEHOLDER and TEMPLATE_ID_PLACEHOLDER in the code with your actual credentials.
-            </p>
-          </div>
         </div>
       </section>
     </Layout>

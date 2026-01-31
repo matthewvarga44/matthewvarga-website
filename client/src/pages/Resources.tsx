@@ -217,18 +217,18 @@ export default function Resources() {
                         </ul>
                       </div>
 
-                      <a
-                        href={resource.downloadUrl}
-                        download
-                        className="w-full"
+                      <Button
+                        asChild
+                        className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold rounded-full"
                       >
-                        <Button
-                          className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold rounded-full"
+                        <a
+                          href={resource.downloadUrl}
+                          download
                         >
                           <Download className="h-4 w-4 mr-2" />
                           Download Free
-                        </Button>
-                      </a>
+                        </a>
+                      </Button>
                     </CardContent>
                   </Card>
                 ))}

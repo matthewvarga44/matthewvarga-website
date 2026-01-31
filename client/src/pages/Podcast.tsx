@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 
 export default function Podcast() {
+  const [, setLocation] = useLocation();
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -80,6 +82,12 @@ export default function Podcast() {
                 size="lg" 
                 variant="outline" 
                 className="border-amber-500 text-amber-400 hover:bg-amber-500/10 font-bold text-lg px-8"
+                onClick={() => {
+                  const faqSection = document.getElementById('faq-section');
+                  if (faqSection) {
+                    faqSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Learn More
               </Button>
@@ -130,7 +138,7 @@ export default function Podcast() {
       {/* Guest Types Section */}
       <section className="py-16 md:py-24 bg-slate-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-4 text-center">Who You'll Hear From</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center text-white">Who You'll Hear From</h2>
           <p className="text-xl text-slate-400 text-center mb-16 max-w-2xl mx-auto">
             A diverse mix of entrepreneurs and investors building wealth through real estate and business ownership.
           </p>
@@ -139,7 +147,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">🏠</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Real Estate Investors</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Real Estate Investors</h3>
                 <p className="text-slate-400">Experts in rentals, Airbnb, flipping, and portfolio scaling</p>
               </div>
             </div>
@@ -147,7 +155,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">🏢</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Property Management Pros</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Property Management Pros</h3>
                 <p className="text-slate-400">Building scalable property management businesses</p>
               </div>
             </div>
@@ -155,7 +163,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">🚗</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Service Business Owners</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Service Business Owners</h3>
                 <p className="text-slate-400">Car washes, laundromats, and other passive income ventures</p>
               </div>
             </div>
@@ -163,7 +171,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">🔨</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Renovation & Construction</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Renovation & Construction</h3>
                 <p className="text-slate-400">Experts in flips, renovations, and construction businesses</p>
               </div>
             </div>
@@ -171,7 +179,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">📱</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Tech & Digital Entrepreneurs</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Tech & Digital Entrepreneurs</h3>
                 <p className="text-slate-400">Building online businesses and digital assets</p>
               </div>
             </div>
@@ -179,7 +187,7 @@ export default function Podcast() {
             <div className="flex items-start gap-4">
               <div className="text-3xl">💡</div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Innovative Thinkers</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Innovative Thinkers</h3>
                 <p className="text-slate-400">Unique business models and unconventional strategies</p>
               </div>
             </div>
@@ -221,7 +229,7 @@ export default function Podcast() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section id="faq-section" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-4xl font-bold mb-16 text-center">Frequently Asked Questions</h2>
 
@@ -274,13 +282,14 @@ export default function Podcast() {
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-slate-900 border-t border-slate-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Build Your Wealth?</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white">Ready to Build Your Wealth?</h2>
           <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
             While you wait for the podcast, join the Retire with Rentals program and start building your real estate portfolio today.
           </p>
           <Button 
             size="lg" 
             className="bg-amber-500 hover:bg-amber-600 text-black font-bold text-lg px-8"
+            onClick={() => setLocation('/coaching')}
           >
             Learn About Retire with Rentals
           </Button>

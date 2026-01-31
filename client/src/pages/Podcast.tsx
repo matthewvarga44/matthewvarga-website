@@ -25,18 +25,14 @@ export default function Podcast() {
     setIsLoading(true);
     
     try {
-      // Send to Flodesk
-      const response = await fetch('https://api.flodesk.com/v1/subscribers', {
+      // Send to Formspree
+      const response = await fetch('https://formspree.io/f/mgoygqqg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer fd_key_aef239100efa4a49a66ebe1c98336e1d.lAF82p96yj5UpVfZNBW55rv65S42GDNsufV6rVleKWUPxDFESLzr16Ild4Gl1XSb4qRL8Z1u34ffTZjCGFbwHywyhPL2hm4kctUhkDoI8vGenOwTcPITXhJ3s9nnhSLRjeO5TXq6PNq5f7oU7mBsFsu1UJiTxxSwHFzzjxOTtOs3ZoOUcDty8BiZgZmfwZAN`,
         },
         body: JSON.stringify({
           email: email,
-          fields: {
-            name: 'Podcast Subscriber',
-          },
         }),
       });
 
@@ -75,6 +71,12 @@ export default function Podcast() {
               <Button 
                 size="lg" 
                 className="bg-amber-500 hover:bg-amber-600 text-black font-bold text-lg px-8"
+                onClick={() => {
+                  const emailSection = document.getElementById('email-section');
+                  if (emailSection) {
+                    emailSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Notify Me When Live
               </Button>
@@ -196,7 +198,7 @@ export default function Podcast() {
       </section>
 
       {/* Email Signup Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-900/20 via-slate-900 to-slate-900 border-t border-amber-500/20">
+      <section id="email-section" className="py-16 md:py-24 bg-gradient-to-br from-amber-900/20 via-slate-900 to-slate-900 border-t border-amber-500/20">
         <div className="container mx-auto px-4 max-w-2xl">
           <h2 className="text-4xl font-bold mb-4 text-center">Be the First to Know</h2>
           <p className="text-xl text-slate-300 text-center mb-8">
@@ -211,6 +213,7 @@ export default function Podcast() {
               onChange={(e) => setEmail(e.target.value)}
               className="bg-slate-800 border-slate-700 text-white placeholder:text-slate-500 py-3"
               disabled={isLoading}
+              required
             />
             <Button
               type="submit"

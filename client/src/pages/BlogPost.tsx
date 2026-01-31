@@ -831,6 +831,151 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Portfolio Scaling", slug: "portfolio-scaling" },
       { title: "From Foreclosure to $10M Portfolio", slug: "my-real-estate-journey" }
     ]
+  },
+  "real-estate-wholesaling": {
+    title: "Real Estate Wholesaling: Quick Profits Without Owning Property",
+    excerpt: "Learn how to profit from real estate deals without owning the property. A complete guide to wholesaling strategies, finding deals, and building your wholesaling business.",
+    category: "Wholesaling",
+    date: "January 18, 2026",
+    readTime: "11 min read",
+    image: "/images/blog-wholesaling.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>📝 What is Real Estate Wholesaling?</h2>
+<p>Real estate wholesaling is the art of finding undervalued properties, getting them under contract, and selling the contract to an end buyer for a profit. You never own the property—you profit from the spread between the contract price and the end buyer's price.</p>
+
+<h2>📝 The Wholesaling Formula</h2>
+<p><strong>Property Value:</strong> $100,000</p>
+<p><strong>Your Contract Price:</strong> $70,000 (30% below market)</p>
+<p><strong>End Buyer's Price:</strong> $85,000 (15% below market)</p>
+<p><strong>Your Profit (Assignment Fee):</strong> $15,000</p>
+<p>You never own the property. You simply control it with a contract and sell your rights to an end buyer.</p>
+
+<h2>📝 Finding Deals</h2>
+<p><strong>Off-Market Sources:</strong> Direct mail, cold calling, door knocking in distressed neighborhoods. Target motivated sellers who need to sell quickly.</p>
+<p><strong>Distressed Properties:</strong> Foreclosures, probate sales, tax liens, code violations. These sellers are motivated and willing to negotiate.</p>
+<p><strong>Wholesaler Networks:</strong> Join local real estate investor groups. Build relationships with other wholesalers, contractors, and agents.</p>
+<p><strong>Online Platforms:</strong> Zillow, PropStream, Connected Investors. Use filters to find undervalued properties.</p>
+
+<h2>📝 The Three Critical Numbers</h2>
+<p><strong>1. After-Repair Value (ARV):</strong> What the property is worth after repairs. Research comparable sales in the area.</p>
+<p><strong>2. Repair Costs:</strong> Get accurate estimates from contractors. Add 10-15% contingency for surprises.</p>
+<p><strong>3. Maximum Offer Price:</strong> ARV - Repairs - Investor Profit (20%) - Your Assignment Fee (10%) = Your Max Offer</p>
+<p>Example: $100,000 ARV - $20,000 Repairs - $20,000 Investor Profit - $10,000 Assignment Fee = $50,000 Max Offer</p>
+
+<h2>📝 Getting the Contract</h2>
+<p><strong>Make an Offer:</strong> Submit a purchase agreement at your max offer price. Include an inspection contingency and assignment clause.</p>
+<p><strong>Assignment Clause:</strong> This allows you to assign your rights to another buyer. Without this, you can't wholesale the deal.</p>
+<p><strong>Due Diligence Period:</strong> Typically 7-14 days. Use this time to verify the property condition and find an end buyer.</p>
+
+<h2>📝 Finding Your End Buyer</h2>
+<p><strong>Cash Buyers:</strong> Investors who buy properties to fix and flip or rent. They want deals below market value.</p>
+<p><strong>Owner-Occupants:</strong> Homebuyers who want a discount. They'll pay more than investors but less than market.</p>
+<p><strong>Wholesaler Networks:</strong> Your email list of investors and contractors. Send deal summaries to your list.</p>
+<p><strong>Facebook Groups:</strong> Local real estate investor groups. Post deals and get responses from interested buyers.</p>
+
+<h2>📝 Closing the Deal</h2>
+<p><strong>Assignment Agreement:</strong> You assign your contract rights to the end buyer. They pay you your assignment fee at closing.</p>
+<p><strong>Double Closing:</strong> You close with the seller, then immediately close with the end buyer. You own the property for 5 minutes.</p>
+<p><strong>Assignment Fee:</strong> Typically $5,000-$20,000 depending on the deal size and market. Split with your partner if you're working with one.</p>
+
+<h2>📝 Common Wholesaling Mistakes</h2>
+<p><strong>Mistake 1:</strong> Not understanding your market. You need to know comparable sales and repair costs.</p>
+<p><strong>Mistake 2:</strong> Overestimating ARV. Be conservative. Investors will verify your numbers.</p>
+<p><strong>Mistake 3:</strong> Not including assignment clause. Your contract is worthless without it.</p>
+<p><strong>Mistake 4:</strong> Not building a buyer list. You need investors ready to buy your deals.</p>
+<p><strong>Mistake 5:</strong> Chasing every deal. Be selective. Only pursue deals that make sense mathematically.</p>
+
+<h2>📝 Wholesaling vs. Flipping</h2>
+<p><strong>Wholesaling:</strong> No capital required. Fast profits (30-90 days). Lower profit per deal ($5,000-$20,000). Scalable.</p>
+<p><strong>Flipping:</strong> Capital required ($50,000+). Longer timeline (6-12 months). Higher profit per deal ($30,000-$100,000). More work.</p>
+<p>Many investors start with wholesaling to build capital, then transition to flipping and rentals.</p>
+
+<h2>📝 Key Takeaways</h2>
+<p>Real estate wholesaling requires no capital, no credit, and no experience. You profit from the spread between the contract price and the end buyer's price. Build a buyer list, learn to analyze deals, and execute consistently. Most wholesalers make $5,000-$20,000 per deal. With 5-10 deals per year, you can generate $25,000-$200,000 in annual income.</p>
+    `,
+    relatedPosts: [
+      { title: "Property Flipping 101", slug: "property-flipping-101" },
+      { title: "Real Estate Investing Fundamentals", slug: "real-estate-investing-fundamentals" }
+    ]
+  },
+  "vacation-rental-management": {
+    title: "Vacation Rental Management: Beyond Airbnb",
+    excerpt: "Master the vacation rental business. Learn strategies for maximizing revenue, managing guests, and scaling your vacation rental portfolio beyond Airbnb.",
+    category: "Short-Term Rentals",
+    date: "January 20, 2026",
+    readTime: "12 min read",
+    image: "/images/blog-vacation-rental.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>📝 The Vacation Rental Opportunity</h2>
+<p>Vacation rentals generate 2-3x more revenue than long-term rentals. A property renting for $1,500/month long-term can generate $4,000-$6,000/month as a vacation rental. The challenge is management, but with systems, it's highly profitable and scalable.</p>
+
+<h2>📝 Vacation Rental vs. Long-Term Rental</h2>
+<p><strong>Long-Term Rental:</strong> $1,500/month = $18,000/year. One tenant. Stable income. Minimal management.</p>
+<p><strong>Vacation Rental:</strong> $150/night average = $4,500/month = $54,000/year. Multiple guests. Higher income. More management.</p>
+<p><strong>Net Difference:</strong> Vacation rentals generate 3x more revenue but require professional management systems.</p>
+
+<h2>📝 Choosing the Right Property</h2>
+<p><strong>Location:</strong> Tourist destinations, beach towns, ski resorts, city centers. Properties near attractions command premium rates.</p>
+<p><strong>Size:</strong> 2-4 bedrooms optimal. Larger properties for groups. Smaller properties for couples.</p>
+<p><strong>Amenities:</strong> Hot tub, pool, washer/dryer, full kitchen, parking. Amenities justify higher nightly rates.</p>
+<p><strong>Condition:</strong> Vacation rentals need to be in excellent condition. Guests expect luxury. Budget 20-30% of revenue for maintenance.</p>
+
+<h2>📝 Pricing Strategy</h2>
+<p><strong>Base Rate:</strong> Research comparable properties. Set your rate 10-15% above average to attract quality guests.</p>
+<p><strong>Seasonal Pricing:</strong> High season (summer, holidays) = 2-3x base rate. Low season = base rate or lower.</p>
+<p><strong>Minimum Stay:</strong> 3-7 nights minimum reduces turnover costs. Longer stays = lower nightly rate.</p>
+<p><strong>Dynamic Pricing:</strong> Use tools like Airbnb's smart pricing. Automatically adjust rates based on demand.</p>
+
+<h2>📝 Beyond Airbnb: Multiple Platforms</h2>
+<p><strong>Airbnb:</strong> 50% of bookings. Highest commission (3%). Largest audience.</p>
+<p><strong>VRBO (Vacation Rentals by Owner):</strong> 30% of bookings. Lower commission (5-12%). Attracts longer stays.</p>
+<p><strong>Booking.com:</strong> 15% of bookings. Lower commission (15%). International guests.</p>
+<p><strong>Direct Bookings:</strong> 5% of bookings. Zero commission. Build your own website and email list.</p>
+<p><strong>Strategy:</strong> List on all platforms. Use a channel manager (Hostaway, Guesty) to sync calendars and manage bookings automatically.</p>
+
+<h2>📝 Guest Management Systems</h2>
+<p><strong>Booking Software:</strong> Hostaway, Guesty, or iCalendar. Syncs all platforms. Prevents double-booking.</p>
+<p><strong>Communication:</strong> Automated welcome messages, check-in instructions, post-stay surveys. Reduce manual work.</p>
+<p><strong>Cleaning:</strong> Hire a professional cleaning service. Budget $150-$300 per turnover. Essential for guest satisfaction.</p>
+<p><strong>Maintenance:</strong> Quick response to guest requests. Have local contractors on speed dial. Guest satisfaction = 5-star reviews = more bookings.</p>
+
+<h2>📝 Revenue Optimization</h2>
+<p><strong>Occupancy Rate:</strong> Target 70-80% occupancy. At 75% occupancy, you're booked 270 days/year.</p>
+<p><strong>Average Daily Rate (ADR):</strong> $150/night = $4,500/month. Optimize pricing and amenities to increase ADR.</p>
+<p><strong>Revenue Per Available Room (RevPAR):</strong> ADR × Occupancy Rate. $150 × 75% = $112.50 RevPAR. Track this metric monthly.</p>
+<p><strong>Upsells:</strong> Early check-in ($25), late check-out ($25), welcome baskets ($50), parking ($15/night). These add 10-15% to revenue.</p>
+
+<h2>📝 Guest Experience = Reviews = Bookings</h2>
+<p><strong>Clean Property:</strong> Professional cleaning between every guest. Spotless is non-negotiable.</p>
+<p><strong>Clear Communication:</strong> Respond to inquiries within 1 hour. Provide detailed check-in instructions.</p>
+<p><strong>Local Recommendations:</strong> Provide a guide with restaurants, activities, attractions. Guests appreciate insider knowledge.</p>
+<p><strong>Problem Resolution:</strong> Issues happen. Resolve them quickly and generously. A $100 gesture prevents a 1-star review.</p>
+<p><strong>Follow-Up:</strong> Post-stay survey and thank you message. Ask for reviews. 5-star reviews drive bookings.</p>
+
+<h2>📝 Scaling Your Vacation Rental Business</h2>
+<p><strong>One Property:</strong> $4,500/month revenue. You can self-manage.</p>
+<p><strong>Two Properties:</strong> $9,000/month revenue. Hire a property manager ($500-$800/month).</p>
+<p><strong>Five Properties:</strong> $22,500/month revenue. Hire a property manager + assistant. Use software for automation.</p>
+<p><strong>Ten Properties:</strong> $45,000/month revenue. Hire a property management company. Focus on acquisition and strategy.</p>
+
+<h2>📝 Common Vacation Rental Mistakes</h2>
+<p><strong>Mistake 1:</strong> Underpricing. Charge what the market will bear. You're not competing on price—you're competing on experience.</p>
+<p><strong>Mistake 2:</strong> Poor cleaning. One dirty property = negative reviews = lost bookings. Invest in professional cleaning.</p>
+<p><strong>Mistake 3:</strong> Ignoring guest communication. Respond quickly. Guests want to feel valued.</p>
+<p><strong>Mistake 4:</strong> Over-complicating the check-in. Make it simple. Provide clear instructions and a lockbox or keypad.</p>
+<p><strong>Mistake 5:</strong> Not tracking metrics. Monitor occupancy, ADR, and RevPAR. What gets measured gets managed.</p>
+
+<h2>📝 Key Takeaways</h2>
+<p>Vacation rentals generate 2-3x more revenue than long-term rentals. Success requires professional management, excellent guest experience, and optimization across multiple platforms. Start with one property, master the systems, then scale to multiple properties. With 5 properties at 75% occupancy and $150/night ADR, you'll generate $22,500/month in revenue and $10,000-$15,000/month in profit.</p>
+    `,
+    relatedPosts: [
+      { title: "Short-Term Rental Secrets", slug: "short-term-rental-secrets" },
+      { title: "Cash Flow Strategies", slug: "cash-flow-strategies" }
+    ]
   }
 };
 
@@ -918,23 +1063,7 @@ export default function BlogPost() {
                 </div>
               )}
               
-              {/* Visual Callout Box */}
-              <div className="my-12 p-8 bg-gradient-to-r from-gold/10 to-slate-100 rounded-2xl border-l-4 border-gold">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="w-8 h-8 text-gold flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-slate-900 mb-2">Key Takeaway</h4>
-                    <p className="text-slate-700 m-0">
-                      {post.slug === "airbnb-arbitrage-strategy" && "Airbnb arbitrage generates higher returns than traditional rentals when executed with proper systems and operational discipline."}
-                      {post.slug === "real-estate-market-2026" && "Secondary markets offer the best risk-adjusted returns for investors willing to move early and build systems before saturation."}
-                      {post.slug === "seller-financing-deals" && "Seller financing unlocks deals that traditional lenders won't touch, enabling faster closings and more flexible terms."}
-                      {post.slug === "property-management-automation" && "Automation systems can reduce management time by 75% while improving tenant satisfaction and reducing costs."}
-                      {post.slug === "1031-exchange-guide" && "1031 exchanges allow you to defer taxes indefinitely while continuously upgrading your portfolio to higher-value properties."}
-                      {post.slug === "my-real-estate-journey" && "Building wealth through real estate is a marathon, not a sprint. Systems and leverage are the keys to exponential growth."}
-                    </p>
-                  </div>
-                </div>
-              </div>
+
             </div>
 
             {/* Share Section */}

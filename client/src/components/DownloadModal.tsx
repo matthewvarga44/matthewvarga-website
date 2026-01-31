@@ -85,13 +85,13 @@ export default function DownloadModal({
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
+        <DialogHeader className={!success ? "" : "sr-only"}>
+          <DialogTitle className={!success ? "text-2xl font-bold text-primary" : ""}>
+            {!success ? "Get Your Free Resource" : "Success"}
+          </DialogTitle>
+        </DialogHeader>
         {!success ? (
           <>
-            <DialogHeader>
-              <DialogTitle className="text-2xl font-bold text-primary">
-                Get Your Free Resource
-              </DialogTitle>
-            </DialogHeader>
 
             <div className="space-y-4">
               <div className="bg-primary/5 p-4 rounded-lg">

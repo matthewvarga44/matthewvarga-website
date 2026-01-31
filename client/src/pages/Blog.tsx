@@ -1,4 +1,5 @@
 import { Calendar, ArrowRight, Tag } from "lucide-react";
+import React from "react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
 
@@ -14,6 +15,9 @@ interface BlogPost {
 }
 
 export default function Blog() {
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const postsPerPage = 10;
+  
   const blogPosts: BlogPost[] = [
     {
       id: "1",
@@ -124,13 +128,39 @@ export default function Blog() {
       readTime: "13 min read",
       image: "/images/blog-financial-freedom.jpg",
       slug: "financial-freedom-real-estate"
+    },
+    {
+      id: "17",
+      title: "Real Estate Wholesaling: Quick Profits Without Owning Property",
+      excerpt: "Learn how to profit from real estate deals without owning the property. A complete guide to wholesaling strategies, finding deals, and building your wholesaling business.",
+      category: "Wholesaling",
+      date: "January 18, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-wholesaling.jpg",
+      slug: "real-estate-wholesaling"
+    },
+    {
+      id: "18",
+      title: "Vacation Rental Management: Beyond Airbnb",
+      excerpt: "Master the vacation rental business. Learn strategies for maximizing revenue, managing guests, and scaling your vacation rental portfolio beyond Airbnb.",
+      category: "Short-Term Rentals",
+      date: "January 20, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-vacation-rental.jpg",
+      slug: "vacation-rental-management"
     }
   ];
 
   // Combine original and new blog posts
   const allBlogPosts: BlogPost[] = blogPosts;
 
-  const categories = ["All", "Airbnb Strategy", "Market Insights", "Investment Strategy", "Operations", "Tax Strategy", "Personal Story", "Real Estate Investing", "Property Management", "Cash Flow", "Market Analysis", "Flipping", "Networking", "Portfolio Growth", "Financial Freedom"];
+  const categories = ["All", "Airbnb Strategy", "Market Insights", "Investment Strategy", "Operations", "Tax Strategy", "Personal Story", "Real Estate Investing", "Property Management", "Cash Flow", "Market Analysis", "Flipping", "Networking", "Portfolio Growth", "Financial Freedom", "Wholesaling", "Short-Term Rentals"];
+  
+  // Pagination logic
+  const totalPages = Math.ceil(allBlogPosts.length / postsPerPage);
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const paginatedPosts = allBlogPosts.slice(startIndex, endIndex);
 
   return (
     <Layout>
@@ -165,7 +195,7 @@ export default function Blog() {
 
             {/* Blog Grid */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {allBlogPosts.map((post) => (
+              {paginatedPosts.map((post) => (
                 <Link key={post.id} href={`/blog/${post.slug}`}>
                   <div className="group h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gold transition-all duration-300 cursor-pointer">
                     {/* Image */}
@@ -209,6 +239,43 @@ export default function Blog() {
                 </Link>
               ))}
             </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="mt-12 flex justify-center items-center gap-2">
+                <button
+                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                  disabled={currentPage === 1}
+                  className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  ← Previous
+                </button>
+                
+                <div className="flex gap-2">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => setCurrentPage(page)}
+                      className={`px-3 py-2 rounded-lg font-semibold transition-colors ${
+                        currentPage === page
+                          ? "bg-gold text-slate-900"
+                          : "border border-slate-300 text-slate-900 hover:border-gold hover:text-gold"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                </div>
+                
+                <button
+                  onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Next →
+                </button>
+              </div>
+            )}
 
             {/* Newsletter CTA */}
             <div className="mt-20 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center text-white">

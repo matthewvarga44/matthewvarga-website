@@ -1,7 +1,6 @@
 import { Calendar, ArrowRight, Tag } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
-import { newBlogPosts } from "@/lib/blogPostsNew";
 
 interface BlogPost {
   id: string;
@@ -75,23 +74,31 @@ export default function Blog() {
       readTime: "12 min read",
       image: "/images/blog-journey.jpg",
       slug: "my-real-estate-journey"
+    },
+    {
+      id: "12",
+      title: "Short-Term Rental Secrets: Maximizing Your Airbnb Revenue",
+      excerpt: "Unlock the proven strategies to maximize your Airbnb revenue. Learn pricing optimization, guest experience, and scaling to multiple properties.",
+      category: "Airbnb Strategy",
+      date: "January 2, 2026",
+      readTime: "10 min read",
+      image: "/images/blog-airbnb-arbitrage.jpg",
+      slug: "short-term-rental-secrets"
+    },
+    {
+      id: "13",
+      title: "Real Estate Networking: Building Your Investor Community",
+      excerpt: "Learn how to build a powerful network of real estate investors, deal partners, and mentors. Networking is where the best deals are found.",
+      category: "Networking",
+      date: "December 30, 2025",
+      readTime: "9 min read",
+      image: "/images/blog-networking.jpg",
+      slug: "real-estate-networking"
     }
   ];
 
   // Combine original and new blog posts
-  const allBlogPosts: BlogPost[] = [
-    ...blogPosts,
-    ...newBlogPosts.map((post) => ({
-      id: post.id,
-      title: post.title,
-      excerpt: post.excerpt,
-      category: post.category,
-      date: post.date,
-      readTime: post.readTime,
-      image: post.image,
-      slug: post.slug,
-    })),
-  ];
+  const allBlogPosts: BlogPost[] = blogPosts;
 
   const categories = ["All", "Airbnb Strategy", "Market Insights", "Investment Strategy", "Operations", "Tax Strategy", "Personal Story", "Real Estate Investing", "Property Management", "Cash Flow", "Market Analysis", "Flipping", "Networking", "Portfolio Growth", "Financial Freedom"];
 

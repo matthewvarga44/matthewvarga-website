@@ -1,7 +1,6 @@
 import { Calendar, ArrowLeft, Share2, ArrowRight, CheckCircle2, TrendingUp, Home, DollarSign, Zap, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link, useParams } from "wouter";
-import { newBlogPosts } from "@/lib/blogPostsNew";
 
 interface BlogPostData {
   title: string;
@@ -539,27 +538,94 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
       { title: "Real Estate Market Analysis", slug: "real-estate-market-2026" }
     ]
+  },
+  "short-term-rental-secrets": {
+    title: "Short-Term Rental Secrets: Maximizing Your Airbnb Revenue",
+    excerpt: "Unlock the proven strategies to maximize your Airbnb revenue. Learn pricing optimization, guest experience, and scaling to multiple properties.",
+    category: "Airbnb Strategy",
+    date: "January 2, 2026",
+    readTime: "10 min read",
+    image: "/images/blog-airbnb-arbitrage.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>The Short-Term Rental Opportunity</h2>
+<p>Short-term rentals generate 2-3x more revenue than long-term rentals. A property that generates $1,200/month as a long-term rental can generate $3,000-4,000/month as a short-term rental.</p>
+
+<h2>Pricing Optimization</h2>
+<p><strong>Dynamic Pricing:</strong> Use tools like PriceLabs or AirBnB's Smart Pricing to automatically adjust rates based on demand, seasonality, and competition.</p>
+<p><strong>Seasonal Strategy:</strong> Charge premium rates during peak seasons (summer, holidays). Offer discounts during off-season to maintain occupancy.</p>
+<p><strong>Competitor Analysis:</strong> Monitor competitor pricing. Price 5-10% below premium properties, 5-10% above budget properties.</p>
+
+<h2>Guest Experience</h2>
+<p><strong>First Impression:</strong> Professional photos are critical. Invest in a professional photographer ($300-500). Photos drive 50%+ of bookings.</p>
+<p><strong>Fast Response:</strong> Respond to inquiries within 1 hour. Fast response rates increase booking conversion by 30%+.</p>
+<p><strong>Cleanliness:</strong> Maintain 4.8+ star cleanliness rating. Dirty properties get cancelled bookings and bad reviews.</p>
+<p><strong>Communication:</strong> Send welcome message with check-in instructions, WiFi password, house rules, emergency contacts.</p>
+
+<h2>Scaling to Multiple Properties</h2>
+<p><strong>Hire Help:</strong> At 2+ properties, hire a co-host or property manager. Cost: $500-1,000/month. Frees you to focus on growth.</p>
+<p><strong>Cleaning Service:</strong> Use professional cleaning between guests. Cost: $150-300 per cleaning. Maintains quality and saves time.</p>
+<p><strong>Maintenance:</strong> Build relationships with local handymen for quick repairs. Responsive maintenance prevents bad reviews.</p>
+
+<h2>Revenue Optimization</h2>
+<p><strong>Upsells:</strong> Offer early check-in, late check-out, extra cleaning, welcome baskets. Upsells add $100-300/booking.</p>
+<p><strong>Longer Stays:</strong> Offer 10-20% discounts for 7+ day stays. Longer stays reduce turnover costs and cleaning frequency.</p>
+<p><strong>Corporate Rentals:</strong> Target business travelers. They pay premium rates and have flexible cancellation policies.</p>
+
+<h2>Key Takeaways</h2>
+<p>Short-term rentals offer exceptional returns. Focus on pricing optimization, guest experience, and scaling with help. Most successful operators manage 3-5 properties generating $8,000-15,000/month combined revenue.</p>
+    `,
+    relatedPosts: [
+      { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
+      { title: "Property Management Automation", slug: "property-management-automation" }
+    ]
+  },
+  "real-estate-networking": {
+    title: "Real Estate Networking: Building Your Investor Community",
+    excerpt: "Learn how to build a powerful network of real estate investors, deal partners, and mentors. Networking is where the best deals are found.",
+    category: "Networking",
+    date: "December 30, 2025",
+    readTime: "9 min read",
+    image: "/images/blog-networking.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>Why Networking Matters</h2>
+<p>80% of real estate deals never hit the market. They're sold off-market to investors in the network. If you're not networking, you're missing the best deals.</p>
+
+<h2>Building Your Network</h2>
+<p><strong>Local REIA Groups:</strong> Join your local Real Estate Investors Association. Monthly meetings connect you with 50-200+ investors. Cost: $50-200/year.</p>
+<p><strong>Mastermind Groups:</strong> Join or create a mastermind with 4-6 serious investors. Meet monthly to discuss deals, strategies, and challenges.</p>
+<p><strong>Online Communities:</strong> Join Facebook groups, BiggerPockets, and investor forums. Participate actively. Share knowledge, ask questions, build relationships.</p>
+<p><strong>Real Estate Agents:</strong> Build relationships with agents who specialize in investment properties. They send you off-market deals first.</p>
+
+<h2>Key Relationships to Cultivate</h2>
+<p><strong>Deal Partners:</strong> Find investors to partner with on larger deals. Partnerships reduce risk and increase buying power.</p>
+<p><strong>Mentors:</strong> Find experienced investors 5-10 years ahead of you. Learn from their mistakes and successes.</p>
+<p><strong>Contractors:</strong> Build relationships with reliable contractors. They're critical for fix-and-flip success.</p>
+<p><strong>Lenders:</strong> Know multiple lenders. Portfolio lenders, private lenders, hard money lenders. Different deals need different financing.</p>
+<p><strong>Wholesalers:</strong> Build relationships with wholesalers. They bring you off-market deals at discounts.</p>
+
+<h2>Networking Strategies</h2>
+<p><strong>Add Value First:</strong> Help others before asking for help. Share deals, make introductions, offer advice. Generosity builds relationships.</p>
+<p><strong>Be Consistent:</strong> Show up to meetings regularly. Consistency builds trust and reputation.</p>
+<p><strong>Follow Up:</strong> After meeting someone, follow up within 48 hours. Send a message, schedule a coffee, stay in touch.</p>
+<p><strong>Share Your Story:</strong> Tell your investing story. What deals have you done? What did you learn? Stories build connection.</p>
+
+<h2>The Power of Referrals</h2>
+<p>Your network becomes your deal pipeline. One good relationship can lead to 10+ deals. One mentor can save you $100,000+ in mistakes.</p>
+
+<h2>Key Takeaways</h2>
+<p>Networking is the foundation of real estate success. Join local groups, build mastermind groups, cultivate key relationships, and add value consistently. Your network is your net worth.</p>
+    `,
+    relatedPosts: [
+      { title: "From Foreclosure to $10M Portfolio", slug: "my-real-estate-journey" },
+      { title: "Real Estate Investing Fundamentals", slug: "real-estate-investing-fundamentals" }
+    ]
   }
 };
 
-// Add new blog posts to the data
-newBlogPosts.forEach((post) => {
-  blogPostsData[post.slug] = {
-    title: post.title,
-    excerpt: post.excerpt,
-    category: post.category,
-    date: post.date,
-    readTime: post.readTime,
-    image: post.image,
-    author: "Matthew Varga",
-    content: post.content,
-    disclaimer: (post.disclaimer as 'tax' | 'financial' | 'investment' | 'legal' | 'none' | undefined),
-    relatedPosts: [
-      { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
-      { title: "Real Estate Market Analysis", slug: "real-estate-market-2026" }
-    ]
-  };
-});
 
 export default function BlogPost() {
   const params = useParams();

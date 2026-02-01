@@ -110,10 +110,19 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            {/* Image */}
+            <div className="flex justify-center order-2 md:order-1">
+              <img 
+                src="/images/matthew-headshot.jpg" 
+                alt="Matthew Varga - Real Estate Investor & Coach" 
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+            
             {/* Text Content */}
-            <div>
+            <div className="order-1 md:order-2">
               <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-6">
-                From Foreclosure to <span className="text-secondary">Financial Freedom</span>
+                My Path to <span className="text-secondary">Financial Freedom</span>
               </h2>
               
               <div className="space-y-6">
@@ -147,15 +156,6 @@ export default function Home() {
                   Apply to Join the Mastermind
                 </button>
               </Link>
-            </div>
-            
-            {/* Image */}
-            <div className="flex justify-center">
-              <img 
-                src="/images/matthew-headshot.jpg" 
-                alt="Matthew Varga - Real Estate Investor & Coach" 
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
-              />
             </div>
           </div>
         </div>

@@ -302,7 +302,7 @@ export default function About() {
               My Mission
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I didn't achieve financial freedom to keep it to myself. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
+              I didn't achieve financial freedom to keep it to myself. My mission is to help 10,000 people achieve financial freedom. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
             </p>
           </div>
 

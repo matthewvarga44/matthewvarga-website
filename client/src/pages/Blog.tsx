@@ -261,6 +261,26 @@ export default function Blog() {
       readTime: "14 min read",
       image: "/images/blog-house-flipping.jpg",
       slug: "house-flipping-side-hustle"
+    },
+    {
+      id: "34",
+      title: "Starting an Airbnb Co-Hosting Service",
+      excerpt: "Launch a profitable Airbnb co-hosting service managing properties for other owners. Learn the business model, pricing strategy, and how to scale to multiple properties.",
+      category: "Airbnb Strategy",
+      date: "February 6, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-airbnb-cohosting.jpg",
+      slug: "airbnb-cohosting-service"
+    },
+    {
+      id: "35",
+      title: "Themed Airbnb Arbitrage in Tourist Hotspots",
+      excerpt: "Maximize revenue with themed Airbnb properties in high-demand tourist destinations. Learn how unique themes command premium pricing and drive higher occupancy rates.",
+      category: "Airbnb Strategy",
+      date: "February 6, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-themed-airbnb.jpg",
+      slug: "themed-airbnb-arbitrage"
     }
   ];
 

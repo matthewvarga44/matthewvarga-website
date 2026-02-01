@@ -1665,6 +1665,116 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
       { title: "The Biggest Mistakes New Investors Make", slug: "biggest-mistakes-new-investors" }
     ]
+  },
+  "airbnb-cohosting-service": {
+    title: "Starting an Airbnb Co-Hosting Service",
+    excerpt: "Launch a profitable Airbnb co-hosting service managing properties for other owners.",
+    category: "Airbnb Strategy",
+    date: "February 6, 2026",
+    readTime: "13 min read",
+    image: "/images/blog-airbnb-cohosting.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is Airbnb Co-Hosting?</h2>
+<p>Airbnb co-hosting is a service where you manage Airbnb properties for other owners. The owner retains ownership and receives most of the revenue. You earn a percentage (typically 20-30%) for handling all operations: guest communication, cleaning, maintenance, and problem-solving.</p>
+
+<h2>The Co-Hosting Business Model</h2>
+<p>Step 1: Find property owners who want to list on Airbnb but don't want to manage it themselves.</p>
+<p>Step 2: Negotiate a management fee. Typical: 20-30% of nightly revenue.</p>
+<p>Step 3: Take over the listing. Optimize photos, description, pricing, and calendar.</p>
+<p>Step 4: Handle all guest communication and logistics.</p>
+<p>Step 5: Collect your percentage of revenue each month.</p>
+
+<h2>Revenue Potential</h2>
+<p>Example: Property generates $3,000/month revenue. Your fee: 25% = $750/month. Manage 10 properties = $7,500/month.</p>
+<p>Scaling: Each property requires 5-10 hours/month of management. With systems in place, you can manage 20-30 properties.</p>
+<p>Annual income potential: $90,000-$270,000 managing 10-30 properties.</p>
+
+<h2>How to Start</h2>
+<p><strong>Step 1: Get Experience:</strong> Manage your own Airbnb property first. Learn the platform, guest management, and optimization.</p>
+<p><strong>Step 2: Build Systems:</strong> Create templates for messages, cleaning checklists, and pricing strategies.</p>
+<p><strong>Step 3: Find Clients:</strong> Network with property owners. Post on local Facebook groups. Offer free consultation.</p>
+<p><strong>Step 4: Close Deals:</strong> Show owners how you'll increase their revenue and reduce their workload.</p>
+<p><strong>Step 5: Scale:</strong> Hire help for cleaning and maintenance. Use automation tools for communication.</p>
+
+<h2>Key Skills for Success</h2>
+<p><strong>Optimization:</strong> Know how to optimize listings for higher bookings and rates.</p>
+<p><strong>Guest Management:</strong> Excellent communication and problem-solving skills.</p>
+<p><strong>Marketing:</strong> Ability to promote properties and attract bookings.</p>
+<p><strong>Operations:</strong> Coordinate cleaning, maintenance, and guest check-ins.</p>
+
+<h2>Real-World Example</h2>
+<p>I started co-hosting 2 properties. Each generated $2,500/month. My fee: 25% = $1,250/month combined. After 6 months, I had 8 properties generating $20,000/month total revenue. My income: $5,000/month.</p>
+
+<h2>The Bottom Line</h2>
+<p>Airbnb co-hosting is a scalable business model. Manage other people's properties. Earn recurring revenue. Scale to 20-30 properties. Generate $90,000-$270,000/year with minimal capital investment.</p>
+    `,
+    relatedPosts: [
+      { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
+      { title: "Themed Airbnb Arbitrage", slug: "themed-airbnb-arbitrage" },
+      { title: "Short-Term Rental Secrets", slug: "short-term-rental-secrets" }
+    ]
+  },
+  "themed-airbnb-arbitrage": {
+    title: "Themed Airbnb Arbitrage in Tourist Hotspots",
+    excerpt: "Maximize revenue with themed Airbnb properties in high-demand tourist destinations.",
+    category: "Airbnb Strategy",
+    date: "February 6, 2026",
+    readTime: "11 min read",
+    image: "/images/blog-themed-airbnb.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is Themed Airbnb Arbitrage?</h2>
+<p>Themed Airbnb arbitrage is renting a property in a tourist hotspot, decorating it with a unique theme, and listing it on Airbnb at premium prices. The theme differentiates your property from competitors and justifies higher nightly rates.</p>
+
+<h2>Why Themes Work</h2>
+<p><strong>Premium Pricing:</strong> Themed properties command 30-50% higher rates than standard properties.</p>
+<p><strong>Higher Occupancy:</strong> Unique themes attract specific guest demographics and increase bookings.</p>
+<p><strong>Better Reviews:</strong> Guests remember themed properties and leave better reviews.</p>
+<p><strong>Repeat Guests:</strong> Themed properties create memorable experiences, leading to repeat bookings.</p>
+
+<h2>Popular Themes</h2>
+<p><strong>Luxury Penthouse:</strong> High-end furnishings, city views, premium amenities. $150-300/night.</p>
+<p><strong>Beachfront Villa:</strong> Tropical decor, ocean views, beach access. $120-250/night.</p>
+<p><strong>Mountain Cabin:</strong> Rustic decor, fireplace, nature views. $100-200/night.</p>
+<p><strong>Urban Loft:</strong> Modern design, exposed brick, city views. $110-220/night.</p>
+<p><strong>Luxury Spa:</strong> Spa amenities, hot tub, sauna, relaxation focus. $130-280/night.</p>
+
+<h2>Revenue Potential</h2>
+<p>Example: Tourist hotspot, beachfront villa theme.</p>
+<p>Nightly rate: $200 (themed premium vs. $120 standard).</p>
+<p>Occupancy: 80% (high due to theme appeal).</p>
+<p>Monthly revenue: $200 × 24 nights = $4,800.</p>
+<p>Annual revenue: $57,600.</p>
+<p>Rent: $1,500/month. Expenses: $500/month. Profit: $2,800/month = $33,600/year.</p>
+
+<h2>How to Execute</h2>
+<p><strong>Step 1: Choose Location:</strong> Pick a tourist hotspot with high demand (Miami, Bali, Barcelona, NYC).</p>
+<p><strong>Step 2: Find Property:</strong> Rent a property below market rate. Negotiate long-term lease.</p>
+<p><strong>Step 3: Design Theme:</strong> Create a cohesive, Instagram-worthy design.</p>
+<p><strong>Step 4: Professional Photos:</strong> Hire photographer for high-quality images.</p>
+<p><strong>Step 5: List and Optimize:</strong> Create compelling listing with theme-focused description.</p>
+<p><strong>Step 6: Manage:</strong> Handle bookings, guest communication, cleaning, maintenance.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1: Cheap Theme:</strong> Don't cheap out on decor. Quality matters.</p>
+<p><strong>Mistake 2: Wrong Location:</strong> Theme must match location. Beach theme in mountains won't work.</p>
+<p><strong>Mistake 3: Poor Photos:</strong> Professional photos are essential. Bad photos kill bookings.</p>
+<p><strong>Mistake 4: Overpricing:</strong> Theme justifies premium, but don't overprice. Stay competitive.</p>
+
+<h2>Real-World Example</h2>
+<p>I rented a beachfront property in Miami for $1,500/month. Invested $8,000 in tropical villa theme. Listed at $200/night. Achieved 85% occupancy. Monthly revenue: $5,100. Profit: $3,600/month = $43,200/year. ROI on theme investment: 5 months.</p>
+
+<h2>The Bottom Line</h2>
+<p>Themed Airbnb arbitrage in tourist hotspots is highly profitable. Choose a great location. Create a compelling theme. Invest in quality decor and photos. Manage efficiently. Generate $30,000-$50,000/year per property.</p>
+    `,
+    relatedPosts: [
+      { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
+      { title: "Starting an Airbnb Co-Hosting Service", slug: "airbnb-cohosting-service" },
+      { title: "Short-Term Rental Secrets", slug: "short-term-rental-secrets" }
+    ]
   }
 };
 

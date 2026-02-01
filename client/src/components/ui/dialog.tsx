@@ -99,7 +99,6 @@ function DialogContent({
   showCloseButton?: boolean;
 }) {
   const { isComposing } = useDialogComposition();
-  const [hasTitle, setHasTitle] = React.useState(false);
 
   const handleEscapeKeyDown = React.useCallback(
     (e: KeyboardEvent) => {
@@ -131,7 +130,7 @@ function DialogContent({
         onEscapeKeyDown={handleEscapeKeyDown}
         {...props}
       >
-        <DialogPrimitive.Title className="sr-only">
+        <DialogPrimitive.Title className="sr-only" style={{ display: 'none' }}>
           Dialog
         </DialogPrimitive.Title>
         {children}

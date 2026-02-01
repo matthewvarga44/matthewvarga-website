@@ -10,19 +10,19 @@ const resources = [
     title: "Buy and Hold Deal Analysis Calculator",
     description: "Analyze buy-and-hold rental deals with precision. Run numbers, calculate cash flow, ROI, and cap rates instantly. The exact tool I use to evaluate every investment opportunity.",
     icon: <Download className="h-6 w-6" />,
-    href: "/BuyandHoldDealAnalysisCalculator.xlsx"
+    href: "/Property-Analysis-Calculator.xlsx"
   },
   {
     title: "Short Term Rental Calculator",
     description: "Analyze short-term rental and Airbnb deals. Project income, expenses, and profitability with detailed financial modeling.",
     icon: <Download className="h-6 w-6" />,
-    href: "/ShortTermRentalCalculator.xlsx"
+    href: "/Airbnb-ROI-Calculator.xlsx"
   },
   {
-    title: "Real Estate Investing Checklist",
-    description: "Your step-by-step guide to evaluating properties, running numbers, and making confident investment decisions.",
+    title: "Real Estate Investing Roadmap",
+    description: "Your step-by-step guide to building a profitable real estate portfolio. From first investment to financial freedom.",
     icon: <BookOpen className="h-6 w-6" />,
-    href: "#"
+    href: "/Real-Estate-Roadmap.pdf"
   }
 ];
 

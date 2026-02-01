@@ -269,14 +269,17 @@ export default function FAQ() {
                   </Button>
                 </a>
               </Link>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full"
-                onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call', '_blank')}
-              >
-                Join Now
-              </Button>
+              <Link href="/apply-mastermind">
+                <a>
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 h-14 rounded-full"
+                  >
+                    Join Now
+                  </Button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

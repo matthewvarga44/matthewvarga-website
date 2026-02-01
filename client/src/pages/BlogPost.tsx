@@ -835,11 +835,11 @@ const blogPostsData: Record<string, BlogPostData> = {
   },
   "first-rental-portfolio-year-1": {
     title: "Building Your First Rental Portfolio: Year 1 Action Plan",
-    excerpt: "A comprehensive guide to acquiring your first 3 rental properties in year 1. Learn the exact system for property analysis, financing, and management.",
+    excerpt: "Your first year in real estate investing sets the foundation for everything that follows. Learn the exact action plan I used to acquire 3 properties and generate $2,400-$3,600/month in cash flow.",
     category: "Portfolio Growth",
     date: "January 31, 2026",
     readTime: "11 min read",
-    image: "/images/blog-portfolio-growth.jpg",
+    image: "/images/blog-first-rental-portfolio.jpg",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -897,7 +897,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "January 31, 2026",
     readTime: "9 min read",
-    image: "/images/blog-investment-strategy.jpg",
+    image: "/images/blog-cap-rates.jpg",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `

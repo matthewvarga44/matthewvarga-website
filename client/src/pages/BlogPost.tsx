@@ -2390,58 +2390,61 @@ const blogPostsData: Record<string, BlogPostData> = {
 <p>Your down payment is the foundation of homeownership. It determines your loan amount, monthly payment, and whether you pay mortgage insurance. A larger down payment means a smaller loan, lower interest, and lower monthly payment. This is why saving for a down payment is critical.</p>
 
 <h2>Down Payment Options</h2>
-<ul>
-<li><strong>3% Down (FHA Loan):</strong> Minimum down payment. Requires mortgage insurance. Monthly payment is higher due to insurance. Best for first-time buyers with limited savings.</li>
-<li><strong>5-10% Down (Conventional Loan):</strong> Mid-range option. Still requires mortgage insurance. Monthly payment is moderate. Good balance between savings and monthly cost.</li>
-<li><strong>15-20% Down (Conventional Loan):</strong> Strong down payment. No mortgage insurance required. Monthly payment is lower. Best for buyers with time to save.</li>
-<li><strong>20%+ Down:</strong> Maximum down payment. No mortgage insurance. Lowest monthly payment. Best if you can afford it.</li>
-</ul>
+<p><strong>3% Down (FHA Loan):</strong> Minimum down payment. Requires mortgage insurance. Monthly payment is higher due to insurance. Best for first-time buyers with limited savings.</p>
+<p><strong>5-10% Down (Conventional Loan):</strong> Mid-range option. Still requires mortgage insurance. Monthly payment is moderate. Good balance between savings and monthly cost.</p>
+<p><strong>15-20% Down (Conventional Loan):</strong> Strong down payment. No mortgage insurance required. Monthly payment is lower. Best for buyers with time to save.</p>
+<p><strong>20%+ Down:</strong> Maximum down payment. No mortgage insurance. Lowest monthly payment. Best if you can afford it.</p>
 
 <h2>The Down Payment Calculator</h2>
 <p><strong>Example:</strong> You want to buy a $300,000 home.</p>
-<ul>
-<li>3% down: $9,000 (loan: $291,000 + mortgage insurance)</li>
-<li>5% down: $15,000 (loan: $285,000 + mortgage insurance)</li>
-<li>10% down: $30,000 (loan: $270,000 + mortgage insurance)</li>
-<li>20% down: $60,000 (loan: $240,000, no mortgage insurance)</li>
-</ul>
-<p><strong>At 6% interest over 30 years:</strong></p>
-<ul>
-<li>3% down: $1,745/month (includes mortgage insurance)</li>
-<li>5% down: $1,710/month (includes mortgage insurance)</li>
-<li>10% down: $1,620/month (includes mortgage insurance)</li>
-<li>20% down: $1,439/month (no mortgage insurance)</li>
-</ul>
+<p>3% down: $9,000 (loan: $291,000 + mortgage insurance)</p>
+<p>5% down: $15,000 (loan: $285,000 + mortgage insurance)</p>
+<p>10% down: $30,000 (loan: $270,000 + mortgage insurance)</p>
+<p>20% down: $60,000 (loan: $240,000, no mortgage insurance)</p>
+
+<p>At 6% interest over 30 years:</p>
+<p>3% down: $1,745/month (includes mortgage insurance)</p>
+<p>5% down: $1,710/month (includes mortgage insurance)</p>
+<p>10% down: $1,620/month (includes mortgage insurance)</p>
+<p>20% down: $1,439/month (no mortgage insurance)</p>
+
 <p>The difference between 3% and 20% down: $306/month or $110,000 over 30 years. This is why a larger down payment matters.</p>
 
 <h2>Down Payment Savings Strategies</h2>
 <p><strong>Strategy 1: Automate Your Savings</strong></p>
 <p>Set up automatic transfers to a separate savings account. Out of sight, out of mind. If you don't see the money, you won't spend it. Start with $500/month. Increase it when you get a raise.</p>
+
 <p><strong>Strategy 2: Cut Expenses</strong></p>
 <p>Review your budget. Where can you cut? Subscriptions ($50/month = $600/year). Dining out ($200/month = $2,400/year). Coffee ($5/day = $1,825/year). Small cuts add up.</p>
+
 <p><strong>Strategy 3: Increase Income</strong></p>
 <p>Side hustle. Freelance work. Part-time job. Even $500/month from a side hustle = $6,000/year toward your down payment.</p>
+
 <p><strong>Strategy 4: High-Yield Savings Account</strong></p>
 <p>Don't keep down payment savings in a regular savings account (0.01% interest). Use a high-yield savings account (4-5% interest). On $50,000, that's $2,000-2,500/year in free money.</p>
+
 <p><strong>Strategy 5: Tax Refunds & Bonuses</strong></p>
 <p>Get a tax refund? Put it in your down payment fund. Get a bonus? Put it in your down payment fund. Don't spend windfalls. Redirect them to your goal.</p>
 
 <h2>Down Payment Timeline</h2>
 <p><strong>Goal: Save $60,000 for 20% down on $300,000 home</strong></p>
-<ul>
-<li><strong>Month 1-12:</strong> Save $2,000/month = $24,000. Actions: Automate $2,000/month transfer. Cut expenses by $500. Side hustle for $1,500.</li>
-<li><strong>Month 13-24:</strong> Save $2,500/month = $30,000. Actions: Got a raise? Increase savings. Side hustle growing? Increase contribution.</li>
-<li><strong>Month 25-30:</strong> Save $2,000/month = $12,000. Actions: You've hit $54,000. Final push. Get a bonus? Tax refund? Put it toward the last $6,000.</li>
-<li><strong>Month 31:</strong> You've saved $60,000. You're ready to buy.</li>
-</ul>
+
+<p><strong>Month 1-12:</strong> Save $2,000/month = $24,000</p>
+<p>Actions: Automate $2,000/month transfer. Cut expenses by $500. Side hustle for $1,500.</p>
+
+<p><strong>Month 13-24:</strong> Save $2,500/month = $30,000</p>
+<p>Actions: Got a raise? Increase savings. Side hustle growing? Increase contribution.</p>
+
+<p><strong>Month 25-30:</strong> Save $2,000/month = $12,000</p>
+<p>Actions: You've hit $54,000. Final push. Get a bonus? Tax refund? Put it toward the last $6,000.</p>
+
+<p><strong>Month 31:</strong> You've saved $60,000. You're ready to buy.</p>
 
 <h2>Where to Keep Your Down Payment Savings</h2>
-<ul>
-<li><strong>High-Yield Savings Account:</strong> Liquid (accessible anytime). Safe (FDIC insured). Growing (4-5% interest). Best for down payment savings.</li>
-<li><strong>Money Market Account:</strong> Similar to savings. Slightly higher interest. Slightly less liquid.</li>
-<li><strong>Short-Term CDs:</strong> Higher interest (5-6%). Less liquid. Penalty for early withdrawal.</li>
-<li><strong>Stock Market:</strong> Risky. Could grow or shrink. Not recommended for down payment savings (you need the money in 2-3 years).</li>
-</ul>
+<p><strong>High-Yield Savings Account:</strong> Liquid (accessible anytime). Safe (FDIC insured). Growing (4-5% interest). Best for down payment savings.</p>
+<p><strong>Money Market Account:</strong> Similar to savings. Slightly higher interest. Slightly less liquid.</p>
+<p><strong>Short-Term CDs:</strong> Higher interest (5-6%). Less liquid. Penalty for early withdrawal.</p>
+<p><strong>Stock Market:</strong> Risky. Could grow or shrink. Not recommended for down payment savings (you need the money in 2-3 years).</p>
 
 <h2>Real-World Example</h2>
 <p>I saved for my down payment over 2 years. I automated $2,000/month. I cut dining out and subscriptions ($500/month). I did freelance work ($1,000/month). In 24 months, I saved $84,000. I bought a $400,000 home with 20% down. No mortgage insurance. My monthly payment was $1,910. That extra $2,000/year in savings (vs. mortgage insurance) was worth it.</p>
@@ -2469,60 +2472,68 @@ const blogPostsData: Record<string, BlogPostData> = {
 <p>Estate planning isn't just for the wealthy. It's for anyone with assets, children, or people who depend on them. Without a plan, the government decides who gets your money. Your family fights over your assets. Your kids might not get what you intended. This is why estate planning is essential.</p>
 
 <h2>The Estate Planning Documents</h2>
-<ul>
-<li><strong>Will:</strong> A legal document that says who gets your assets when you die. Requires probate (court process). Public record. Takes 6-12 months to execute.</li>
-<li><strong>Trust:</strong> A legal entity that holds your assets. Avoids probate. Private. Executes quickly (weeks). More expensive to set up but saves time and money later.</li>
-<li><strong>Power of Attorney:</strong> Gives someone authority to make financial decisions if you're incapacitated. Essential if you're in an accident or illness.</li>
-<li><strong>Healthcare Directive:</strong> Specifies your medical wishes if you can't communicate. Do Not Resuscitate (DNR). Organ donation. Life support preferences.</li>
-<li><strong>Beneficiary Designations:</strong> Specify who gets life insurance, retirement accounts, and bank accounts. Overrides your will. Update after major life events.</li>
-</ul>
+<p><strong>Will:</strong> A legal document that says who gets your assets when you die. Requires probate (court process). Public record. Takes 6-12 months to execute.</p>
+<p><strong>Trust:</strong> A legal entity that holds your assets. Avoids probate. Private. Executes quickly (weeks). More expensive to set up but saves time and money later.</p>
+<p><strong>Power of Attorney:</strong> Gives someone authority to make financial decisions if you're incapacitated. Essential if you're in an accident or illness.</p>
+<p><strong>Healthcare Directive:</strong> Specifies your medical wishes if you can't communicate. Do Not Resuscitate (DNR). Organ donation. Life support preferences.</p>
+<p><strong>Beneficiary Designations:</strong> Specify who gets life insurance, retirement accounts, and bank accounts. Overrides your will. Update after major life events.</p>
 
 <h2>Will vs. Trust</h2>
 <p><strong>Will:</strong></p>
-<ul>
-<li>Pros: Simple. Cheap ($200-500). Easy to update.</li>
-<li>Cons: Goes through probate. Public. Slow (6-12 months). Expensive probate fees (3-7% of estate).</li>
-</ul>
+<p>Pros: Simple. Cheap ($200-500). Easy to update.</p>
+<p>Cons: Goes through probate. Public. Slow (6-12 months). Expensive probate fees (3-7% of estate).</p>
+
 <p><strong>Trust:</strong></p>
-<ul>
-<li>Pros: Avoids probate. Private. Fast (weeks). Saves probate fees.</li>
-<li>Cons: Complex. Expensive to set up ($1,000-3,000). Requires funding (transferring assets into trust).</li>
-</ul>
+<p>Pros: Avoids probate. Private. Fast (weeks). Saves probate fees.</p>
+<p>Cons: Complex. Expensive to set up ($1,000-3,000). Requires funding (transferring assets into trust).</p>
+
 <p><strong>Best Practice:</strong> Use both. A will for assets not in the trust. A trust for major assets (house, investments, business).</p>
 
 <h2>What to Include in Your Estate Plan</h2>
-<ul>
-<li><strong>Asset Inventory:</strong> List all assets (house, cars, investments, retirement accounts, life insurance, business). Include account numbers and locations.</li>
-<li><strong>Debt Inventory:</strong> List all debts (mortgage, credit cards, loans). Include account numbers and contact information.</li>
-<li><strong>Beneficiary Designations:</strong> Specify who gets life insurance ($500,000?), retirement accounts ($1,000,000?), bank accounts ($100,000?).</li>
-<li><strong>Executor:</strong> Who manages your estate? Usually a trusted family member or professional executor. They handle probate, pay debts, distribute assets.</li>
-<li><strong>Guardian for Minor Children:</strong> Who raises your kids if you die? Specify in your will. Discuss with them first.</li>
-<li><strong>Healthcare Proxy:</strong> Who makes medical decisions if you can't? Specify in your healthcare directive.</li>
-</ul>
+<p><strong>Asset Inventory:</strong> List all assets (house, cars, investments, retirement accounts, life insurance, business). Include account numbers and locations.</p>
+
+<p><strong>Debt Inventory:</strong> List all debts (mortgage, credit cards, loans). Include account numbers and contact information.</p>
+
+<p><strong>Beneficiary Designations:</strong> Specify who gets life insurance ($500,000?), retirement accounts ($1,000,000?), bank accounts ($100,000?).</p>
+
+<p><strong>Executor:</strong> Who manages your estate? Usually a trusted family member or professional executor. They handle probate, pay debts, distribute assets.</p>
+
+<p><strong>Guardian for Minor Children:</strong> Who raises your kids if you die? Specify in your will. Discuss with them first.</p>
+
+<p><strong>Healthcare Proxy:</strong> Who makes medical decisions if you can't? Specify in your healthcare directive.</p>
 
 <h2>Estate Planning Timeline</h2>
-<ul>
-<li><strong>Age 25-35 (Starting Out):</strong> Create a basic will. Designate beneficiaries. Name a guardian for kids.</li>
-<li><strong>Age 35-50 (Building Wealth):</strong> Create a trust. Transfer major assets into trust. Update beneficiary designations. Review annually.</li>
-<li><strong>Age 50+ (Peak Wealth):</strong> Create a comprehensive plan. Consider tax strategies. Update for major life changes. Review every 3-5 years.</li>
-</ul>
+<p><strong>Age 25-35 (Starting Out):</strong> Create a basic will. Designate beneficiaries. Name a guardian for kids.</p>
+
+<p><strong>Age 35-50 (Building Wealth):</strong> Create a trust. Transfer major assets into trust. Update beneficiary designations. Review annually.</p>
+
+<p><strong>Age 50+ (Peak Wealth):</strong> Create a comprehensive plan. Consider tax strategies. Update for major life changes. Review every 3-5 years.</p>
 
 <h2>Common Estate Planning Mistakes</h2>
-<ul>
-<li><strong>Mistake 1: No Plan at All</strong> - 40% of Americans have no will or trust. If you die without a plan, the state decides who gets your money. Don't let this happen.</li>
-<li><strong>Mistake 2: Outdated Beneficiaries</strong> - You get divorced but don't update beneficiaries. Your ex gets your life insurance. Update beneficiaries after major life events.</li>
-<li><strong>Mistake 3: Not Funding Your Trust</strong> - You create a trust but don't transfer assets into it. The trust is useless. Funding is critical.</li>
-<li><strong>Mistake 4: Not Communicating Your Plan</strong> - Your family doesn't know where your documents are or what you want. Leave a detailed letter with your executor. Tell them where everything is.</li>
-<li><strong>Mistake 5: Ignoring Tax Strategies</strong> - Large estates can face significant taxes. Work with a tax professional to minimize estate taxes. Strategies include gifting, charitable donations, and trusts.</li>
-</ul>
+<p><strong>Mistake 1: No Plan at All</strong></p>
+<p>40% of Americans have no will or trust. If you die without a plan, the state decides who gets your money. Don't let this happen.</p>
+
+<p><strong>Mistake 2: Outdated Beneficiaries</strong></p>
+<p>You get divorced but don't update beneficiaries. Your ex gets your life insurance. Update beneficiaries after major life events.</p>
+
+<p><strong>Mistake 3: Not Funding Your Trust</strong></p>
+<p>You create a trust but don't transfer assets into it. The trust is useless. Funding is critical.</p>
+
+<p><strong>Mistake 4: Not Communicating Your Plan</strong></p>
+<p>Your family doesn't know where your documents are or what you want. Leave a detailed letter with your executor. Tell them where everything is.</p>
+
+<p><strong>Mistake 5: Ignoring Tax Strategies</strong></p>
+<p>Large estates can face significant taxes. Work with a tax professional to minimize estate taxes. Strategies include gifting, charitable donations, and trusts.</p>
 
 <h2>Estate Planning Cost</h2>
-<ul>
-<li><strong>DIY Will (Online):</strong> $50-200. Simple. Limited options.</li>
-<li><strong>Attorney Will:</strong> $300-1,000. Professional. Customized.</li>
-<li><strong>Basic Trust:</strong> $1,000-2,000. Professional. Customized.</li>
-<li><strong>Comprehensive Plan (Will + Trust + Directives):</strong> $2,000-5,000. Professional. Complete.</li>
-</ul>
+<p><strong>DIY Will (Online):</strong> $50-200. Simple. Limited options.</p>
+
+<p><strong>Attorney Will:</strong> $300-1,000. Professional. Customized.</p>
+
+<p><strong>Basic Trust:</strong> $1,000-2,000. Professional. Customized.</p>
+
+<p><strong>Comprehensive Plan (Will + Trust + Directives):</strong> $2,000-5,000. Professional. Complete.</p>
+
 <p><strong>My Recommendation:</strong> If your estate is under $500,000, a DIY will is fine. If over $500,000, hire an attorney. The cost is worth the peace of mind.</p>
 
 <h2>Real-World Example</h2>

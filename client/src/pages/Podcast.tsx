@@ -51,6 +51,19 @@ export default function Podcast() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation Header */}
+      <div className="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex items-center">
+          <Button
+            variant="ghost"
+            className="text-amber-400 hover:text-amber-300 hover:bg-slate-800"
+            onClick={() => setLocation('/')}
+          >
+            ← Back to Home
+          </Button>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-32">
         <div className="container mx-auto px-4">

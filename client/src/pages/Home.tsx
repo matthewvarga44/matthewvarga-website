@@ -1,9 +1,30 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, BarChart3, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, BarChart3, TrendingUp, Users, Download, BookOpen } from "lucide-react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+
+const resources = [
+  {
+    title: "Buy and Hold Deal Analysis Calculator",
+    description: "Analyze buy-and-hold rental deals with precision. Run numbers, calculate cash flow, ROI, and cap rates instantly. The exact tool I use to evaluate every investment opportunity.",
+    icon: <Download className="h-6 w-6" />,
+    href: "/BuyandHoldDealAnalysisCalculator.xlsx"
+  },
+  {
+    title: "Short Term Rental Calculator",
+    description: "Analyze short-term rental and Airbnb deals. Project income, expenses, and profitability with detailed financial modeling.",
+    icon: <Download className="h-6 w-6" />,
+    href: "/ShortTermRentalCalculator.xlsx"
+  },
+  {
+    title: "Real Estate Investing Checklist",
+    description: "Your step-by-step guide to evaluating properties, running numbers, and making confident investment decisions.",
+    icon: <BookOpen className="h-6 w-6" />,
+    href: "#"
+  }
+];
 
 export default function Home() {
   // Scroll to top when component mounts
@@ -212,6 +233,60 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
+              <div className="h-3 bg-secondary w-full"></div>
+              <CardHeader>
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
+                  <Users className="h-8 w-8" />
+                </div>
+                <CardTitle className="text-xl font-bold text-primary">Exclusive Community</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-foreground/70">
+                  Network with 300+ serious investors committed to retirement through real estate. Share deals, strategies, and support.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Free Resources Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center mb-16">
+            <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-6">
+              Free Rental Resources
+            </h2>
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              Get instant access to the exact tools and calculators I use to analyze deals and build my portfolio.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
+            {resources.map((resource, index) => (
+              <Card key={index} className="border-2 border-secondary/20 hover:border-secondary/50 transition-colors hover:shadow-lg overflow-hidden group">
+                <CardHeader>
+                  <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
+                    {resource.icon}
+                  </div>
+                  <CardTitle className="text-lg font-bold text-primary">{resource.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-foreground/70 text-sm leading-relaxed">
+                    {resource.description}
+                  </p>
+                  <a
+                    href={resource.href}
+                    download
+                    className="inline-flex items-center gap-2 text-secondary font-semibold hover:text-secondary/80 transition-colors"
+                  >
+                    <Download className="h-4 w-4" />
+                    Download Now
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -221,10 +296,10 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-              Ready to Build Your Wealth?
+              Ready to Scale Your Real Estate Business?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+              Join the Retire with Rentals program and learn the exact strategies to build wealth and achieve financial freedom.
             </p>
             <Link href="/apply-mastermind">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">

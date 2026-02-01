@@ -1388,6 +1388,99 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Seller Financing Deals", slug: "seller-financing-deals" },
       { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
     ]
+  },
+  "10-year-plan-financial-freedom": {
+    title: "The 10-Year Plan to Financial Freedom Through Real Estate",
+    excerpt: "The complete 10-year roadmap to achieve financial freedom through real estate investing.",
+    category: "Portfolio Growth",
+    date: "February 3, 2026",
+    readTime: "14 min read",
+    image: "/images/blog-10year-plan.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>The 10-Year Blueprint</h2>
+<p>Financial freedom through real estate is achievable in 10 years with disciplined execution. I built a $10M+ portfolio using this exact framework. In this post, I'm sharing the complete 10-year roadmap with milestones, timelines, and exact strategies.</p>
+
+<h2>Year 1: Foundation & First Property</h2>
+<p>Goal: Acquire 1 property, generate $500/month cash flow. Buy a property that generates positive cash flow. Get a mortgage. Build your first rental income stream. Portfolio value: $250K. Passive income: $500/month.</p>
+
+<h2>Year 2-3: Build Momentum</h2>
+<p>Goal: Acquire 2 more properties, generate $1,500/month cash flow. Use cash flow from property 1 to fund down payments. Build your property management systems. Portfolio value: $750K. Passive income: $1,500/month.</p>
+
+<h2>Year 4-5: Scale to 5 Properties</h2>
+<p>Goal: Acquire 2 more properties, generate $2,500/month cash flow. You now have systems in place. You know how to analyze deals. You know how to manage properties. Scale faster. Portfolio value: $1.2M. Passive income: $2,500/month.</p>
+
+<h2>Year 6-7: Accelerate Growth</h2>
+<p>Goal: Acquire 3 more properties, generate $5,000/month cash flow. With $2,500/month in passive income, you have significant leverage. You can borrow more. You can take more risk. Buy better properties. Portfolio value: $2M. Passive income: $5,000/month.</p>
+
+<h2>Year 8-9: Build Wealth</h2>
+<p>Goal: Acquire 2 more properties, generate $7,000/month cash flow. You're now at 10 properties. You're generating significant passive income. You're building serious wealth. Portfolio value: $3.5M. Passive income: $7,000/month.</p>
+
+<h2>Year 10: Financial Freedom</h2>
+<p>Goal: Acquire 1 more property, generate $8,000+/month cash flow. You now have 11 properties. Your portfolio is worth $4M+. Your passive income is $8,000+/month. You're financially free. You don't need a job. Your money works for you.</p>
+
+<h2>The Key Strategies</h2>
+<p><strong>Buy and Hold:</strong> Don't flip. Buy for long-term cash flow. This is the path to wealth.</p>
+<p><strong>Leverage:</strong> Use mortgages. Don't pay cash. Use other people's money to multiply your returns.</p>
+<p><strong>Reinvest:</strong> Don't spend your cash flow. Reinvest it into new properties. Compound your wealth.</p>
+
+<h2>Critical Success Factors</h2>
+<p><strong>Discipline:</strong> Stick to your criteria. Buy properties that cash flow. Don't get emotional.</p>
+<p><strong>Systems:</strong> Build systems for everything. Property management. Tenant screening. Accounting. Don't do it all yourself.</p>
+<p><strong>Team:</strong> Build a team. Property manager. CPA. Contractor. Lender. You can't do it alone.</p>
+
+<h2>The Bottom Line</h2>
+<p>Financial freedom is achievable in 10 years. Follow this roadmap. Buy 1 property/year. Each property generates $500-800/month. After 10 years, you'll have $4M+ in assets and $8,000+/month in passive income. That's financial freedom.</p>
+    `,
+    relatedPosts: [
+      { title: "Scaling from 1 to 10 Properties", slug: "scaling-1-to-10-properties" },
+      { title: "Financial Freedom Through Real Estate", slug: "financial-freedom-roadmap" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
+    ]
+  },
+  "biggest-mistakes-new-investors": {
+    title: "The Biggest Mistakes New Real Estate Investors Make",
+    excerpt: "Learn the 7 critical mistakes that destroy new investor returns.",
+    category: "Investment Strategy",
+    date: "February 3, 2026",
+    readTime: "11 min read",
+    image: "/images/blog-investor-mistakes.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>Learning From Mistakes</h2>
+<p>Most new real estate investors make critical mistakes that destroy their returns. They lose money. They get discouraged. They quit. In this post, I'm sharing the 7 biggest mistakes I see new investors make—and how to avoid them.</p>
+
+<h2>Mistake 1: Overpaying for Property</h2>
+<p>New investors fall in love with properties. They pay too much. They rationalize the overpayment. They lose money from day one. Solution: Analyze every deal objectively. Calculate cap rate. Calculate cash-on-cash return. Only buy if the numbers work.</p>
+
+<h2>Mistake 2: Ignoring Inspections</h2>
+<p>New investors skip inspections to save money. They buy properties with hidden problems. They spend thousands on repairs. Solution: Always get a professional inspection. Budget for repairs. If repairs exceed 15% of purchase price, walk away.</p>
+
+<h2>Mistake 3: Poor Tenant Screening</h2>
+<p>New investors accept the first tenant to fill a vacancy. Bad tenants destroy your returns. They don't pay rent. They damage property. They require eviction. Solution: Screen every tenant carefully. Check credit, income, employment, rental history. Only accept excellent tenants.</p>
+
+<h2>Mistake 4: Buying Negative Cash Flow Properties</h2>
+<p>New investors buy properties that lose money. They think appreciation will save them. It won't. Solution: Only buy properties with positive cash flow. Calculate monthly income minus expenses. If it's negative, walk away.</p>
+
+<h2>Mistake 5: Wrong Market Selection</h2>
+<p>New investors buy in declining markets. They think they're getting a deal. They're not. Declining markets mean declining rents and declining property values. Solution: Buy in growing markets. Look for population growth, job growth, rising property values.</p>
+
+<h2>Mistake 6: Not Building Systems</h2>
+<p>New investors try to manage everything themselves. They burn out. They make mistakes. They lose money. Solution: Build systems for tenant screening, maintenance, accounting, property management. Hire help. Delegate.</p>
+
+<h2>Mistake 7: Giving Up Too Early</h2>
+<p>New investors expect overnight success. When it doesn't happen, they quit. Building wealth takes time. Solution: Stay committed. Buy 1 property/year. After 10 years, you'll have significant wealth. Patience is key.</p>
+
+<h2>The Bottom Line</h2>
+<p>Avoid these 7 mistakes and you'll accelerate your path to financial freedom. Analyze deals objectively. Get inspections. Screen tenants carefully. Buy positive cash flow. Choose growing markets. Build systems. Stay committed. That's how you build wealth.</p>
+    `,
+    relatedPosts: [
+      { title: "5 Red Flags When Analyzing a Deal", slug: "red-flags-rental-property" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
+      { title: "The 10-Year Plan to Financial Freedom", slug: "10-year-plan-financial-freedom" }
+    ]
   }
 };
 

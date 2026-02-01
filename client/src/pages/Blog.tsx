@@ -201,6 +201,26 @@ export default function Blog() {
       readTime: "12 min read",
       image: "/images/blog-seller-financing-guide.jpg",
       slug: "negotiate-seller-financing"
+    },
+    {
+      id: "28",
+      title: "The 10-Year Plan to Financial Freedom Through Real Estate",
+      excerpt: "The complete 10-year roadmap to achieve financial freedom through real estate investing. Learn the exact milestones, timelines, and strategies to build a $4M+ portfolio and $8,000+/month passive income.",
+      category: "Portfolio Growth",
+      date: "February 3, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-10year-plan.jpg",
+      slug: "10-year-plan-financial-freedom"
+    },
+    {
+      id: "29",
+      title: "The Biggest Mistakes New Real Estate Investors Make",
+      excerpt: "Learn the 7 critical mistakes that destroy new investor returns. Discover how to avoid these pitfalls and accelerate your path to financial freedom.",
+      category: "Investment Strategy",
+      date: "February 3, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-investor-mistakes.jpg",
+      slug: "biggest-mistakes-new-investors"
     }
   ];
 

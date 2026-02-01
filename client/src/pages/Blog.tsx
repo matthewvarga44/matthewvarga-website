@@ -241,6 +241,26 @@ export default function Blog() {
       readTime: "10 min read",
       image: "/images/blog-debt-snowball.jpg",
       slug: "debt-snowball-method"
+    },
+    {
+      id: "32",
+      title: "Rent-to-Own Deals for Long-Term Wealth",
+      excerpt: "Discover how rent-to-own deals create a path to homeownership for buyers and cash flow for investors. Learn the strategy that benefits both sides of the transaction.",
+      category: "Investment Strategy",
+      date: "February 5, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-rent-to-own.jpg",
+      slug: "rent-to-own-deals"
+    },
+    {
+      id: "33",
+      title: "House Flipping as a Side Hustle",
+      excerpt: "Turn house flipping into a profitable side hustle. Learn the exact process, profit margins, and strategies to flip houses successfully while keeping your day job.",
+      category: "Flipping",
+      date: "February 5, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-house-flipping.jpg",
+      slug: "house-flipping-side-hustle"
     }
   ];
 

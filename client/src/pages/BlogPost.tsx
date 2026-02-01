@@ -1566,6 +1566,105 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Financial Freedom Through Real Estate", slug: "10-year-plan-financial-freedom" },
       { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
     ]
+  },
+  "rent-to-own-deals": {
+    title: "Rent-to-Own Deals for Long-Term Wealth",
+    excerpt: "Discover how rent-to-own deals create a path to homeownership for buyers and cash flow for investors.",
+    category: "Investment Strategy",
+    date: "February 5, 2026",
+    readTime: "12 min read",
+    image: "/images/blog-rent-to-own.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is a Rent-to-Own Deal?</h2>
+<p>A rent-to-own deal is a real estate transaction where a buyer rents a property with the option to purchase it later. A portion of the monthly rent is credited toward the down payment. This benefits both the buyer (path to homeownership) and the investor (cash flow + appreciation).</p>
+
+<h2>How Rent-to-Own Works</h2>
+<p>Step 1: Investor buys a property. Example: $200,000 purchase price.</p>
+<p>Step 2: Investor rents to tenant-buyer. Example: $1,500/month rent.</p>
+<p>Step 3: Portion of rent is credited toward down payment. Example: $300/month credit.</p>
+<p>Step 4: After 3 years, tenant-buyer has accumulated $10,800 in rent credits ($300 × 36 months).</p>
+<p>Step 5: Tenant-buyer exercises option to purchase at pre-agreed price. Example: $210,000.</p>
+<p>Step 6: Tenant-buyer uses $10,800 rent credits + $39,200 down payment = $50,000 down payment. Finances remaining $160,000.</p>
+
+<h2>Benefits for Buyers</h2>
+<p><strong>Path to Homeownership:</strong> Buyers who can't get traditional financing can rent-to-own and build credit while accumulating down payment.</p>
+<p><strong>Rent Credits:</strong> A portion of rent goes toward purchase price, accelerating down payment accumulation.</p>
+<p><strong>Lock-in Price:</strong> Price is agreed upon upfront, protecting buyer from market increases.</p>
+
+<h2>Benefits for Investors</h2>
+<p><strong>Higher Rent:</strong> Rent-to-own properties command 10-20% higher rent than traditional rentals.</p>
+<p><strong>Motivated Tenants:</strong> Tenant-buyers take better care of property because they're building equity.</p>
+<p><strong>Appreciation:</strong> Investor benefits from property appreciation while collecting rent.</p>
+<p><strong>Option Fee:</strong> Investor collects upfront option fee (typically 2-5% of purchase price).</p>
+
+<h2>Real-World Example</h2>
+<p>I bought a property for $200,000. I rented it as rent-to-own for $1,500/month with $300 rent credit. Option fee: $6,000. After 3 years, tenant-buyer exercised option at $210,000. I collected $54,000 in rent ($1,500 × 36 months), $6,000 option fee, and $10,000 appreciation. Total profit: $70,000 in 3 years.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1: Overpricing:</strong> Don't overprice the option to purchase. Make it attractive to tenant-buyer.</p>
+<p><strong>Mistake 2: Poor Tenant Screening:</strong> Screen tenant-buyers carefully. They need to be able to qualify for financing.</p>
+<p><strong>Mistake 3: No Legal Documentation:</strong> Get everything in writing. Hire an attorney to draft rent-to-own agreement.</p>
+
+<h2>The Bottom Line</h2>
+<p>Rent-to-own deals create win-win situations. Buyers get a path to homeownership. Investors get higher rent, option fees, and appreciation. This strategy accelerates wealth building for both parties.</p>
+    `,
+    relatedPosts: [
+      { title: "Seller Financing Deals", slug: "negotiate-seller-financing" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
+      { title: "5 Red Flags When Analyzing a Deal", slug: "red-flags-rental-property" }
+    ]
+  },
+  "house-flipping-side-hustle": {
+    title: "House Flipping as a Side Hustle",
+    excerpt: "Turn house flipping into a profitable side hustle. Learn the exact process, profit margins, and strategies.",
+    category: "Flipping",
+    date: "February 5, 2026",
+    readTime: "14 min read",
+    image: "/images/blog-house-flipping.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is House Flipping?</h2>
+<p>House flipping is buying an undervalued property, renovating it, and selling it for profit. The goal is to maximize profit while minimizing holding time. This can be done as a side hustle while keeping your day job.</p>
+
+<h2>The House Flipping Process</h2>
+<p>Step 1: Find a deal. Look for distressed properties, foreclosures, or properties needing renovation.</p>
+<p>Step 2: Analyze the deal. Calculate purchase price + renovation costs + holding costs = total investment. Calculate after-repair value (ARV). Profit = ARV - total investment.</p>
+<p>Step 3: Secure financing. Use cash, hard money loans, or private money.</p>
+<p>Step 4: Purchase the property.</p>
+<p>Step 5: Renovate. Hire contractors. Manage the project.</p>
+<p>Step 6: List for sale. Use real estate agent or sell directly.</p>
+<p>Step 7: Close sale. Collect profit.</p>
+
+<h2>Profit Margins in House Flipping</h2>
+<p>Average profit: 15-25% of purchase price. Example: Buy for $100,000, spend $30,000 on renovations, sell for $155,000. Profit: $25,000 (25% return).</p>
+<p>Time frame: 3-6 months from purchase to sale.</p>
+<p>Return on investment: 50-100% annualized (if you flip 2-3 houses/year).</p>
+
+<h2>House Flipping as a Side Hustle</h2>
+<p>You can flip houses while keeping your day job. Key: Hire good contractors to manage the renovation. You don't need to be on-site daily.</p>
+<p>Time commitment: 10-20 hours/week for project management, contractor coordination, and inspections.</p>
+<p>Capital requirement: $20,000-50,000 for down payment and renovation costs.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1: Overpaying:</strong> Don't pay too much for the property. The deal is made at purchase, not at sale.</p>
+<p><strong>Mistake 2: Underestimating Renovation Costs:</strong> Always add 20% contingency to renovation budget.</p>
+<p><strong>Mistake 3: Poor Contractor Selection:</strong> Hire experienced contractors. Bad contractors destroy profits.</p>
+<p><strong>Mistake 4: Overimproving:</strong> Don't over-renovate. Stick to market standards for the neighborhood.</p>
+
+<h2>Real-World Example</h2>
+<p>I flipped a property for $100,000. Renovation: $30,000. Holding costs (6 months): $5,000. Total investment: $135,000. After-repair value: $160,000. Sale price: $158,000. Profit: $23,000 (17% return). Time: 6 months. Annualized return: 34%.</p>
+
+<h2>The Bottom Line</h2>
+<p>House flipping can be a profitable side hustle. Buy undervalued properties. Renovate strategically. Sell quickly. Repeat. With good deal analysis and contractor management, you can generate significant profits while keeping your day job.</p>
+    `,
+    relatedPosts: [
+      { title: "5 Red Flags When Analyzing a Deal", slug: "red-flags-rental-property" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
+      { title: "The Biggest Mistakes New Investors Make", slug: "biggest-mistakes-new-investors" }
+    ]
   }
 };
 

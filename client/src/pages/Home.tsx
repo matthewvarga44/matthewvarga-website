@@ -239,6 +239,104 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Retire with Rentals Program Section */}
+      <section className="bg-primary text-primary-foreground py-20 md:py-32">
+        <div className="container">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+                Retire with <span className="text-secondary">Rentals Program</span>
+              </h2>
+              <p className="text-xl text-primary-foreground/90 leading-relaxed">
+                A comprehensive, community-driven program designed to help you build a profitable real estate portfolio and achieve financial freedom.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 mb-12">
+              <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
+                <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">What's Included</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Weekly live coaching sessions with me",
+                    "Access to exclusive real estate deals",
+                    "Property analysis templates & tools",
+                    "Airbnb investment strategies",
+                    "Market analysis & trends",
+                    "Private community forum",
+                    "Deal evaluation framework",
+                    "Tax & financing strategies"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="h-6 w-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-secondary font-bold text-sm">✓</span>
+                      </div>
+                      <span className="text-primary-foreground/90">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-secondary/10 border-2 border-secondary rounded-2xl p-8">
+                <div className="text-center mb-8">
+                  <p className="text-primary-foreground/80 text-sm uppercase tracking-widest font-semibold mb-2">Annual Investment</p>
+                  <h3 className="font-heading text-5xl font-bold text-secondary mb-2">$3,000</h3>
+                  <p className="text-primary-foreground/80">/year</p>
+                </div>
+                
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Monthly Cost</span>
+                    <span className="font-bold">$250</span>
+                  </div>
+                  <div className="h-px bg-secondary/20"></div>
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Program Members</span>
+                    <span className="font-bold">300 (Capped)</span>
+                  </div>
+                  <div className="h-px bg-secondary/20"></div>
+                  <div className="flex items-center justify-between text-primary-foreground/90">
+                    <span>Access Duration</span>
+                    <span className="font-bold">12 Months</span>
+                  </div>
+                </div>
+                <Link href="/apply-mastermind">
+                  <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
+                    Apply Now - Limited Spots
+                  </Button>
+                </Link>
+                
+                <p className="text-center text-primary-foreground/60 text-sm mt-6">
+                  Only 300 members allowed. Spots are filling up fast.
+                </p>
+              </div>
+            </div>
+            <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
+              <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">Why Retire With Rentals?</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $10M+ portfolio. You'll learn exactly what worked and what didn't.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors who are all working toward financial freedom. Share deals, ask questions, and grow together.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Actionable Strategies:</span> No fluff. Every session focuses on practical, implementable strategies you can use immediately.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-primary-foreground/90 leading-relaxed">
+                    <span className="font-bold text-secondary">Full Access while a Member:</span> Access to all recorded sessions and resources. Learn at your own pace.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Free Resources Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">

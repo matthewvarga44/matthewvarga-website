@@ -2615,7 +2615,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 <p><strong>Regular Brokerage Account:</strong> No contribution limits but you pay taxes on gains. Use this after maxing out 529s.</p>
 
 <h2>Real-World Example</h2>
-<p>My son was born in 2010. I opened a 529 plan and committed to saving $400/month ($4,800/year). For 16 years, I contributed $76,800. With 7% average returns, my account grew to $145,000. My son is now starting college. He's attending a public university that costs $32,000/year. My 529 covers his entire education with money left over for graduate school. Zero student debt. Priceless.</p>
+<p>Sarah, a software engineer in Austin, Texas, opened a 529 plan when her daughter Emma was born in 2010. She committed to saving $400/month ($4,800/year), even during lean years. For 16 years, she contributed $76,800. With 7% average returns, her account grew to $145,000. Emma is now starting college at UT Austin, which costs $32,000/year. Sarah's 529 covers Emma's entire 4-year education with money left over for graduate school. Emma graduates debt-free and starts her career with financial freedom. Sarah's disciplined saving changed her daughter's entire financial trajectory.</p>
 
 <h2>The Bottom Line</h2>
 <p>Education is the best investment you can make. Start saving today. Open a 529 plan. Contribute consistently. Let compound interest do the heavy lifting. Your child will graduate debt-free. They'll start their career with financial freedom. They'll thank you for it.</p>

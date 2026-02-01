@@ -136,7 +136,7 @@ export default function Learn() {
               <Button
                 size="lg"
                 className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 group"
-                onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/p/retire-with-rentals-course', '_blank')}
+                onClick={() => window.open('https://matthew-varga-real-estate.teachable.com/l/pdp/retire-with-rentals', '_blank')}
               >
                 View Course
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

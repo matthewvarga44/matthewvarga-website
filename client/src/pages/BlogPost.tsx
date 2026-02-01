@@ -13,7 +13,7 @@ interface BlogPostData {
   author: string;
   content: string;
   slug?: string;
-  relatedPosts: Array<{ title: string; slug: string }>;
+  relatedPosts: Array<{ title: string; slug: string; image?: string }>;
   disclaimer?: 'tax' | 'financial' | 'investment' | 'legal' | 'none';
 }
 
@@ -2978,15 +2978,29 @@ export default function BlogPostPage() {
             <div className="mt-12 pt-8 border-t border-slate-200">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Related Posts</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {post.relatedPosts.map((related) => (
-                  <Link 
-                    key={related.slug}
-                    href={`/blog/${related.slug}`}
-                    className="p-4 rounded-lg border border-slate-200 hover:border-gold hover:shadow-lg transition-all"
-                  >
-                    <p className="text-slate-900 font-semibold hover:text-gold">{related.title}</p>
-                  </Link>
-                ))}
+                {post.relatedPosts.map((related) => {
+                  const relatedPost = blogPostsData[related.slug];
+                  return (
+                    <Link 
+                      key={related.slug}
+                      href={`/blog/${related.slug}`}
+                      className="group rounded-lg border border-slate-200 hover:border-gold hover:shadow-lg transition-all overflow-hidden"
+                    >
+                      {relatedPost?.image && (
+                        <div className="h-40 overflow-hidden bg-slate-100">
+                          <img 
+                            src={relatedPost.image} 
+                            alt={related.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                          />
+                        </div>
+                      )}
+                      <div className="p-4">
+                        <p className="text-slate-900 font-semibold group-hover:text-gold transition-colors">{related.title}</p>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           )}

@@ -1,7 +1,7 @@
 import { Calendar, ArrowRight, Tag } from "lucide-react";
 import React from "react";
 import Layout from "@/components/Layout";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 interface BlogPost {
   id: string;
@@ -15,7 +15,10 @@ interface BlogPost {
 }
 
 export default function Blog() {
-  const [currentPage, setCurrentPage] = React.useState(1);
+  const [location, setLocation] = useLocation();
+  const queryParams = new URLSearchParams(location.split('?')[1] || '');
+  const pageFromUrl = parseInt(queryParams.get('page') || '1', 10);
+  const [currentPage, setCurrentPage] = React.useState(pageFromUrl);
   const postsPerPage = 10;
   
   // Scroll to top when component mounts
@@ -23,10 +26,11 @@ export default function Blog() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Scroll to top when page changes
+  // Scroll to top when page changes and update URL
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentPage]);
+    setLocation(`/blog?page=${currentPage}`);
+  }, [currentPage, setLocation]);
   
   const blogPosts: BlogPost[] = [
     {
@@ -226,7 +230,7 @@ export default function Blog() {
             {/* Blog Grid */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {paginatedPosts.map((post) => (
-                <Link key={post.id} href={`/blog/${post.slug}`}>
+                <Link key={post.id} href={`/blog/${post.slug}?from_page=${currentPage}`}>
                   <div className="group h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gold transition-all duration-300 cursor-pointer">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300">

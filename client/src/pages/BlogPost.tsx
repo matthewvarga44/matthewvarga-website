@@ -1,7 +1,7 @@
 import { Calendar, ArrowLeft, Share2, ArrowRight, CheckCircle2, TrendingUp, Home, DollarSign, Zap, BookOpen } from "lucide-react";
 import Layout from "@/components/Layout";
 import React from "react";
-import { Link, useParams } from "wouter";
+import { Link, useParams, useLocation } from "wouter";
 
 interface BlogPostData {
   title: string;
@@ -1185,6 +1185,17 @@ export default function BlogPost() {
   const params = useParams();
   const slug = params.slug as string;
   const post = blogPostsData[slug];
+  const [location] = useLocation();
+  
+  // Get the page number from the referrer or default to 1
+  const [pageNumber, setPageNumber] = React.useState(1);
+  React.useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const page = queryParams.get('from_page');
+    if (page) {
+      setPageNumber(parseInt(page, 10));
+    }
+  }, []);
 
   // Auto-scroll to top when post loads
   React.useEffect(() => {
@@ -1246,7 +1257,7 @@ export default function BlogPost() {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-3xl mx-auto">
             {/* Back Link */}
-            <Link href="/blog">
+            <Link href={`/blog?page=${pageNumber}`}>
               <div className="flex items-center gap-2 text-gold font-semibold mb-8 cursor-pointer hover:gap-3 transition-all">
                 <ArrowLeft className="w-4 h-4" />
                 Back to Blog

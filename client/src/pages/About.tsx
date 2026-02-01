@@ -39,7 +39,7 @@ export default function About() {
             <div className="space-y-6">
               <div>
                 <h2 className="font-heading text-4xl font-bold tracking-tight text-primary mb-4">
-                  My Journey: From Foreclosure to Recognized Authority
+                  My Real Estate Journey
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                   I didn't inherit wealth or get lucky breaks. I overcame devastating adversity, earned elite certifications, and systematically built a $10M+ real estate empire. Today, I'm a recognized thought leader, published expert, and sought-after speaker in real estate investing.

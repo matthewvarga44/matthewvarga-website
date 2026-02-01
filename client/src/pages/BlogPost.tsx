@@ -1481,9 +1481,93 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
       { title: "The 10-Year Plan to Financial Freedom", slug: "10-year-plan-financial-freedom" }
     ]
+  },
+  "side-hustles-extra-income": {
+    title: "Side Hustles for Extra Income",
+    excerpt: "Discover the best side hustles to generate extra income while building your real estate portfolio.",
+    category: "Financial Freedom",
+    date: "February 4, 2026",
+    readTime: "13 min read",
+    image: "/images/blog-side-hustles.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Side Hustles Matter</h2>
+<p>Building wealth requires multiple income streams. Your day job is one stream. Real estate is another. Side hustles are a third. The more income streams you have, the faster you build wealth.</p>
+
+<h2>The Best Side Hustles</h2>
+<p><strong>Freelancing:</strong> Offer your skills on Upwork, Fiverr, or Freelancer. Writing, design, programming, consulting. Income: $500-5,000/month.</p>
+<p><strong>Online Business:</strong> Create an online course, digital product, or e-commerce store. Income: $1,000-10,000/month.</p>
+<p><strong>Consulting:</strong> Offer consulting in your area of expertise. Real estate consulting, business consulting, financial consulting. Income: $2,000-10,000/month.</p>
+<p><strong>Gig Economy:</strong> Uber, DoorDash, TaskRabbit. Flexible but lower income. Income: $500-2,000/month.</p>
+<p><strong>Passive Income:</strong> Affiliate marketing, YouTube, blogging. Slow to start but scales. Income: $100-5,000/month.</p>
+
+<h2>Which Side Hustles Scale Best</h2>
+<p>The best side hustles are those that scale. Freelancing doesn't scale—you trade time for money. Online courses scale. You create once, sell many times.</p>
+<p>Focus on side hustles that scale: online courses, digital products, e-commerce, affiliate marketing, YouTube, blogging.</p>
+
+<h2>How to Automate Your Side Hustle</h2>
+<p>The ultimate goal is to automate your side hustle so it generates income without your time. This is passive income.</p>
+<p>Steps: 1) Create a product or service. 2) Build an audience. 3) Automate the sales process. 4) Scale to multiple channels.</p>
+
+<h2>Real-World Example</h2>
+<p>I created an online course about real estate investing. I spent 2 months creating it. Now it generates $3,000/month in passive income. I don't do anything. The course sells itself.</p>
+
+<h2>The Bottom Line</h2>
+<p>Side hustles accelerate wealth building. Choose a side hustle that scales. Automate it. Generate passive income. Combine with real estate investing for exponential wealth growth.</p>
+    `,
+    relatedPosts: [
+      { title: "Financial Freedom Through Real Estate", slug: "10-year-plan-financial-freedom" },
+      { title: "Paying Off Debt with the Snowball Method", slug: "debt-snowball-method" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
+    ]
+  },
+  "debt-snowball-method": {
+    title: "Paying Off Debt with the Snowball Method",
+    excerpt: "Master the debt snowball method to eliminate debt faster and build momentum toward financial freedom.",
+    category: "Financial Freedom",
+    date: "February 4, 2026",
+    readTime: "10 min read",
+    image: "/images/blog-debt-snowball.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>What is the Debt Snowball Method?</h2>
+<p>The debt snowball method is a debt elimination strategy where you pay off debts from smallest to largest. As you pay off each debt, you apply the payment to the next debt. Your payments grow like a rolling snowball.</p>
+
+<h2>How the Debt Snowball Works</h2>
+<p>Step 1: List all your debts from smallest to largest. Example: Credit card $500, store card $1,200, car loan $5,000, student loan $12,000.</p>
+<p>Step 2: Pay minimum payments on all debts except the smallest.</p>
+<p>Step 3: Put all extra money toward the smallest debt.</p>
+<p>Step 4: When the smallest debt is paid, apply that payment to the next smallest debt.</p>
+<p>Step 5: Repeat until all debts are paid.</p>
+
+<h2>Example: The Debt Snowball in Action</h2>
+<p>Month 1: Credit card $500 (smallest debt). You pay $500 + $200 extra = $700. Debt paid! Freed up $700/month.</p>
+<p>Month 2: Store card $1,200. You pay $100 minimum + $700 from credit card = $800/month. Debt paid in 2 months!</p>
+<p>Month 3: Car loan $5,000. You pay $300 minimum + $800 from store card = $1,100/month. Debt paid in 5 months!</p>
+<p>Month 8: Student loan $12,000. You pay $200 minimum + $1,100 from car loan = $1,300/month. Debt paid in 10 months!</p>
+<p>Total time to debt freedom: 18 months instead of 5+ years.</p>
+
+<h2>Why the Debt Snowball Works</h2>
+<p><strong>Psychological wins:</strong> You eliminate debts quickly, which motivates you to continue.</p>
+<p><strong>Momentum:</strong> Each paid debt frees up more money for the next debt.</p>
+<p><strong>Simplicity:</strong> You focus on one debt at a time, not all debts at once.</p>
+
+<h2>Debt Snowball vs. Debt Avalanche</h2>
+<p>The debt avalanche method pays highest-interest debts first. Mathematically, it saves more money. But the debt snowball provides psychological wins faster.</p>
+<p>Choose the method that keeps you motivated. For most people, the debt snowball works better because you see quick wins.</p>
+
+<h2>The Bottom Line</h2>
+<p>The debt snowball method eliminates debt faster by focusing on one debt at a time. You build momentum. You stay motivated. You achieve debt freedom faster. Once you're debt-free, you can invest in real estate and build wealth.</p>
+    `,
+    relatedPosts: [
+      { title: "Side Hustles for Extra Income", slug: "side-hustles-extra-income" },
+      { title: "Financial Freedom Through Real Estate", slug: "10-year-plan-financial-freedom" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
+    ]
   }
 };
-
 
 export default function BlogPost() {
   const params = useParams();

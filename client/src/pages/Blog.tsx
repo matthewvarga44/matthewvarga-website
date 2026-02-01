@@ -221,6 +221,26 @@ export default function Blog() {
       readTime: "11 min read",
       image: "/images/blog-investor-mistakes.jpg",
       slug: "biggest-mistakes-new-investors"
+    },
+    {
+      id: "30",
+      title: "Side Hustles for Extra Income",
+      excerpt: "Discover the best side hustles to generate extra income while building your real estate portfolio. Learn which side hustles scale best and how to automate them.",
+      category: "Financial Freedom",
+      date: "February 4, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-side-hustles.jpg",
+      slug: "side-hustles-extra-income"
+    },
+    {
+      id: "31",
+      title: "Paying Off Debt with the Snowball Method",
+      excerpt: "Master the debt snowball method to eliminate debt faster and build momentum toward financial freedom. Learn the exact strategy to pay off all your debts.",
+      category: "Financial Freedom",
+      date: "February 4, 2026",
+      readTime: "10 min read",
+      image: "/images/blog-debt-snowball.jpg",
+      slug: "debt-snowball-method"
     }
   ];
 

@@ -152,8 +152,8 @@ export default function Home() {
             {/* Image */}
             <div className="flex justify-center">
               <img 
-                src="/images/IMG_3974.jpeg" 
-                alt="Matthew Varga - Financial Freedom" 
+                src="/images/matthew-headshot.jpg" 
+                alt="Matthew Varga - Real Estate Investor & Coach" 
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
             </div>

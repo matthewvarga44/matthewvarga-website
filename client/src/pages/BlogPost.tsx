@@ -2375,6 +2375,178 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Budgeting Basics for Beginners", slug: "budgeting-basics-beginners" },
       { title: "How I Went From Broke to $10M+ Portfolio", slug: "broke-to-10m" }
     ]
+  },
+  "saving-down-payment": {
+    title: "Saving for a Down Payment",
+    excerpt: "Master the art of down payment savings. Learn strategies to accumulate funds faster and achieve your homeownership goals.",
+    category: "Financial Freedom",
+    date: "February 11, 2026",
+    readTime: "12 min read",
+    image: "/images/blog-down-payment-savings.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Down Payment Matters</h2>
+<p>Your down payment is the foundation of homeownership. It determines your loan amount, monthly payment, and whether you pay mortgage insurance. A larger down payment means a smaller loan, lower interest, and lower monthly payment. This is why saving for a down payment is critical.</p>
+
+<h2>Down Payment Options</h2>
+<p><strong>3% Down (FHA Loan):</strong> Minimum down payment. Requires mortgage insurance. Monthly payment is higher due to insurance. Best for first-time buyers with limited savings.</p>
+<p><strong>5-10% Down (Conventional Loan):</strong> Mid-range option. Still requires mortgage insurance. Monthly payment is moderate. Good balance between savings and monthly cost.</p>
+<p><strong>15-20% Down (Conventional Loan):</strong> Strong down payment. No mortgage insurance required. Monthly payment is lower. Best for buyers with time to save.</p>
+<p><strong>20%+ Down:</strong> Maximum down payment. No mortgage insurance. Lowest monthly payment. Best if you can afford it.</p>
+
+<h2>The Down Payment Calculator</h2>
+<p><strong>Example:</strong> You want to buy a $300,000 home.</p>
+<p>3% down: $9,000 (loan: $291,000 + mortgage insurance)</p>
+<p>5% down: $15,000 (loan: $285,000 + mortgage insurance)</p>
+<p>10% down: $30,000 (loan: $270,000 + mortgage insurance)</p>
+<p>20% down: $60,000 (loan: $240,000, no mortgage insurance)</p>
+
+<p>At 6% interest over 30 years:</p>
+<p>3% down: $1,745/month (includes mortgage insurance)</p>
+<p>5% down: $1,710/month (includes mortgage insurance)</p>
+<p>10% down: $1,620/month (includes mortgage insurance)</p>
+<p>20% down: $1,439/month (no mortgage insurance)</p>
+
+<p>The difference between 3% and 20% down: $306/month or $110,000 over 30 years. This is why a larger down payment matters.</p>
+
+<h2>Down Payment Savings Strategies</h2>
+<p><strong>Strategy 1: Automate Your Savings</strong></p>
+<p>Set up automatic transfers to a separate savings account. Out of sight, out of mind. If you don't see the money, you won't spend it. Start with $500/month. Increase it when you get a raise.</p>
+
+<p><strong>Strategy 2: Cut Expenses</strong></p>
+<p>Review your budget. Where can you cut? Subscriptions ($50/month = $600/year). Dining out ($200/month = $2,400/year). Coffee ($5/day = $1,825/year). Small cuts add up.</p>
+
+<p><strong>Strategy 3: Increase Income</strong></p>
+<p>Side hustle. Freelance work. Part-time job. Even $500/month from a side hustle = $6,000/year toward your down payment.</p>
+
+<p><strong>Strategy 4: High-Yield Savings Account</strong></p>
+<p>Don't keep down payment savings in a regular savings account (0.01% interest). Use a high-yield savings account (4-5% interest). On $50,000, that's $2,000-2,500/year in free money.</p>
+
+<p><strong>Strategy 5: Tax Refunds & Bonuses</strong></p>
+<p>Get a tax refund? Put it in your down payment fund. Get a bonus? Put it in your down payment fund. Don't spend windfalls. Redirect them to your goal.</p>
+
+<h2>Down Payment Timeline</h2>
+<p><strong>Goal: Save $60,000 for 20% down on $300,000 home</strong></p>
+
+<p><strong>Month 1-12:</strong> Save $2,000/month = $24,000</p>
+<p>Actions: Automate $2,000/month transfer. Cut expenses by $500. Side hustle for $1,500.</p>
+
+<p><strong>Month 13-24:</strong> Save $2,500/month = $30,000</p>
+<p>Actions: Got a raise? Increase savings. Side hustle growing? Increase contribution.</p>
+
+<p><strong>Month 25-30:</strong> Save $2,000/month = $12,000</p>
+<p>Actions: You've hit $54,000. Final push. Get a bonus? Tax refund? Put it toward the last $6,000.</p>
+
+<p><strong>Month 31:</strong> You've saved $60,000. You're ready to buy.</p>
+
+<h2>Where to Keep Your Down Payment Savings</h2>
+<p><strong>High-Yield Savings Account:</strong> Liquid (accessible anytime). Safe (FDIC insured). Growing (4-5% interest). Best for down payment savings.</p>
+<p><strong>Money Market Account:</strong> Similar to savings. Slightly higher interest. Slightly less liquid.</p>
+<p><strong>Short-Term CDs:</strong> Higher interest (5-6%). Less liquid. Penalty for early withdrawal.</p>
+<p><strong>Stock Market:</strong> Risky. Could grow or shrink. Not recommended for down payment savings (you need the money in 2-3 years).</p>
+
+<h2>Real-World Example</h2>
+<p>I saved for my down payment over 2 years. I automated $2,000/month. I cut dining out and subscriptions ($500/month). I did freelance work ($1,000/month). In 24 months, I saved $84,000. I bought a $400,000 home with 20% down. No mortgage insurance. My monthly payment was $1,910. That extra $2,000/year in savings (vs. mortgage insurance) was worth it.</p>
+
+<h2>The Bottom Line</h2>
+<p>A larger down payment saves you money over time. Automate your savings. Cut expenses. Increase income. Use high-yield accounts. Save windfalls. Build your down payment systematically. In 2-3 years, you'll have enough to buy your home without mortgage insurance. The discipline now pays off for 30 years.</p>
+    `,
+    relatedPosts: [
+      { title: "Home Buying for Beginners", slug: "home-buying-beginners" },
+      { title: "Building an Emergency Fund", slug: "building-emergency-fund" },
+      { title: "Budgeting Basics for Beginners", slug: "budgeting-basics-beginners" }
+    ]
+  },
+  "estate-planning-basics": {
+    title: "Estate Planning Basics",
+    excerpt: "Protect your legacy. Learn the fundamentals of estate planning, wills, trusts, and how to ensure your assets go where you want them.",
+    category: "Financial Freedom",
+    date: "February 11, 2026",
+    readTime: "14 min read",
+    image: "/images/blog-estate-planning.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Estate Planning Matters</h2>
+<p>Estate planning isn't just for the wealthy. It's for anyone with assets, children, or people who depend on them. Without a plan, the government decides who gets your money. Your family fights over your assets. Your kids might not get what you intended. This is why estate planning is essential.</p>
+
+<h2>The Estate Planning Documents</h2>
+<p><strong>Will:</strong> A legal document that says who gets your assets when you die. Requires probate (court process). Public record. Takes 6-12 months to execute.</p>
+<p><strong>Trust:</strong> A legal entity that holds your assets. Avoids probate. Private. Executes quickly (weeks). More expensive to set up but saves time and money later.</p>
+<p><strong>Power of Attorney:</strong> Gives someone authority to make financial decisions if you're incapacitated. Essential if you're in an accident or illness.</p>
+<p><strong>Healthcare Directive:</strong> Specifies your medical wishes if you can't communicate. Do Not Resuscitate (DNR). Organ donation. Life support preferences.</p>
+<p><strong>Beneficiary Designations:</strong> Specify who gets life insurance, retirement accounts, and bank accounts. Overrides your will. Update after major life events.</p>
+
+<h2>Will vs. Trust</h2>
+<p><strong>Will:</strong></p>
+<p>Pros: Simple. Cheap ($200-500). Easy to update.</p>
+<p>Cons: Goes through probate. Public. Slow (6-12 months). Expensive probate fees (3-7% of estate).</p>
+
+<p><strong>Trust:</strong></p>
+<p>Pros: Avoids probate. Private. Fast (weeks). Saves probate fees.</p>
+<p>Cons: Complex. Expensive to set up ($1,000-3,000). Requires funding (transferring assets into trust).</p>
+
+<p><strong>Best Practice:</strong> Use both. A will for assets not in the trust. A trust for major assets (house, investments, business).</p>
+
+<h2>What to Include in Your Estate Plan</h2>
+<p><strong>Asset Inventory:</strong> List all assets (house, cars, investments, retirement accounts, life insurance, business). Include account numbers and locations.</p>
+
+<p><strong>Debt Inventory:</strong> List all debts (mortgage, credit cards, loans). Include account numbers and contact information.</p>
+
+<p><strong>Beneficiary Designations:</strong> Specify who gets life insurance ($500,000?), retirement accounts ($1,000,000?), bank accounts ($100,000?).</p>
+
+<p><strong>Executor:</strong> Who manages your estate? Usually a trusted family member or professional executor. They handle probate, pay debts, distribute assets.</p>
+
+<p><strong>Guardian for Minor Children:</strong> Who raises your kids if you die? Specify in your will. Discuss with them first.</p>
+
+<p><strong>Healthcare Proxy:</strong> Who makes medical decisions if you can't? Specify in your healthcare directive.</p>
+
+<h2>Estate Planning Timeline</h2>
+<p><strong>Age 25-35 (Starting Out):</strong> Create a basic will. Designate beneficiaries. Name a guardian for kids.</p>
+
+<p><strong>Age 35-50 (Building Wealth):</strong> Create a trust. Transfer major assets into trust. Update beneficiary designations. Review annually.</p>
+
+<p><strong>Age 50+ (Peak Wealth):</strong> Create a comprehensive plan. Consider tax strategies. Update for major life changes. Review every 3-5 years.</p>
+
+<h2>Common Estate Planning Mistakes</h2>
+<p><strong>Mistake 1: No Plan at All</strong></p>
+<p>40% of Americans have no will or trust. If you die without a plan, the state decides who gets your money. Don't let this happen.</p>
+
+<p><strong>Mistake 2: Outdated Beneficiaries</strong></p>
+<p>You get divorced but don't update beneficiaries. Your ex gets your life insurance. Update beneficiaries after major life events.</p>
+
+<p><strong>Mistake 3: Not Funding Your Trust</strong></p>
+<p>You create a trust but don't transfer assets into it. The trust is useless. Funding is critical.</p>
+
+<p><strong>Mistake 4: Not Communicating Your Plan</strong></p>
+<p>Your family doesn't know where your documents are or what you want. Leave a detailed letter with your executor. Tell them where everything is.</p>
+
+<p><strong>Mistake 5: Ignoring Tax Strategies</strong></p>
+<p>Large estates can face significant taxes. Work with a tax professional to minimize estate taxes. Strategies include gifting, charitable donations, and trusts.</p>
+
+<h2>Estate Planning Cost</h2>
+<p><strong>DIY Will (Online):</strong> $50-200. Simple. Limited options.</p>
+
+<p><strong>Attorney Will:</strong> $300-1,000. Professional. Customized.</p>
+
+<p><strong>Basic Trust:</strong> $1,000-2,000. Professional. Customized.</p>
+
+<p><strong>Comprehensive Plan (Will + Trust + Directives):</strong> $2,000-5,000. Professional. Complete.</p>
+
+<p><strong>My Recommendation:</strong> If your estate is under $500,000, a DIY will is fine. If over $500,000, hire an attorney. The cost is worth the peace of mind.</p>
+
+<h2>Real-World Example</h2>
+<p>My parents didn't have an estate plan. When my dad died unexpectedly, my mom had to go through probate. It took 14 months. It cost $30,000 in legal fees. My mom couldn't access his accounts for months. If they'd had a trust, it would have taken 2 weeks and cost $2,000. I learned the hard way. Now I have a comprehensive estate plan. My family knows where everything is. When I'm gone, they'll be taken care of.</p>
+
+<h2>The Bottom Line</h2>
+<p>Estate planning isn't morbid. It's responsible. It protects your family. It ensures your wishes are honored. It saves time and money. Create a will or trust. Designate beneficiaries. Name guardians. Update your plan every 3-5 years. Your family will thank you.</p>
+    `,
+    relatedPosts: [
+      { title: "Building an Emergency Fund", slug: "building-emergency-fund" },
+      { title: "Goal Setting for Personal Success", slug: "goal-setting-personal-success" },
+      { title: "How I Went From Broke to $10M+ Portfolio", slug: "broke-to-10m" }
+    ]
   }
 };
 
@@ -2401,176 +2573,72 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <Layout>
-        <div className="min-h-screen bg-background flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">Post Not Found</h1>
-            <p className="text-slate-600 mb-8">Sorry, the blog post you're looking for doesn't exist.</p>
-            <Link href="/blog">
-              <button className="bg-gold hover:bg-gold/90 text-slate-900 font-bold py-3 px-8 rounded-lg transition-colors">
-                Back to Blog
-              </button>
-            </Link>
-          </div>
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
+          <p className="text-lg mb-8">The blog post you're looking for doesn't exist.</p>
+          <Link href="/blog" className="text-primary hover:underline">
+            Back to Blog
+          </Link>
         </div>
-      </Layout>
+      </div>
     );
   }
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-background">
-        {/* Hero Section */}
-        <section className="relative h-96 overflow-hidden">
-          <img
-            src={post.image}
-            alt={post.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="absolute inset-0 flex items-end">
-            <div className="w-full px-4 py-12">
-              <div className="max-w-4xl mx-auto">
-                <div className="inline-block bg-gold text-slate-900 font-bold text-sm px-4 py-2 rounded-full mb-4">
-                  {post.category}
-                </div>
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-                  {post.title}
-                </h1>
-                <div className="flex flex-wrap gap-6 text-white/80">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5" />
-                    {post.date}
-                  </div>
-                  <div>{post.readTime}</div>
-                  <div>By {post.author}</div>
-                </div>
-              </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="container py-12">
+        <Link href={`/blog?page=${pageNumber}`} className="text-primary hover:underline mb-6 inline-block">
+          ← Back to Blog
+        </Link>
+
+        <article className="max-w-3xl mx-auto">
+          <div className="mb-8">
+            <img src={post.image} alt={post.title} className="w-full h-96 object-cover rounded-lg mb-8" />
+            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+              <span>{post.date}</span>
+              <span>•</span>
+              <span>{post.readTime}</span>
+              <span>•</span>
+              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">{post.category}</span>
             </div>
+            <h1 className="text-5xl font-bold mb-4">{post.title}</h1>
+            <p className="text-xl text-muted-foreground mb-4">By {post.author}</p>
           </div>
-        </section>
 
-        {/* Content Section */}
-        <section className="py-20 px-4 bg-white">
-          <div className="max-w-3xl mx-auto">
-            {/* Back Link */}
-            <Link href={`/blog?page=${pageNumber}`}>
-              <div className="flex items-center gap-2 text-gold font-semibold mb-8 cursor-pointer hover:gap-3 transition-all">
-                <ArrowLeft className="w-4 h-4" />
-                Back to Blog
-              </div>
-            </Link>
+          <div className="prose prose-invert max-w-none mb-12" dangerouslySetInnerHTML={{ __html: post.content }} />
 
-            {/* Article Content */}
-            <div className="prose prose-lg max-w-none mb-12">
-              <div
-                dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }}
-                className="text-slate-700 leading-relaxed space-y-6"
-              />
-              
-              {/* Disclaimer Box */}
-              {post.disclaimer && post.disclaimer !== 'none' && (
-                <div className="my-12 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-500">
-                  <p className="text-amber-900 text-sm m-0">
-                    {getDisclaimerText(post.disclaimer)}
-                  </p>
-                </div>
-              )}
-              
-              {/* Visual Callout Box */}
-              <div className="my-12 p-8 bg-gradient-to-r from-gold/10 to-slate-100 rounded-2xl border-l-4 border-gold">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="w-8 h-8 text-gold flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-bold text-slate-900 mb-2">Key Takeaway</h4>
-                    <p className="text-slate-700 m-0">
-                      {post.slug === "airbnb-arbitrage-strategy" && "Airbnb arbitrage generates higher returns than traditional rentals when executed with proper systems and operational discipline."}
-                      {post.slug === "real-estate-market-2026" && "Secondary markets offer the best risk-adjusted returns for investors willing to move early and build systems before saturation."}
-                      {post.slug === "seller-financing-deals" && "Seller financing unlocks deals that traditional lenders won't touch, enabling faster closings and more flexible terms."}
-                      {post.slug === "property-management-automation" && "Automation systems can reduce management time by 75% while improving tenant satisfaction and reducing costs."}
-                      {post.slug === "1031-exchange-guide" && "1031 exchanges allow you to defer taxes indefinitely while continuously upgrading your portfolio to higher-value properties."}
-                      {post.slug === "my-real-estate-journey" && "Building wealth through real estate is a marathon, not a sprint. Systems and leverage are the keys to exponential growth."}
-                    </p>
-                  </div>
-                </div>
-              </div>
+          {post.disclaimer !== 'none' && (
+            <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 mb-12">
+              <p className="text-sm text-yellow-200">
+                <strong>Disclaimer:</strong> This content is for educational purposes only and should not be considered financial or investment advice. Always consult with a qualified professional before making financial decisions.
+              </p>
             </div>
+          )}
 
-            {/* Share Section */}
-            <div className="border-t border-b border-slate-200 py-8 my-12">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <span className="font-semibold text-slate-900">Share this post:</span>
-                <div className="flex gap-3">
-                  <button className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-lg transition-colors">
-                    <Share2 className="w-4 h-4" />
-                    Share
-                  </button>
-                  <button className="flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-lg transition-colors font-medium">
-                    LinkedIn
-                  </button>
-                  <button className="flex items-center gap-2 bg-sky-50 hover:bg-sky-100 text-sky-700 px-4 py-2 rounded-lg transition-colors font-medium">
-                    Twitter
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Related Posts */}
-            <div className="mt-16">
-              <div className="flex items-center gap-3 mb-8">
-                <BookOpen className="w-6 h-6 text-gold" />
-                <h3 className="text-2xl font-bold text-slate-900">Related Posts</h3>
-              </div>
-              <div className="grid gap-6 md:grid-cols-2">
-                {post.relatedPosts.map((relatedPost) => (
-                  <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`}>
-                    <div className="group p-6 border border-slate-200 rounded-xl hover:border-gold hover:shadow-lg transition-all cursor-pointer hover:bg-gradient-to-br hover:from-gold/5 hover:to-transparent">
-                      <div className="flex items-start gap-3 mb-3">
-                        <ArrowRight className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                        <h4 className="font-bold text-slate-900 group-hover:text-gold transition-colors">
-                          {relatedPost.title}
-                        </h4>
+          {post.relatedPosts && post.relatedPosts.length > 0 && (
+            <div className="border-t pt-12">
+              <h2 className="text-2xl font-bold mb-8">Related Posts</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {post.relatedPosts.map((relatedPost) => {
+                  const relatedData = blogPostsData[relatedPost.slug];
+                  return (
+                    <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`} className="group">
+                      <div className="bg-card rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                        <img src={relatedData?.image} alt={relatedPost.title} className="w-full h-48 object-cover group-hover:opacity-90 transition-opacity" />
+                        <div className="p-4">
+                          <h3 className="font-bold group-hover:text-primary transition-colors">{relatedPost.title}</h3>
+                          <p className="text-sm text-muted-foreground mt-2">{relatedData?.readTime}</p>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all ml-8">
-                        Read More <ArrowRight className="w-4 h-4" />
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
-
-            {/* CTA Section */}
-            <div className="mt-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-12 text-center text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-gold/10 rounded-full -mr-20 -mt-20"></div>
-              <div className="relative z-10">
-                <div className="flex justify-center mb-4">
-                  <Zap className="w-8 h-8 text-gold" />
-                </div>
-                <h3 className="text-3xl font-bold mb-4">Ready to Build Your Real Estate Portfolio?</h3>
-                <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-                  Join the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio. Get personalized guidance from someone who has been where you are.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/apply-mastermind">
-                    <button className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
-                      Apply to Join the Mastermind
-                    </button>
-                  </Link>
-                  <a
-                    href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-                  >
-                    Schedule Free Consultation
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          )}
+        </article>
       </div>
-    </Layout>
+    </div>
   );
 }

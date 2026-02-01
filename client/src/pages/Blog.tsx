@@ -361,6 +361,26 @@ export default function Blog() {
       readTime: "15 min read",
       image: "/images/blog-home-buying.jpg",
       slug: "home-buying-beginners"
+    },
+    {
+      id: "44",
+      title: "Saving for a Down Payment",
+      excerpt: "Master the art of down payment savings. Learn strategies to accumulate funds faster and achieve your homeownership goals.",
+      category: "Financial Freedom",
+      date: "February 11, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-down-payment-savings.jpg",
+      slug: "saving-down-payment"
+    },
+    {
+      id: "45",
+      title: "Estate Planning Basics",
+      excerpt: "Protect your legacy. Learn the fundamentals of estate planning, wills, trusts, and how to ensure your assets go where you want them.",
+      category: "Financial Freedom",
+      date: "February 11, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-estate-planning.jpg",
+      slug: "estate-planning-basics"
     }
   ];
 

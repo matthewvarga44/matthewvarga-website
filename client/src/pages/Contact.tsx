@@ -24,16 +24,33 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Open email client with pre-filled information
-    const subject = encodeURIComponent(formData.subject);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:matthew.p.varga@gmail.com?subject=${subject}&body=${body}`;
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mgoygqqg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   const socialLinks = [
@@ -109,7 +126,7 @@ export default function Contact() {
               {submitted && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800">
-                    ✓ Thank you! Your message has been sent to your email client. Please complete the send.
+                    ✓ Thank you! Your message has been sent successfully. I'll get back to you soon!
                   </p>
                 </div>
               )}

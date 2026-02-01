@@ -68,7 +68,7 @@ export default function Resources() {
           title: "Property Analysis Calculator",
           description: "Complete spreadsheet to analyze real estate investment opportunities. Calculate cap rate, cash-on-cash return, NOI, and more. Includes sample data to get you started.",
           icon: <Calculator className="h-8 w-8" />,
-          value: "$200+",
+          value: "Value: $200+",
           downloadUrl: "/Property-Analysis-Calculator.xlsx",
           features: [
             "Property information & financing",
@@ -82,7 +82,7 @@ export default function Resources() {
           title: "Airbnb ROI Calculator",
           description: "Analyze short-term rental profitability. Calculate occupancy rates, pricing strategies, and monthly cash flow for Airbnb properties.",
           icon: <Calculator className="h-8 w-8" />,
-          value: "$150+",
+          value: "Value: $150+",
           downloadUrl: "/Airbnb-ROI-Calculator.xlsx",
           features: [
             "Nightly rate optimization",
@@ -96,7 +96,7 @@ export default function Resources() {
           title: "Rental Property Expense Tracker",
           description: "Track all rental property expenses throughout the year for accurate tax reporting and profitability analysis.",
           icon: <Calculator className="h-8 w-8" />,
-          value: "$100+",
+          value: "Value: $100+",
           downloadUrl: "/Expense-Tracker.xlsx",
           features: [
             "Monthly expense logging",
@@ -115,7 +115,7 @@ export default function Resources() {
           title: "Due Diligence Checklist",
           description: "Complete checklist for evaluating properties before purchase. Covers inspection, financials, legal, and market analysis.",
           icon: <CheckCircle className="h-8 w-8" />,
-          value: "$75+",
+          value: "Value: $75+",
           downloadUrl: "/Due-Diligence-Checklist.pdf",
           features: [
             "Property inspection items",
@@ -129,7 +129,7 @@ export default function Resources() {
           title: "Tenant Screening Guide",
           description: "Step-by-step guide for screening tenants to minimize risk and ensure quality renters for your properties.",
           icon: <FileText className="h-8 w-8" />,
-          value: "$75+",
+          value: "Value: $75+",
           downloadUrl: "/Tenant-Screening-Guide.pdf",
           features: [
             "Credit check guidelines",
@@ -143,7 +143,7 @@ export default function Resources() {
           title: "Property Management Template",
           description: "Complete templates for property management including lease agreements, maintenance logs, and tenant communication.",
           icon: <FileText className="h-8 w-8" />,
-          value: "$100+",
+          value: "Value: $100+",
           downloadUrl: "/Property-Management-Templates.pdf",
           features: [
             "Lease agreement template",
@@ -162,7 +162,7 @@ export default function Resources() {
           title: "Airbnb Arbitrage Playbook",
           description: "Complete guide to the Airbnb arbitrage model. Learn how to source properties, negotiate leases, and scale to multiple units.",
           icon: <Zap className="h-8 w-8" />,
-          value: "$150+",
+          value: "Value: $150+",
           downloadUrl: "/Airbnb-Arbitrage-Playbook.pdf",
           features: [
             "Finding arbitrage opportunities",
@@ -176,7 +176,7 @@ export default function Resources() {
           title: "Seller Financing Guide",
           description: "Learn how to structure seller financing deals to get properties with less cash down and creative terms.",
           icon: <FileText className="h-8 w-8" />,
-          value: "$100+",
+          value: "Value: $100+",
           downloadUrl: "/Seller-Financing-Guide.pdf",
           features: [
             "Seller financing basics",
@@ -190,7 +190,7 @@ export default function Resources() {
           title: "Real Estate Investing Roadmap",
           description: "Step-by-step roadmap to go from beginner to experienced real estate investor. Includes timeline, milestones, and action items.",
           icon: <Zap className="h-8 w-8" />,
-          value: "$125+",
+          value: "Value: $125+",
           downloadUrl: "/Real-Estate-Roadmap.pdf",
           features: [
             "Year 1 action plan",

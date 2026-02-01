@@ -321,6 +321,26 @@ export default function Blog() {
       readTime: "13 min read",
       image: "/images/blog-emergency-fund.jpg",
       slug: "building-emergency-fund"
+    },
+    {
+      id: "40",
+      title: "Budgeting Basics for Beginners",
+      excerpt: "Master the fundamentals of budgeting. Learn the 50/30/20 rule, track expenses, and build a budget that actually works for your lifestyle.",
+      category: "Financial Freedom",
+      date: "February 9, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-budgeting-basics.jpg",
+      slug: "budgeting-basics-beginners"
+    },
+    {
+      id: "41",
+      title: "Goal Setting for Personal Success",
+      excerpt: "Set goals that stick. Learn the SMART framework, create actionable plans, and achieve the success you've been dreaming about.",
+      category: "Personal Story",
+      date: "February 9, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-goal-setting.jpg",
+      slug: "goal-setting-personal-success"
     }
   ];
 

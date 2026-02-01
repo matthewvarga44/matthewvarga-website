@@ -2042,6 +2042,172 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "How I Went From Broke to $10M+ Portfolio", slug: "broke-to-10m" },
       { title: "The 10-Year Plan to Financial Freedom", slug: "10-year-plan-financial-freedom" }
     ]
+  },
+  "budgeting-basics-beginners": {
+    title: "Budgeting Basics for Beginners",
+    excerpt: "Master the fundamentals of budgeting. Learn the 50/30/20 rule, track expenses, and build a budget that works.",
+    category: "Financial Freedom",
+    date: "February 9, 2026",
+    readTime: "12 min read",
+    image: "/images/blog-budgeting-basics.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Budgeting Matters</h2>
+<p>Most people don't budget. They spend money reactively, then wonder where it went. A budget is different. It's a plan. It tells your money where to go instead of wondering where it went. A budget gives you control, reduces stress, and accelerates wealth building. This is why budgeting is the foundation of financial success.</p>
+
+<h2>The 50/30/20 Rule</h2>
+<p>The simplest budgeting framework is the 50/30/20 rule. It divides your income into three categories:</p>
+<p><strong>50% Needs:</strong> Essential expenses that keep you alive. Housing, food, transportation, insurance, utilities. These are non-negotiable.</p>
+<p><strong>30% Wants:</strong> Discretionary spending. Entertainment, dining out, hobbies, shopping. These make life enjoyable but aren't essential.</p>
+<p><strong>20% Savings & Debt:</strong> Future security. Emergency fund, investments, debt repayment. This builds wealth.</p>
+
+<h2>How to Calculate Your Budget</h2>
+<p><strong>Step 1: Calculate Monthly Income</strong></p>
+<p>Add up all income sources: salary, side hustle, freelance work, investments. Use your average monthly income.</p>
+<p>Example: $5,000/month salary + $500/month side hustle = $5,500/month total income.</p>
+
+<p><strong>Step 2: Calculate 50/30/20 Allocations</strong></p>
+<p>$5,500 × 50% = $2,750 for needs</p>
+<p>$5,500 × 30% = $1,650 for wants</p>
+<p>$5,500 × 20% = $1,100 for savings/debt</p>
+
+<p><strong>Step 3: List Your Expenses</strong></p>
+<p>Categorize every expense:</p>
+<p><strong>Needs ($2,750):</strong> Rent $1,500, Groceries $400, Car payment $300, Insurance $200, Utilities $150, Phone $50, Internet $50, Gas $100</p>
+<p><strong>Wants ($1,650):</strong> Dining out $400, Entertainment $300, Shopping $300, Gym $50, Subscriptions $100, Coffee $200, Hobbies $300</p>
+<p><strong>Savings/Debt ($1,100):</strong> Emergency fund $500, Investments $300, Debt payment $300</p>
+
+<h2>Common Budget Mistakes</h2>
+<p><strong>Mistake 1: Underestimating Expenses</strong></p>
+<p>People guess at expenses instead of tracking them. They think they spend $200/month on dining out, but it's actually $400. Track everything for 30 days to get accurate numbers.</p>
+
+<p><strong>Mistake 2: Being Too Restrictive</strong></p>
+<p>A budget that's too tight fails. You can't eliminate wants entirely. The 50/30/20 rule allows 30% for wants. Use it.</p>
+
+<p><strong>Mistake 3: Not Adjusting for Reality</strong></p>
+<p>Your budget isn't perfect. Your actual needs might be 55% instead of 50%. That's okay. Adjust the percentages to match your reality, but keep the principle: track, allocate, and prioritize savings.</p>
+
+<p><strong>Mistake 4: Forgetting Irregular Expenses</strong></p>
+<p>Car maintenance, medical bills, annual subscriptions. These aren't monthly but they're real. Budget for them by dividing annual costs by 12 and adding to monthly budget.</p>
+
+<h2>Tools to Track Your Budget</h2>
+<p><strong>Spreadsheet (Excel, Google Sheets):</strong> Free, flexible, customizable. Best for detail-oriented people.</p>
+<p><strong>Apps (YNAB, Mint, EveryDollar):</strong> Automated tracking, real-time updates, mobile access. Best for convenience.</p>
+<p><strong>Pen & Paper:</strong> Simple, tactile, no distractions. Best for beginners.</p>
+<p><strong>My Recommendation:</strong> Start with a simple spreadsheet. Track income and expenses for 30 days. See where money actually goes. Then adjust your budget based on reality.</p>
+
+<h2>The Budget Adjustment Process</h2>
+<p><strong>Month 1:</strong> Create budget, track expenses, see where money goes.</p>
+<p><strong>Month 2:</strong> Adjust budget based on actual spending. Cut wants if needed. Protect needs and savings.</p>
+<p><strong>Month 3:</strong> Refine further. Find areas to optimize. Look for subscriptions to cancel, ways to reduce expenses.</p>
+<p><strong>Month 4+:</strong> Budget becomes automatic. You know your numbers. You control your money.</p>
+
+<h2>Real-World Example</h2>
+<p>I started budgeting 5 years ago. I was spending $3,000/month on wants without realizing it. My budget showed me the problem. I cut wants to $1,500/month. That freed up $1,500/month for savings. In 5 years, that's $90,000 extra. That extra money became my down payment on a rental property. Budgeting changed my financial life.</p>
+
+<h2>The Bottom Line</h2>
+<p>Budgeting isn't restrictive. It's liberating. It gives you control. Use the 50/30/20 rule as a starting point. Track your actual expenses. Adjust to match your reality. Protect your needs. Enjoy your wants. Prioritize your savings. A budget is the difference between financial chaos and financial control.</p>
+    `,
+    relatedPosts: [
+      { title: "Building an Emergency Fund", slug: "building-emergency-fund" },
+      { title: "Paying Off Debt with the Snowball Method", slug: "debt-snowball-method" },
+      { title: "The 10-Year Plan to Financial Freedom", slug: "10-year-plan-financial-freedom" }
+    ]
+  },
+  "goal-setting-personal-success": {
+    title: "Goal Setting for Personal Success",
+    excerpt: "Set goals that stick. Learn the SMART framework, create actionable plans, and achieve the success you've been dreaming about.",
+    category: "Personal Story",
+    date: "February 9, 2026",
+    readTime: "14 min read",
+    image: "/images/blog-goal-setting.jpg",
+    author: "Matthew Varga",
+    disclaimer: "none",
+    content: `
+<h2>Why Most Goals Fail</h2>
+<p>90% of New Year's resolutions fail by February. Why? Because they're vague. "Get fit." "Make more money." "Be happy." These aren't goals. They're wishes. A real goal is specific, measurable, and actionable. This is why most people fail—they set wishes, not goals.</p>
+
+<h2>The SMART Goals Framework</h2>
+<p>SMART goals are the gold standard. They work because they're specific and measurable.</p>
+
+<p><strong>S = Specific</strong></p>
+<p>Your goal must be crystal clear. Not "make more money" but "earn $100,000 in the next 12 months."</p>
+<p>Not "get fit" but "run a 5K in under 25 minutes."</p>
+<p>Not "learn real estate" but "acquire 3 rental properties generating $5,000/month passive income."</p>
+
+<p><strong>M = Measurable</strong></p>
+<p>You must be able to track progress. $100,000 is measurable. "Get rich" is not. 5K in 25 minutes is measurable. "Get fit" is not.</p>
+<p>Measurement creates accountability. You can't hide from numbers.</p>
+
+<p><strong>A = Achievable</strong></p>
+<p>Your goal must be realistic. "Earn $1 billion in 12 months" is not achievable. "Earn $100,000 in 12 months" is achievable if you have a plan.</p>
+<p>Achievable doesn't mean easy. It means possible with effort and strategy.</p>
+
+<p><strong>R = Relevant</strong></p>
+<p>Your goal must matter to you. It must align with your values and vision. If you don't care about running, don't set a 5K goal. If you don't want to be an investor, don't set a real estate goal.</p>
+<p>Relevance creates motivation. You'll work harder for goals you actually care about.</p>
+
+<p><strong>T = Time-Bound</strong></p>
+<p>Your goal must have a deadline. "Make more money" has no deadline. "Earn $100,000 by December 31, 2026" has a deadline.</p>
+<p>Deadlines create urgency. They force you to act now instead of procrastinating.</p>
+
+<h2>From Goal to Action Plan</h2>
+<p>A SMART goal is the destination. An action plan is the map.</p>
+
+<p><strong>Example Goal:</strong> Earn $100,000 in the next 12 months (currently earning $60,000/year).</p>
+
+<p><strong>Action Plan:</strong></p>
+<p>1. Identify income sources: $40,000 from salary increase + $30,000 from side business + $30,000 from investments</p>
+<p>2. Salary increase: Ask for 10% raise ($6,000) + find higher-paying job ($34,000 increase)</p>
+<p>3. Side business: Start consulting, charge $150/hour, work 10 hours/week = $78,000/year. Target: $30,000 in first year</p>
+<p>4. Investments: Invest $5,000/month in dividend stocks, target 6% return = $30,000/year</p>
+<p>5. Timeline: Salary increase by March. Side business by April. Investments ongoing.</p>
+<p>6. Milestones: $8,000 by March. $25,000 by June. $50,000 by September. $100,000 by December.</p>
+
+<h2>The 90-Day Sprint</h2>
+<p>Big goals feel overwhelming. Break them into 90-day sprints. A 12-month goal becomes four 90-day goals. This makes progress visible and momentum builds.</p>
+
+<p><strong>Q1 (Jan-Mar):</strong> $25,000 earned. Secure salary increase. Launch side business.</p>
+<p><strong>Q2 (Apr-Jun):</strong> $25,000 earned. Scale side business. Start investments.</p>
+<p><strong>Q3 (Jul-Sep):</strong> $25,000 earned. Optimize side business. Increase investment amount.</p>
+<p><strong>Q4 (Oct-Dec):</strong> $25,000 earned. Maximize side business. Compound investments.</p>
+
+<h2>Tracking Progress</h2>
+<p>You can't improve what you don't measure. Track your progress weekly or monthly.</p>
+
+<p><strong>Weekly Check-In:</strong> Did I take action toward my goal? What worked? What didn't?</p>
+<p><strong>Monthly Review:</strong> Am I on track? Do I need to adjust my plan?</p>
+<p><strong>Quarterly Review:</strong> Did I hit my 90-day milestone? What did I learn? What's next?</p>
+
+<p>Tracking creates accountability. You can't lie to yourself about progress.</p>
+
+<h2>Dealing with Obstacles</h2>
+<p>Every goal has obstacles. The difference between successful and unsuccessful people is how they handle them.</p>
+
+<p><strong>Obstacle 1: Lack of Time</strong></p>
+<p>Solution: Audit your time. Where do you spend 10+ hours/week? Can you reduce it? Can you wake up earlier? Can you work during lunch?</p>
+
+<p><strong>Obstacle 2: Lack of Skills</strong></p>
+<p>Solution: Learn. Take courses, read books, find mentors. Skills are learnable.</p>
+
+<p><strong>Obstacle 3: Lack of Money</strong></p>
+<p>Solution: Start small. You don't need $100,000 to start a business. You need $1,000 and a plan.</p>
+
+<p><strong>Obstacle 4: Self-Doubt</strong></p>
+<p>Solution: Find proof. Find someone who achieved your goal. Study their path. Believe it's possible.</p>
+
+<h2>Real-World Example</h2>
+<p>My goal was to build a $10M real estate portfolio by age 35. I was 25 with zero properties. I created a SMART goal: Acquire 10 properties generating $10,000/month passive income by age 35. I broke it into 90-day sprints. Year 1: 1 property. Year 2: 2 properties. Year 3: 3 properties. By age 35, I had 12 properties generating $12,000/month. I exceeded my goal because I was specific, measurable, and accountable.</p>
+
+<h2>The Bottom Line</h2>
+<p>Goals change lives. But only SMART goals. Vague wishes don't work. Specific, measurable, achievable, relevant, time-bound goals work. Create your SMART goal. Build your action plan. Break it into 90-day sprints. Track progress weekly. Deal with obstacles. Adjust as needed. Repeat. This is how you achieve success.</p>
+    `,
+    relatedPosts: [
+      { title: "Building a Morning Routine for Productivity", slug: "morning-routine-productivity" },
+      { title: "5 Habits to Improve Focus and Efficiency", slug: "focus-efficiency-habits" },
+      { title: "The 10-Year Plan to Financial Freedom", slug: "10-year-plan-financial-freedom" }
+    ]
   }
 };
 

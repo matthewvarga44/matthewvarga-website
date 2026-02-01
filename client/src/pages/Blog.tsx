@@ -281,6 +281,106 @@ export default function Blog() {
       readTime: "11 min read",
       image: "/images/blog-themed-airbnb.jpg",
       slug: "themed-airbnb-arbitrage"
+    },
+    {
+      id: "36",
+      title: "Airbnb Arbitrage in College Towns",
+      excerpt: "Unlock consistent revenue by targeting the college housing market. Learn why college towns offer year-round demand, higher occupancy rates, and premium pricing opportunities.",
+      category: "Airbnb Strategy",
+      date: "February 7, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-college-town-airbnb.jpg",
+      slug: "airbnb-college-towns"
+    },
+    {
+      id: "37",
+      title: "Building a Morning Routine for Productivity",
+      excerpt: "Master the science-backed morning routine that successful entrepreneurs use to dominate their day. Learn the exact sequence, timing, and habits that drive peak performance.",
+      category: "Personal Story",
+      date: "February 7, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-morning-routine.jpg",
+      slug: "morning-routine-productivity"
+    },
+    {
+      id: "38",
+      title: "5 Habits to Improve Focus and Efficiency",
+      excerpt: "Master the 5 science-backed habits that eliminate distractions and boost productivity. Learn how top performers stay focused and accomplish more in less time.",
+      category: "Personal Story",
+      date: "February 8, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-focus-habits.jpg",
+      slug: "focus-efficiency-habits"
+    },
+    {
+      id: "39",
+      title: "Building an Emergency Fund",
+      excerpt: "Create financial security with a strategic emergency fund. Learn the exact formula to save 3-6 months of expenses and achieve peace of mind.",
+      category: "Financial Freedom",
+      date: "February 8, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-emergency-fund.jpg",
+      slug: "building-emergency-fund"
+    },
+    {
+      id: "40",
+      title: "Budgeting Basics for Beginners",
+      excerpt: "Master the fundamentals of budgeting. Learn the 50/30/20 rule, track expenses, and build a budget that actually works for your lifestyle.",
+      category: "Financial Freedom",
+      date: "February 9, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-budgeting-basics.jpg",
+      slug: "budgeting-basics-beginners"
+    },
+    {
+      id: "41",
+      title: "Goal Setting for Personal Success",
+      excerpt: "Set goals that stick. Learn the SMART framework, create actionable plans, and achieve the success you've been dreaming about.",
+      category: "Personal Story",
+      date: "February 9, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-goal-setting.jpg",
+      slug: "goal-setting-personal-success"
+    },
+    {
+      id: "42",
+      title: "Networking for Personal Growth",
+      excerpt: "Master the art of professional networking. Learn how to build meaningful connections, create opportunities, and accelerate your career.",
+      category: "Networking",
+      date: "February 10, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-networking-growth.jpg",
+      slug: "networking-personal-growth"
+    },
+    {
+      id: "43",
+      title: "Home Buying for Beginners",
+      excerpt: "Navigate the home buying process with confidence. Learn about mortgages, inspections, closing costs, and how to make your first home purchase.",
+      category: "Real Estate Investing",
+      date: "February 10, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-home-buying.jpg",
+      slug: "home-buying-beginners"
+    },
+    {
+      id: "44",
+      title: "Saving for a Down Payment",
+      excerpt: "Master the art of down payment savings. Learn strategies to accumulate funds faster and achieve your homeownership goals.",
+      category: "Financial Freedom",
+      date: "February 11, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-down-payment-savings.jpg",
+      slug: "saving-down-payment"
+    },
+    {
+      id: "45",
+      title: "Estate Planning Basics",
+      excerpt: "Protect your legacy. Learn the fundamentals of estate planning, wills, trusts, and how to ensure your assets go where you want them.",
+      category: "Financial Freedom",
+      date: "February 11, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-estate-planning.jpg",
+      slug: "estate-planning-basics"
     }
   ];
 

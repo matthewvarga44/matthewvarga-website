@@ -281,6 +281,26 @@ export default function Blog() {
       readTime: "11 min read",
       image: "/images/blog-themed-airbnb.jpg",
       slug: "themed-airbnb-arbitrage"
+    },
+    {
+      id: "36",
+      title: "Airbnb Arbitrage in College Towns",
+      excerpt: "Unlock consistent revenue by targeting the college housing market. Learn why college towns offer year-round demand, higher occupancy rates, and premium pricing opportunities.",
+      category: "Airbnb Strategy",
+      date: "February 7, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-college-town-airbnb.jpg",
+      slug: "airbnb-college-towns"
+    },
+    {
+      id: "37",
+      title: "Building a Morning Routine for Productivity",
+      excerpt: "Master the science-backed morning routine that successful entrepreneurs use to dominate their day. Learn the exact sequence, timing, and habits that drive peak performance.",
+      category: "Personal Story",
+      date: "February 7, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-morning-routine.jpg",
+      slug: "morning-routine-productivity"
     }
   ];
 

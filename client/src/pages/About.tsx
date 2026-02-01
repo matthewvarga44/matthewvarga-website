@@ -48,19 +48,19 @@ export default function About() {
 
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
-                  My story began with hardship. In the 1990s, my family lost everything—foreclosure, unemployment, no utilities. That crisis became my catalyst. I committed to understanding wealth from the ground up.
+                  My story started rough. In the 1990s, my family lost everything—foreclosure, job loss, no utilities. But that crisis taught me more than any classroom ever could. I decided right then that I was going to figure out wealth building, no matter what it took.
                 </p>
                 <p>
-                  I pursued elite credentials: Certified Financial Planner, Licensed Mortgage Broker, and deep expertise in real estate investment. I studied under industry leaders and developed proprietary strategies that consistently beat market returns.
+                  I got my CFP and Mortgage Broker license, and I studied under people who actually knew how to build wealth. I developed strategies that work because I've tested them myself in real market conditions.
                 </p>
                 <p>
-                  The results speak for themselves. I've built a $10M+ real estate portfolio generating $49,000+ in monthly passive income. I scaled from zero to multi-millionaire through disciplined execution and strategic deal analysis. Every method I teach has been tested in real market conditions.
+                  The proof is in the numbers. I've built a $10M+ real estate portfolio that generates $49,000+ every month in income. I went from broke to multi-millionaire by staying disciplined and making smart moves. Everything I teach, I've actually done.
                 </p>
                 <p>
-                  My work has earned recognition. I've spoken at major real estate conferences, appeared on 50+ podcasts, and shared strategies with thousands of ambitious investors. I've helped hundreds escape the traditional job and build genuine financial independence.
+                  My work got noticed. I've spoken at real estate conferences, been on multiple podcasts, and helped thousands of people escape the 9-5 grind and build real financial freedom.
                 </p>
                 <p>
-                  Today, I live the freedom I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This isn't theory—it's my lived reality. I teach exactly what I've done, and I'm committed to helping others achieve the same.
+                  Today, I live the life I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This is real—not theory. I teach exactly what worked for me, and I'm committed to helping others do the same.
                 </p>
               </div>
             </div>

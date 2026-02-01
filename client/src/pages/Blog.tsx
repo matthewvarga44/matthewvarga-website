@@ -158,6 +158,26 @@ export default function Blog() {
       readTime: "12 min read",
       image: "/images/blog-vacation-rental.jpg",
       slug: "vacation-rental-management"
+    },
+    {
+      id: "19",
+      title: "Building Your First Rental Portfolio: Year 1 Action Plan",
+      excerpt: "Your first year in real estate investing sets the foundation for everything that follows. Learn the exact action plan I used to acquire my first three properties and build momentum toward financial freedom.",
+      category: "Portfolio Growth",
+      date: "January 31, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-first-portfolio.jpg",
+      slug: "first-rental-portfolio-year-1"
+    },
+    {
+      id: "20",
+      title: "The Truth About Cap Rates: What Investors Get Wrong",
+      excerpt: "Cap rate is the most misunderstood metric in real estate investing. Most investors focus on it too much, others ignore it completely. Learn what cap rate actually tells you and how to use it correctly to evaluate deals.",
+      category: "Investment Strategy",
+      date: "January 31, 2026",
+      readTime: "9 min read",
+      image: "/images/blog-cap-rates.jpg",
+      slug: "cap-rates-truth"
     }
   ];
 

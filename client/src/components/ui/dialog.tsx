@@ -119,10 +119,6 @@ function DialogContent({
     [isComposing, onEscapeKeyDown]
   );
 
-  React.useEffect(() => {
-    setHasTitle(true);
-  }, []);
-
   return (
     <DialogPortal data-slot="dialog-portal">
       <DialogOverlay />
@@ -135,11 +131,9 @@ function DialogContent({
         onEscapeKeyDown={handleEscapeKeyDown}
         {...props}
       >
-        {!hasTitle && (
-          <DialogPrimitive.Title className="sr-only">
-            Dialog
-          </DialogPrimitive.Title>
-        )}
+        <DialogPrimitive.Title className="sr-only">
+          Dialog
+        </DialogPrimitive.Title>
         {children}
         {showCloseButton && (
           <DialogPrimitive.Close

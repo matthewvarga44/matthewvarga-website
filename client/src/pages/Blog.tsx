@@ -301,6 +301,26 @@ export default function Blog() {
       readTime: "12 min read",
       image: "/images/blog-morning-routine.jpg",
       slug: "morning-routine-productivity"
+    },
+    {
+      id: "38",
+      title: "5 Habits to Improve Focus and Efficiency",
+      excerpt: "Master the 5 science-backed habits that eliminate distractions and boost productivity. Learn how top performers stay focused and accomplish more in less time.",
+      category: "Personal Story",
+      date: "February 8, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-focus-habits.jpg",
+      slug: "focus-efficiency-habits"
+    },
+    {
+      id: "39",
+      title: "Building an Emergency Fund",
+      excerpt: "Create financial security with a strategic emergency fund. Learn the exact formula to save 3-6 months of expenses and achieve peace of mind.",
+      category: "Financial Freedom",
+      date: "February 8, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-emergency-fund.jpg",
+      slug: "building-emergency-fund"
     }
   ];
 

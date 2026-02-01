@@ -381,6 +381,26 @@ export default function Blog() {
       readTime: "14 min read",
       image: "/images/blog-estate-planning.jpg",
       slug: "estate-planning-basics"
+    },
+    {
+      id: "46",
+      title: "Saving for Kids' Education",
+      excerpt: "Plan ahead for your children's future. Discover 529 plans, education savings accounts, and investment strategies to fund college without debt.",
+      category: "Financial Freedom",
+      date: "February 12, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-education-savings.jpg",
+      slug: "saving-kids-education"
+    },
+    {
+      id: "47",
+      title: "Building ADUs for Rental Income",
+      excerpt: "Maximize your property's potential. Learn how to build and rent accessory dwelling units for consistent passive income and property appreciation.",
+      category: "Investment Strategy",
+      date: "February 12, 2026",
+      readTime: "16 min read",
+      image: "/images/blog-adu-rental-income.jpg",
+      slug: "building-adus-rental-income"
     }
   ];
 

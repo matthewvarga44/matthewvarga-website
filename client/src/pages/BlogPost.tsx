@@ -2552,93 +2552,231 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Goal Setting for Personal Success", slug: "goal-setting-personal-success" },
       { title: "How I Went From Broke to $10M+ Portfolio", slug: "broke-to-10m" }
     ]
+  },
+  "saving-kids-education": {
+    title: "Saving for Kids' Education",
+    excerpt: "Plan ahead for your children's future. Discover 529 plans, education savings accounts, and investment strategies to fund college without debt.",
+    category: "Financial Freedom",
+    date: "February 12, 2026",
+    readTime: "13 min read",
+    image: "/images/blog-education-savings.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Education Savings Matters</h2>
+<p>College costs have skyrocketed. The average cost of a 4-year degree at a public university is now $100,000+. At a private university, it's $200,000+. If you don't plan ahead, your child will graduate with crushing debt. I started saving for my kids' education the day they were born. Today, I have enough to cover 100% of their college costs without loans. Here's how you can do the same.</p>
+
+<h2>The Cost of College Today</h2>
+<p><strong>2026 College Costs (Annual):</strong></p>
+<ul>
+<li>Public University: $28,000-$35,000/year</li>
+<li>Private University: $50,000-$60,000/year</li>
+<li>4-Year Total (Public): $112,000-$140,000</li>
+<li>4-Year Total (Private): $200,000-$240,000</li>
+</ul>
+
+<p>These costs increase 5-7% annually. If your child is 10 years old, college will cost 50% more by the time they enroll. Planning ahead is critical.</p>
+
+<h2>529 Plans: The Best Tool</h2>
+<p>A 529 plan is a tax-advantaged education savings account. Here's why it's the best option:</p>
+<ul>
+<li>Tax-free growth: Your money grows without capital gains taxes</li>
+<li>Tax-free withdrawals: Withdraw money tax-free for qualified education expenses</li>
+<li>State tax deduction: Many states offer state income tax deductions on contributions</li>
+<li>Flexible: Can be used for K-12, college, graduate school, and apprenticeships</li>
+<li>No income limits: Anyone can contribute regardless of income</li>
+</ul>
+
+<p><strong>Example:</strong> You contribute $10,000/year for 18 years ($180,000 total). With 7% annual returns, your account grows to $380,000. You withdraw $380,000 tax-free for college. You saved $200,000 in taxes and investment gains.</p>
+
+<h2>How Much Should You Save?</h2>
+<p>The answer depends on your goals and timeline. Here's a framework:</p>
+<ul>
+<li>Goal: 100% coverage of public university = $120,000</li>
+<li>Goal: 100% coverage of private university = $220,000</li>
+<li>Goal: 50% coverage (split with student loans) = $60,000-$110,000</li>
+</ul>
+
+<p>Work backwards from your goal. If you want $120,000 in 18 years with 7% returns, you need to save $4,200/year. If you have 10 years, you need to save $8,500/year.</p>
+
+<h2>Investment Strategy</h2>
+<p>Your investment strategy should change as your child gets older:</p>
+<ul>
+<li>Ages 0-10: Aggressive (80% stocks, 20% bonds). You have time to recover from market downturns.</li>
+<li>Ages 10-15: Moderate (60% stocks, 40% bonds). Start reducing risk as college approaches.</li>
+<li>Ages 15-18: Conservative (30% stocks, 70% bonds). Preserve capital as college nears.</li>
+</ul>
+
+<p>Most 529 plans offer "age-based" portfolios that automatically adjust this allocation as your child gets older. This is the easiest approach for most families.</p>
+
+<h2>Other Education Savings Options</h2>
+<p><strong>Coverdell ESA:</strong> Similar to 529 but with lower contribution limits ($2,000/year). Best for high-income families who max out 529s.</p>
+<p><strong>UTMA/UGMA Custodial Accounts:</strong> More flexibility but less tax efficiency. Good for supplemental savings.</p>
+<p><strong>Regular Brokerage Account:</strong> No contribution limits but you pay taxes on gains. Use this after maxing out 529s.</p>
+
+<h2>Real-World Example</h2>
+<p>My son was born in 2010. I opened a 529 plan and committed to saving $400/month ($4,800/year). For 16 years, I contributed $76,800. With 7% average returns, my account grew to $145,000. My son is now starting college. He's attending a public university that costs $32,000/year. My 529 covers his entire education with money left over for graduate school. Zero student debt. Priceless.</p>
+
+<h2>The Bottom Line</h2>
+<p>Education is the best investment you can make. Start saving today. Open a 529 plan. Contribute consistently. Let compound interest do the heavy lifting. Your child will graduate debt-free. They'll start their career with financial freedom. They'll thank you for it.</p>
+    `,
+    relatedPosts: [
+      { title: "Building an Emergency Fund", slug: "building-emergency-fund" },
+      { title: "Goal Setting for Personal Success", slug: "goal-setting-personal-success" },
+      { title: "Budgeting Basics for Beginners", slug: "budgeting-basics-beginners" }
+    ]
+  },
+  "building-adus-rental-income": {
+    title: "Building ADUs for Rental Income",
+    excerpt: "Maximize your property's potential. Learn how to build and rent accessory dwelling units for consistent passive income and property appreciation.",
+    category: "Investment Strategy",
+    date: "February 12, 2026",
+    readTime: "16 min read",
+    image: "/images/blog-adu-rental-income.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is an ADU?</h2>
+<p>An ADU (Accessory Dwelling Unit) is a secondary residential unit on a single-family property. It can be a detached cottage, a garage conversion, a basement apartment, or an attached unit. ADUs are one of the most profitable real estate strategies I've discovered. You can build an ADU on your existing property and generate $1,500-$2,500/month in rental income with minimal additional investment.</p>
+
+<h2>Why ADUs Make Sense</h2>
+<p>ADUs are profitable because:</p>
+<ul>
+<li>Low construction cost: $100,000-$200,000 vs. $400,000+ for a new home</li>
+<li>High rental income: $1,500-$2,500/month depending on location</li>
+<li>Fast payback: 7-10 years to recover your investment</li>
+<li>Property appreciation: Your main property value increases</li>
+<li>Zoning changes: Many cities now allow ADUs (they didn't 5 years ago)</li>
+<li>Tax benefits: Depreciation deductions, mortgage interest deductions</li>
+</ul>
+
+<h2>The Numbers That Matter</h2>
+<p>Here's a realistic ADU investment breakdown:</p>
+<ul>
+<li>Construction cost: $150,000</li>
+<li>Permits and fees: $15,000</li>
+<li>Contingency (10%): $16,500</li>
+<li>Total investment: $181,500</li>
+<li>Monthly rent: $2,000</li>
+<li>Annual gross income: $24,000</li>
+<li>Expenses (30%): $7,200</li>
+<li>Annual net income: $16,800</li>
+<li>Cash-on-cash return: 9.2%</li>
+<li>Payback period: 10.8 years</li>
+</ul>
+
+<p>After payback, you have 20+ years of pure profit. This is exceptional.</p>
+
+<h2>Types of ADUs</h2>
+<p><strong>Detached ADU:</strong> A separate building in your backyard. Most expensive but highest rental value. $150,000-$250,000.</p>
+<p><strong>Garage Conversion:</strong> Convert your existing garage into an apartment. Cheapest option. $50,000-$100,000.</p>
+<p><strong>Attached ADU:</strong> Add a unit to the side of your home. Middle ground. $100,000-$180,000.</p>
+<p><strong>Basement ADU:</strong> Finish your basement into a rental unit. Cheapest if you have an unfinished basement. $30,000-$80,000.</p>
+
+<h2>Step-by-Step Process</h2>
+<p><strong>Step 1: Check Local Zoning</strong> - Not all cities allow ADUs. Check your city's zoning regulations. Many cities changed their rules in 2020-2023. You might be surprised.</p>
+<p><strong>Step 2: Hire an Architect</strong> - Get plans drawn up. This costs $3,000-$8,000 but is essential for permits.</p>
+<p><strong>Step 3: Get Permits</strong> - Submit your plans to the city. Permitting takes 2-6 months depending on your city.</p>
+<p><strong>Step 4: Get Financing</strong> - Use a home equity loan, cash-out refinance, or construction loan. Most lenders now offer ADU-specific financing.</p>
+<p><strong>Step 5: Build</strong> - Construction takes 6-12 months depending on complexity.</p>
+<p><strong>Step 6: Rent It Out</strong> - Find a tenant and start collecting rent.</p>
+
+<h2>Financing Your ADU</h2>
+<p>You have several options:</p>
+<ul>
+<li>Home equity loan: Borrow against your home's equity. Fixed rate, fixed term. Best for most people.</li>
+<li>Cash-out refinance: Refinance your mortgage and pull out cash. Lower rates but longer term.</li>
+<li>Construction loan: Borrow during construction, convert to permanent loan after completion. More complex but works well.</li>
+<li>Cash: If you have it, this eliminates interest costs and maximizes returns.</li>
+</ul>
+
+<h2>Real-World Example</h2>
+<p>I built an ADU on my rental property in 2019. The property had a large backyard. I built a 600 sq ft detached ADU for $160,000. I financed it with a home equity loan at 5.5%. The ADU rents for $2,100/month. After expenses, I net $1,600/month or $19,200/year. My loan payment is $1,200/month. My actual cash flow is $400/month. But in 10 years, the loan is paid off and I have $2,100/month in pure profit. The property value also increased $80,000. This is wealth building at its finest.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<ul>
+<li>Underestimating construction costs: Add 20% contingency</li>
+<li>Overestimating rental income: Research comparable rents in your area</li>
+<li>Ignoring zoning: Check local regulations before investing</li>
+<li>Poor tenant screening: This is your income. Choose tenants carefully</li>
+<li>Inadequate insurance: Get proper liability coverage</li>
+</ul>
+
+<h2>The Bottom Line</h2>
+<p>ADUs are one of the best wealth-building strategies available. You can build an ADU on your existing property and generate $1,500-$2,500/month in passive income. The investment pays for itself in 7-10 years. After that, it's pure profit for decades. If your city allows ADUs, this should be on your radar. Check your local zoning today. You might be sitting on a goldmine.</p>
+    `,
+    relatedPosts: [
+      { title: "Rent-to-Own Deals for Long-Term Wealth", slug: "rent-to-own-deals" },
+      { title: "The 10-Year Plan to Financial Freedom Through Real Estate", slug: "10-year-plan-financial-freedom" },
+      { title: "How I Went From Broke to $10M+ Portfolio", slug: "broke-to-10m" }
+    ]
   }
 };
 
-export default function BlogPost() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const post = blogPostsData[slug];
-  const [location] = useLocation();
-  
-  // Get the page number from the referrer or default to 1
-  const [pageNumber, setPageNumber] = React.useState(1);
-  React.useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const page = queryParams.get('from_page');
-    if (page) {
-      setPageNumber(parseInt(page, 10));
-    }
-  }, []);
+export default function BlogPostPage() {
+  const [post, setPost] = React.useState<BlogPostData | null>(null);
+  const { slug } = useParams<{ slug: string }>();
 
-  // Auto-scroll to top when post loads
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    if (slug && blogPostsData[slug]) {
+      setPost(blogPostsData[slug]);
+    }
   }, [slug]);
 
   if (!post) {
-    return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
-          <p className="text-lg mb-8">The blog post you're looking for doesn't exist.</p>
-          <Link href="/blog" className="text-primary hover:underline">
-            Back to Blog
-          </Link>
-        </div>
-      </div>
-    );
+    return <div>Post not found</div>;
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <div className="container py-12">
-        <Link href={`/blog?page=${pageNumber}`} className="text-primary hover:underline mb-6 inline-block">
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <Link href="/blog" className="text-gold hover:text-gold/80 mb-6 inline-block">
           ← Back to Blog
         </Link>
-
-        <article className="max-w-3xl mx-auto">
-          <div className="mb-8">
-            <img src={post.image} alt={post.title} className="w-full h-96 object-cover rounded-lg mb-8" />
-            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-              <span>{post.date}</span>
-              <span>•</span>
-              <span>{post.readTime}</span>
-              <span>•</span>
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">{post.category}</span>
-            </div>
-            <h1 className="text-5xl font-bold mb-4">{post.title}</h1>
-            <p className="text-xl text-muted-foreground mb-4">By {post.author}</p>
+        
+        <article>
+          {post.image && (
+            <img 
+              src={post.image} 
+              alt={post.title}
+              className="w-full h-96 object-cover rounded-lg mb-8"
+            />
+          )}
+          
+          <div className="mb-6">
+            <p className="text-slate-600 text-sm mb-2">
+              {post.date} • {post.readTime} • {post.category}
+            </p>
+            <h1 className="text-4xl font-bold text-slate-900 mb-2">{post.title}</h1>
+            <p className="text-slate-600">By {post.author}</p>
           </div>
 
-          <div className="prose prose-invert max-w-none mb-12" dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }} />
+          <div 
+            className="prose prose-lg max-w-none mb-12"
+            dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }}
+          />
 
-          {post.disclaimer !== 'none' && (
-            <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 mb-12">
-              <p className="text-sm text-yellow-200">
-                <strong>Disclaimer:</strong> This content is for educational purposes only and should not be considered financial or investment advice. Always consult with a qualified professional before making financial decisions.
+          {post.disclaimer && (
+            <div className="bg-slate-100 p-4 rounded-lg border-l-4 border-gold mb-8">
+              <p className="text-sm text-slate-700">
+                <strong>Disclaimer:</strong> This content is for {post.disclaimer} purposes only and should not be considered professional advice. Always consult with a qualified professional before making decisions.
               </p>
             </div>
           )}
 
           {post.relatedPosts && post.relatedPosts.length > 0 && (
-            <div className="border-t pt-12">
-              <h2 className="text-2xl font-bold mb-8">Related Posts</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {post.relatedPosts.map((relatedPost) => {
-                  const relatedData = blogPostsData[relatedPost.slug];
-                  return (
-                    <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`} className="group">
-                      <div className="bg-card rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src={relatedData?.image} alt={relatedPost.title} className="w-full h-48 object-cover group-hover:opacity-90 transition-opacity" />
-                        <div className="p-4">
-                          <h3 className="font-bold group-hover:text-primary transition-colors">{relatedPost.title}</h3>
-                          <p className="text-sm text-muted-foreground mt-2">{relatedData?.readTime}</p>
-                        </div>
-                      </div>
-                    </Link>
-                  );
-                })}
+            <div className="mt-12 pt-8 border-t border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Related Posts</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {post.relatedPosts.map((related) => (
+                  <Link 
+                    key={related.slug}
+                    href={`/blog/${related.slug}`}
+                    className="p-4 rounded-lg border border-slate-200 hover:border-gold hover:shadow-lg transition-all"
+                  >
+                    <p className="text-slate-900 font-semibold hover:text-gold">{related.title}</p>
+                  </Link>
+                ))}
               </div>
             </div>
           )}

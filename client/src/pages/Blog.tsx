@@ -181,7 +181,37 @@ export default function Blog() {
       date: "January 31, 2026",
       readTime: "9 min read",
       image: "/images/blog-cap-rates.jpg",
-      slug: "cap-rates-truth"
+      slug: "cap-rates"
+    },
+    {
+      id: "21",
+      title: "Why Most People Never Achieve Financial Independence (And How You Can)",
+      excerpt: "Most people fail to achieve financial independence. Not because they're lazy, but because they make critical mistakes. Learn the 5 mistakes holding you back and the exact steps to break free.",
+      category: "Financial Freedom",
+      date: "February 1, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-financial-freedom.jpg",
+      slug: "why-most-never-achieve-financial-independence"
+    },
+    {
+      id: "22",
+      title: "Passive Income vs. Active Income: Which Path to Choose",
+      excerpt: "Should you pursue passive income or active income? The answer isn't simple. Learn the pros and cons of each approach and how to build a balanced portfolio.",
+      category: "Financial Freedom",
+      date: "February 1, 2026",
+      readTime: "10 min read",
+      image: "/images/blog-financial-freedom.jpg",
+      slug: "passive-vs-active-income"
+    },
+    {
+      id: "23",
+      title: "Scaling from 1 to 10 Properties: The Exact System I Used",
+      excerpt: "Learn the exact system I used to scale from 1 property to 10 properties in 5 years. Discover the financing strategies, systems, and metrics that matter.",
+      category: "Portfolio Growth",
+      date: "February 1, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-portfolio-scaling.jpg",
+      slug: "scaling-1-to-10-properties"
     }
   ];
 

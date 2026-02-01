@@ -1,4 +1,4 @@
-import { Calendar, ArrowRight, Tag } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import React from "react";
 import Layout from "@/components/Layout";
 import { Link, useLocation } from "wouter";
@@ -19,20 +19,23 @@ export default function Blog() {
   const [currentPage, setCurrentPage] = React.useState(1);
   const postsPerPage = 10;
   
-  // Update currentPage when URL changes
+  // Parse page from URL
   React.useEffect(() => {
-    const queryParams = new URLSearchParams(location.split('?')[1] || '');
-    const page = parseInt(queryParams.get('page') || '1', 10);
-    setCurrentPage(page);
+    const params = new URLSearchParams(location.split('?')[1] || '');
+    const pageParam = params.get('page');
+    if (pageParam) {
+      const page = parseInt(pageParam, 10);
+      if (!isNaN(page) && page > 0) {
+        setCurrentPage(page);
+      }
+    } else {
+      setCurrentPage(1);
+    }
     window.scrollTo(0, 0);
   }, [location]);
   
-  // Scroll to top when component mounts
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
   const handlePageChange = (newPage: number) => {
+    // Use setLocation to update the URL
     setLocation(`/blog?page=${newPage}`);
   };
   

@@ -46,112 +46,22 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold text-lg text-secondary mb-3">🔥 The Struggle → The Comeback</h3>
-                  <ul className="space-y-2 text-foreground/80">
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>1990s: Family faced foreclosure, job loss, no utilities</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Turned pain into purpose—vowed to master wealth building</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Proved financial freedom is possible for anyone willing to execute</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-bold text-lg text-secondary mb-3">📚 Elite Credentials & Expertise</h3>
-                  <ul className="space-y-2 text-foreground/80">
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Certified Financial Planner (CFP)</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Licensed Mortgage Broker</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>20+ years hands-on real estate experience</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Built proprietary strategies that outperform market averages</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-bold text-lg text-secondary mb-3">💰 Proven Track Record</h3>
-                  <ul className="space-y-2 text-foreground/80">
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>$10M+ real estate portfolio</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>$49,000+ monthly passive income</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Scaled from zero to multi-millionaire through disciplined execution</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Every strategy battle-tested in real market conditions</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-bold text-lg text-secondary mb-3">🎤 Thought Leader & Public Voice</h3>
-                  <ul className="space-y-2 text-foreground/80">
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Speaker at major real estate conferences</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Featured on 50+ podcasts</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Shared strategies with thousands of aspiring investors</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Helped hundreds escape the 9-5 and build financial freedom</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="font-bold text-lg text-secondary mb-3">✈️ Living the Dream</h3>
-                  <ul className="space-y-2 text-foreground/80">
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Retired in my 30s</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Traveled 40+ countries</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Built multiple income streams</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <span className="text-secondary font-bold">•</span>
-                      <span>Living life completely on my own terms</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="space-y-4 text-foreground/80 leading-relaxed">
+                <p>
+                  My story began with hardship. In the 1990s, my family lost everything—foreclosure, unemployment, no utilities. That crisis became my catalyst. I committed to understanding wealth from the ground up.
+                </p>
+                <p>
+                  I pursued elite credentials: Certified Financial Planner, Licensed Mortgage Broker, and deep expertise in real estate investment. I studied under industry leaders and developed proprietary strategies that consistently beat market returns.
+                </p>
+                <p>
+                  The results speak for themselves. I've built a $10M+ real estate portfolio generating $49,000+ in monthly passive income. I scaled from zero to multi-millionaire through disciplined execution and strategic deal analysis. Every method I teach has been tested in real market conditions.
+                </p>
+                <p>
+                  My work has earned recognition. I've spoken at major real estate conferences, appeared on 50+ podcasts, and shared strategies with thousands of ambitious investors. I've helped hundreds escape the traditional job and build genuine financial independence.
+                </p>
+                <p>
+                  Today, I live the freedom I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This isn't theory—it's my lived reality. I teach exactly what I've done, and I'm committed to helping others achieve the same.
+                </p>
               </div>
             </div>
 

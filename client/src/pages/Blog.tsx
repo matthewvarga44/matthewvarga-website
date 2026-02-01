@@ -181,6 +181,26 @@ export default function Blog() {
       readTime: "15 min read",
       image: "/images/blog-broke-to-10m.jpg",
       slug: "broke-to-10m-portfolio"
+    },
+    {
+      id: "26",
+      title: "5 Red Flags When Analyzing a Rental Property Deal",
+      excerpt: "Learn the critical warning signs that separate good deals from bad ones. Discover the red flags I use to quickly eliminate deals that will destroy your returns.",
+      category: "Investment Strategy",
+      date: "February 2, 2026",
+      readTime: "10 min read",
+      image: "/images/blog-red-flags-rental.jpg",
+      slug: "red-flags-rental-property"
+    },
+    {
+      id: "27",
+      title: "How to Negotiate Seller Financing: A Step-by-Step Guide",
+      excerpt: "Seller financing unlocks deals that traditional lenders won't touch. Learn my proven negotiation framework to structure deals that work for both buyer and seller.",
+      category: "Investment Strategy",
+      date: "February 2, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-seller-financing-guide.jpg",
+      slug: "negotiate-seller-financing"
     }
   ];
 

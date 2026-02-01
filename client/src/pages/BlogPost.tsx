@@ -1291,6 +1291,103 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "From Foreclosure to $10M Portfolio", slug: "my-real-estate-journey" },
       { title: "Scaling from 1 to 10 Properties", slug: "scaling-1-to-10-properties" }
     ]
+  },
+  "red-flags-rental-property": {
+    title: "5 Red Flags When Analyzing a Rental Property Deal",
+    excerpt: "Learn the critical warning signs that separate good deals from bad ones.",
+    category: "Investment Strategy",
+    date: "February 2, 2026",
+    readTime: "10 min read",
+    image: "/images/blog-red-flags-rental.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>Why Deal Analysis Matters</h2>
+<p>Most real estate investors lose money because they analyze deals poorly. They get emotional. They fall in love with properties. They ignore the red flags. Then they buy bad deals and lose thousands.</p>
+
+<h2>Red Flag 1: Negative Cash Flow</h2>
+<p>The biggest mistake new investors make is buying properties with negative cash flow. Never buy a property with negative cash flow. Only buy properties that generate positive cash flow from day one.</p>
+
+<h2>Red Flag 2: Cap Rate Below 4%</h2>
+<p>Cap rate tells you the annual return on your investment. If a property has a cap rate below 4%, the returns are too low. Target cap rates: 5-7% for buy and hold.</p>
+
+<h2>Red Flag 3: Declining Neighborhood</h2>
+<p>Location is everything in real estate. A property in a declining neighborhood will lose value. Buy in growing neighborhoods. Look for population growth. Job growth. Rising property values.</p>
+
+<h2>Red Flag 4: Major Deferred Maintenance</h2>
+<p>Get a professional inspection. Budget for major repairs. If repairs exceed 15% of purchase price, walk away. The deal doesn't work.</p>
+
+<h2>Red Flag 5: Problematic Tenants</h2>
+<p>The tenants make or break a deal. If a property has problem tenants, walk away. Screen tenants carefully. Check credit, income, employment, and rental history.</p>
+
+<h2>The Bottom Line</h2>
+<p>If something feels wrong, it probably is. Don't ignore red flags. Walk away. There are always more deals. Only buy deals that check all the boxes.</p>
+    `,
+    relatedPosts: [
+      { title: "How to Negotiate Seller Financing", slug: "negotiate-seller-financing" },
+      { title: "The Truth About Cap Rates", slug: "cap-rates" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
+    ]
+  },
+  "negotiate-seller-financing": {
+    title: "How to Negotiate Seller Financing: A Step-by-Step Guide",
+    excerpt: "Seller financing unlocks deals that traditional lenders won't touch.",
+    category: "Investment Strategy",
+    date: "February 2, 2026",
+    readTime: "12 min read",
+    image: "/images/blog-seller-financing-guide.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>What is Seller Financing?</h2>
+<p>Seller financing is when the property seller acts as the lender. Instead of getting a mortgage from a bank, you borrow from the seller. The seller finances part or all of the purchase price.</p>
+
+<h2>Why Sellers Offer Financing</h2>
+<p>Sellers offer financing for several reasons: They want to sell quickly. They can't find a buyer with traditional financing. They want to generate income from the sale. They want to help the buyer.</p>
+
+<h2>The Benefits of Seller Financing</h2>
+<p><strong>Lower Down Payment:</strong> Banks require 20-25% down. Sellers often accept 10-15% down.</p>
+<p><strong>Faster Closing:</strong> No bank approval process. You can close in 30 days.</p>
+<p><strong>Flexible Terms:</strong> You can negotiate interest rates, loan terms, and payment schedules.</p>
+<p><strong>Access to Deals:</strong> Properties that don't qualify for bank financing become available.</p>
+
+<h2>Step 1: Identify Potential Deals</h2>
+<p>Look for properties where the seller might be motivated to finance. Older properties. Properties with issues. Properties in declining markets. When you find a potential deal, ask the seller: Would you consider seller financing?</p>
+
+<h2>Step 2: Understand the Seller's Situation</h2>
+<p>Before negotiating, understand the seller's motivation. Are they desperate to sell? Do they need cash? Do they want income? Ask questions and listen carefully.</p>
+
+<h2>Step 3: Structure the Deal</h2>
+<p>Seller financing typically works like this: You pay a down payment (10-20%). The seller finances the rest. You make monthly payments to the seller.</p>
+
+<h2>Step 4: Negotiate Terms</h2>
+<p><strong>Down Payment:</strong> Negotiate the lowest down payment possible. 10-15% is typical.</p>
+<p><strong>Interest Rate:</strong> Negotiate the lowest interest rate. 4-6% is typical.</p>
+<p><strong>Loan Term:</strong> Longer terms mean lower monthly payments. 15-20 years is typical.</p>
+
+<h2>Step 5: Get Everything in Writing</h2>
+<p>Never do seller financing verbally. Get everything in writing. Hire an attorney to draft a promissory note and mortgage. This protects both you and the seller.</p>
+
+<h2>Step 6: Close the Deal</h2>
+<p>Close like a normal real estate transaction. Get title insurance. Record the mortgage. Transfer the deed. Make sure everything is legal and binding.</p>
+
+<h2>Real-World Example</h2>
+<p>I bought a property for $150,000 using seller financing. Down payment: $25,000. Seller financed: $125,000. Interest rate: 5%. Loan term: 20 years. Monthly payment: $745. The property generated $1,200/month in rent. My cash flow was $455/month.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1: Overpaying</strong> - Don't overpay just because seller financing is available.</p>
+<p><strong>Mistake 2: Bad Terms</strong> - Don't accept bad terms. Negotiate for favorable terms.</p>
+<p><strong>Mistake 3: No Documentation</strong> - Always get everything in writing.</p>
+<p><strong>Mistake 4: Buying Bad Deals</strong> - Analyze the deal carefully before committing.</p>
+
+<h2>The Bottom Line</h2>
+<p>Seller financing is a powerful tool to access deals that traditional lenders won't touch. Understand the seller's motivation. Structure a deal that works for both of you. Get everything in writing. Close professionally.</p>
+    `,
+    relatedPosts: [
+      { title: "5 Red Flags When Analyzing a Deal", slug: "red-flags-rental-property" },
+      { title: "Seller Financing Deals", slug: "seller-financing-deals" },
+      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" }
+    ]
   }
 };
 

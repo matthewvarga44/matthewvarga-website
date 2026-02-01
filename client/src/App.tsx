@@ -16,6 +16,7 @@ import BlogPost from "./pages/BlogPost";
 import MastermindApplication from "./pages/MastermindApplication";
 import Newsletter from "./pages/Newsletter";
 import Podcast from "./pages/Podcast";
+import Learn from "./pages/Learn";
 import Placeholder from "./pages/Placeholder";
 
 function Router() {
@@ -33,6 +34,7 @@ function Router() {
       <Route path="/apply-mastermind" component={MastermindApplication} />
       <Route path="/newsletter" component={Newsletter} />
       <Route path="/podcast" component={Podcast} />
+      <Route path="/learn" component={Learn} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

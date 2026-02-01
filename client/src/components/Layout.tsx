@@ -124,7 +124,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-secondary">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Free Guide</a></li>
               <li><Link href="/podcast" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Podcast</Link></li>
               <li><Link href="/blog" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Blog</Link></li>
               <li><Link href="/newsletter" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">Newsletter</Link></li>

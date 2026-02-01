@@ -409,18 +409,18 @@ export default function BlogPost() {
         {/* Content Section */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
-            {/* Disclaimer */}
-            {disclaimerText && (
-              <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg mb-12">
-                <p className="text-amber-800 text-sm">{disclaimerText}</p>
-              </div>
-            )}
-
             {/* Main Content */}
             <div
               className="prose prose-lg max-w-none text-slate-700 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: enhancedContent }}
             />
+
+            {/* Disclaimer */}
+            {disclaimerText && (
+              <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-lg my-12">
+                <p className="text-amber-800 text-sm">{disclaimerText}</p>
+              </div>
+            )}
 
             {/* Share Section */}
             <div className="mt-12 pt-8 border-t border-slate-200">

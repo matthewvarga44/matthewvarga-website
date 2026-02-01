@@ -68,7 +68,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "January 2, 2026",
       readTime: "10 min read",
-      image: "/images/blog-airbnb-arbitrage.jpg",
+      image: "/images/blog-short-term-rental-secrets.jpg",
       slug: "short-term-rental-secrets"
     },
     {
@@ -119,7 +119,7 @@ export default function Blog() {
       category: "Portfolio Growth",
       date: "January 31, 2026",
       readTime: "11 min read",
-      image: "/images/blog-first-portfolio.jpg",
+      image: "/images/blog-portfolio-scaling.jpg",
       slug: "first-rental-portfolio-year-1"
     },
     {
@@ -129,7 +129,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "January 31, 2026",
       readTime: "9 min read",
-      image: "/images/blog-cap-rates.jpg",
+      image: "/images/blog-market-analysis.jpg",
       slug: "cap-rates"
     },
     {

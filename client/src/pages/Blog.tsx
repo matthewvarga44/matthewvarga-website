@@ -401,6 +401,26 @@ export default function Blog() {
       readTime: "16 min read",
       image: "/images/blog-adu-rental-income.jpg",
       slug: "building-adus-rental-income"
+    },
+    {
+      id: "48",
+      title: "Real Estate Crowdfunding for Passive Income",
+      excerpt: "Invest in real estate without the hassle of property management. Discover how crowdfunding platforms let you build a diversified portfolio with minimal capital.",
+      category: "Investment Strategy",
+      date: "February 15, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-crowdfunding-passive.jpg",
+      slug: "real-estate-crowdfunding"
+    },
+    {
+      id: "49",
+      title: "Exercise Routines for Energy and Health",
+      excerpt: "Build the physical foundation for success. Learn science-backed exercise routines that boost energy, improve focus, and enhance overall health for entrepreneurs.",
+      category: "Personal Story",
+      date: "February 15, 2026",
+      readTime: "12 min read",
+      image: "/images/blog-exercise-energy.jpg",
+      slug: "exercise-routines-energy-health"
     }
   ];
 

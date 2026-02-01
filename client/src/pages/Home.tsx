@@ -234,20 +234,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden group">
-              <div className="h-3 bg-secondary w-full"></div>
-              <CardHeader>
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
-                  <Users className="h-8 w-8" />
-                </div>
-                <CardTitle className="text-xl font-bold text-primary">Exclusive Community</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/70">
-                  Network with 300+ serious investors committed to retirement through real estate. Share deals, strategies, and support.
-                </p>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
       </section>
@@ -296,10 +283,10 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-              Ready to Scale Your Real Estate Business?
+              Ready to Build Your Wealth?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join the Retire with Rentals program and learn the exact strategies to build wealth and achieve financial freedom.
+              Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
             <Link href="/apply-mastermind">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">

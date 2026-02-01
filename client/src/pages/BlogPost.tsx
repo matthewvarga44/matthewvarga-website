@@ -53,15 +53,20 @@ const enhanceContent = (html: string): string => {
   enhanced = enhanced.replace(/<h2>(.*?)<\/h2>/g, (match, content) => {
     for (const [key, icon] of Object.entries(iconMap)) {
       if (content.includes(key)) {
-        return `<h2 class="flex items-center gap-3 mt-8 mb-4"><span class="text-2xl">${icon}</span><span>${content}</span></h2>`;
+        return `<h2 class="flex items-center gap-3 mt-10 mb-6 pt-6 border-t border-slate-300"><span class="text-2xl">${icon}</span><span class="text-slate-900 font-bold">${content}</span></h2>`;
       }
     }
-    return `<h2 class="flex items-center gap-3 mt-8 mb-4"><span class="text-2xl">📝</span><span>${content}</span></h2>`;
+    return `<h2 class="flex items-center gap-3 mt-10 mb-6 pt-6 border-t border-slate-300"><span class="text-2xl">📝</span><span class="text-slate-900 font-bold">${content}</span></h2>`;
   });
   enhanced = enhanced.replace(/<ul>/g, '<ul class="space-y-3 pl-4 my-4">');
   enhanced = enhanced.replace(/<li>/g, '<li class="flex items-start gap-3"><span class="text-gold font-bold text-lg">▸</span><span class="text-slate-700">');
   enhanced = enhanced.replace(/<\/li>/g, '</span></li>');
-  enhanced = enhanced.replace(/<p><strong>(.*?)<\/strong>(.*?)<\/p>/g, '<p class="bg-slate-50 p-4 rounded-lg border-l-4 border-gold my-4"><strong class="text-slate-900 font-bold">$1</strong>$2</p>');
+  enhanced = enhanced.replace(/<p><strong>(.*?)<\/strong>(.*?)<\/p>/g, (match, strong, rest) => {
+    return `<p class="bg-slate-100 p-4 rounded-lg border-l-4 border-gold my-4 text-slate-900"><strong class="font-bold text-slate-900">${strong}</strong>${rest}</p>`;
+  });
+  enhanced = enhanced.replace(/<p><strong>(.*?)<\/strong><\/p>/g, (match, strong) => {
+    return `<p class="bg-slate-100 p-4 rounded-lg border-l-4 border-gold my-4 text-slate-900"><strong class="font-bold text-slate-900">${strong}</strong></p>`;
+  });
   return enhanced;
 };
 

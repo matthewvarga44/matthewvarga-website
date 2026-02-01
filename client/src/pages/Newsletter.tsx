@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CheckCircle2, Mail, TrendingUp, Users, Zap } from "lucide-react";
+import { toast } from "sonner";
 import Layout from "@/components/Layout";
 
 export default function Newsletter() {
@@ -14,32 +15,41 @@ export default function Newsletter() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!email || !name) {
+      toast.error('Please enter your name and email address');
+      return;
+    }
+
     setLoading(true);
 
     try {
-      // Submit to Flodesk
-      const response = await fetch("https://api.flodesk.com/v1/subscribers", {
+      // Submit to Formspree
+      const response = await fetch("https://formspree.io/f/xpqlzazz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer fd_key_aef239100efa4a49a66ebe1c98336e1d.lAF82p96yj5UpVfZNBW55rv65S42GDNsufV6rVleKWUPxDFESLzr16Ild4Gl1XSb4qRL8Z1u34ffTZjCGFbwHywyhPL2hm4kctUhkDoI8vGenOwTcPITXhJ3s9nnhSLRjeO5TXq6PNq5f7oU7mBsFsu1UJiTxxSwHFzzjxOTtOs3ZoOUcDty8BiZgZmfwZAN", // You'll need to add this
         },
         body: JSON.stringify({
           email: email,
-          first_name: name,
+          name: name,
         }),
       });
 
       if (response.ok) {
+        toast.success('Welcome! Check your email for your first newsletter issue.');
         setSubmitted(true);
         setEmail("");
         setName("");
         setTimeout(() => {
           setSubmitted(false);
         }, 5000);
+      } else {
+        toast.error('Something went wrong. Please try again.');
       }
     } catch (err) {
       console.error("Error subscribing:", err);
+      toast.error('Failed to subscribe. Please try again.');
     } finally {
       setLoading(false);
     }

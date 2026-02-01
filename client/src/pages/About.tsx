@@ -187,11 +187,13 @@ export default function About() {
               My mission is to help 10,000 people achieve financial freedom through real estate investing. I'm committed to sharing the exact strategies I used to build my $10M+ portfolio, and I'm building a community of serious investors who support each other on this journey.
             </p>
             <div className="flex justify-center">
-              <Link href="/apply-mastermind">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                  Join the Movement
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 cursor-pointer"
+                onClick={() => window.location.href = '/apply-mastermind'}
+              >
+                Join the Movement
+              </Button>
             </div>
           </div>
         </div>
@@ -210,11 +212,13 @@ export default function About() {
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
               Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
-            <Link href="/apply-mastermind">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
-                Apply to Join the Mastermind
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px] cursor-pointer"
+              onClick={() => window.location.href = '/apply-mastermind'}
+            >
+              Apply to Join the Mastermind
+            </Button>
           </div>
         </div>
       </section>

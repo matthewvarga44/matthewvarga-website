@@ -341,6 +341,26 @@ export default function Blog() {
       readTime: "14 min read",
       image: "/images/blog-goal-setting.jpg",
       slug: "goal-setting-personal-success"
+    },
+    {
+      id: "42",
+      title: "Networking for Personal Growth",
+      excerpt: "Master the art of professional networking. Learn how to build meaningful connections, create opportunities, and accelerate your career.",
+      category: "Networking",
+      date: "February 10, 2026",
+      readTime: "13 min read",
+      image: "/images/blog-networking-growth.jpg",
+      slug: "networking-personal-growth"
+    },
+    {
+      id: "43",
+      title: "Home Buying for Beginners",
+      excerpt: "Navigate the home buying process with confidence. Learn about mortgages, inspections, closing costs, and how to make your first home purchase.",
+      category: "Real Estate Investing",
+      date: "February 10, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-home-buying.jpg",
+      slug: "home-buying-beginners"
     }
   ];
 

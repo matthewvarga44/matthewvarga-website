@@ -120,6 +120,59 @@ export default function About() {
         </div>
       </section>
 
+      {/* Key Milestones Section */}
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
+        <div className="container">
+          <div className="mx-auto max-w-3xl mb-16 text-center">
+            <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+              Key Milestones
+            </h2>
+            <p className="text-lg text-primary-foreground/90 leading-relaxed">
+              My journey to financial freedom wasn't overnight. It was built on consistent execution and strategic decisions.
+            </p>
+          </div>
+          <div className="space-y-8 max-w-3xl mx-auto">
+            {[
+              {
+                year: "2010-2012",
+                title: "Foundation Years",
+                description: "Earned certifications in Financial Planning, Real Estate, and Mortgage Brokerage. Began investing in first rental properties."
+              },
+              {
+                year: "2012-2016",
+                title: "Portfolio Growth",
+                description: "Scaled from 1 to 8 long-term rental properties. Built a portfolio worth $6.5M generating $18,500/month in passive income."
+              },
+              {
+                year: "2016-2018",
+                title: "Diversification",
+                description: "Discovered Airbnb arbitrage and short-term rentals. Built a 4-unit Airbnb portfolio generating $22,000/month in less than a year."
+              },
+              {
+                year: "2018-2020",
+                title: "Commercial Expansion",
+                description: "Added 2 commercial properties to portfolio. Achieved $10M+ in total real estate holdings and $49,000+ monthly passive income."
+              },
+              {
+                year: "2020+",
+                title: "Financial Freedom",
+                description: "Retired in my 30s with passive income exceeding expenses. Traveled 40+ countries. Now focused on helping others achieve the same freedom."
+              }
+            ].map((milestone, index) => (
+              <div key={index} className="flex gap-6">
+                <div className="flex-shrink-0 w-24">
+                  <p className="font-heading text-lg font-bold text-secondary">{milestone.year}</p>
+                </div>
+                <div className="flex-1 pb-8 border-b border-primary-foreground/20">
+                  <h3 className="font-bold text-xl mb-2">{milestone.title}</h3>
+                  <p className="text-primary-foreground/90">{milestone.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* My Mission Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">

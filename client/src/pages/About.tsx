@@ -138,9 +138,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Photo Gallery - Lifestyle & Freedom */}
-      <PhotoGallery />
-
       {/* Professional Credentials */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container">
@@ -354,6 +351,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery - Lifestyle & Freedom */}
+      <PhotoGallery />
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">

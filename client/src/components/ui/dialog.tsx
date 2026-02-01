@@ -3,6 +3,15 @@ import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";
 import * as React from "react";
 
+// VisuallyHidden component for accessible hidden elements
+function VisuallyHidden({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="sr-only">
+      {children}
+    </div>
+  );
+}
+
 // Context to track composition state across dialog children
 const DialogCompositionContext = React.createContext<{
   isComposing: () => boolean;
@@ -131,9 +140,11 @@ function DialogContent({
         onEscapeKeyDown={handleEscapeKeyDown}
         {...props}
       >
-        <DialogPrimitive.Title className="sr-only">
-          Dialog
-        </DialogPrimitive.Title>
+        <VisuallyHidden>
+          <DialogPrimitive.Title>
+            Dialog
+          </DialogPrimitive.Title>
+        </VisuallyHidden>
         {children}
         {showCloseButton && (
           <DialogPrimitive.Close

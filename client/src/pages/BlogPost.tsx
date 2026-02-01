@@ -2606,7 +2606,7 @@ export default function BlogPost() {
             <p className="text-xl text-muted-foreground mb-4">By {post.author}</p>
           </div>
 
-          <div className="prose prose-invert max-w-none mb-12" dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div className="prose prose-invert max-w-none mb-12" dangerouslySetInnerHTML={{ __html: enhanceContent(post.content) }} />
 
           {post.disclaimer !== 'none' && (
             <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 mb-12">

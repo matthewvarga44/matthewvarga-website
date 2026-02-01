@@ -29,7 +29,7 @@ export default function Learn() {
         <div className="container">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Image */}
-            <div className="flex-shrink-0 w-full md:w-80 h-80">
+            <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
                 src="/images/airbnb-hero.jpg" 
                 alt="Airbnb Wealth Academy"
@@ -90,7 +90,7 @@ export default function Learn() {
         <div className="container">
           <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
             {/* Image */}
-            <div className="flex-shrink-0 w-full md:w-80 h-80">
+            <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
                 src="/images/retire-rentals-hero.jpg" 
                 alt="Retire with Rentals Course"
@@ -100,9 +100,7 @@ export default function Learn() {
 
             {/* Content */}
             <div className="flex-1">
-              <div className="inline-block rounded-full bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary mb-6">
-                Coming Soon
-              </div>
+
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Retire with Rentals Course
               </h2>
@@ -151,7 +149,7 @@ export default function Learn() {
         <div className="container">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Image */}
-            <div className="flex-shrink-0 w-full md:w-80 h-80">
+            <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
                 src="/images/coaching-hero.jpg" 
                 alt="One-on-One Coaching"

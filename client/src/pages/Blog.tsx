@@ -421,6 +421,26 @@ export default function Blog() {
       readTime: "12 min read",
       image: "/images/blog-exercise-energy.jpg",
       slug: "exercise-routines-energy-health"
+    },
+    {
+      id: "50",
+      title: "Credit Card Rewards Strategies",
+      excerpt: "Maximize your cash back and travel rewards. Learn how to strategically use premium credit cards to earn thousands in annual rewards while building credit.",
+      category: "Financial Freedom",
+      date: "February 18, 2026",
+      readTime: "11 min read",
+      image: "/images/blog-credit-card-rewards.jpg",
+      slug: "credit-card-rewards-strategies"
+    },
+    {
+      id: "51",
+      title: "Flipping Condos in Coastal Areas",
+      excerpt: "Discover why coastal condos are ideal for flipping. Learn market analysis, renovation strategies, and how to profit $300K-$500K per project.",
+      category: "Flipping",
+      date: "February 18, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-condo-flipping-coastal.jpg",
+      slug: "flipping-condos-coastal-areas"
     }
   ];
 

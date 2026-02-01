@@ -2822,10 +2822,107 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "5 Habits to Improve Focus and Efficiency", slug: "focus-efficiency-habits" },
       { title: "Goal Setting for Personal Success", slug: "goal-setting-personal-success" }
     ]
+  },
+  "credit-card-rewards-strategies": {
+    title: "Credit Card Rewards Strategies",
+    excerpt: "Maximize your cash back and travel rewards. Learn how to strategically use premium credit cards to earn thousands in annual rewards while building credit.",
+    category: "Financial Freedom",
+    date: "February 18, 2026",
+    readTime: "11 min read",
+    image: "/images/blog-credit-card-rewards.jpg",
+    author: "Matthew Varga",
+    disclaimer: "financial",
+    content: `
+<h2>Why Credit Card Rewards Matter</h2>
+<p>Most people use credit cards reactively—they swipe and pay. Smart investors use credit cards strategically. The average premium credit card offers 2-5% cash back or equivalent rewards. If you spend $100,000 annually (common for business owners), that's $2,000-$5,000 in pure rewards. Over 10 years, that's $20,000-$50,000 in free money. The key is strategy: choosing the right cards, maximizing bonus categories, and avoiding fees.</p>
+
+<h2>The Three-Card Strategy</h2>
+<ul>
+<li><strong>Card 1 - Business Spend:</strong> 5% cash back on business expenses (office supplies, travel, dining). Example: Chase Ink Business Preferred (5x points on business purchases). Annual fee: $95. Net benefit: $500-$1,000/year.</li>
+<li><strong>Card 2 - Everyday Spending:</strong> 2% cash back on all purchases. Example: Citi Double Cash (2% cash back). Annual fee: $0. Net benefit: $1,000-$2,000/year.</li>
+<li><strong>Card 3 - Travel/Premium:</strong> 3-5x points on travel, dining, hotels. Example: Chase Sapphire Reserve (3x points on travel/dining). Annual fee: $550. Net benefit: $2,000-$4,000/year after fee.</li>
+</ul>
+
+<h2>Maximizing Sign-Up Bonuses</h2>
+<p>New card bonuses are the biggest opportunity. Premium cards offer $500-$1,500 in value for meeting spending requirements. Strategy: Open a new premium card every 12-18 months, meet the spending requirement (often $5,000-$10,000), capture the bonus, then downgrade to a no-fee version. Over 10 years, this generates $5,000-$15,000 in bonus value alone.</p>
+
+<h2>Real-World Example</h2>
+<p>Jennifer, a real estate investor, implemented this strategy. She opened the Chase Sapphire Reserve (bonus: $750 + $300 travel credit = $1,050 value). She uses it for all business travel and dining ($15,000/year). She earns 3x points = 45,000 points/year. She also has the Ink Business card for office supplies (5x points). Annual rewards value: $3,500. Over 5 years: $17,500 in free rewards. She paid $2,750 in annual fees, netting $14,750 in pure profit.</p>
+
+<h2>Critical Mistakes to Avoid</h2>
+<ul>
+<li>Carrying a balance: If you pay interest, rewards don't matter. Only use cards you can pay off monthly.</li>
+<li>Overspending for rewards: Don't buy things you don't need to hit spending requirements.</li>
+<li>Ignoring annual fees: A $550 annual fee needs $5,500+ in rewards to break even.</li>
+<li>Forgetting to downgrade: After the bonus period, downgrade to a no-fee card to avoid paying for benefits you don't use.</li>
+<li>Neglecting credit score: Multiple hard inquiries can temporarily lower your score. Space out applications 3-6 months apart.</li>
+</ul>
+
+<h2>The Bottom Line</h2>
+<p>Credit card rewards are free money if you're strategic. Choose cards aligned with your spending, maximize bonuses, and pay off balances monthly. This strategy generates $2,000-$5,000 annually with zero effort beyond smart card selection. It's one of the highest ROI financial moves you can make.</p>
+    `,
+    relatedPosts: [
+      { title: "Building an Emergency Fund", slug: "building-emergency-fund" },
+      { title: "Budgeting Basics for Beginners", slug: "budgeting-basics-beginners" },
+      { title: "Goal Setting for Personal Success", slug: "goal-setting-personal-success" }
+    ]
+  },
+  "flipping-condos-coastal-areas": {
+    title: "Flipping Condos in Coastal Areas",
+    excerpt: "Discover why coastal condos are ideal for flipping. Learn market analysis, renovation strategies, and how to profit $300K-$500K per project.",
+    category: "Flipping",
+    date: "February 18, 2026",
+    readTime: "15 min read",
+    image: "/images/blog-condo-flipping-coastal.jpg",
+    author: "Matthew Varga",
+    disclaimer: "investment",
+    content: `
+<h2>Why Coastal Condos Are Ideal for Flipping</h2>
+<p>Coastal condos are the sweet spot for flipping. They have strong demand (everyone wants ocean views), limited supply (you can't build more coastline), and consistent appreciation. Unlike single-family homes, condos have lower entry prices ($400K-$800K vs. $1M+), faster sales cycles (60-90 days vs. 120+ days), and lower holding costs (HOA covers maintenance). I've flipped 15+ coastal condos, averaging $350K profit per project in 6-8 months.</p>
+
+<h2>Market Analysis: Finding the Right Coastal Market</h2>
+<ul>
+<li><strong>Population Growth:</strong> Choose markets growing 2-3% annually. Growing populations drive demand and appreciation.</li>
+<li><strong>Job Market:</strong> Look for cities with strong employment (tech, healthcare, tourism). Employed people buy condos.</li>
+<li><strong>Inventory Levels:</strong> Target markets with 3-5 months of inventory. Too much inventory = price pressure. Too little = competition.</li>
+<li><strong>Price Trends:</strong> Analyze 5-year price history. Consistent 3-5% annual appreciation is ideal. Flat or declining markets are risky.</li>
+<li><strong>HOA Costs:</strong> Research HOA fees. Anything above $400/month in a $600K condo is a red flag. High HOA = harder to sell.</li>
+</ul>
+
+<h2>The Acquisition Strategy</h2>
+<p>Target distressed properties: foreclosures, short sales, and estate sales. These offer 15-25% discounts vs. market. Your acquisition formula: After-repair value (ARV) × 70% - Renovation costs = Maximum offer price. Example: $1.2M ARV × 70% = $840K. Renovation: $150K. Maximum offer: $690K. This ensures 20%+ profit margin even if market softens.</p>
+
+<h2>Renovation Focus Areas for Coastal Condos</h2>
+<ul>
+<li><strong>Kitchen:</strong> 40% of renovation budget. Modern appliances, granite counters, open layout. Buyers prioritize kitchens.</li>
+<li><strong>Bathrooms:</strong> 30% of budget. Spa-like finishes, rainfall showers, heated floors. Coastal buyers expect luxury.</li>
+<li><strong>Flooring:</strong> 15% of budget. Light wood or tile (easier to maintain in coastal humidity). Avoid carpet.</li>
+<li><strong>Paint & Staging:</strong> 10% of budget. Neutral colors, minimal furniture, maximize ocean views. First impressions matter.</li>
+<li><strong>Outdoor Spaces:</strong> 5% of budget. Balcony upgrades, outdoor furniture, lighting. Showcase the views.</li>
+</ul>
+
+<h2>Real-World Example: Miami Beach Flip</h2>
+<p>I purchased a 2-bed/2-bath condo for $690K (distressed sale). Market value: $850K. Renovation: $145K (kitchen, bathrooms, flooring, paint). Total investment: $835K. Sold for: $1.2M after 7 months. Profit: $365K. Holding costs (mortgage, HOA, taxes): $35K. Net profit: $330K. ROI: 39% in 7 months. This is typical for coastal condo flips in strong markets.</p>
+
+<h2>Risks and Mitigation</h2>
+<ul>
+<li><strong>Market Downturn:</strong> Coastal markets are cyclical. Ensure 20%+ profit margin to weather downturns.</li>
+<li><strong>HOA Issues:</strong> Research HOA reserves and special assessments. A $50K special assessment kills your profit.</li>
+<li><strong>Renovation Overruns:</strong> Add 15% contingency to estimates. Coastal properties often have hidden moisture/mold issues.</li>
+<li><strong>Holding Costs:</strong> Calculate daily holding costs. Every month costs $5K-$8K. Minimize holding time.</li>
+<li><strong>Buyer Pool:</strong> Coastal condos attract investors and retirees. Understand your buyer. Price accordingly.</li>
+</ul>
+
+<h2>The Bottom Line</h2>
+<p>Coastal condo flipping is one of the most profitable real estate strategies. Strong demand, limited supply, and consistent appreciation create ideal conditions. Focus on distressed acquisitions, strategic renovations, and fast sales. Execute properly, and you'll generate $300K-$500K profit per project. This is how I built my portfolio to $10M+.</p>
+    `,
+    relatedPosts: [
+      { title: "House Flipping as a Side Hustle", slug: "house-flipping-side-hustle" },
+      { title: "5 Red Flags When Analyzing a Rental Property Deal", slug: "red-flags-rental-property" },
+      { title: "The 10-Year Plan to Financial Freedom Through Real Estate", slug: "10-year-plan-financial-freedom" }
+    ]
   }
 };
-
-
 export default function BlogPostPage() {
   const [post, setPost] = React.useState<BlogPostData | null>(null);
   const { slug } = useParams<{ slug: string }>();

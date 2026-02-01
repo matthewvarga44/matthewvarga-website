@@ -233,14 +233,12 @@ export default function Contact() {
                 <p className="text-slate-300 mb-6">
                   Schedule a free consultation to learn if the program is right for you
                 </p>
-                <a
-                  href="https://calendly.com/matthew-p-varga/15-minute-coaching-introduction"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                <button
+                  onClick={() => window.open('https://calendly.com/matthew-p-varga/15-minute-coaching-introduction', '_blank')}
+                  className="inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer border-none"
                 >
                   Schedule Free Consultation
-                </a>
+                </button>
               </div>
             </div>
           </div>

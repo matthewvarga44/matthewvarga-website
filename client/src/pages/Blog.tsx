@@ -161,6 +161,26 @@ export default function Blog() {
       readTime: "13 min read",
       image: "/images/blog-portfolio-scaling.jpg",
       slug: "scaling-1-to-10-properties"
+    },
+    {
+      id: "24",
+      title: "Retiring in Your 30s: What Nobody Tells You",
+      excerpt: "Early retirement is not just about having enough money. Discover the psychological, social, and practical challenges nobody warns you about and how to navigate them successfully.",
+      category: "Financial Freedom",
+      date: "February 1, 2026",
+      readTime: "14 min read",
+      image: "/images/blog-retiring-30s.jpg",
+      slug: "retiring-in-your-30s"
+    },
+    {
+      id: "25",
+      title: "How I Went From Broke to $10M+ Portfolio",
+      excerpt: "The complete blueprint of my journey from financial struggle to building a $10M+ real estate portfolio. Learn the exact strategies, mindset shifts, and decisions that transformed my life.",
+      category: "Personal Story",
+      date: "February 1, 2026",
+      readTime: "15 min read",
+      image: "/images/blog-broke-to-10m.jpg",
+      slug: "broke-to-10m-portfolio"
     }
   ];
 

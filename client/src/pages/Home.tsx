@@ -128,25 +128,19 @@ export default function Home() {
               <div className="space-y-6">
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    With 20+ years of experience as a Certified Financial Planner, Mortgage Broker, and Real Estate Investor, I've built a $10M+ portfolio that generates $49,000+ in monthly passive income.
+                    My journey didn't start with success. In the 90s, my family lost everything—foreclosure, job loss, no utilities. That crisis became my wake-up call. I decided right then that I was going to figure out wealth building, no matter what it took.
                   </p>
                 </div>
                 
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    But my journey didn't start with success. In the 90s, my family faced foreclosure and financial devastation. That pain became my greatest teacher. I vowed to master money and build a life of true freedom—not just for myself, but to help others escape the 9-5 trap.
+                    I got my CFP and Mortgage Broker license, and I studied under people who actually knew how to build wealth. I developed strategies that work because I've tested them myself in real market conditions. The proof is in the numbers—I've built a $10M+ portfolio that generates $49,000+ every month in income.
                   </p>
                 </div>
                 
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    I retired in my 30s as a multi-millionaire. I've traveled 40+ countries, built multiple income streams, and created a life where money works for me. Now, I help ambitious professionals do the same through proven real estate strategies and a supportive community of 300+ serious investors.
-                  </p>
-                </div>
-                
-                <div className="pt-4">
-                  <p className="text-base font-semibold text-primary mb-4">
-                    This isn't about quick flips or risky moves. It's about building lasting wealth and the freedom to live life on your terms.
+                    Today, I live the life I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This is real—not theory. I help ambitious professionals do the same through proven real estate strategies and a community of 300+ serious investors.
                   </p>
                 </div>
               </div>
@@ -184,7 +178,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Master the buy-and-hold strategy that builds steady passive income through rental properties and long-term appreciation.
+                  Master the buy-and-hold strategy that builds steady income through rental properties and long-term appreciation.
                 </p>
               </CardContent>
             </Card>
@@ -199,7 +193,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Generate premium returns through short-term rentals and build a scalable Airbnb investment portfolio.
+                  Learn how to maximize income with short-term rentals and Airbnb arbitrage strategies that generate higher returns.
                 </p>
               </CardContent>
             </Card>
@@ -208,13 +202,13 @@ export default function Home() {
               <div className="h-3 bg-secondary w-full"></div>
               <CardHeader>
                 <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary transition-colors">
-                  <Users className="h-8 w-8" />
+                  <BarChart3 className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl font-bold text-primary">Exclusive Community</CardTitle>
+                <CardTitle className="text-xl font-bold text-primary">Deal Analysis & Financing</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground/70">
-                  Network with 300+ serious investors committed to retirement through real estate. Share deals, strategies, and support.
+                  Analyze deals like a pro and structure creative financing to maximize returns and minimize risk.
                 </p>
               </CardContent>
             </Card>
@@ -222,243 +216,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Real Estate Mastery Program Section */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-32">
-        <div className="container">
-            <div className="mx-auto max-w-4xl">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
-                <span className="text-secondary">Retire with Rentals</span> Program
-              </h2>
-              <p className="text-xl text-primary-foreground/90 leading-relaxed">
-                A comprehensive, community-driven program designed to help you build a profitable rental portfolio and retire on your terms.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 mb-12">
-              <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
-                <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">What's Included</h3>
-                <ul className="space-y-4">
-                  {[
-                    "Weekly live coaching sessions with me",
-                    "Access to exclusive real estate deals",
-                    "Property analysis templates & tools",
-                    "Airbnb investment strategies",
-                    "Market analysis & trends",
-                    "Private community forum",
-                    "Deal evaluation framework",
-                    "Tax & financing strategies"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="h-6 w-6 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-secondary font-bold text-sm">✓</span>
-                      </div>
-                      <span className="text-primary-foreground/90">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-secondary/10 border-2 border-secondary rounded-2xl p-8">
-                <div className="text-center mb-8">
-                  <p className="text-primary-foreground/80 text-sm uppercase tracking-widest font-semibold mb-2">Annual Investment</p>
-                  <h3 className="font-heading text-5xl font-bold text-secondary mb-2">$3,000</h3>
-                  <p className="text-primary-foreground/80">/year</p>
-                </div>
-                
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-center justify-between text-primary-foreground/90">
-                    <span>Valued at over</span>
-                    <span className="font-bold">$10,000</span>
-                  </div>
-                  <div className="h-px bg-secondary/20"></div>
-                  <div className="flex items-center justify-between text-primary-foreground/90">
-                    <span>Program Members</span>
-                    <span className="font-bold">300 (Capped)</span>
-                  </div>
-                  <div className="h-px bg-secondary/20"></div>
-                  <div className="flex items-center justify-between text-primary-foreground/90">
-                    <span>Access Duration</span>
-                    <span className="font-bold">12 Months</span>
-                  </div>
-                </div>
-
-                <Link href="/apply-mastermind">
-                  <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 rounded-full shadow-lg shadow-secondary/30">
-                    Apply Now - Limited Spots
-                  </Button>
-                </Link>
-                
-                <p className="text-center text-primary-foreground/60 text-sm mt-6">
-                  Only 300 members allowed. Spots are filling up fast.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
-                <h3 className="font-heading text-2xl font-bold mb-6 text-secondary">Why Retire with Rentals?</h3>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Proven Track Record:</span> I've built a $10M+ rental portfolio in less than 5 years. You'll learn exactly what worked and what didn't.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors committed to retirement through rentals. Share deals, strategies, and support.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Actionable Strategies:</span> No fluff. Every session focuses on practical rental strategies you can implement immediately.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Full Access while a Member:</span> Access to all recorded sessions and resources during your membership year.
-                    </p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Resources Section */}
-      <section className="py-20 md:py-32 bg-white">
-        <div className="container">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div className="max-w-2xl">
-              <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-4">
-                Free <span className="text-secondary">Rental Resources</span>
-              </h2>
-              <p className="text-lg text-foreground/70">
-                Start building your rental portfolio with these hand-picked tools and guides.
-              </p>
-            </div>
-            <Link href="/resources">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold">
-                View All Resources
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Real Estate Investing Checklist",
-                desc: "The complete checklist I use before buying any property. Covers financing, inspections, and due diligence.",
-                tag: "Checklist"
-              },
-              {
-                title: "Airbnb Financial Breakdown",
-                desc: "Real numbers from my Airbnb properties. See exactly how much you can make from short-term rentals. Use this calculator to analyze your own short-term rental deals and project ROI.",
-                tag: "Guide",
-                href: "/ShortTermRentalCalculator.xlsx"
-              },
-              {
-                title: "Buy and Hold Deal Analysis Calculator",
-                desc: "Analyze buy-and-hold rental deals with precision. Run numbers, calculate cash flow, ROI, and cap rates instantly. The exact tool I use to evaluate every investment opportunity.",
-                tag: "Tool",
-                href: "/BuyandHoldDealAnalysisCalculator.xlsx"
-              }
-            ].map((item, i) => (
-              <div key={i} className="group relative overflow-hidden rounded-2xl bg-white border border-primary/10 p-8 hover:border-secondary/50 hover:shadow-lg transition-all">
-                <div className="mb-4 inline-block rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
-                  {item.tag}
-                </div>
-                <h3 className="mb-3 font-heading text-xl font-bold text-primary">{item.title}</h3>
-                <p className="mb-6 text-foreground/70">{item.desc}</p>
-                <a href={item.href || "#"} className="inline-flex items-center font-bold text-secondary hover:text-primary transition-colors">
-                  Download Now <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 md:py-32 bg-primary/5">
-        <div className="container">
-          <h2 className="font-heading text-4xl font-bold tracking-tight text-center text-primary sm:text-5xl mb-16">
-            Success Stories from <span className="text-secondary">Retire with Rentals Members</span>
-          </h2>
-          
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                name: "Sarah Chen",
-                role: "First-Time Investor",
-                quote: "Matthew's strategies helped me buy my first rental property. I'm now generating $2,500/month in passive income."
-              },
-              {
-                name: "David Rodriguez",
-                role: "Airbnb Investor",
-                quote: "The Airbnb breakdown was eye-opening. I scaled from 1 to 3 properties in 18 months. Game changer."
-              },
-              {
-                name: "Jessica Williams",
-                role: "Real Estate Investor",
-                quote: "The community alone is worth it. I've met my business partners and best friends through this program."
-              }
-            ].map((testimonial, i) => (
-              <Card key={i} className="border-none shadow-lg">
-                <CardContent className="pt-8">
-                  <div className="mb-4 flex text-secondary">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg key={star} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="mb-6 text-foreground/70 italic">"{testimonial.quote}"</p>
-                  <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
-                      {testimonial.name.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-bold text-primary text-sm">{testimonial.name}</p>
-                      <p className="text-xs text-foreground/60">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container">
-          <div className="rounded-3xl bg-gradient-to-br from-secondary/20 to-secondary/5 px-6 py-16 md:px-16 md:py-24 text-center relative overflow-hidden border border-secondary/30">
-            <div className="absolute top-0 left-0 w-64 h-64 bg-secondary/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
-            
-            <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
-                Ready to <span className="text-secondary">Retire with Rentals?</span>
-              </h2>
-              <p className="text-lg text-primary-foreground/90 mb-10 leading-relaxed">
-                Join 300+ investors in the Retire with Rentals program. Limited spots available. Enrollment closes when we hit capacity.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/apply-mastermind">
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30">
-                    Apply to Join
-                  </Button>
-                </Link>
-                <Link href="/book-consultation">
-                  <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-bold text-lg px-8 h-14 rounded-full">
-                    Schedule a Call
-                  </Button>
-                </Link>
-              </div>
-              <p className="text-sm text-primary-foreground/70 mt-8">
-                Questions? <a href="mailto:contact@matthewvarga.com" className="text-secondary hover:underline font-bold">Email me directly</a>
-              </p>
-            </div>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+              Ready to Build Your Wealth?
+            </h2>
+            <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
+              Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+            </p>
+            <Link href="/apply-mastermind">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">
+                Apply to Join the Mastermind
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

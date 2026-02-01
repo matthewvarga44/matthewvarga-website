@@ -94,7 +94,7 @@ export function PhotoGallery() {
           </p>
           <a
             href="/apply-mastermind"
-            className="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
+            className="inline-block px-8 py-3 bg-secondary hover:bg-secondary/90 text-primary font-bold rounded-full transition-colors duration-200 shadow-lg shadow-secondary/30"
           >
             Start Your Journey
           </a>

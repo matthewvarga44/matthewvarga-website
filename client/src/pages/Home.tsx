@@ -99,8 +99,8 @@ export default function Home() {
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">YouTube Followers</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-secondary">5 Yrs</h3>
-              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">To Build Portfolio</p>
+              <h3 className="text-4xl font-extrabold text-secondary">20+ Yrs</h3>
+              <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Experience</p>
             </div>
           </div>
         </div>
@@ -244,8 +244,8 @@ export default function Home() {
                 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center justify-between text-primary-foreground/90">
-                    <span>Monthly Cost</span>
-                    <span className="font-bold">$250</span>
+                    <span>Valued at over</span>
+                    <span className="font-bold">$10,000</span>
                   </div>
                   <div className="h-px bg-secondary/20"></div>
                   <div className="flex items-center justify-between text-primary-foreground/90">
@@ -291,7 +291,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-primary-foreground/90 leading-relaxed">
-                      <span className="font-bold text-secondary">Lifetime Access:</span> Access to all recorded sessions and resources. Learn at your own pace, forever.
+                      <span className="font-bold text-secondary">Full Access while a Member:</span> Access to all recorded sessions and resources during your membership year.
                     </p>
                   </div>
                 </div>
@@ -328,13 +328,15 @@ export default function Home() {
               },
               {
                 title: "Airbnb Financial Breakdown",
-                desc: "Real numbers from my Airbnb properties. See exactly how much you can make from short-term rentals.",
-                tag: "Guide"
+                desc: "Real numbers from my Airbnb properties. See exactly how much you can make from short-term rentals. Use this calculator to analyze your own short-term rental deals and project ROI.",
+                tag: "Guide",
+                href: "/ShortTermRentalCalculator.xlsx"
               },
               {
-                title: "Property Analysis Calculator",
-                desc: "The spreadsheet I use to evaluate every deal. Plug in numbers and get instant ROI calculations.",
-                tag: "Tool"
+                title: "Buy and Hold Deal Analysis Calculator",
+                desc: "Analyze buy-and-hold rental deals with precision. Run numbers, calculate cash flow, ROI, and cap rates instantly. The exact tool I use to evaluate every investment opportunity.",
+                tag: "Tool",
+                href: "/BuyandHoldDealAnalysisCalculator.xlsx"
               }
             ].map((item, i) => (
               <div key={i} className="group relative overflow-hidden rounded-2xl bg-white border border-primary/10 p-8 hover:border-secondary/50 hover:shadow-lg transition-all">
@@ -343,7 +345,7 @@ export default function Home() {
                 </div>
                 <h3 className="mb-3 font-heading text-xl font-bold text-primary">{item.title}</h3>
                 <p className="mb-6 text-foreground/70">{item.desc}</p>
-                <a href="#" className="inline-flex items-center font-bold text-secondary hover:text-primary transition-colors">
+                <a href={item.href || "#"} className="inline-flex items-center font-bold text-secondary hover:text-primary transition-colors">
                   Download Now <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>

@@ -5,6 +5,55 @@ import { Download, FileText, Calculator, CheckCircle, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
 
+function FAQAccordion() {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+  
+  const faqs = [
+    {
+      q: "Are these resources really free?",
+      a: "Yes! All resources are completely free. No email required, no strings attached. I created these tools to help real estate investors make better decisions."
+    },
+    {
+      q: "Can I use these in my business?",
+      a: "Absolutely! These are yours to use, modify, and share with your team. Feel free to customize them for your specific needs and market conditions."
+    },
+    {
+      q: "Are these Excel files compatible with Google Sheets?",
+      a: "Yes! All Excel files can be opened and edited in Google Sheets. Simply upload them to your Google Drive and they'll work perfectly."
+    },
+    {
+      q: "Will you add more resources?",
+      a: "Yes! I'm constantly creating new tools and templates based on member feedback. Join the program to get early access to new resources and exclusive tools."
+    }
+  ];
+
+  return (
+    <div className="space-y-4">
+      {faqs.map((item, index) => (
+        <Card 
+          key={index} 
+          className="border-secondary/20 cursor-pointer hover:border-secondary/40 transition-colors" 
+          onClick={() => setOpenIndex(openIndex === index ? null : index)}
+        >
+          <CardHeader>
+            <CardTitle className="text-lg text-primary flex items-center justify-between">
+              {item.q}
+              <span className="text-secondary text-xl">{openIndex === index ? '−' : '+'}</span>
+            </CardTitle>
+          </CardHeader>
+          {openIndex === index && (
+            <CardContent>
+              <p className="text-foreground/80">
+                {item.a}
+              </p>
+            </CardContent>
+          )}
+        </Card>
+      ))}
+    </div>
+  );
+}
+
 export default function Resources() {
   // Scroll to top when component mounts
   React.useEffect(() => {
@@ -267,7 +316,7 @@ export default function Resources() {
       </section>
 
       {/* YouTube Videos Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white">
         <div className="container">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-16">
@@ -356,7 +405,7 @@ export default function Resources() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-heading text-4xl font-bold text-primary mb-6">
@@ -389,39 +438,7 @@ export default function Resources() {
               Resource FAQs
             </h2>
 
-            <div className="space-y-6">
-              {[
-                {
-                  q: "Are these resources really free?",
-                  a: "Yes! All resources are completely free. No email required, no strings attached. I created these tools to help real estate investors make better decisions."
-                },
-                {
-                  q: "Can I use these in my business?",
-                  a: "Absolutely! These are yours to use, modify, and share with your team. Feel free to customize them for your specific needs and market conditions."
-                },
-                {
-                  q: "Are these Excel files compatible with Google Sheets?",
-                  a: "Yes! All Excel files can be opened and edited in Google Sheets. Simply upload them to your Google Drive and they'll work perfectly."
-                },
-                {
-                  q: "Will you add more resources?",
-                  a: "Yes! I'm constantly creating new tools and templates based on member feedback. Join the program to get early access to new resources and exclusive tools."
-                }
-              ].map((item, index) => (
-                <Card key={index} className="border-secondary/20">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-primary">
-                      {item.q}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-foreground/80">
-                      {item.a}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <FAQAccordion />
           </div>
         </div>
       </section>

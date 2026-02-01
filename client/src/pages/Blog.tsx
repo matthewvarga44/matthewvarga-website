@@ -297,22 +297,24 @@ export default function Blog() {
             )}
 
             {/* Newsletter CTA */}
-            <div className="mt-20 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center text-white">
+            <form action="https://formspree.io/f/xpqlzazz" method="POST" className="mt-20 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center text-white">
               <h3 className="text-3xl font-bold mb-4">Stay Updated with Real Estate Insights</h3>
               <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
                 Get weekly market analysis, investment strategies, and exclusive tips delivered to your inbox. Join 500+ real estate investors.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <div className="flex flex-col gap-4 max-w-md mx-auto items-center">
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-6 py-3 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-gold"
+                  required
+                  className="w-full px-6 py-3 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-white"
                 />
-                <button className="bg-gold hover:bg-gold/90 text-slate-900 font-bold py-3 px-8 rounded-lg transition-colors">
+                <button type="submit" className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-3 px-8 rounded-lg transition-colors w-full sm:w-auto">
                   Subscribe
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </section>
       </div>

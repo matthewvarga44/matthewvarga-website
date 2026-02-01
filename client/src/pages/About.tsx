@@ -235,8 +235,8 @@ export default function About() {
                 <p className="text-sm font-semibold text-foreground/70 uppercase tracking-wide">Monthly Passive Income</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-secondary mb-2">10 Yrs</p>
-                <p className="text-sm font-semibold text-foreground/70 uppercase tracking-wide">To Build Portfolio</p>
+                <p className="text-4xl font-bold text-secondary mb-2">20+ Yrs</p>
+                <p className="text-sm font-semibold text-foreground/70 uppercase tracking-wide">Experience</p>
               </div>
             </div>
           </div>
@@ -297,12 +297,12 @@ export default function About() {
         </div>
       </section>
 
-      {/* Why I Teach */}
+      {/* My Mission */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center mb-16">
             <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl mb-6">
-              Why I Teach
+              My Mission
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
               I didn't achieve financial freedom to keep it to myself. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.

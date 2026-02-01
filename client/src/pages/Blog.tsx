@@ -16,21 +16,22 @@ interface BlogPost {
 
 export default function Blog() {
   const [location, setLocation] = useLocation();
-  const queryParams = new URLSearchParams(location.split('?')[1] || '');
-  const pageFromUrl = parseInt(queryParams.get('page') || '1', 10);
-  const [currentPage, setCurrentPage] = React.useState(pageFromUrl);
+  const [currentPage, setCurrentPage] = React.useState(1);
   const postsPerPage = 10;
+  
+  // Update currentPage when URL changes
+  React.useEffect(() => {
+    const queryParams = new URLSearchParams(location.split('?')[1] || '');
+    const page = parseInt(queryParams.get('page') || '1', 10);
+    setCurrentPage(page);
+    window.scrollTo(0, 0);
+  }, [location]);
   
   // Scroll to top when component mounts
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   
-  // Scroll to top when page changes and update URL
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-    setLocation(`/blog?page=${currentPage}`);
-  }, [currentPage, setLocation]);
   
   const blogPosts: BlogPost[] = [
     {
@@ -43,16 +44,7 @@ export default function Blog() {
       image: "/images/blog-airbnb-arbitrage.jpg",
       slug: "airbnb-arbitrage-strategy"
     },
-    {
-      id: "2",
-      title: "Real Estate Market Analysis: 2026 Opportunities in Secondary Markets",
-      excerpt: "Secondary markets are generating unprecedented returns for savvy investors. I break down the data, show you where to look, and reveal the three metrics that predict market growth before it happens.",
-      category: "Market Insights",
-      date: "January 25, 2026",
-      readTime: "10 min read",
-      image: "/images/blog-market-analysis.jpg",
-      slug: "real-estate-market-2026"
-    },
+
     {
       id: "3",
       title: "Seller Financing 101: How to Close Deals Without Bank Approval",
@@ -73,16 +65,7 @@ export default function Blog() {
       image: "/images/blog-property-management.jpg",
       slug: "property-management-automation"
     },
-    {
-      id: "5",
-      title: "The 1031 Exchange: Tax-Free Real Estate Wealth Building",
-      excerpt: "A 1031 exchange is one of the most powerful wealth-building tools available to real estate investors. Learn how to structure exchanges, avoid common mistakes, and defer taxes indefinitely.",
-      category: "Tax Strategy",
-      date: "January 16, 2026",
-      readTime: "8 min read",
-      image: "/images/blog-1031-exchange.jpg",
-      slug: "1031-exchange-guide"
-    },
+
     {
       id: "6",
       title: "From Foreclosure to $10M Portfolio: My Real Estate Journey",
@@ -143,26 +126,7 @@ export default function Blog() {
       image: "/images/blog-financial-freedom.jpg",
       slug: "financial-freedom-real-estate"
     },
-    {
-      id: "17",
-      title: "Real Estate Wholesaling: Quick Profits Without Owning Property",
-      excerpt: "Learn how to profit from real estate deals without owning the property. A complete guide to wholesaling strategies, finding deals, and building your wholesaling business.",
-      category: "Wholesaling",
-      date: "January 18, 2026",
-      readTime: "11 min read",
-      image: "/images/blog-wholesaling.jpg",
-      slug: "real-estate-wholesaling"
-    },
-    {
-      id: "18",
-      title: "Vacation Rental Management: Beyond Airbnb",
-      excerpt: "Master the vacation rental business. Learn strategies for maximizing revenue, managing guests, and scaling your vacation rental portfolio beyond Airbnb.",
-      category: "Short-Term Rentals",
-      date: "January 20, 2026",
-      readTime: "12 min read",
-      image: "/images/blog-vacation-rental.jpg",
-      slug: "vacation-rental-management"
-    },
+
     {
       id: "19",
       title: "Building Your First Rental Portfolio: Year 1 Action Plan",
@@ -260,7 +224,7 @@ export default function Blog() {
             {/* Blog Grid */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {paginatedPosts.map((post) => (
-                <Link key={post.id} href={`/blog/${post.slug}?from_page=${currentPage}`}>
+                <Link key={post.id} href={`/blog/${post.slug}?from_page=${parseInt(new URLSearchParams(location.split('?')[1] || '').get('page') || '1', 10)}`}>
                   <div className="group h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gold transition-all duration-300 cursor-pointer">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300">
@@ -309,7 +273,7 @@ export default function Blog() {
               <div className="mt-12 flex justify-center items-center gap-2">
                 <button
                   onClick={() => {
-                    setCurrentPage(Math.max(1, currentPage - 1));
+                    setLocation(`/blog?page=${Math.max(1, currentPage - 1)}`);
                     window.scrollTo(0, 0);
                   }}
                   disabled={currentPage === 1}
@@ -323,7 +287,7 @@ export default function Blog() {
                     <button
                       key={page}
                       onClick={() => {
-                        setCurrentPage(page);
+                        setLocation(`/blog?page=${page}`);
                         window.scrollTo(0, 0);
                       }}
                       className={`px-3 py-2 rounded-lg font-semibold transition-colors ${
@@ -339,7 +303,7 @@ export default function Blog() {
                 
                 <button
                   onClick={() => {
-                    setCurrentPage(Math.min(totalPages, currentPage + 1));
+                    setLocation(`/blog?page=${Math.min(totalPages, currentPage + 1)}`);
                     window.scrollTo(0, 0);
                   }}
                   disabled={currentPage === totalPages}

@@ -1045,63 +1045,6 @@ const blogPostsData: Record<string, BlogPostData> = {
       { title: "Financial Freedom Through Real Estate", slug: "financial-freedom-roadmap" }
     ]
   },
-  "real-estate-tax-optimization": {
-    title: "Real Estate Tax Optimization: Legal Strategies to Minimize Your Tax Burden",
-    excerpt: "Discover the 7 most powerful tax strategies used by successful real estate investors to legally minimize taxes and keep more of your profits.",
-    category: "Tax Strategy",
-    date: "February 1, 2026",
-    readTime: "12 min read",
-    image: "/images/blog-tax-strategy.jpg",
-    author: "Matthew Varga",
-    disclaimer: "tax",
-    content: `
-<h2>Real Estate is Tax-Advantaged</h2>
-<p>Real estate is one of the most tax-advantaged investments available. But you have to know the rules. Most investors don't. They pay more taxes than necessary. They leave money on the table.</p>
-<p>In this post, I'm sharing the 7 most powerful tax strategies used by successful investors. These strategies can save you thousands every year.</p>
-
-<h2>Strategy 1: Depreciation</h2>
-<p>Depreciation is the most powerful tax tool. The IRS assumes buildings lose value over time. So you can deduct the "loss in value" from your taxes.</p>
-<p>Example: You buy a $300,000 property. The building is worth $250,000. You can depreciate $250,000 over 27.5 years = $9,090/year in deductions.</p>
-<p>This deduction reduces your taxable income. If you earn $30,000 in rent and deduct $9,090 in depreciation, your taxable income is only $20,910. You save taxes on $9,090 of income.</p>
-<p>At a 25% tax rate, that's $2,272/year in tax savings. Over 27.5 years, that's $62,480 in tax savings. And you still own the property.</p>
-
-<h2>Strategy 2: Cost Segregation</h2>
-<p>Cost segregation accelerates depreciation. Instead of depreciating the building over 27.5 years, you can depreciate components (appliances, flooring, roof) over 5-15 years.</p>
-<p>Example: A $300,000 property can be segregated into: building ($200,000, 27.5 years), appliances ($30,000, 5 years), flooring ($40,000, 15 years), roof ($30,000, 15 years).</p>
-<p>This creates larger deductions in early years. You save more taxes upfront. Cost segregation studies cost $3,000-$5,000 but save $10,000-$20,000 in taxes. Easy ROI.</p>
-
-<h2>Strategy 3: Deduct All Legitimate Expenses</h2>
-<p>You can deduct all expenses related to your rental property. This includes: mortgage interest (not principal), property taxes, insurance, maintenance, repairs, utilities, property management, advertising, and office supplies.</p>
-<p>Many investors miss deductions. Track everything. Keep receipts. Work with a CPA. Common missed deductions: travel to properties, office supplies, phone/internet, professional fees.</p>
-<p>If you earn $30,000 in rent and have $12,000 in expenses, your taxable income is $18,000. The $12,000 in deductions saves you $3,000 in taxes (at 25% rate).</p>
-
-<h2>Strategy 4: 1031 Exchange</h2>
-<p>A 1031 exchange lets you sell a property and buy another without paying capital gains tax. This is powerful for scaling your portfolio.</p>
-<p>Example: You sell a property for $400,000 (original cost $200,000, gain $200,000). Normally you'd pay 20% capital gains tax = $40,000. With a 1031 exchange, you reinvest the $400,000 into another property and pay $0 in taxes.</p>
-<p>You can do multiple 1031 exchanges throughout your life. This lets you scale your portfolio without paying taxes along the way. You only pay taxes when you finally sell and don't reinvest.</p>
-
-<h2>Strategy 5: Bonus Depreciation</h2>
-<p>Bonus depreciation lets you deduct 100% of the cost of certain property improvements in the year you make them, instead of depreciating over time.</p>
-<p>This applies to appliances, flooring, roof replacements, HVAC systems, and other improvements. If you spend $50,000 on renovations, you can deduct the entire $50,000 in year 1 instead of depreciating over 5-27 years.</p>
-<p>This creates huge deductions in renovation years, which can offset other income.</p>
-
-<h2>Strategy 6: Passive Loss Carryforwards</h2>
-<p>Real estate investors can deduct up to $25,000 in passive losses against active income (like your W2 job) if you actively participate in managing the property.</p>
-<p>If your losses exceed $25,000, you carry them forward to future years. This can save you thousands in taxes.</p>
-
-<h2>Strategy 7: Hire a Tax Professional</h2>
-<p>The best tax strategy is hiring a CPA who specializes in real estate. A good CPA will find deductions and strategies you miss. They'll save you more than they cost.</p>
-<p>I spend $2,000-$3,000/year on my CPA. She saves me $15,000-$20,000 in taxes. Easy ROI.</p>
-<p>Find a CPA who specializes in real estate. Interview multiple. Ask about their experience with depreciation, 1031 exchanges, and cost segregation. Invest in expertise.</p>
-
-<h2>The Bottom Line</h2>
-<p>Real estate is one of the most tax-advantaged investments available. But you have to know the rules. Use depreciation. Use 1031 exchanges. Deduct all legitimate expenses. Hire a good CPA. These strategies can save you thousands every year and accelerate your path to financial freedom. Don't leave money on the table.</p>
-    `,
-    relatedPosts: [
-      { title: "Building Your First Rental Portfolio", slug: "first-rental-portfolio-year-1" },
-      { title: "Financial Freedom Through Real Estate", slug: "financial-freedom-roadmap" }
-    ]
-  },
   "scaling-1-to-10-properties": {
     title: "Scaling from 1 to 10 Properties: The Exact System I Used",
     excerpt: "Most investors get stuck at 1-3 properties. Learn the exact system I used to scale from 1 property to 10 properties and generate $10,000+/month in passive income.",

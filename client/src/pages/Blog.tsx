@@ -32,6 +32,9 @@ export default function Blog() {
     window.scrollTo(0, 0);
   }, []);
   
+  const handlePageChange = (newPage: number) => {
+    setLocation(`/blog?page=${newPage}`);
+  };
   
   const blogPosts: BlogPost[] = [
     {
@@ -224,7 +227,7 @@ export default function Blog() {
             {/* Blog Grid */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {paginatedPosts.map((post) => (
-                <Link key={post.id} href={`/blog/${post.slug}?from_page=${parseInt(new URLSearchParams(location.split('?')[1] || '').get('page') || '1', 10)}`}>
+                <Link key={post.id} href={`/blog/${post.slug}?from_page=${currentPage}`}>
                   <div className="group h-full bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gold transition-all duration-300 cursor-pointer">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300">
@@ -272,10 +275,7 @@ export default function Blog() {
             {totalPages > 1 && (
               <div className="mt-12 flex justify-center items-center gap-2">
                 <button
-                  onClick={() => {
-                    setLocation(`/blog?page=${Math.max(1, currentPage - 1)}`);
-                    window.scrollTo(0, 0);
-                  }}
+                  onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
                   className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
@@ -286,10 +286,7 @@ export default function Blog() {
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}
-                      onClick={() => {
-                        setLocation(`/blog?page=${page}`);
-                        window.scrollTo(0, 0);
-                      }}
+                      onClick={() => handlePageChange(page)}
                       className={`px-3 py-2 rounded-lg font-semibold transition-colors ${
                         currentPage === page
                           ? "bg-gold text-slate-900"
@@ -302,10 +299,7 @@ export default function Blog() {
                 </div>
                 
                 <button
-                  onClick={() => {
-                    setLocation(`/blog?page=${Math.min(totalPages, currentPage + 1)}`);
-                    window.scrollTo(0, 0);
-                  }}
+                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 rounded-lg border border-slate-300 text-slate-900 font-semibold hover:border-gold hover:text-gold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >

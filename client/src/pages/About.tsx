@@ -176,7 +176,7 @@ export default function About() {
       {/* My Mission Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-center border-4 border-primary/30 rounded-full px-12 py-12">
             <h2 className="font-heading text-4xl font-bold tracking-tight text-primary mb-8">
               My Mission
             </h2>

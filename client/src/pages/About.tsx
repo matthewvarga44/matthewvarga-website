@@ -42,25 +42,25 @@ export default function About() {
                   My Real Estate Journey
                 </h2>
                 <p className="text-lg text-foreground/80 leading-relaxed mb-4">
-                  I didn't inherit wealth or get lucky breaks. I overcame devastating adversity, earned elite certifications, and systematically built a $10M+ real estate empire. Today, I'm a recognized thought leader, published expert, and sought-after speaker in real estate investing.
+                  My journey to $10M+ is really a story about discovering what's possible when you refuse to accept limitations.
                 </p>
               </div>
 
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
-                  My story started rough. In the 1990s, my family lost everything—foreclosure, job loss, no utilities. But that crisis taught me more than any classroom ever could. I decided right then that I was going to figure out wealth building, no matter what it took.
+                  I started with challenges—foreclosure, job loss, uncertainty. But I refused to let that be my ending. Instead, I decided to become an expert in wealth building. I earned my CFP and Mortgage Broker licenses, learned from mentors who had actually succeeded, and tested strategies until I found what worked.
                 </p>
                 <p>
-                  I got my CFP and Mortgage Broker license, and I studied under people who actually knew how to build wealth. I developed strategies that work because I've tested them myself in real market conditions.
+                  And it worked. Big time. A $10M+ real estate portfolio. $49,000+ monthly income. Retired in my 30s. Traveled to 40+ countries. Built multiple income streams. But honestly? The best part isn't the numbers—it's about being able to do what i want when i want.
                 </p>
                 <p>
-                  The proof is in the numbers. I've built a $10M+ real estate portfolio that generates $49,000+ every month in income. I went from broke to multi-millionaire by staying disciplined and making smart moves. Everything I teach, I've actually done.
+                  I get to travel whenever I want. Spend time with people I love. Work on projects that excite me. Live without the stress of a 9-5 job. This is what financial freedom actually looks like, and it's incredible.
                 </p>
                 <p>
-                  My work got noticed. I've spoken at real estate conferences, been on multiple podcasts, and helped thousands of people escape the 9-5 grind and build real financial freedom.
+                  I speak at real estate conferences, I'm featured in podcasts and publications, and I've helped thousands escape the 9-5 grind. But what genuinely excites me most is helping people realize they can build this too. You don't have to choose between financial success and enjoying your life. You can have both.
                 </p>
                 <p>
-                  Today, I live the life I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This is real—not theory. I teach exactly what worked for me, and I'm committed to helping others do the same.
+                  Everything I teach comes from my own experience. Every strategy works because I've tested it. And I'm genuinely excited to help you build the freedom and life you deserve.
                 </p>
               </div>
             </div>

@@ -166,7 +166,7 @@ export default function Coaching() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Exclusive Community</h3>
                   <p className="text-primary-foreground/90">
-                    Network with 300 serious investors and entrepreneurs. Share deals, strategies, and support with people who understand your ambitions.
+                    Network with 100 serious investors and entrepreneurs. Share deals, strategies, and support with people who understand your ambitions.
                   </p>
                 </div>
               </div>

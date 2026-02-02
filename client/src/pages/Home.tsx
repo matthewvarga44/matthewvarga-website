@@ -52,7 +52,7 @@ export default function Home() {
               Retire with <span className="text-secondary">Rentals</span>. Build Your Legacy.
             </h1>
             <p className="max-w-[600px] text-lg text-primary-foreground/90 md:text-xl leading-relaxed font-light">
-              Join 300+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s.
+              Join 100+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/apply-mastermind">
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
               <div className="w-px h-12 bg-secondary/30"></div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary">300</p>
+                <p className="font-bold text-secondary">100</p>
                 <p className="text-xs uppercase tracking-wide">Program Members</p>
               </div>
               <div className="w-px h-12 bg-secondary/30"></div>
@@ -112,7 +112,7 @@ export default function Home() {
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Real Estate Owned</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-4xl font-extrabold text-secondary">300+</h3>
+              <h3 className="text-4xl font-extrabold text-secondary">100+</h3>
               <p className="text-sm font-medium text-foreground/70 uppercase tracking-wide">Program Members</p>
             </div>
             <div className="space-y-2">

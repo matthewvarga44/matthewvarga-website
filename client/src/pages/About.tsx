@@ -212,7 +212,7 @@ export default function About() {
               Ready to Build Your Wealth?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+              Join 100+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
             <Button 
               size="lg" 

@@ -295,7 +295,7 @@ export default function Resources() {
               Total Value: $1,275+
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              These are the exact tools I've used to build a $10M+ portfolio and help 300+ members achieve their financial goals. Download them all for free and start analyzing deals today.
+              These are the exact tools I've used to build a $10M+ portfolio and help 100+ members achieve their financial goals. Download them all for free and start analyzing deals today.
             </p>
             <div className="grid gap-6 md:grid-cols-3 max-w-2xl mx-auto mb-12">
               <div>
@@ -412,7 +412,7 @@ export default function Resources() {
               Ready to Scale Your Real Estate Business?
             </h2>
             <p className="text-lg text-foreground/80 mb-8">
-              These free resources are just the beginning. Join Retire with Rentals to get personalized coaching, expert calls, accountability groups, and a community of 300+ investors all working toward financial freedom.
+              These free resources are just the beginning. Join Retire with Rentals to get personalized coaching, expert calls, accountability groups, and a community of 100+ investors all working toward financial freedom.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/faq">

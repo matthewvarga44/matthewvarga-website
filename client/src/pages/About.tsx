@@ -120,6 +120,34 @@ export default function About() {
         </div>
       </section>
 
+
+
+      {/* My Mission Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container">
+          <div className="mx-auto max-w-3xl text-center border-4 border-primary/30 rounded-full px-12 py-12">
+            <h2 className="font-heading text-4xl font-bold tracking-tight text-primary mb-8">
+              My Mission
+            </h2>
+            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+              I didn't achieve financial freedom to keep it to myself. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
+            </p>
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              My mission is to help 10,000 people achieve financial freedom through real estate investing. I'm committed to sharing the exact strategies I used to build my $10M+ portfolio, and I'm building a community of serious investors who support each other on this journey.
+            </p>
+            <div className="flex justify-center">
+              <Button 
+                size="lg" 
+                className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 cursor-pointer"
+                onClick={() => window.location.href = '/apply-mastermind'}
+              >
+                Join the Movement
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Milestones Section */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container">
@@ -169,32 +197,6 @@ export default function About() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* My Mission Section */}
-      <section className="py-20 md:py-32 bg-white">
-        <div className="container">
-          <div className="mx-auto max-w-3xl text-center border-4 border-primary/30 rounded-full px-12 py-12">
-            <h2 className="font-heading text-4xl font-bold tracking-tight text-primary mb-8">
-              My Mission
-            </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              I didn't achieve financial freedom to keep it to myself. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
-            </p>
-            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              My mission is to help 10,000 people achieve financial freedom through real estate investing. I'm committed to sharing the exact strategies I used to build my $10M+ portfolio, and I'm building a community of serious investors who support each other on this journey.
-            </p>
-            <div className="flex justify-center">
-              <Button 
-                size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 cursor-pointer"
-                onClick={() => window.location.href = '/apply-mastermind'}
-              >
-                Join the Movement
-              </Button>
-            </div>
           </div>
         </div>
       </section>

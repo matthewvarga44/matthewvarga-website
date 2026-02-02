@@ -86,7 +86,7 @@ export default function Learn() {
       </section>
 
       {/* Course 2: Retire with Rentals */}
-      <section className="py-16 md:py-24 bg-slate-900 text-white">
+      <section className="py-16 md:py-24 bg-white text-foreground">
         <div className="container">
           <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
             {/* Image */}
@@ -101,33 +101,33 @@ export default function Learn() {
             {/* Content */}
             <div className="flex-1">
 
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
                 Retire with Rentals Course
               </h2>
-              <p className="text-lg text-white/80 leading-relaxed mb-8">
+              <p className="text-lg text-foreground/70 leading-relaxed mb-8">
                 Learn the proven buy-and-hold strategy I used to build a $10M+ portfolio and achieve financial freedom in my 30s. This is the long-term wealth-building system that creates generational income.
               </p>
 
               <div className="space-y-4 mb-10">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/80">Buy-and-hold investment strategy fundamentals</span>
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground/70">Buy-and-hold investment strategy fundamentals</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/80">Property analysis, underwriting & due diligence</span>
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground/70">Property analysis, underwriting & due diligence</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/80">Financing strategies & leverage optimization</span>
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground/70">Financing strategies & leverage optimization</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/80">Tenant management & property operations</span>
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground/70">Tenant management & property operations</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-0.5" />
-                  <span className="text-white/80">Build a $10M+ portfolio & achieve financial freedom</span>
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground/70">Build a $10M+ portfolio & achieve financial freedom</span>
                 </div>
               </div>
 

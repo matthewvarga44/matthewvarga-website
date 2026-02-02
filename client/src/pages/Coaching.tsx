@@ -237,8 +237,11 @@ export default function Coaching() {
                   <span className="text-4xl font-bold text-secondary">$3,000</span>
                 </div>
                 <div className="flex items-center justify-between pb-4 border-b border-secondary/20">
-                  <span className="text-lg font-semibold text-foreground">Valued at over</span>
-                  <span className="text-2xl font-bold text-foreground">$10,000</span>
+                  <span className="text-lg font-semibold text-foreground">Program Value</span>
+                  <div className="text-right">
+                    <p className="text-xs text-foreground/60 mb-1">Valued at</p>
+                    <span className="text-2xl font-bold text-foreground line-through decoration-red-500 decoration-2">$10,000</span>
+                  </div>
                 </div>
                 <div className="flex items-center justify-between pb-4 border-b border-secondary/20">
                   <span className="text-lg font-semibold text-foreground">Program Members</span>

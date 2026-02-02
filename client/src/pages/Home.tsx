@@ -149,19 +149,19 @@ export default function Home() {
               <div className="space-y-6">
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    My journey didn't start with success. In the 90s, my family lost everything—foreclosure, job loss, no utilities. That crisis became my wake-up call. I decided right then that I was going to figure out wealth building, no matter what it took.
+                    My journey didn't start with success—it started with loss. In the 90s, my family faced foreclosure, job loss, and the kind of hardship that makes you question everything. But that crisis became the best teacher I ever had. I made a decision that day: I was going to learn everything I could about building wealth.
                   </p>
                 </div>
                 
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    I got my CFP and Mortgage Broker license, and I studied under people who actually knew how to build wealth. I developed strategies that work because I've tested them myself in real market conditions. The proof is in the numbers—I've built a $10M+ portfolio that generates $49,000+ every month in income.
+                    I pursued my CFP and Mortgage Broker licenses, but more importantly, I learned from mentors who had actually built real wealth. I didn't just study theory from a book—I learned the hard way, by actually doing the work in the real world. And it worked. Today, I've built a $10M+ portfolio generating $49,000+ monthly, retired in my 30s, traveled 40+ countries, and created multiple income streams.
                   </p>
                 </div>
                 
                 <div>
                   <p className="text-base text-foreground/80 leading-relaxed mb-4">
-                    Today, I live the life I built. I retired in my 30s, traveled 40+ countries, and created multiple income streams. This is real—not theory. I help ambitious professionals do the same through proven real estate strategies and a community of 300+ serious investors.
+                    But here's what matters most: I didn't do it alone, and you don't have to either. I help ambitious people achieve Financial Freedom through proven real estate strategies and a community of serious investors who are committed to the same goal.
                   </p>
                 </div>
               </div>

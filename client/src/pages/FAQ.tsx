@@ -68,11 +68,11 @@ export default function FAQ() {
       questions: [
         {
           q: "How much does the program cost?",
-          a: "$3,000 per year, or $250 per month. That breaks down to roughly $250/month for unlimited access to monthly one-on-one coaching ($400/hour value), monthly expert calls, accountability groups, the private community, exclusive resources, and annual retreats. Most members recoup this investment within their first deal."
+          a: "$3,000 per year, paid upfront at enrollment. That breaks down to roughly $250/month for unlimited access to monthly one-on-one coaching ($400/hour value), monthly expert calls, accountability groups, the private community, exclusive resources, and annual retreats. Most members recoup this investment within their first deal."
         },
         {
           q: "Is there a payment plan?",
-          a: "Yes! You can pay $3,000 upfront for the full year, or $250/month. Both options give you full access to everything. Choose whatever works best for your cash flow."
+          a: "No, the program requires a one-time upfront payment of $3,000 for the full year. This ensures commitment from members and allows us to deliver the highest quality coaching and community experience. Payment is due at enrollment."
         },
         {
           q: "What if I'm not satisfied with the program?",

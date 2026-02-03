@@ -35,6 +35,7 @@ function Router() {
       <Route path="/newsletter" component={Newsletter} />
       <Route path="/podcast" component={Podcast} />
       <Route path="/learn" component={Learn} />
+      <Route path="/courses" component={Learn} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

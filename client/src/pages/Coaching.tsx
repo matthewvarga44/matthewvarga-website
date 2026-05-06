@@ -227,7 +227,7 @@ export default function Coaching() {
                   Join the The Ordinary Millionaire Community Mastermind
                 </h3>
                 <p className="text-lg text-foreground/80 mb-8">
-                  Limited to 300 members. Spots are filling up fast.
+                  Join our exclusive community of serious investors.
                 </p>
               </div>
 
@@ -243,10 +243,7 @@ export default function Coaching() {
                     <span className="text-2xl font-bold text-red-600 line-through decoration-black decoration-2">$10,000</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between pb-4 border-b border-secondary/20">
-                  <span className="text-lg font-semibold text-foreground">Program Members</span>
-                  <span className="text-2xl font-bold text-secondary">300 (Capped)</span>
-                </div>
+
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-semibold text-foreground">Access Duration</span>
                   <span className="text-2xl font-bold text-foreground">12 Months</span>
@@ -266,7 +263,7 @@ export default function Coaching() {
               </Link>
 
               <p className="text-center text-sm text-foreground/60 mt-6">
-                Only 300 members allowed. Spots are filling up fast. Once we reach capacity, enrollment closes.
+                We maintain a selective community to ensure quality and personalized attention.
               </p>
             </div>
           </div>
@@ -281,7 +278,7 @@ export default function Coaching() {
               Ready to The Ordinary Millionaire Community?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Join 300+ investors building wealth through real estate and alternative business models. Limited spots available.
+              Join serious investors building wealth through real estate and alternative business models. Limited spots available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/apply-mastermind">

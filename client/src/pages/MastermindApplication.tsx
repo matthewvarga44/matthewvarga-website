@@ -43,7 +43,7 @@ export default function MastermindApplication() {
               <h3 className="text-2xl font-bold text-primary mb-4">Why the call?</h3>
               <ol className="space-y-3 mb-8 list-decimal list-inside">
                 <li className="text-foreground/90">
-                  <strong>We're selective</strong> – The Ordinary Millionaire Community is capped at 300 members so we can go deep, not wide. We want to get to know you and make sure you're going to be a valuable member of the community too.
+                  <strong>We're selective</strong> – The Ordinary Millionaire Community maintains a tight-knit group so we can go deep, not wide. We want to get to know you and make sure you're going to be a valuable member of the community too.
                 </li>
                 <li className="text-foreground/90">
                   <strong>We focus on serious investors</strong> – This program isn't for beginners or info collectors. We want to understand your real estate experience and what you've accomplished so far.
@@ -66,7 +66,7 @@ export default function MastermindApplication() {
 
               <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg mb-8">
                 <p className="text-amber-900 m-0">
-                  <strong>While we're typically full at 300 members, a few spots open each month.</strong> Apply now! If there's space available, you'll be admitted right away. Otherwise, you'll be added to the waitlist and be the first to be notified when a spot becomes available.
+                  <strong>We're currently at capacity and accept new members selectively.</strong> Apply now! If there's space available, you'll be admitted right away. Otherwise, you'll be added to the waitlist and be the first to be notified when a spot becomes available.
                 </p>
               </div>
 

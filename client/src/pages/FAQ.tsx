@@ -26,7 +26,7 @@ export default function FAQ() {
       questions: [
         {
           q: "What exactly is the The Ordinary Millionaire Community mastermind program?",
-          a: "The Ordinary Millionaire Community is an exclusive mastermind community of 300 real estate investors committed to building wealth through rental properties, Airbnb, and alternative business models. You get monthly one-on-one coaching with me, access to industry experts, a private community, accountability groups, and exclusive resources—all designed to accelerate your path to financial freedom."
+          a: "The Ordinary Millionaire Community is an exclusive mastermind community of serious real estate investors committed to building wealth through rental properties, Airbnb, and alternative business models. You get monthly one-on-one coaching with me, access to industry experts, a private community, accountability groups, and exclusive resources—all designed to accelerate your path to financial freedom."
         },
         {
           q: "How is this different from other real estate courses?",
@@ -118,7 +118,7 @@ export default function FAQ() {
       questions: [
         {
           q: "How large is the community?",
-          a: "We cap the program at 300 members to maintain quality and ensure you get personalized attention. This creates an exclusive, tight-knit community rather than a massive, impersonal group. Currently, we have [X] members and are filling up fast."
+          a: "We maintain a selective, tight-knit community to ensure you get personalized attention and quality interactions. This creates an exclusive community rather than a massive, impersonal group. We're currently at capacity and accepting new members selectively."
         },
         {
           q: "Will I actually connect with other members?",
@@ -307,19 +307,6 @@ export default function FAQ() {
               <CardContent>
                 <p className="text-foreground/80">
                   I've personally built a $10M+ portfolio. I'm not teaching theory—I'm teaching what actually works.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-secondary/20 text-center">
-              <CardHeader>
-                <CardTitle className="text-secondary text-4xl font-bold mb-2">
-                  300+
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/80">
-                  300+ members have joined and are seeing real results. We're capped at 300 to maintain quality.
                 </p>
               </CardContent>
             </Card>

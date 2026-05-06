@@ -74,11 +74,6 @@ export default function Home() {
               </div>
               <div className="w-px h-12 bg-secondary/30"></div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary">100</p>
-                <p className="text-xs uppercase tracking-wide">Program Members</p>
-              </div>
-              <div className="w-px h-12 bg-secondary/30"></div>
-              <div className="space-y-1">
                 <p className="font-bold text-secondary">30s</p>
                 <p className="text-xs uppercase tracking-wide">Retired & Traveling</p>
               </div>
@@ -375,7 +370,7 @@ export default function Home() {
               Ready to Build Your Wealth?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join 300+ investors in the The Ordinary Millionaire Community program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+              Join serious investors in The Ordinary Millionaire Community program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
             <Link href="/apply-mastermind">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">

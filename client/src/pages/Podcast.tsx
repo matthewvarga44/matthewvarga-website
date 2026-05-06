@@ -286,9 +286,9 @@ export default function Podcast() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-3">How does this relate to the Retire with Rentals program?</h3>
+              <h3 className="text-2xl font-bold mb-3">How does this relate to the The Ordinary Millionaire Community program?</h3>
               <p className="text-slate-400 text-lg">
-                The podcast complements the Retire with Rentals program by providing diverse perspectives and strategies from successful entrepreneurs. It's a way to learn from multiple experts and get inspired by different paths to financial freedom.
+                The podcast complements the The Ordinary Millionaire Community program by providing diverse perspectives and strategies from successful entrepreneurs. It's a way to learn from multiple experts and get inspired by different paths to financial freedom.
               </p>
             </div>
           </div>
@@ -300,14 +300,14 @@ export default function Podcast() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6 text-white">Ready to Build Your Wealth?</h2>
           <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
-            While you wait for the podcast, join the Retire with Rentals program and start building your real estate portfolio today.
+            While you wait for the podcast, join the The Ordinary Millionaire Community program and start building your real estate portfolio today.
           </p>
           <Button 
             size="lg" 
             className="bg-amber-500 hover:bg-amber-600 text-black font-bold text-lg px-8"
             onClick={() => setLocation('/coaching')}
           >
-            Learn About Retire with Rentals
+            Learn About The Ordinary Millionaire Community
           </Button>
         </div>
       </section>

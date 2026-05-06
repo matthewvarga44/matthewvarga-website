@@ -512,7 +512,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 <h2>The Freedom Phase (2020+)</h2>
 <p>In my 30s, I achieved financial freedom. My passive income exceeded my expenses, and I could choose how to spend my time. I traveled to 40+ countries, ran with the bulls in Spain, skydived, and lived life on my own terms.</p>
 
-<p>But I realized that financial freedom without purpose felt empty. That's when I decided to start teaching. I created the Retire with Rentals program to help others achieve the same freedom I had.</p>
+<p>But I realized that financial freedom without purpose felt empty. That's when I decided to start teaching. I created the The Ordinary Millionaire Community program to help others achieve the same freedom I had.</p>
 
 <h2>The Key Lessons</h2>
 <p><strong>1. Start with What You Have</strong></p>
@@ -533,7 +533,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 <h2>The Journey Continues</h2>
 <p>My journey from foreclosure to $10M+ portfolio wasn't overnight. It took discipline, systems, and relentless execution. But it's proof that anyone can build wealth through real estate if they're willing to learn and take action.</p>
 
-<p>Now, I'm focused on helping others achieve the same freedom. That's why I created Retire with Rentals. I want to accelerate your journey and help you avoid the mistakes I made.</p>
+<p>Now, I'm focused on helping others achieve the same freedom. That's why I created The Ordinary Millionaire Community. I want to accelerate your journey and help you avoid the mistakes I made.</p>
     `,
     relatedPosts: [
       { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },
@@ -1126,7 +1126,7 @@ export default function BlogPost() {
                 </div>
                 <h3 className="text-3xl font-bold mb-4">Ready to Build Your Real Estate Portfolio?</h3>
                 <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-                  Join the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio. Get personalized guidance from someone who has been where you are.
+                  Join the The Ordinary Millionaire Community program and learn the exact strategies I used to build a $10M+ portfolio. Get personalized guidance from someone who has been where you are.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/apply-mastermind">

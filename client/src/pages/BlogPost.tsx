@@ -517,7 +517,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 <h2>The Freedom Phase (2020+)</h2>
 <p>In my 30s, I achieved financial freedom. My passive income exceeded my expenses, and I could choose how to spend my time. I traveled to 40+ countries, ran with the bulls in Spain, skydived, and lived life on my own terms.</p>
 
-<p>But I realized that financial freedom without purpose felt empty. That's when I decided to start teaching. I created the Retire with Rentals program to help others achieve the same freedom I had.</p>
+<p>But I realized that financial freedom without purpose felt empty. That's when I decided to start teaching. I created the The Ordinary Millionaire Community program to help others achieve the same freedom I had.</p>
 
 <h2>The Key Lessons</h2>
 <p><strong>1. Start with What You Have</strong></p>
@@ -538,7 +538,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 <h2>The Journey Continues</h2>
 <p>My journey from foreclosure to $10M+ portfolio wasn't overnight. It took discipline, systems, and relentless execution. But it's proof that anyone can build wealth through real estate if they're willing to learn and take action.</p>
 
-<p>Now, I'm focused on helping others achieve the same freedom. That's why I created Retire with Rentals. I want to accelerate your journey and help you avoid the mistakes I made.</p>
+<p>Now, I'm focused on helping others achieve the same freedom. That's why I created The Ordinary Millionaire Community. I want to accelerate your journey and help you avoid the mistakes I made.</p>
     `,
     relatedPosts: [
       { title: "Airbnb Arbitrage Strategy", slug: "airbnb-arbitrage-strategy" },

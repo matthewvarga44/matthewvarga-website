@@ -130,7 +130,7 @@ export default function About() {
               My Mission
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              I didn't achieve financial freedom to keep it to myself. I built the Retire with Rentals program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
+              I didn't achieve financial freedom to keep it to myself. I built The Ordinary Millionaire Community program to help ambitious professionals like you escape the 9-5 and build lasting wealth through proven real estate strategies.
             </p>
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               My mission is to help 10,000 people achieve financial freedom through real estate investing. I'm committed to sharing the exact strategies I used to build my $10M+ portfolio, and I'm building a community of serious investors who support each other on this journey.
@@ -212,7 +212,7 @@ export default function About() {
               Ready to Build Your Wealth?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join 100+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+              Learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s. Join The Ordinary Millionaire Community today.
             </p>
             <Button 
               size="lg" 

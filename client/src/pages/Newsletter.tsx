@@ -71,7 +71,7 @@ export default function Newsletter() {
                 Check your email for your first issue. We're excited to share insights that will help you build wealth through real estate.
               </p>
               <p className="text-foreground/60">
-                In the meantime, explore more resources on our site or join the Retire with Rentals mastermind program.
+                In the meantime, explore more resources on our site or join the The Ordinary Millionaire Community mastermind program.
               </p>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default function Newsletter() {
               },
               {
                 q: "What if I want more personalized coaching?",
-                a: "We offer the Retire with Rentals mastermind program for investors ready for one-on-one coaching, deal analysis, and community support.",
+                a: "We offer the The Ordinary Millionaire Community mastermind program for investors ready for one-on-one coaching, deal analysis, and community support.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-lg p-6 border border-border">

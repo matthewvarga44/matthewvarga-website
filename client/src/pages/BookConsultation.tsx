@@ -17,7 +17,7 @@ export default function BookConsultation() {
     {
       icon: <Users className="h-6 w-6" />,
       title: "Learn About the Program",
-      description: "Get an overview of the Retire with Rentals mastermind and how it can help you achieve financial freedom."
+      description: "Get an overview of the The Ordinary Millionaire Community mastermind and how it can help you achieve financial freedom."
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -46,7 +46,7 @@ export default function BookConsultation() {
               Schedule Your <span className="text-secondary">Free Consultation</span>
             </h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
-              Interested in learning more about the Retire with Rentals mastermind program? Schedule a free 15-minute consultation call with me to discuss your goals and see if the program is right for you.
+              Interested in learning more about the The Ordinary Millionaire Community mastermind program? Schedule a free 15-minute consultation call with me to discuss your goals and see if the program is right for you.
             </p>
             <Button 
               size="lg" 
@@ -67,7 +67,7 @@ export default function BookConsultation() {
               What We'll Discuss
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              During your free 15-minute consultation, we'll explore your real estate goals and discuss whether the Retire with Rentals mastermind is the right fit for you.
+              During your free 15-minute consultation, we'll explore your real estate goals and discuss whether the The Ordinary Millionaire Community mastermind is the right fit for you.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export default function BookConsultation() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">What We'll Cover</h3>
                   <p className="text-primary-foreground/90">
-                    Your real estate goals, current situation, what you're looking to achieve, and how the Retire with Rentals mastermind program can help you get there.
+                    Your real estate goals, current situation, what you're looking to achieve, and how the The Ordinary Millionaire Community mastermind program can help you get there.
                   </p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function BookConsultation() {
                 </div>
                 <div>
                   <p className="text-lg text-foreground/90">
-                    You're curious about the Retire with Rentals mastermind program and want to learn more before committing.
+                    You're curious about the The Ordinary Millionaire Community mastermind program and want to learn more before committing.
                   </p>
                 </div>
               </div>

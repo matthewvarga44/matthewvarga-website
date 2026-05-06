@@ -81,7 +81,7 @@ export default function Coaching() {
         <div className="container relative z-10">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-5xl font-extrabold tracking-tight sm:text-6xl leading-tight mb-6">
-              The <span className="text-secondary">Retire with Rentals</span> Mastermind
+              The <span className="text-secondary">The Ordinary Millionaire Community</span> Mastermind
             </h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
               Join an exclusive community of ambitious investors and entrepreneurs committed to building wealth through real estate and alternative business models. Get access to proven strategies, expert guidance, and a network of like-minded peers.
@@ -110,7 +110,7 @@ export default function Coaching() {
               What's Included in Your Membership
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              The Retire with Rentals program is designed to accelerate your journey to financial independence through comprehensive support, expert guidance, and a thriving community.
+              The The Ordinary Millionaire Community program is designed to accelerate your journey to financial independence through comprehensive support, expert guidance, and a thriving community.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export default function Coaching() {
         <div className="container">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl mb-12 text-center">
-              Why Join <span className="text-secondary">Retire with Rentals</span>?
+              Why Join <span className="text-secondary">The Ordinary Millionaire Community</span>?
             </h2>
 
             <div className="space-y-8">
@@ -224,7 +224,7 @@ export default function Coaching() {
             <div className="rounded-2xl border-2 border-secondary bg-white p-8 md:p-12 shadow-xl">
               <div className="text-center mb-8">
                 <h3 className="font-heading text-3xl font-bold text-primary mb-4">
-                  Join the Retire with Rentals Mastermind
+                  Join the The Ordinary Millionaire Community Mastermind
                 </h3>
                 <p className="text-lg text-foreground/80 mb-8">
                   Limited to 300 members. Spots are filling up fast.
@@ -278,7 +278,7 @@ export default function Coaching() {
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-heading text-4xl font-bold tracking-tight mb-6">
-              Ready to Retire with Rentals?
+              Ready to The Ordinary Millionaire Community?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
               Join 300+ investors building wealth through real estate and alternative business models. Limited spots available.

@@ -46,13 +46,13 @@ export default function Home() {
         <div className="container relative z-10 grid gap-12 md:grid-cols-2 md:items-center">
           <div className="space-y-8">
             <div className="inline-block rounded-full bg-secondary/20 px-4 py-1.5 text-sm font-semibold text-secondary">
-              Retire with Rentals
+              The Ordinary Millionaire Community
             </div>
             <h1 className="font-heading text-5xl font-extrabold tracking-tight text-primary-foreground sm:text-6xl md:text-7xl leading-tight">
               Retire with <span className="text-secondary">Rentals</span>. Build Your Legacy.
             </h1>
             <p className="max-w-[600px] text-lg text-primary-foreground/90 md:text-xl leading-relaxed font-light">
-              Join 100+ real estate investors in the Retire with Rentals program. Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s.
+              Learn the proven strategies I used to build a $10M+ portfolio and achieve financial freedom in my 30s. Join The Ordinary Millionaire Community today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/apply-mastermind">
@@ -239,7 +239,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Retire with Rentals Program Section */}
+      {/* The Ordinary Millionaire Community Program Section */}
       <section className="bg-primary text-primary-foreground py-20 md:py-32">
         <div className="container">
           <div className="mx-auto max-w-4xl">
@@ -287,11 +287,7 @@ export default function Home() {
                     <span className="font-bold">$250</span>
                   </div>
                   <div className="h-px bg-secondary/20"></div>
-                  <div className="flex items-center justify-between text-primary-foreground/90">
-                    <span>Program Members</span>
-                    <span className="font-bold">300 (Capped)</span>
-                  </div>
-                  <div className="h-px bg-secondary/20"></div>
+
                   <div className="flex items-center justify-between text-primary-foreground/90">
                     <span>Access Duration</span>
                     <span className="font-bold">12 Months</span>
@@ -303,9 +299,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 
-                <p className="text-center text-primary-foreground/60 text-sm mt-6">
-                  Only 300 members allowed. Spots are filling up fast.
-                </p>
+
               </div>
             </div>
             <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 backdrop-blur-sm">
@@ -318,7 +312,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-primary-foreground/90 leading-relaxed">
-                    <span className="font-bold text-secondary">Exclusive Community:</span> Network with 300 serious investors who are all working toward financial freedom. Share deals, ask questions, and grow together.
+                    <span className="font-bold text-secondary">Exclusive Community:</span> Network with serious investors who are all working toward financial freedom. Share deals, ask questions, and grow together.
                   </p>
                 </div>
                 <div>
@@ -384,7 +378,7 @@ export default function Home() {
               Ready to Build Your Wealth?
             </h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed mb-8">
-              Join 300+ investors in the Retire with Rentals program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
+              Join 300+ investors in the The Ordinary Millionaire Community program and learn the exact strategies I used to build a $10M+ portfolio and retire in my 30s.
             </p>
             <Link href="/apply-mastermind">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg px-8 h-14 rounded-full shadow-lg shadow-secondary/30 transition-all hover:translate-y-[-2px]">

@@ -125,7 +125,7 @@ export default function DownloadModal({
                 </div>
 
                 <p className="text-xs text-foreground/60">
-                  We'll add you to our email list so you can get more free resources, tips, and updates about the Retire with Rentals program. We respect your privacy.
+                  We'll add you to our email list so you can get more free resources, tips, and updates about the The Ordinary Millionaire Community program. We respect your privacy.
                 </p>
 
                 <Button

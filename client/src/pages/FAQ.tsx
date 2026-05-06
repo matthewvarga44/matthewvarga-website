@@ -25,16 +25,16 @@ export default function FAQ() {
       category: "Program Overview",
       questions: [
         {
-          q: "What exactly is the Retire with Rentals mastermind program?",
-          a: "Retire with Rentals is an exclusive mastermind community of 300 real estate investors committed to building wealth through rental properties, Airbnb, and alternative business models. You get monthly one-on-one coaching with me, access to industry experts, a private community, accountability groups, and exclusive resources—all designed to accelerate your path to financial freedom."
+          q: "What exactly is the The Ordinary Millionaire Community mastermind program?",
+          a: "The Ordinary Millionaire Community is an exclusive mastermind community of 300 real estate investors committed to building wealth through rental properties, Airbnb, and alternative business models. You get monthly one-on-one coaching with me, access to industry experts, a private community, accountability groups, and exclusive resources—all designed to accelerate your path to financial freedom."
         },
         {
           q: "How is this different from other real estate courses?",
-          a: "Most courses are one-way information delivery. Retire with Rentals is a living, breathing community with direct access to me for personalized coaching, monthly expert calls, peer accountability, deal-sharing, and ongoing support. You're not just learning strategies—you're joining a network of serious investors executing those strategies in real-time."
+          a: "Most courses are one-way information delivery. The Ordinary Millionaire Community is a living, breathing community with direct access to me for personalized coaching, monthly expert calls, peer accountability, deal-sharing, and ongoing support. You're not just learning strategies—you're joining a network of serious investors executing those strategies in real-time."
         },
         {
           q: "Who is this program for?",
-          a: "Retire with Rentals is for ambitious professionals who want to escape the 9-5, build passive income through real estate, and achieve financial freedom. Whether you're a complete beginner or an experienced investor looking to scale, this program has value. The only requirement is a genuine commitment to building wealth."
+          a: "The Ordinary Millionaire Community is for ambitious professionals who want to escape the 9-5, build passive income through real estate, and achieve financial freedom. Whether you're a complete beginner or an experienced investor looking to scale, this program has value. The only requirement is a genuine commitment to building wealth."
         },
         {
           q: "Is this program for beginners?",
@@ -160,7 +160,7 @@ export default function FAQ() {
       questions: [
         {
           q: "How do I join?",
-          a: "Click the 'Join Retire with Rentals' button on our website. You'll be taken to our enrollment page where you can sign up and make your first payment. You'll get immediate access to the community, resource library, and we'll schedule your first one-on-one coaching call."
+          a: "Click the 'Join The Ordinary Millionaire Community' button on our website. You'll be taken to our enrollment page where you can sign up and make your first payment. You'll get immediate access to the community, resource library, and we'll schedule your first one-on-one coaching call."
         },
         {
           q: "What happens after I enroll?",
@@ -168,7 +168,7 @@ export default function FAQ() {
         },
         {
           q: "Should I schedule a consultation first?",
-          a: "Absolutely! If you have questions or want to make sure this is the right fit, schedule a free 15-minute consultation. We'll discuss your goals, answer your questions, and help you decide if Retire with Rentals is right for you. No pressure—just a genuine conversation."
+          a: "Absolutely! If you have questions or want to make sure this is the right fit, schedule a free 15-minute consultation. We'll discuss your goals, answer your questions, and help you decide if The Ordinary Millionaire Community is right for you. No pressure—just a genuine conversation."
         },
         {
           q: "What if I'm still not sure?",
@@ -196,7 +196,7 @@ export default function FAQ() {
               Your Questions <span className="text-secondary">Answered</span>
             </h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
-              Everything you need to know about the Retire with Rentals mastermind program. Can't find your answer? Schedule a free consultation to chat directly.
+              Everything you need to know about the The Ordinary Millionaire Community mastermind program. Can't find your answer? Schedule a free consultation to chat directly.
             </p>
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function FAQ() {
               Still Have Questions?
             </h2>
             <p className="text-lg text-primary-foreground/90 mb-8">
-              Schedule a free 15-minute consultation with me. I'm happy to answer any questions and help you decide if Retire with Rentals is the right fit for your goals.
+              Schedule a free 15-minute consultation with me. I'm happy to answer any questions and help you decide if The Ordinary Millionaire Community is the right fit for your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book-consultation">

@@ -109,7 +109,7 @@ export default function Contact() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Let's Connect</h1>
             <p className="text-xl text-slate-300 mb-8">
-              Have questions about the Retire with Rentals program? Want to collaborate or discuss opportunities? I'd love to hear from you.
+              Have questions about the The Ordinary Millionaire Community program? Want to collaborate or discuss opportunities? I'd love to hear from you.
             </p>
           </div>
         </section>
@@ -246,7 +246,7 @@ export default function Contact() {
 
             <div className="mt-16 text-center">
               <div className="bg-gold/10 border border-gold/30 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-3">Ready to Join Retire with Rentals?</h3>
+                <h3 className="text-2xl font-bold mb-3">Ready to Join The Ordinary Millionaire Community?</h3>
                 <p className="text-slate-300 mb-6">
                   Schedule a free consultation to learn if the program is right for you
                 </p>

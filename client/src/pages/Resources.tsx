@@ -412,7 +412,7 @@ export default function Resources() {
               Ready to Scale Your Real Estate Business?
             </h2>
             <p className="text-lg text-foreground/80 mb-8">
-              These free resources are just the beginning. Join Retire with Rentals to get personalized coaching, expert calls, accountability groups, and a community of 100+ investors all working toward financial freedom.
+              These free resources are just the beginning. Join The Ordinary Millionaire Community to get personalized coaching, expert calls, accountability groups, and a community of 100+ investors all working toward financial freedom.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/faq">

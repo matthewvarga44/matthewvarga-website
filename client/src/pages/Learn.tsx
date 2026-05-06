@@ -85,7 +85,7 @@ export default function Learn() {
         </div>
       </section>
 
-      {/* Course 2: Retire with Rentals */}
+      {/* Course 2: The Ordinary Millionaire Community */}
       <section className="py-16 md:py-24 bg-white text-foreground">
         <div className="container">
           <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
@@ -93,7 +93,7 @@ export default function Learn() {
             <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
                 src="/images/retire-rentals-hero.jpg" 
-                alt="Retire with Rentals Course"
+                alt="The Ordinary Millionaire Community Course"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
             </div>

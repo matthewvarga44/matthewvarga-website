@@ -57,7 +57,7 @@ export default function Podcast() {
       </section>
 
       {/* Episodes Section */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-black">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Latest Episodes</h2>

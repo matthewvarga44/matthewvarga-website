@@ -82,7 +82,7 @@ export default function Podcast() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://www.spotify.com/search/the%20ordinary%20millionaire%20podcast" 
+                href="https://open.spotify.com/show/1vJHRnpmKxo0H4v10zUvqo" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -94,7 +94,7 @@ export default function Podcast() {
                 </Button>
               </a>
               <a 
-                href="https://podcasts.apple.com" 
+                href="https://podcasts.apple.com/us/podcast/the-ordinary-millionaire/id1885938813" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

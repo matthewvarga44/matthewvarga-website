@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
-            <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
+            <img src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
             <span className="font-heading text-2xl font-bold text-primary tracking-tight">
               MATTHEW<span className="text-secondary">VARGA</span>
             </span>
@@ -60,7 +60,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-8 mt-8">
                   <Link href="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
-                    <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
+                    <img src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
                     <span className="font-heading text-2xl font-bold text-primary">
                       MATTHEW<span className="text-secondary">VARGA</span>
                     </span>
@@ -99,7 +99,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <img src="/images/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
+              <img src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png" alt="Matthew Varga Logo" className="h-10 w-10" />
               <span className="font-heading text-2xl font-bold text-white tracking-tight">
                 MATTHEW<span className="text-secondary">VARGA</span>
               </span>

@@ -38,7 +38,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-primary text-primary-foreground py-24 md:py-40">
         <div className="absolute inset-0 opacity-5">
           <img 
-            src="/images/hero-bg.jpg" 
+            src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537412/matthewvarga/hero-bg.png" 
             alt="Background pattern" 
             className="h-full w-full object-cover"
           />
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary/20">
               {/* Matthew's professional photo */}
               <img 
-                src="/images/matthew-hero.jpg" 
+                src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537444/matthewvarga/matthew-hero.webp" 
                 alt="Matthew Varga" 
                 className="h-full w-full object-cover"
               />
@@ -126,7 +126,7 @@ export default function Home() {
             {/* Image */}
             <div className="flex justify-center order-2 md:order-1">
               <img 
-                src="/images/matthew-headshot.jpg" 
+                src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537442/matthewvarga/matthew-headshot.webp" 
                 alt="Matthew Varga - Real Estate Investor & Coach" 
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />

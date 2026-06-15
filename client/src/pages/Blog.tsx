@@ -26,7 +26,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "January 28, 2026",
       readTime: "8 min read",
-      image: "/images/blog-airbnb-arbitrage.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535786/matthewvarga/blog-airbnb-arbitrage.png",
       slug: "airbnb-arbitrage-strategy"
     },
 
@@ -37,7 +37,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "January 22, 2026",
       readTime: "9 min read",
-      image: "/images/blog-seller-financing.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537187/matthewvarga/blog-seller-financing.png",
       slug: "seller-financing-deals"
     },
     {
@@ -47,7 +47,7 @@ export default function Blog() {
       category: "Operations",
       date: "January 19, 2026",
       readTime: "7 min read",
-      image: "/images/blog-property-management.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536998/matthewvarga/blog-property-management.png",
       slug: "property-management-automation"
     },
 
@@ -58,7 +58,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "January 13, 2026",
       readTime: "12 min read",
-      image: "/images/blog-journey.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536785/matthewvarga/blog-journey.png",
       slug: "my-real-estate-journey"
     },
     {
@@ -68,7 +68,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "January 2, 2026",
       readTime: "10 min read",
-      image: "/images/blog-short-term-rental-secrets.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537211/matthewvarga/blog-short-term-rental-secrets.png",
       slug: "short-term-rental-secrets"
     },
     {
@@ -78,7 +78,7 @@ export default function Blog() {
       category: "Networking",
       date: "December 30, 2025",
       readTime: "9 min read",
-      image: "/images/blog-networking.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536948/matthewvarga/blog-networking.png",
       slug: "real-estate-networking"
     },
     {
@@ -88,7 +88,7 @@ export default function Blog() {
       category: "Tax Strategy",
       date: "January 8, 2026",
       readTime: "11 min read",
-      image: "/images/blog-tax-optimization.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537292/matthewvarga/blog-tax-optimization.png",
       slug: "real-estate-tax-optimization"
     },
     {
@@ -98,7 +98,7 @@ export default function Blog() {
       category: "Portfolio Growth",
       date: "January 12, 2026",
       readTime: "12 min read",
-      image: "/images/blog-portfolio-scaling.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536974/matthewvarga/blog-portfolio-scaling.png",
       slug: "portfolio-scaling"
     },
     {
@@ -108,7 +108,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "January 15, 2026",
       readTime: "13 min read",
-      image: "/images/blog-financial-freedom.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
       slug: "financial-freedom-real-estate"
     },
 
@@ -119,7 +119,7 @@ export default function Blog() {
       category: "Portfolio Growth",
       date: "January 31, 2026",
       readTime: "11 min read",
-      image: "/images/blog-portfolio-scaling.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536974/matthewvarga/blog-portfolio-scaling.png",
       slug: "first-rental-portfolio-year-1"
     },
     {
@@ -129,7 +129,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "January 31, 2026",
       readTime: "9 min read",
-      image: "/images/blog-market-analysis.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536840/matthewvarga/blog-market-analysis.png",
       slug: "cap-rates"
     },
     {
@@ -139,7 +139,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 1, 2026",
       readTime: "13 min read",
-      image: "/images/blog-financial-freedom.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
       slug: "why-most-never-achieve-financial-independence"
     },
     {
@@ -149,7 +149,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 1, 2026",
       readTime: "10 min read",
-      image: "/images/blog-financial-freedom.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
       slug: "passive-vs-active-income"
     },
     {
@@ -159,7 +159,7 @@ export default function Blog() {
       category: "Portfolio Growth",
       date: "February 1, 2026",
       readTime: "13 min read",
-      image: "/images/blog-portfolio-scaling.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536974/matthewvarga/blog-portfolio-scaling.png",
       slug: "scaling-1-to-10-properties"
     },
     {
@@ -169,7 +169,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 1, 2026",
       readTime: "14 min read",
-      image: "/images/blog-retiring-30s.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537117/matthewvarga/blog-retiring-30s.png",
       slug: "retiring-in-your-30s"
     },
     {
@@ -179,7 +179,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "February 1, 2026",
       readTime: "15 min read",
-      image: "/images/blog-broke-to-10m.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535833/matthewvarga/blog-broke-to-10m.png",
       slug: "broke-to-10m-portfolio"
     },
     {
@@ -189,7 +189,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 2, 2026",
       readTime: "10 min read",
-      image: "/images/blog-red-flags-rental.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537047/matthewvarga/blog-red-flags-rental.png",
       slug: "red-flags-rental-property"
     },
     {
@@ -199,7 +199,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 2, 2026",
       readTime: "12 min read",
-      image: "/images/blog-seller-financing-guide.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537163/matthewvarga/blog-seller-financing-guide.png",
       slug: "negotiate-seller-financing"
     },
     {
@@ -209,7 +209,7 @@ export default function Blog() {
       category: "Portfolio Growth",
       date: "February 3, 2026",
       readTime: "14 min read",
-      image: "/images/blog-10year-plan.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535721/matthewvarga/blog-10year-plan.png",
       slug: "10-year-plan-financial-freedom"
     },
     {
@@ -219,7 +219,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 3, 2026",
       readTime: "11 min read",
-      image: "/images/blog-investor-mistakes.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536759/matthewvarga/blog-investor-mistakes.png",
       slug: "biggest-mistakes-new-investors"
     },
     {
@@ -229,7 +229,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 4, 2026",
       readTime: "13 min read",
-      image: "/images/blog-side-hustles.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537264/matthewvarga/blog-side-hustles.png",
       slug: "side-hustles-extra-income"
     },
     {
@@ -239,7 +239,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 4, 2026",
       readTime: "10 min read",
-      image: "/images/blog-debt-snowball.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536074/matthewvarga/blog-debt-snowball.png",
       slug: "debt-snowball-method"
     },
     {
@@ -249,7 +249,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 5, 2026",
       readTime: "12 min read",
-      image: "/images/blog-rent-to-own.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537094/matthewvarga/blog-rent-to-own.png",
       slug: "rent-to-own-deals"
     },
     {
@@ -259,7 +259,7 @@ export default function Blog() {
       category: "Flipping",
       date: "February 5, 2026",
       readTime: "14 min read",
-      image: "/images/blog-house-flipping.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536702/matthewvarga/blog-house-flipping.png",
       slug: "house-flipping-side-hustle"
     },
     {
@@ -269,7 +269,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "February 6, 2026",
       readTime: "13 min read",
-      image: "/images/blog-airbnb-cohosting.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535811/matthewvarga/blog-airbnb-cohosting.png",
       slug: "airbnb-cohosting-service"
     },
     {
@@ -279,7 +279,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "February 6, 2026",
       readTime: "11 min read",
-      image: "/images/blog-themed-airbnb.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537345/matthewvarga/blog-themed-airbnb.png",
       slug: "themed-airbnb-arbitrage"
     },
     {
@@ -289,7 +289,7 @@ export default function Blog() {
       category: "Airbnb Strategy",
       date: "February 7, 2026",
       readTime: "15 min read",
-      image: "/images/blog-college-town-airbnb.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535974/matthewvarga/blog-college-town-airbnb.png",
       slug: "airbnb-college-towns"
     },
     {
@@ -299,7 +299,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "February 7, 2026",
       readTime: "12 min read",
-      image: "/images/blog-morning-routine.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536867/matthewvarga/blog-morning-routine.png",
       slug: "morning-routine-productivity"
     },
     {
@@ -309,7 +309,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "February 8, 2026",
       readTime: "11 min read",
-      image: "/images/blog-focus-habits.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536356/matthewvarga/blog-focus-habits.png",
       slug: "focus-efficiency-habits"
     },
     {
@@ -319,7 +319,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 8, 2026",
       readTime: "13 min read",
-      image: "/images/blog-emergency-fund.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536158/matthewvarga/blog-emergency-fund.png",
       slug: "building-emergency-fund"
     },
     {
@@ -329,7 +329,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 9, 2026",
       readTime: "12 min read",
-      image: "/images/blog-budgeting-basics.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535860/matthewvarga/blog-budgeting-basics.png",
       slug: "budgeting-basics-beginners"
     },
     {
@@ -339,7 +339,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "February 9, 2026",
       readTime: "14 min read",
-      image: "/images/blog-goal-setting.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536387/matthewvarga/blog-goal-setting.png",
       slug: "goal-setting-personal-success"
     },
     {
@@ -349,7 +349,7 @@ export default function Blog() {
       category: "Networking",
       date: "February 10, 2026",
       readTime: "13 min read",
-      image: "/images/blog-networking-growth.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536897/matthewvarga/blog-networking-growth.png",
       slug: "networking-personal-growth"
     },
     {
@@ -359,7 +359,7 @@ export default function Blog() {
       category: "Real Estate Investing",
       date: "February 10, 2026",
       readTime: "15 min read",
-      image: "/images/blog-home-buying.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536669/matthewvarga/blog-home-buying.png",
       slug: "home-buying-beginners"
     },
     {
@@ -369,7 +369,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 11, 2026",
       readTime: "12 min read",
-      image: "/images/blog-down-payment-savings.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536098/matthewvarga/blog-down-payment-savings.png",
       slug: "saving-down-payment"
     },
     {
@@ -379,7 +379,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 11, 2026",
       readTime: "14 min read",
-      image: "/images/blog-estate-planning.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536188/matthewvarga/blog-estate-planning.png",
       slug: "estate-planning-basics"
     },
     {
@@ -389,7 +389,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 12, 2026",
       readTime: "13 min read",
-      image: "/images/blog-education-savings.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536129/matthewvarga/blog-education-savings.png",
       slug: "saving-kids-education"
     },
     {
@@ -399,7 +399,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 12, 2026",
       readTime: "16 min read",
-      image: "/images/blog-adu-rental-income.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535757/matthewvarga/blog-adu-rental-income.png",
       slug: "building-adus-rental-income"
     },
     {
@@ -409,7 +409,7 @@ export default function Blog() {
       category: "Investment Strategy",
       date: "February 15, 2026",
       readTime: "14 min read",
-      image: "/images/blog-crowdfunding-passive.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536049/matthewvarga/blog-crowdfunding-passive.png",
       slug: "real-estate-crowdfunding"
     },
     {
@@ -419,7 +419,7 @@ export default function Blog() {
       category: "Personal Story",
       date: "February 15, 2026",
       readTime: "12 min read",
-      image: "/images/blog-exercise-energy.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536218/matthewvarga/blog-exercise-energy.png",
       slug: "exercise-routines-energy-health"
     },
     {
@@ -429,7 +429,7 @@ export default function Blog() {
       category: "Financial Freedom",
       date: "February 18, 2026",
       readTime: "11 min read",
-      image: "/images/blog-credit-card-rewards.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536022/matthewvarga/blog-credit-card-rewards.png",
       slug: "credit-card-rewards-strategies"
     },
     {
@@ -439,7 +439,7 @@ export default function Blog() {
       category: "Flipping",
       date: "February 18, 2026",
       readTime: "15 min read",
-      image: "/images/blog-condo-flipping-coastal.jpg",
+      image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535998/matthewvarga/blog-condo-flipping-coastal.png",
       slug: "flipping-condos-coastal-areas"
     }
   ];

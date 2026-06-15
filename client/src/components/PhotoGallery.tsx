@@ -11,28 +11,28 @@ interface PhotoItem {
 const photos: PhotoItem[] = [
   {
     id: '1',
-    src: '/images/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpeg',
+    src: 'https://res.cloudinary.com/dheaagd8g/image/upload/v1781535651/matthewvarga/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpg',
     alt: 'Family at Castaway Cay cruise port',
     caption: 'Living the Dream with Family',
     span: 'col-span-1'
   },
   {
     id: '2',
-    src: '/images/6cec682f-2935-4430-846b-8b4ca3fb254d.jpeg',
+    src: 'https://res.cloudinary.com/dheaagd8g/image/upload/v1781535653/matthewvarga/6cec682f-2935-4430-846b-8b4ca3fb254d.jpg',
     alt: 'Family with Minnie Mouse on Disney Cruise',
     caption: 'Creating Unforgettable Memories',
     span: 'col-span-1'
   },
   {
     id: '3',
-    src: '/images/IMG_8960.jpeg',
+    src: 'https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg',
     alt: 'Relaxing on cruise deck with ocean view',
     caption: 'Enjoying the Fruits of Financial Freedom',
     span: 'col-span-1'
   },
   {
     id: '4',
-    src: '/images/IMG_3974.jpeg',
+    src: 'https://res.cloudinary.com/dheaagd8g/image/upload/v1781535655/matthewvarga/IMG_3974.jpg',
     alt: 'Surfing adventure lifestyle',
     caption: 'Adventure and Lifestyle Freedom',
     span: 'col-span-1'

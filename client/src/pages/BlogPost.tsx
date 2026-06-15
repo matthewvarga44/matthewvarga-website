@@ -77,7 +77,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Airbnb Strategy",
     date: "January 28, 2026",
     readTime: "8 min read",
-    image: "/images/blog-airbnb-arbitrage.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535786/matthewvarga/blog-airbnb-arbitrage.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -170,7 +170,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Market Insights",
     date: "January 25, 2026",
     readTime: "10 min read",
-    image: "/images/blog-market-analysis.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536840/matthewvarga/blog-market-analysis.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -245,7 +245,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "January 22, 2026",
     readTime: "9 min read",
-    image: "/images/blog-seller-financing.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537187/matthewvarga/blog-seller-financing.png",
     author: "Matthew Varga",
     disclaimer: "legal",
     content: `
@@ -340,7 +340,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Operations",
     date: "January 19, 2026",
     readTime: "7 min read",
-    image: "/images/blog-property-management.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536998/matthewvarga/blog-property-management.png",
     author: "Matthew Varga",
     content: `
 <h2>The Property Management Challenge</h2>
@@ -398,7 +398,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Tax Strategy",
     date: "January 16, 2026",
     readTime: "8 min read",
-    image: "/images/blog-1031-exchange.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535696/matthewvarga/blog-1031-exchange.png",
     author: "Matthew Varga",
     disclaimer: "tax",
     content: `
@@ -477,7 +477,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "January 13, 2026",
     readTime: "12 min read",
-    image: "/images/blog-journey.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536785/matthewvarga/blog-journey.png",
     author: "Matthew Varga",
     content: `
 <h2>The Beginning: Foreclosure and Hardship</h2>
@@ -551,7 +551,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Airbnb Strategy",
     date: "January 2, 2026",
     readTime: "10 min read",
-    image: "/images/blog-airbnb-arbitrage.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535786/matthewvarga/blog-airbnb-arbitrage.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -593,7 +593,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Networking",
     date: "December 30, 2025",
     readTime: "9 min read",
-    image: "/images/blog-networking.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536948/matthewvarga/blog-networking.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -636,7 +636,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Tax Strategy",
     date: "January 8, 2026",
     readTime: "11 min read",
-    image: "/images/blog-tax-optimization.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537292/matthewvarga/blog-tax-optimization.png",
     author: "Matthew Varga",
     disclaimer: "tax",
     content: `
@@ -695,7 +695,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Portfolio Growth",
     date: "January 12, 2026",
     readTime: "12 min read",
-    image: "/images/blog-portfolio-scaling.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536974/matthewvarga/blog-portfolio-scaling.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -767,7 +767,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "January 15, 2026",
     readTime: "13 min read",
-    image: "/images/blog-financial-freedom.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -844,7 +844,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Portfolio Growth",
     date: "January 31, 2026",
     readTime: "11 min read",
-    image: "/images/blog-first-rental-portfolio.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536292/matthewvarga/blog-first-rental-portfolio.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -902,7 +902,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "January 31, 2026",
     readTime: "9 min read",
-    image: "/images/blog-cap-rates.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535884/matthewvarga/blog-cap-rates.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -946,7 +946,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 1, 2026",
     readTime: "13 min read",
-    image: "/images/blog-financial-freedom.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -999,7 +999,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 1, 2026",
     readTime: "10 min read",
-    image: "/images/blog-financial-freedom.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536243/matthewvarga/blog-financial-freedom.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1056,7 +1056,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Portfolio Growth",
     date: "February 2, 2026",
     readTime: "13 min read",
-    image: "/images/blog-portfolio-growth.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536974/matthewvarga/blog-portfolio-scaling.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1132,7 +1132,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 1, 2026",
     readTime: "11 min read",
-    image: "/images/blog-investing-fundamentals.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536730/matthewvarga/blog-investing-fundamentals.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1216,7 +1216,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 1, 2026",
     readTime: "14 min read",
-    image: "/images/blog-retiring-30s.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537117/matthewvarga/blog-retiring-30s.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1254,7 +1254,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "February 1, 2026",
     readTime: "15 min read",
-    image: "/images/blog-broke-to-10m.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535833/matthewvarga/blog-broke-to-10m.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1303,7 +1303,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 2, 2026",
     readTime: "10 min read",
-    image: "/images/blog-red-flags-rental.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537047/matthewvarga/blog-red-flags-rental.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1340,7 +1340,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 2, 2026",
     readTime: "12 min read",
-    image: "/images/blog-seller-financing-guide.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537163/matthewvarga/blog-seller-financing-guide.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1400,7 +1400,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Portfolio Growth",
     date: "February 3, 2026",
     readTime: "14 min read",
-    image: "/images/blog-10year-plan.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535721/matthewvarga/blog-10year-plan.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1450,7 +1450,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 3, 2026",
     readTime: "11 min read",
-    image: "/images/blog-investor-mistakes.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536759/matthewvarga/blog-investor-mistakes.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1493,7 +1493,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 4, 2026",
     readTime: "13 min read",
-    image: "/images/blog-side-hustles.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537264/matthewvarga/blog-side-hustles.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1533,7 +1533,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 4, 2026",
     readTime: "10 min read",
-    image: "/images/blog-debt-snowball.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536074/matthewvarga/blog-debt-snowball.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -1578,7 +1578,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 5, 2026",
     readTime: "12 min read",
-    image: "/images/blog-rent-to-own.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537094/matthewvarga/blog-rent-to-own.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1627,7 +1627,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Flipping",
     date: "February 5, 2026",
     readTime: "14 min read",
-    image: "/images/blog-house-flipping.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536702/matthewvarga/blog-house-flipping.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1677,7 +1677,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Airbnb Strategy",
     date: "February 6, 2026",
     readTime: "13 min read",
-    image: "/images/blog-airbnb-cohosting.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535811/matthewvarga/blog-airbnb-cohosting.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1727,7 +1727,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Airbnb Strategy",
     date: "February 6, 2026",
     readTime: "11 min read",
-    image: "/images/blog-themed-airbnb.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537345/matthewvarga/blog-themed-airbnb.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1787,7 +1787,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Airbnb Strategy",
     date: "February 7, 2026",
     readTime: "15 min read",
-    image: "/images/blog-college-town-airbnb.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535974/matthewvarga/blog-college-town-airbnb.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -1853,7 +1853,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "February 7, 2026",
     readTime: "12 min read",
-    image: "/images/blog-morning-routine.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536867/matthewvarga/blog-morning-routine.png",
     author: "Matthew Varga",
     disclaimer: "none",
     content: `
@@ -1915,7 +1915,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "February 8, 2026",
     readTime: "11 min read",
-    image: "/images/blog-focus-habits.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536356/matthewvarga/blog-focus-habits.png",
     author: "Matthew Varga",
     disclaimer: "none",
     content: `
@@ -1978,7 +1978,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 8, 2026",
     readTime: "13 min read",
-    image: "/images/blog-emergency-fund.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536158/matthewvarga/blog-emergency-fund.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2054,7 +2054,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 9, 2026",
     readTime: "12 min read",
-    image: "/images/blog-budgeting-basics.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535860/matthewvarga/blog-budgeting-basics.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2126,7 +2126,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "February 9, 2026",
     readTime: "14 min read",
-    image: "/images/blog-goal-setting.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536387/matthewvarga/blog-goal-setting.png",
     author: "Matthew Varga",
     disclaimer: "none",
     content: `
@@ -2220,7 +2220,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Networking",
     date: "February 10, 2026",
     readTime: "13 min read",
-    image: "/images/blog-networking-growth.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536897/matthewvarga/blog-networking-growth.png",
     author: "Matthew Varga",
     disclaimer: "none",
     content: `
@@ -2298,7 +2298,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Real Estate Investing",
     date: "February 10, 2026",
     readTime: "15 min read",
-    image: "/images/blog-home-buying.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536669/matthewvarga/blog-home-buying.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2387,7 +2387,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 11, 2026",
     readTime: "12 min read",
-    image: "/images/blog-down-payment-savings.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536098/matthewvarga/blog-down-payment-savings.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2469,7 +2469,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 11, 2026",
     readTime: "14 min read",
-    image: "/images/blog-estate-planning.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536188/matthewvarga/blog-estate-planning.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2559,7 +2559,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 12, 2026",
     readTime: "13 min read",
-    image: "/images/blog-education-savings.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536129/matthewvarga/blog-education-savings.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2632,7 +2632,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 12, 2026",
     readTime: "16 min read",
-    image: "/images/blog-adu-rental-income.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535757/matthewvarga/blog-adu-rental-income.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -2717,7 +2717,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Investment Strategy",
     date: "February 15, 2026",
     readTime: "14 min read",
-    image: "/images/blog-crowdfunding-passive.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536049/matthewvarga/blog-crowdfunding-passive.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `
@@ -2775,7 +2775,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Personal Story",
     date: "February 15, 2026",
     readTime: "12 min read",
-    image: "/images/blog-exercise-energy.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536218/matthewvarga/blog-exercise-energy.png",
     author: "Matthew Varga",
     disclaimer: "none",
     content: `
@@ -2829,7 +2829,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Financial Freedom",
     date: "February 18, 2026",
     readTime: "11 min read",
-    image: "/images/blog-credit-card-rewards.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781536022/matthewvarga/blog-credit-card-rewards.png",
     author: "Matthew Varga",
     disclaimer: "financial",
     content: `
@@ -2873,7 +2873,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     category: "Flipping",
     date: "February 18, 2026",
     readTime: "15 min read",
-    image: "/images/blog-condo-flipping-coastal.jpg",
+    image: "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535998/matthewvarga/blog-condo-flipping-coastal.png",
     author: "Matthew Varga",
     disclaimer: "investment",
     content: `

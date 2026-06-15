@@ -31,7 +31,7 @@ export default function Learn() {
             {/* Image */}
             <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
-                src="/images/airbnb-hero.jpg" 
+                src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781535672/matthewvarga/airbnb-hero.png" 
                 alt="Airbnb Wealth Academy"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
@@ -92,7 +92,7 @@ export default function Learn() {
             {/* Image */}
             <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
-                src="/images/retire-rentals-hero.jpg" 
+                src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537456/matthewvarga/retire-rentals-hero.png" 
                 alt="The Ordinary Millionaire Community Course"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
@@ -151,7 +151,7 @@ export default function Learn() {
             {/* Image */}
             <div className="flex-shrink-0 w-full md:w-96 h-96">
               <img 
-                src="/images/coaching-hero.jpg" 
+                src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537396/matthewvarga/coaching-hero.webp" 
                 alt="One-on-One Coaching"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />

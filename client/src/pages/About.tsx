@@ -15,7 +15,7 @@ export default function About() {
       <section className="relative overflow-hidden bg-primary text-primary-foreground py-24 md:py-40">
         <div className="absolute inset-0 opacity-5">
           <img 
-            src="/images/hero-bg.jpg" 
+            src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537412/matthewvarga/hero-bg.png" 
             alt="Background pattern" 
             className="h-full w-full object-cover"
           />
@@ -68,7 +68,7 @@ export default function About() {
             <div className="relative mx-auto w-full max-w-[400px]">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary/20">
                 <img 
-                  src="/images/matthew-about.jpg" 
+                  src="https://res.cloudinary.com/dheaagd8g/image/upload/v1781537437/matthewvarga/matthew-about.webp" 
                   alt="Matthew Varga" 
                   className="h-full w-full object-cover"
                 />

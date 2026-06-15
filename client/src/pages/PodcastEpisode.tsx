@@ -49,7 +49,7 @@ Whether you're trying to buy your first property or scale to your first 50 units
       '"Buy the stuff that moves you forward."',
     ],
     buzzsproutUrl: 'https://www.buzzsprout.com/2603590/episodes/18863733',
-    youtubeUrl: 'https://www.youtube.com/matthewvarga',
+    youtubeUrl: 'https://youtu.be/HPyZLh6kdB4',
     spotifyUrl: 'https://open.spotify.com/show/1vJHRnpmKxo0H4v10zUvqo',
     applePodcastsUrl: 'https://podcasts.apple.com/us/podcast/the-ordinary-millionaire/id1885938813',
   },
@@ -138,7 +138,7 @@ export default function PodcastEpisode() {
                 <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://www.youtube.com/embed/HPyZLh6kdB4"
                     title={episode.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

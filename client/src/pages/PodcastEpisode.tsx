@@ -88,11 +88,11 @@ export default function PodcastEpisode() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation Header */}
-      <div className="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+      <div className="bg-black border-b border-yellow-600/20 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center">
           <Button
             variant="ghost"
-            className="text-amber-400 hover:text-amber-300 hover:bg-slate-800"
+            className="text-yellow-400 hover:text-yellow-300 hover:bg-slate-900"
             onClick={() => setLocation('/podcast')}
           >
             ← Back to Episodes
@@ -101,10 +101,10 @@ export default function PodcastEpisode() {
       </div>
 
       {/* Episode Header */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 border-b border-slate-800">
+      <section className="bg-gradient-to-br from-black via-slate-950 to-black text-white py-16 md:py-24 border-b border-yellow-600/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <p className="text-amber-400 font-semibold text-sm mb-4">{episode.date}</p>
+            <p className="text-yellow-400 font-semibold text-sm mb-4">{episode.date}</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               {episode.title}
             </h1>
@@ -113,12 +113,12 @@ export default function PodcastEpisode() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href={episode.spotifyUrl} target="_blank" rel="noopener noreferrer">
-                <Button className="bg-amber-500 hover:bg-amber-600 text-black font-bold">
+                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
                   Listen on Spotify
                 </Button>
               </a>
               <a href={episode.applePodcastsUrl} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-amber-500 text-amber-400 hover:bg-amber-500/10 font-bold">
+                <Button variant="outline" className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 font-bold">
                   Apple Podcasts
                 </Button>
               </a>
@@ -134,7 +134,7 @@ export default function PodcastEpisode() {
             {/* Main Column */}
             <div className="md:col-span-2">
               {/* Video Player */}
-              <div className="bg-slate-900 rounded-lg overflow-hidden border border-slate-800 mb-12">
+              <div className="bg-slate-950 rounded-lg overflow-hidden border border-yellow-600/20 mb-12">
                 <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
@@ -158,10 +158,10 @@ export default function PodcastEpisode() {
               {/* Timestamps */}
               <div className="mb-12">
                 <h2 className="text-3xl font-bold mb-6 text-white">⏱️ Timestamps</h2>
-                <div className="bg-slate-900 border border-slate-800 rounded-lg p-6 space-y-3">
+                <div className="bg-slate-950 border border-yellow-600/20 rounded-lg p-6 space-y-3">
                   {episode.timestamps.map((ts, idx) => (
                     <div key={idx} className="flex gap-4">
-                      <span className="text-amber-400 font-bold min-w-fit">{ts.time}</span>
+                      <span className="text-yellow-400 font-bold min-w-fit">{ts.time}</span>
                       <span className="text-slate-300">{ts.title}</span>
                     </div>
                   ))}
@@ -173,7 +173,7 @@ export default function PodcastEpisode() {
                 <h2 className="text-3xl font-bold mb-6 text-white">🔑 Key Quotes</h2>
                 <div className="space-y-4">
                   {episode.keyQuotes.map((quote, idx) => (
-                    <div key={idx} className="bg-slate-900 border-l-4 border-amber-500 rounded-lg p-6">
+                    <div key={idx} className="bg-slate-950 border-l-4 border-yellow-500 rounded-lg p-6">
                       <p className="text-slate-300 text-lg italic">
                         {quote}
                       </p>
@@ -186,13 +186,13 @@ export default function PodcastEpisode() {
             {/* Sidebar */}
             <div className="md:col-span-1">
               {/* Guest Info */}
-              <div className="bg-slate-900 border border-slate-800 rounded-lg p-6 mb-6 sticky top-24">
+              <div className="bg-slate-950 border border-yellow-600/20 rounded-lg p-6 mb-6 sticky top-24">
                 <h3 className="text-sm text-slate-400 font-semibold mb-3 uppercase">Guest</h3>
                 <a 
                   href={episode.guestLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 font-bold text-xl block mb-4"
+                  className="text-yellow-400 hover:text-yellow-300 font-bold text-xl block mb-4"
                 >
                   {episode.guest}
                 </a>
@@ -209,26 +209,26 @@ export default function PodcastEpisode() {
               {/* Listen Buttons */}
               <div className="space-y-3 mb-6">
                 <a href={episode.buzzsproutUrl} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold">
+                  <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
                     Listen on Buzzsprout
                   </Button>
                 </a>
                 <a href={episode.youtubeUrl} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="outline" className="w-full border-amber-500 text-amber-400 hover:bg-amber-500/10 font-bold">
+                  <Button variant="outline" className="w-full border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 font-bold">
                     Watch on YouTube
                   </Button>
                 </a>
               </div>
 
               {/* CTA */}
-              <div className="bg-gradient-to-br from-amber-900/20 to-slate-900 border border-amber-500/30 rounded-lg p-6">
+              <div className="bg-gradient-to-br from-yellow-900/20 to-slate-950 border border-yellow-500/30 rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-3 text-white">Ready to Build?</h3>
                 <p className="text-slate-300 text-sm mb-4">
                   Join The Ordinary Millionaire Community and start your wealth-building journey.
                 </p>
                 <Button 
                   onClick={() => setLocation('/coaching')}
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
                 >
                   Learn More
                 </Button>

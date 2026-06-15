@@ -30,10 +30,10 @@ export default function Podcast() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-32 border-b border-slate-800">
+      <section className="bg-gradient-to-br from-black via-slate-950 to-black text-white py-20 md:py-32 border-b border-yellow-600/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <p className="text-amber-400 font-semibold text-sm mb-4 uppercase tracking-wider">The Ordinary Millionaire Podcast</p>
+            <p className="text-yellow-500 font-semibold text-sm mb-4 uppercase tracking-wider">The Ordinary Millionaire Podcast</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Real Stories. Real Numbers. Real Possibilities.
             </h1>
@@ -42,12 +42,12 @@ export default function Podcast() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://open.spotify.com/show/1vJHRnpmKxo0H4v10zUvqo" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 py-6 text-lg">
+                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-6 text-lg">
                   Listen on Spotify
                 </Button>
               </a>
               <a href="https://podcasts.apple.com/us/podcast/the-ordinary-millionaire/id1885938813" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-amber-500 text-amber-400 hover:bg-amber-500/10 font-bold px-8 py-6 text-lg">
+                <Button variant="outline" className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 font-bold px-8 py-6 text-lg">
                   Apple Podcasts
                 </Button>
               </a>
@@ -61,7 +61,7 @@ export default function Podcast() {
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Latest Episodes</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-amber-500 to-amber-600 rounded"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded"></div>
           </div>
 
           {/* Episodes Grid */}
@@ -69,16 +69,16 @@ export default function Podcast() {
             {podcastEpisodes.map((episode) => (
               <div
                 key={episode.id}
-                className="group bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10 cursor-pointer"
+                className="group bg-slate-950 border border-yellow-600/20 rounded-lg overflow-hidden hover:border-yellow-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/10 cursor-pointer"
                 onClick={() => setLocation(`/podcast/${episode.id}`)}
               >
                 {/* Episode Card */}
                 <div className="p-6 h-full flex flex-col">
                   {/* Date */}
-                  <p className="text-amber-400 text-sm font-semibold mb-3">{episode.date}</p>
+                  <p className="text-yellow-400 text-sm font-semibold mb-3">{episode.date}</p>
 
                   {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors line-clamp-2">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors line-clamp-2">
                     {episode.title}
                   </h3>
 
@@ -92,7 +92,7 @@ export default function Podcast() {
 
                   {/* Listen Button */}
                   <Button
-                    className="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold"
+                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold"
                     onClick={(e) => {
                       e.stopPropagation();
                       setLocation(`/podcast/${episode.id}`);
@@ -116,7 +116,7 @@ export default function Podcast() {
       </section>
 
       {/* Email Signup Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-t border-slate-800">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-black via-slate-950 to-black border-t border-yellow-600/20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -132,7 +132,7 @@ export default function Podcast() {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors"
               />
-              <Button className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-8">
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8">
                 Subscribe
               </Button>
             </form>

@@ -12,6 +12,20 @@ interface Episode {
 
 const podcastEpisodes: Episode[] = [
   {
+    id: 'ryan-leake-10m-airbnb',
+    title: 'From Zero to $10M in 2 Years: How Ryan Leake Built an Airbnb Management Empire',
+    guest: 'Ryan Leake',
+    date: 'July 28, 2026',
+    description: 'Ryan Leake had never managed a single Airbnb when he took an online course and got his first client 14 days later. Two years later, he and his partners manage 70 luxury short-term rentals across Austin and San Antonio with $10 million in gross revenue.',
+  },
+  {
+    id: 'spencer-ashley-80-properties',
+    title: 'From Airbnb Investor to Managing 80 Properties — How Spencer & Ashley Built a Business They Can Run From Anywhere',
+    guest: 'Spencer & Ashley',
+    date: 'July 7, 2026',
+    description: 'Spencer and Ashley started investing in Airbnb in Niagara because they wanted more than two weeks of vacation a year. Today they manage over 80 properties through their company Travel Lux — all while traveling the world using credit card points.',
+  },
+  {
     id: 'cody-davis-200-rental-units',
     title: 'From Zero to 200+ Rental Units',
     guest: 'Cody Davis',
@@ -106,10 +120,10 @@ export default function Podcast() {
           </div>
 
           {/* Coming Soon Message */}
-          {podcastEpisodes.length === 1 && (
+          {podcastEpisodes.length <= 3 && (
             <div className="mt-16 text-center">
-              <p className="text-slate-400 text-lg mb-4">More episodes coming soon...</p>
-              <p className="text-slate-500 text-sm">New episodes released every week</p>
+              <p className="text-slate-400 text-lg mb-4">New episodes released weekly</p>
+              <p className="text-slate-500 text-sm">Subscribe to stay updated on the latest conversations</p>
             </div>
           )}
         </div>

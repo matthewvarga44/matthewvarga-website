@@ -20,6 +20,80 @@ interface Episode {
 }
 
 const episodes: Record<string, Episode> = {
+  'ryan-leake-10m-airbnb': {
+    id: 'ryan-leake-10m-airbnb',
+    title: 'From Zero to $10M in 2 Years: How Ryan Leake Built an Airbnb Management Empire',
+    guest: 'Ryan Leake',
+    guestHandle: '@itsaleak',
+    guestLink: 'https://www.instagram.com/itsaleak/',
+    date: 'July 28, 2026',
+    description: 'Ryan Leake had never managed a single Airbnb when he took an online course and got his first client 14 days later. Two years later, he and his partners manage 70 luxury short-term rentals across Austin and San Antonio with $10 million in gross revenue.',
+    fullDescription: `Ryan Leake had never managed a single Airbnb when he took an online course and got his first client 14 days later. Two years after that, he and his partners manage 70 luxury short-term rentals across Austin and San Antonio with roughly $10 million in gross revenue and a team of 17 people.
+
+In this episode, Ryan gives a complete roadmap — from how to land your first client with zero experience (including the box of cookies that got him his), to what the financial breakdown actually looks like at scale, to how he's now using ChatGPT and Claude to generate inbound leads without spending a dollar on ads.
+
+Whether you're thinking about getting into Airbnb management, already running properties, or just want to understand how to build a service business from scratch, this one is loaded.`,
+    timestamps: [
+      { time: '00:00', title: 'How Ryan got his first client in 14 days (no experience, no portfolio)' },
+      { time: '05:30', title: 'The box of cookies that landed his first deal' },
+      { time: '12:15', title: 'The two strategies that took him from 0 to 10 properties in 10 months' },
+      { time: '18:45', title: 'Why Google My Business was his #1 growth tool' },
+      { time: '25:00', title: 'How AI tools like ChatGPT and Claude are now sending him leads for free' },
+      { time: '35:20', title: 'The full financial breakdown: $10M gross, 18% average fee, ~$1M EBITDA' },
+      { time: '42:30', title: 'How strategic mergers helped him scale faster than organic growth' },
+      { time: '50:15', title: 'His complete tech stack for managing 70 properties' },
+      { time: '56:00', title: 'The pool ROI math: why he\'s added pools at 10 properties and counting' },
+    ],
+    keyQuotes: [
+      '"Focus on massive income before passive income."',
+      '"The box of cookies was worth more than any marketing campaign."',
+      '"AI is now our best lead generation tool — and it costs nothing."',
+    ],
+    buzzsproutUrl: 'https://www.buzzsprout.com/2603590',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    spotifyUrl: 'https://open.spotify.com/show/1vJHRnpmKxo0H4v10zUvqo',
+    applePodcastsUrl: 'https://podcasts.apple.com/us/podcast/the-ordinary-millionaire/id1885938813',
+  },
+  'spencer-ashley-80-properties': {
+    id: 'spencer-ashley-80-properties',
+    title: 'From Airbnb Investor to Managing 80 Properties — How Spencer & Ashley Built a Business They Can Run From Anywhere',
+    guest: 'Spencer & Ashley',
+    guestHandle: '@spencerandashley',
+    guestLink: 'https://www.instagram.com/spencerandashley/',
+    date: 'July 7, 2026',
+    description: 'Spencer and Ashley started investing in Airbnb in Niagara because they wanted more than two weeks of vacation a year. Today they manage over 80 properties through their company Travel Lux — all while traveling the world using credit card points.',
+    fullDescription: `Spencer and Ashley started investing in Airbnb in Niagara because they wanted more than two weeks of vacation a year. Today they own six short-term rentals, one long-term property, and a management company called Travel Lux with over 80 properties — all while traveling the world using credit card points.
+
+In this episode they break down exactly how they research new markets, what amenities are actually moving the needle in 2026 (including the $80,000 pickleball court that added $10,000 in a single month), how to start a property management business from scratch with no clients, and how they've flown Emirates First Class and stayed at the St. Regis Maldives for a fraction of the cash cost.
+
+If you're thinking about getting into short-term rentals, scaling what you already have, or building a business you can run from anywhere in the world — this one is packed.`,
+    timestamps: [
+      { time: '00:00', title: 'Introduction & how Spencer & Ashley got started' },
+      { time: '03:45', title: 'Their first Airbnb BRRRR: St. Catharines, $310k, beach proximity' },
+      { time: '09:35', title: 'Buying in Ellicottville, NY sight unseen during COVID' },
+      { time: '11:35', title: 'How to research any Airbnb market in 2026 (AirDNA, BnbCalc, PriceLabs)' },
+      { time: '17:30', title: 'What\'s working in Ellicottville today: $200k+ gross revenue properties' },
+      { time: '22:00', title: 'What amenities actually drive revenue in 2026' },
+      { time: '25:00', title: 'The pickleball court: $80k investment, $10k monthly lift, 20–50% revenue increase' },
+      { time: '35:28', title: 'Best markets to invest in right now: Niagara & Kawartha Lakes' },
+      { time: '37:45', title: 'Is Airbnb dead? Their answer (with data)' },
+      { time: '40:57', title: 'How Travel Lux started (a Kijiji ad) and grew to 80 properties' },
+      { time: '45:35', title: 'How to start a co-hosting business from scratch today' },
+      { time: '54:00', title: 'What you actually keep from a 20% management fee (80–85% margins)' },
+      { time: '1:03:30', title: 'Travel hacking: how it started and the first business class redemption' },
+      { time: '1:09:00', title: 'The Emirates "Boomerang": $100k in flights for 300k points' },
+      { time: '1:14:30', title: 'Qatar Q Suites and the best Aeroplan redemptions for Canadians' },
+    ],
+    keyQuotes: [
+      '"We can choose anywhere in the world that we work."',
+      '"The pickleball court paid for itself in one month."',
+      '"Airbnb is not dead — you just have to be smarter about amenities."',
+    ],
+    buzzsproutUrl: 'https://www.buzzsprout.com/2603590',
+    youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    spotifyUrl: 'https://open.spotify.com/show/1vJHRnpmKxo0H4v10zUvqo',
+    applePodcastsUrl: 'https://podcasts.apple.com/us/podcast/the-ordinary-millionaire/id1885938813',
+  },
   'cody-davis-200-rental-units': {
     id: 'cody-davis-200-rental-units',
     title: 'From Zero to 200+ Rental Units',

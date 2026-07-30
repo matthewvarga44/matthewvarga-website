@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retire Early on a Normal Income - The OMP Method Workbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #faf8f5;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* STICKY HEADER WITH URGENCY */
+        /* ─────────────────────────────────────────────────────────────── */
+        header {
+            background: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e8e6e2;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #D4A574;
+        }
+
+        .header-cta {
+            background: #D4A574;
+            color: #1a1a1a;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .header-cta:hover {
+            background: #c49460;
+            transform: translateY(-2px);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* HERO SECTION - WITH IMAGE */
+        /* ─────────────────────────────────────────────────────────────── */
+        .hero {
+            background: linear-gradient(135deg, #f5f2ee 0%, #f0ebe5 100%);
+            padding: 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: rgba(212, 165, 116, 0.05);
+            border-radius: 50%;
+            transform: translate(100px, -100px);
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            padding-right: 2rem;
+        }
+
+        .urgency-badge {
+            display: inline-block;
+            background: #D4A574;
+            color: #1a1a1a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 .highlight {
+            color: #D4A574;
+            display: block;
+        }
+
+        .hero-subheading {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .hero-proof {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .proof-item {
+            color: #666;
+            font-weight: 600;
+        }
+
+        .proof-item strong {
+            color: #D4A574;
+            display: block;
+            font-size: 1.3rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            background: #e8e6e2;
+            aspect-ratio: 4/5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            padding: 1.1rem 2.2rem;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #D4A574;
+            color: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #c49460;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #D4A574;
+            border: 2px solid #D4A574;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f2ee;
+        }
+
+        .guarantee-text {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* SOCIAL PROOF BANNER */
+        /* ─────────────────────────────────────────────────────────────── */
+        .social-proof-banner {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-top: 1px solid #e8e6e2;
+            border-bottom: 1px solid #e8e6e2;
+        }
+
+        .proof-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .proof-stat h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #D4A574;
+            margin-bottom: 0.3rem;
+        }
+
+        .proof-stat p {
+            color: #777;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* PROBLEM SECTION - EMOTIONAL CONNECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+        .problem-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .problem-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .problem-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-content p {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .problem-content strong {
+            color: #D4A574;
+        }
+
+        .problem-image {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .problem-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .before-after-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            pointer-events: none;
+        }
+
+        .before-label, .after-label {
+            width: 50%;
+            text-align: center;
+            padding: 0.8rem 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+
+        .before-label {
+            color: #e53935;
+        }
+
+        .after-label {
+            color: #D4A574;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* SOLUTION JOURNEY */
+        /* ─────────────────────────────────────────────────────────────── */
+        .solution-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title .accent {
+            color: #D4A574;
+        }
+
+        .journey-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .journey-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #D4A574;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .journey-step:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #D4A574;
+            color: #1a1a1a;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .journey-step h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.8rem;
+        }
+
+        .journey-step p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* WHAT'S INSIDE - SPECIFICITY */
+        /* ─────────────────────────────────────────────────────────────── */
+        .whats-inside {
+            background: linear-gradient(135deg, #f5f2ee 0%, #f0ebe5 100%);
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+        }
+
+        .whats-inside-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* SCREENSHOTS GALLERY */
+        /* ─────────────────────────────────────────────────────────────── */
+        .screenshots {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .screenshots h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .screenshot-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #f5f5f5;
+            aspect-ratio: 3/4;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            border: 2px solid #e8e6e2;
+        }
+
+        .screenshot-item:hover {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transform: scale(1.03);
+            border-color: #D4A574;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .screenshot-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.95), transparent);
+            padding: 1.5rem 1rem 1rem;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* TESTIMONIALS - SOCIAL PROOF */
+        /* ─────────────────────────────────────────────────────────────── */
+        .testimonials {
+            background: white;
+            padding: 4rem 2rem;
+            border-top: 1px solid #e8e6e2;
+            border-bottom: 1px solid #e8e6e2;
+        }
+
+        .testimonials-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: #f5f2ee;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #D4A574;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #D4A574;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .stars {
+            color: #D4A574;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* PRICING - VALUE STACK WITH MOCKUP */
+        /* ─────────────────────────────────────────────────────────────── */
+        .pricing {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .pricing-container {
+            display: block;
+        }
+
+        .pricing-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 0.4rem;
+            text-align: center;
+        }
+
+        .pricing-subtitle {
+            color: #777;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, #f5f2ee 0%, #f0ebe5 100%);
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #D4A574;
+            position: relative;
+        }
+
+        .value-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #D4A574;
+            color: #1a1a1a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #D4A574;
+            margin: 0.6rem 0;
+        }
+
+        .price-note {
+            color: #777;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .value-stack {
+            text-align: left;
+            margin: 1.2rem 0;
+            padding: 1.2rem 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 2rem;
+        }
+
+        .value-stack li {
+            list-style: none;
+            padding: 0.5rem 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .value-stack li:before {
+            content: "✓ ";
+            color: #D4A574;
+            font-weight: 700;
+            margin-right: 0.8rem;
+        }
+
+        .value-stack li strong {
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #d32f2f;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* WORKBOOK MOCKUP SECTION */
+        /* ─────────────────────────────────────────────────────────────── */
+        .mockup-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .mockup-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .mockup-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .mockup-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .mockup-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        .mockup-content ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .mockup-content li {
+            padding: 0.6rem 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .mockup-content li:before {
+            content: "✓ ";
+            color: #D4A574;
+            font-weight: 700;
+            margin-right: 0.8rem;
+        }
+
+        .pricing-mockup {
+            background: #e8e6e2;
+            border-radius: 8px;
+            aspect-ratio: 3/4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FAQ - OBJECTION HANDLING */
+        /* ─────────────────────────────────────────────────────────────── */
+        .faq {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .faq h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: #f5f2ee;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #ede8e2;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FINAL CTA - URGENCY */
+        /* ─────────────────────────────────────────────────────────────── */
+        .final-cta {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .final-cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta h2 .accent {
+            color: #D4A574;
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .final-cta-button {
+            background: #D4A574;
+            color: #1a1a1a;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .final-cta-button:hover {
+            background: #c49460;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        .final-guarantee {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* FOOTER */
+        /* ─────────────────────────────────────────────────────────────── */
+        footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #D4A574;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ─────────────────────────────────────────────────────────────── */
+        /* RESPONSIVE */
+        /* ─────────────────────────────────────────────────────────────── */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subheading {
+                font-size: 1.05rem;
+            }
+
+            .problem-container {
+                grid-template-columns: 1fr;
+            }
+
+            .mockup-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+
+            .header-cta {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- STICKY HEADER -->
+<header>
+    <div class="header-content">
+        <a href="#" class="logo">The Ordinary <span>Millionaire</span></a>
+        <a href="https://matthewvarga.gumroad.com/l/fireworkbook?wanted=true" target="_blank" class="header-cta">Get Access Now</a>
+    </div>
+</header>
+
+<!-- HERO SECTION - WITH IMAGE -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="urgency-badge">⏰ Limited Time Offer</div>
+            <h1>Retire Early on a <span class="highlight">Normal Income</span></h1>
+            <p class="hero-subheading">The step-by-step workbook that's helped 10,000+ people build wealth, eliminate debt, and achieve financial independence - without a six-figure salary or inheritance.</p>
+            
+            <div class="hero-proof">
+                <div class="proof-item"><strong>91</strong> Pages</div>
+                <div class="proof-item"><strong>29+</strong> Worksheets</div>
+                <div class="proof-item"><strong>2000+</strong> Fields</div>
+                <div class="proof-item"><strong>2</strong> Formats</div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://matthewvarga.gumroad.com/l/fireworkbook?wanted=true" target="_blank" class="btn btn-primary">Get the Workbook - $19.99</a>
+                <button class="btn btn-secondary" onclick="document.querySelector('.problem-section').scrollIntoView({behavior: 'smooth'})">See What's Inside</button>
+            </div>
+            <p class="guarantee-text">✓ 30-day money-back guarantee • Instant download • No questions asked</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="hero-image.webp" alt="Matthew Varga - Financial Freedom Expert">
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF BANNER -->
+<section class="social-proof-banner">
+    <div class="proof-grid">
+        <div class="proof-stat">
+            <h3>10,000+</h3>
+            <p>People Transformed</p>
+        </div>
+        <div class="proof-stat">
+            <h3>$50M+</h3>
+            <p>Wealth Built by Users</p>
+        </div>
+        <div class="proof-stat">
+            <h3>4.9/5</h3>
+            <p>Average Rating</p>
+        </div>
+        <div class="proof-stat">
+            <h3>3-5 Yrs</h3>
+            <p>To Financial Freedom</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM SECTION - WITH BEFORE/AFTER IMAGE -->
+<section class="problem-section">
+    <div class="problem-container">
+        <div class="problem-content">
+            <h2>You're Doing Everything "Right"... But Still Stuck</h2>
+            <p>You have a decent income. You pay your bills. You even try to save. But at the end of the month, there's nothing left. And the idea of retiring before 65 feels impossible.</p>
+            <p>You're not alone. <strong>Sarah and Mark</strong> earned $120,000 a year - a solid six-figure household income. Yet they felt financially squeezed, stressed about money, and had no clear path to freedom.</p>
+            <p>The problem wasn't their income. It was their system. They didn't have a roadmap. They didn't understand their numbers. And nobody had ever taught them how to build real wealth.</p>
+            <p>Then everything changed. Using the <strong>OMP Method</strong>, they took control of their money, eliminated $80K in debt, built a 6-month emergency fund, and created a clear path to retire in their 50s instead of 65.</p>
+            <p>This workbook contains the exact system that transformed their financial life - and it can transform yours too.</p>
+        </div>
+
+        <div class="problem-image">
+            <img src="sarah_mark_transformation.jpg" alt="Sarah & Mark's Financial Transformation">
+            <div class="before-after-labels">
+                <div class="before-label">BEFORE</div>
+                <div class="after-label">AFTER</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUTION JOURNEY -->
+<section class="solution-section">
+    <h2 class="section-title">Your <span class="accent">5-Step</span> Path to Financial Freedom</h2>
+    
+    <div class="journey-timeline">
+        <div class="journey-step">
+            <div class="step-number">1</div>
+            <h3>Money Mindset</h3>
+            <p>Shift your relationship with money and build the psychological foundation for wealth. Understand the beliefs holding you back.</p>
+        </div>
+        <div class="journey-step">
+            <div class="step-number">2</div>
+            <h3>Calculate Your FIRE Number</h3>
+            <p>Discover exactly how much you need to retire. Interactive worksheets walk you through the math - no financial background required.</p>
+        </div>
+        <div class="journey-step">
+            <div class="step-number">3</div>
+            <h3>Master Your Budget</h3>
+            <p>Create a realistic budget that actually works. Track every dollar and find hidden money you didn't know you had.</p>
+        </div>
+        <div class="journey-step">
+            <div class="step-number">4</div>
+            <h3>Eliminate Debt Fast</h3>
+            <p>Learn proven debt payoff strategies. Become debt-free faster using the snowball and avalanche methods.</p>
+        </div>
+        <div class="journey-step">
+            <div class="step-number">5</div>
+            <h3>Build Real Wealth</h3>
+            <p>Understand stocks, bonds, real estate, and retirement accounts. Invest with confidence and watch your wealth grow.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="whats-inside">
+    <div class="whats-inside-content">
+        <h2 class="section-title">What You Get Inside the <span class="accent">OMP Workbook</span></h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- Worksheet Icon -->
+                        <rect x="15" y="10" width="70" height="80" rx="4" fill="none" stroke="#D4A574" stroke-width="3"/>
+                        <line x1="25" y1="30" x2="75" y2="30" stroke="#D4A574" stroke-width="2"/>
+                        <line x1="25" y1="45" x2="75" y2="45" stroke="#D4A574" stroke-width="2"/>
+                        <line x1="25" y1="60" x2="75" y2="60" stroke="#D4A574" stroke-width="2"/>
+                        <line x1="25" y1="75" x2="50" y2="75" stroke="#D4A574" stroke-width="2"/>
+                        <circle cx="65" cy="75" r="8" fill="#D4A574"/>
+                    </svg>
+                </div>
+                <h3>Interactive Worksheets</h3>
+                <p>29+ fillable worksheets that guide you through every step. No guessing, no confusion - just clear action.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- Money/Growth Icon -->
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#D4A574" stroke-width="3"/>
+                        <path d="M 50 30 L 60 45 L 70 40 L 75 55" fill="none" stroke="#D4A574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="35" cy="65" r="6" fill="#D4A574"/>
+                        <circle cx="50" cy="70" r="6" fill="#D4A574"/>
+                        <circle cx="65" cy="62" r="6" fill="#D4A574"/>
+                    </svg>
+                </div>
+                <h3>Real Numbers & Examples</h3>
+                <p>Follow Sarah & Mark's journey with real numbers. See exactly how they went from stressed to financially free.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- Target/Method Icon -->
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#D4A574" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="28" fill="none" stroke="#D4A574" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="16" fill="none" stroke="#D4A574" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="6" fill="#D4A574"/>
+                        <path d="M 50 10 L 50 20" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 50 80 L 50 90" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 10 50 L 20 50" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 80 50 L 90 50" stroke="#D4A574" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>The OMP Method</h3>
+                <p>Our proprietary system for building wealth. Proven, tested, and used by thousands of people worldwide.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- PDF/Document Icon -->
+                        <rect x="20" y="15" width="60" height="70" rx="3" fill="none" stroke="#D4A574" stroke-width="3"/>
+                        <path d="M 30 30 L 70 30" stroke="#D4A574" stroke-width="2"/>
+                        <path d="M 30 42 L 70 42" stroke="#D4A574" stroke-width="2"/>
+                        <path d="M 30 54 L 70 54" stroke="#D4A574" stroke-width="2"/>
+                        <path d="M 30 66 L 50 66" stroke="#D4A574" stroke-width="2"/>
+                        <rect x="55" y="58" width="15" height="15" rx="2" fill="#D4A574"/>
+                        <text x="62" y="70" font-size="10" fill="white" text-anchor="middle" font-weight="bold">2</text>
+                    </svg>
+                </div>
+                <h3>2 PDF Formats</h3>
+                <p>Fillable PDF for digital use + printable PDF for pen & paper. Use it however works best for you.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- Tools/Calculator Icon -->
+                        <path d="M 25 35 L 35 25 L 40 30 L 30 40 Z" fill="none" stroke="#D4A574" stroke-width="2.5" stroke-linejoin="round"/>
+                        <rect x="35" y="35" width="50" height="35" rx="3" fill="none" stroke="#D4A574" stroke-width="2.5"/>
+                        <circle cx="45" cy="48" r="4" fill="#D4A574"/>
+                        <circle cx="60" cy="48" r="4" fill="#D4A574"/>
+                        <circle cx="75" cy="48" r="4" fill="#D4A574"/>
+                        <line x1="45" y1="58" x2="75" y2="58" stroke="#D4A574" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Calculators & Tools</h3>
+                <p>FIRE number calculator, debt payoff tracker, investment planner, and more. All built-in and ready to use.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" width="70" height="70">
+                        <!-- Rocket/Bonus Icon -->
+                        <path d="M 50 15 L 60 40 L 50 35 L 40 40 Z" fill="#D4A574"/>
+                        <rect x="45" y="35" width="10" height="35" rx="2" fill="none" stroke="#D4A574" stroke-width="2.5"/>
+                        <circle cx="40" cy="55" r="5" fill="none" stroke="#D4A574" stroke-width="2.5"/>
+                        <circle cx="60" cy="55" r="5" fill="none" stroke="#D4A574" stroke-width="2.5"/>
+                        <circle cx="50" cy="75" r="8" fill="#D4A574"/>
+                        <circle cx="50" cy="75" r="5" fill="white"/>
+                    </svg>
+                </div>
+                <h3>Bonus Resources</h3>
+                <p>Templates, checklists, and action plans. Everything you need to take immediate action.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="screenshots">
+    <h2>See the Workbook in Action</h2>
+    <div class="screenshots-grid">
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_money_mindset.png" alt="Money Mindset">
+            <div class="screenshot-label">Money Mindset</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_fire_number.png" alt="FIRE Calculator">
+            <div class="screenshot-label">FIRE Number</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_budget.png" alt="Budget Planner">
+            <div class="screenshot-label">Budget Planner</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_debt_payoff.png" alt="Debt Payoff">
+            <div class="screenshot-label">Debt Payoff</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_emergency_fund.png" alt="Emergency Fund">
+            <div class="screenshot-label">Emergency Fund</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_investment.png" alt="Investment Guide">
+            <div class="screenshot-label">Investment Guide</div>
+        </div>
+        <div class="screenshot-item">
+            <img src="landing_page_screenshot_real_estate.png" alt="Real Estate">
+            <div class="screenshot-label">Real Estate</div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <div class="testimonials-content">
+        <h2>Real Results from Real People</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"This workbook changed my life. I finally understand my numbers and have a real plan. I'm on track to retire 12 years earlier than I thought."</p>
+            <div class="testimonial-author">
+                <img src="testimonial_jessica.jpg" alt="Jessica M." style="width:50px;height:50px;border-radius:50%;object-fit:cover;">
+                <div class="author-info">
+                    <h4>Jessica M.</h4>
+                    <p>Teacher, 34</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Paid off $50K in debt in 18 months using the strategies in this workbook. The debt payoff section alone is worth the price."</p>
+                <div class="testimonial-author">
+                <img src="testimonial_robert.jpg" alt="Robert K." style="width:50px;height:50px;border-radius:50%;object-fit:cover;">
+                <div class="author-info">
+                    <h4>Robert K.</h4>
+                    <p>Software Engineer, 29</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Finally, a workbook that doesn't assume you're already rich. This is practical, actionable, and actually works for normal people."</p>
+                <div class="testimonial-author">
+                <img src="testimonial_sarah.jpg" alt="Sarah C." style="width:50px;height:50px;border-radius:50%;object-fit:cover;">
+                <div class="author-info">
+                    <h4>Sarah C.</h4>
+                    <p>Nurse, 38</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING WITH MOCKUP -->
+<section class="pricing">
+    <div class="pricing-container">
+        <h2>Simple, Transparent Pricing</h2>
+        <p class="pricing-subtitle">One-time purchase. Lifetime access. No subscriptions.</p>
+
+        <div class="pricing-card">
+            <div class="value-badge">Best Value</div>
+            <h3>The OMP Workbook</h3>
+            <div class="original-price">Usually $49 | Today</div>
+            <div class="price">$19.99</div>
+            <p class="price-note">One-time purchase - forever yours</p>
+
+            <ul class="value-stack">
+                <li><strong>91 pages</strong> of proven strategies</li>
+                <li><strong>29+ worksheets</strong> you can fill out</li>
+                <li><strong>2000+ form fields</strong> ready to use</li>
+                <li><strong>Fillable PDF</strong> for digital use</li>
+                <li><strong>Printable PDF</strong> for pen & paper</li>
+                <li><strong>Instant download</strong> - no waiting</li>
+                <li><strong>Email support</strong> - we're here to help</li>
+                <li><strong>30-day guarantee</strong> - full refund if not satisfied</li>
+            </ul>
+
+            <a href="https://matthewvarga.gumroad.com/l/fireworkbook?wanted=true" target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 2rem; text-align: center;">Get Instant Access Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- WORKBOOK MOCKUP SECTION -->
+<section class="mockup-section">
+    <h2>See It On Your Device</h2>
+    <div class="mockup-container">
+        <div class="mockup-content">
+            <h3>Access Anytime, Anywhere</h3>
+            <p>Get both PDF formats - use them however works best for you. Fill it out digitally on your computer, tablet, or phone. Or print it out and work through it with pen and paper.</p>
+            <ul>
+                <li>Fillable PDF - Interactive form fields</li>
+                <li>Printable PDF - Perfect for pen & paper</li>
+                <li>Download once, access forever</li>
+                <li>No subscriptions or recurring fees</li>
+                <li>Works offline - no internet needed</li>
+            </ul>
+            <p><strong>Start using it immediately after purchase.</strong> No waiting, no delays. Just instant access to your complete financial roadmap.</p>
+        </div>
+        <div class="pricing-mockup">
+            <img src="workbook_laptop_mockup.jpg" alt="OMP Workbook on Laptop" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <h2>Common Questions</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>Is this only for real estate investors?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            No. This workbook is for anyone pursuing financial independence, whether through real estate, stocks, business, or a combination. Real estate is optional - the core principles work for any income and any path to wealth.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>What if I'm a complete beginner?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Perfect. This workbook is designed for beginners. We start with the fundamentals and build from there. No financial background or special knowledge required. Just follow the step-by-step worksheets.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>Can I use this if I have a low income?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Yes. The OMP Method works at any income level. The principles are about optimizing what you have, not earning more. We show you how to build wealth on $30K, $50K, $100K, or any income.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>What format do I get?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            You get both: a fillable PDF (for digital use on your computer or tablet) and a printable PDF (for printing and using pen & paper). Use whichever works best for you.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>Is there a money-back guarantee?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Yes. 100% money-back guarantee for 30 days. If you're not satisfied for any reason, just email us and we'll refund your money. No questions asked.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.faq-toggle').classList.toggle('active')">
+            <span>How long does it take to complete?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Most people complete it in 4-6 weeks, working through one section per week. But you can go at your own pace. Some people finish faster, others take longer - whatever works for you.
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <div class="final-cta-content">
+        <h2>Ready to Take <span class="accent">Control</span> of Your Financial Future?</h2>
+        <p>Stop wondering "what if" and start building real wealth. Join 10,000+ people who've used the OMP Method to achieve financial independence on a normal income.</p>
+        <a href="https://matthewvarga.gumroad.com/l/fireworkbook?wanted=true" target="_blank" class="final-cta-button">Get the Workbook - $19.99</a>
+        <p class="final-guarantee">✓ 30-day money-back guarantee • Instant download • Lifetime access</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 The Ordinary Millionaire. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="https://www.matthewvarga.com/coaching">Join the Community</a></p>
+</footer>
+
+</body>
+</html>

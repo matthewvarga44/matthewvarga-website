@@ -1,8 +1,8 @@
 # Travel Hacking Guide exact-fidelity implementation
 
-- [ ] Replace the existing page with the canonical handoff component from `Home.tsx`.
-- [ ] Apply the canonical landing-page styles and typography from `index.css` without changing the rest of the site.
-- [ ] Preserve all five canonical `/manus-storage/` asset URLs exactly.
+- [ ] Compare the public route with the active project and identify the stale deployment source.
+- [ ] Remove every personal-photo and fallback-image reference from the route.
+- [ ] Restore the intended landing-page implementation and production asset URLs.
 - [ ] Preserve the exact Gumroad checkout URL on every purchase CTA.
 - [ ] Verify `/travel-hacking-guide` and `/travel-hacking-guide/`.
 - [ ] Run TypeScript checks and production build.

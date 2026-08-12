@@ -1,363 +1,327 @@
-/*
- * Design philosophy: premium travel editorial with a near-black charcoal foundation,
- * restrained gold accents, Playfair Display-style display typography, asymmetrical
- * compositions, and clear benefit-led conversion moments. Every section should feel
- * like a thoughtful travel journal—not a generic SaaS template.
- */
-import {
-  ArrowRight,
-  Check,
-  Compass,
-  CreditCard,
-  Gem,
-  Hotel,
-  Map,
-  Menu,
-  Plane,
-  ShieldCheck,
-  Sparkles,
-  Users,
-  X,
-} from "lucide-react";
-import { useState } from "react";
-import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import "./TravelHackingGuide.css";
 
-const checkoutUrl =
-  "https://matthewvarga.gumroad.com/l/travelhackingguidebook?wanted=true";
-
-const heroImage = "/manus-storage/travel-guide-hero_e394b3c1.png";
-const hotelImage = "/manus-storage/travel-guide-hotel_d611a167.png";
-const familyImage = "/manus-storage/travel-guide-family_c3a00d28.png";
-const heroFallback = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg";
-const hotelFallback = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535653/matthewvarga/6cec682f-2935-4430-846b-8b4ca3fb254d.jpg";
-const familyFallback = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535651/matthewvarga/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpg";
-
-function useImageFallback(fallback: string) {
-  return (event: React.SyntheticEvent<HTMLImageElement>) => {
-    event.currentTarget.onerror = null;
-    event.currentTarget.src = fallback;
+export default function Home() {
+  const handleCTA = () => {
+    window.location.href = "https://matthewvarga.gumroad.com/l/travelhackingguidebook?wanted=true";
   };
-}
 
-function trackGuideClick(location: string) {
-  if (typeof window !== "undefined" && "gtag" in window) {
-    (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.(
-      "event",
-      "travel_guide_checkout_click",
-      { location, value: 12.99, currency: "USD" },
-    );
-  }
-}
-
-function PurchaseLink({
-  children,
-  location,
-  className = "",
-}: {
-  children: React.ReactNode;
-  location: string;
-  className?: string;
-}) {
-  return (
-    <a
-      href={checkoutUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => trackGuideClick(location)}
-      className={className}
-    >
-      {children}
-    </a>
-  );
-}
-
-const outcomes = [
-  {
-    icon: CreditCard,
-    eyebrow: "SPEND WITH INTENTION",
-    title: "Earn from the life you already live.",
-    copy: "Build a points strategy around ordinary spending instead of chasing every new card or every loud internet hack.",
-  },
-  {
-    icon: Plane,
-    eyebrow: "REDEEM WITH CONFIDENCE",
-    title: "Trade points for premium flights.",
-    copy: "Learn how business- and first-class redemptions work, so you can pursue high-value trips for taxes and fees instead of cash fares.",
-  },
-  {
-    icon: Hotel,
-    eyebrow: "GO FURTHER",
-    title: "Turn stays into part of the plan.",
-    copy: "Use loyalty programs and hotel points to make luxury stays and family trips more attainable—and more intentional.",
-  },
-];
-
-const chapters = [
-  "The points ecosystem, explained without the jargon",
-  "Which cards and loyalty programs deserve your attention",
-  "A practical first-90-days plan for beginners",
-  "How to earn points on spending you already do",
-  "How to compare cash prices against redemption value",
-  "Business-class, first-class, hotel, and family-trip strategies",
-];
-
-export default function TravelHackingGuide() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const handleImageError = (fallbackUrl: string) => (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = fallbackUrl;
+  };
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#11100f] text-[#f7f1e8] selection:bg-[#c89a49] selection:text-[#11100f]">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#11100f]/95 backdrop-blur-xl">
-        <div className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-5 sm:px-8">
-          <Link href="/" className="group flex items-center gap-3" aria-label="Back to Matthew Varga home">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#c89a49]/60 text-[#e7bd76] transition-colors group-hover:border-[#f4d196] group-hover:text-[#f4d196]">
-              <Compass className="h-5 w-5" strokeWidth={1.5} />
-            </span>
-            <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-[#f7f1e8] sm:text-xs">
-              Matthew Varga
-              <span className="block text-[9px] tracking-[0.3em] text-[#c89a49]">Travel Hacking Guide</span>
-            </span>
-          </Link>
-
-          <nav className="hidden items-center gap-8 md:flex" aria-label="Travel guide navigation">
-            <a href="#inside" className="text-xs uppercase tracking-[0.16em] text-white/60 transition-colors hover:text-white">Inside the guide</a>
-            <a href="#method" className="text-xs uppercase tracking-[0.16em] text-white/60 transition-colors hover:text-white">The method</a>
-            <PurchaseLink location="header" className="inline-flex items-center gap-2 rounded-full bg-[#c89a49] px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#11100f] transition-all hover:bg-[#e7bd76] active:scale-[0.98]">
-              Get the guide <ArrowRight className="h-3.5 w-3.5" />
-            </PurchaseLink>
-          </nav>
-
-          <button
-            type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white md:hidden"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+    <div className="travel-hacking-page min-h-screen bg-[#1a1a1a] text-[#fafaf7]">
+      {/* Header with Logo */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-[#333]">
+        <div className="container py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src="/manus-storage/compass_logo_4054d509.png" alt="Travel Hacking Logo" onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png")} className="w-8 h-8" />
+            <span className="font-playfair text-lg font-bold text-[#fafaf7]">Travel Hacking</span>
+          </div>
+          <button onClick={handleCTA} className="text-sm font-montserrat font-600 text-[#e0c87a] hover:text-[#f0e0a0] transition-colors">
+            Buy Now
           </button>
         </div>
-        {menuOpen && (
-          <nav className="border-t border-white/10 px-5 py-5 md:hidden" aria-label="Mobile travel guide navigation">
-            <div className="flex flex-col gap-5">
-              <a href="#inside" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.16em] text-white/70">Inside the guide</a>
-              <a href="#method" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.16em] text-white/70">The method</a>
-              <PurchaseLink location="mobile-header" className="inline-flex w-fit items-center gap-2 rounded-full bg-[#c89a49] px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#11100f]">
-                Get the guide <ArrowRight className="h-3.5 w-3.5" />
-              </PurchaseLink>
-            </div>
-          </nav>
-        )}
       </header>
 
-      <main>
-        <section className="relative isolate border-b border-white/10">
-          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_78%_35%,rgba(200,154,73,0.16),transparent_34%),linear-gradient(115deg,#11100f_18%,#171411_58%,#0d0c0b)]" />
-          <div className="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16 lg:py-20">
-            <div className="relative z-10 max-w-2xl">
-              <div className="mb-8 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.28em] text-[#e7bd76]">
-                <span className="h-px w-10 bg-[#c89a49]" />
-                Travel Hacking Guide 2026
+      {/* Hero Section */}
+      <section
+        className="hero-section relative"
+        style={{
+          backgroundImage: "url(/manus-storage/hero_firstclass_e2fea991.jpg)",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[rgba(26,26,26,0.8)] to-transparent z-5" />
+        <div className="container relative z-10 py-20 mt-20">
+          <div className="hero-content">
+            <div className="pre-headline">Stop Paying Retail</div>
+            <h1 className="hero-headline">
+              Learn How to Book $10,000 First-Class Flights and Luxury Suites for Pennies on the Dollar
+            </h1>
+            <p className="hero-subheadline">
+              The exact step-by-step system ordinary families use to unlock elite travel, without spending hours searching or opening dozens of credit cards.
+            </p>
+            <div className="flex flex-col gap-4">
+              <button onClick={handleCTA} className="cta-button w-fit">
+                Get the 2026 Guide Now - Only $12.99
+              </button>
+              <div className="flex items-center gap-4 mt-4">
+                <div className="relative inline-block">
+                  <p className="text-2xl font-bold text-[#fafaf7]">$39.99</p>
+                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
+                    <line x1="0" y1="15" x2="100" y2="15" stroke="#cc3333" strokeWidth="2" />
+                  </svg>
+                </div>
+                <div className="bg-red-600 text-white px-3 py-2 rounded-lg font-bold text-sm">
+                  SAVE 67%
+                </div>
               </div>
-              <h1 className="max-w-xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-[#f7f1e8] sm:text-6xl lg:text-[5.25rem]">
-                Fly further.
-                <span className="block text-[#d4a45a]">Stay better.</span>
-                <span className="block">Pay with strategy.</span>
-              </h1>
-              <p className="mt-8 max-w-xl text-lg leading-8 text-white/65 sm:text-xl">
-                Learn the step-by-step system ordinary families use to unlock premium travel—first-class flights, luxury hotels, and unforgettable trips—without paying cash prices or opening dozens of cards.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Section */}
+      <section className="section bg-[#fafaf7] text-[#1a1a1a]">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="gold-accent-bar" />
+              <h2 className="section-headline">
+                You're leaving thousands of dollars on the table every time you fly.
+              </h2>
+              <p className="mb-4 text-lg">
+                Let's be honest. When you see someone sipping champagne in a lie-flat first-class seat, or posting photos from an overwater bungalow in the Maldives, you probably think:
               </p>
-
-              <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
-                <PurchaseLink location="hero" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#c89a49] px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-[#11100f] shadow-[0_14px_40px_rgba(200,154,73,0.18)] transition-all hover:-translate-y-0.5 hover:bg-[#e7bd76] active:scale-[0.98]">
-                  Get the guide for $12.99 <ArrowRight className="h-4 w-4" />
-                </PurchaseLink>
-                <a href="#inside" className="inline-flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-[0.14em] text-white/70 transition-colors hover:text-[#f4d196]">
-                  See what&apos;s inside <ArrowRight className="h-4 w-4 text-[#c89a49]" />
-                </a>
-              </div>
-
-              <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-xs text-white/45">
-                <span className="inline-flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-[#c89a49]" /> Instant digital access</span>
-                <span className="inline-flex items-center gap-2"><Map className="h-4 w-4 text-[#c89a49]" /> 163-page deep dive</span>
-              </div>
+              <p className="mb-6 text-lg italic text-[#e0c87a]">
+                "They must be rich."
+              </p>
+              <p className="mb-6 text-lg">
+                But here's the truth: They aren't paying cash for those experiences. They are using points.
+              </p>
+              <p className="mb-6 text-lg font-semibold">
+                The problem? The points game is rigged against beginners.
+              </p>
+              <ul className="space-y-3 text-lg">
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span>Hoarding points that devalue every year.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span>Getting rejected for the best cards because you don't know the hidden rules (like Chase's 5/24).</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span>Transferring points to the wrong airline and losing half their value.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span>Spending hours searching for award flights that don't exist.</span>
+                </li>
+              </ul>
+              <p className="mt-6 text-lg font-semibold">
+                It's exhausting. And it's exactly what the banks want you to do.
+              </p>
             </div>
+            <div className="relative flex justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/10 to-transparent rounded-lg" />
+              <img
+                src="/manus-storage/hero_hotel_suite_9d17e317.jpg"
+                alt="Luxury overwater bungalow"
+                onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535653/matthewvarga/6cec682f-2935-4430-846b-8b4ca3fb254d.jpg")}
+                className="rounded-lg shadow-2xl transform -rotate-3 border-8 border-[#1a1a1a] relative z-10"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="relative lg:translate-x-5">
-              <div className="absolute -inset-5 rounded-[2rem] bg-[#c89a49]/10 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[1.6rem] border border-[#c89a49]/45 bg-[#1b1815] p-2 shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
-                <img src={heroImage} alt="Premium first-class airplane suite at dusk" onError={useImageFallback(heroFallback)} className="aspect-[4/3] w-full rounded-[1.1rem] object-cover" />
-                <div className="absolute bottom-7 left-7 right-7 flex items-end justify-between gap-5 rounded-xl border border-white/15 bg-[#11100f]/80 p-4 backdrop-blur-md">
+      {/* Solution Section */}
+      <section className="section bg-[#1a1a1a]">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 lg:order-1 flex justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/10 to-transparent rounded-lg" />
+              <img
+                src="/manus-storage/hero_family_travel_fbcd4b28.jpg"
+                alt="Family traveling in Europe"
+                onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535651/matthewvarga/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpg")}
+                className="rounded-lg shadow-2xl transform rotate-2 border-8 border-[#252520] relative z-10"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="gold-accent-bar" />
+              <h2 className="section-headline text-[#fafaf7]">
+                What if you had the cheat code to the entire system?
+              </h2>
+              <p className="mb-6 text-lg text-[#fafaf7]">
+                Introducing the <strong>Travel Hacking Guide 2026</strong>.
+              </p>
+              <p className="mb-8 text-lg text-[#fafaf7]">
+                This isn't just a list of credit cards. It's a complete, engineered system that teaches you how to legally hack the travel industry. We've distilled years of trial and error into a proven roadmap that anyone can follow.
+              </p>
+              <h3 className="mb-6">Here is exactly what you will learn how to do:</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold text-xl">✓</span>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#e7bd76]">The 2026 guide</p>
-                    <p className="mt-1 font-serif text-xl text-[#f7f1e8]">Premium travel, made practical.</p>
+                    <strong className="text-[#fafaf7] block">Fly First Class for Economy Prices</strong>
+                    <span className="text-[#aaa]">Discover the exact transfer partners and booking portals to turn everyday spending into luxury flights.</span>
                   </div>
-                  <Plane className="hidden h-6 w-6 shrink-0 text-[#e7bd76] sm:block" strokeWidth={1.5} />
-                </div>
-              </div>
-              <div className="absolute -bottom-6 -left-4 hidden rounded-xl border border-[#c89a49]/35 bg-[#1a1714] px-5 py-4 shadow-xl sm:block lg:-left-10">
-                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/45">Today&apos;s price</p>
-                <p className="mt-1 text-2xl font-semibold text-[#f7f1e8]">$12.99</p>
-              </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <strong className="text-[#fafaf7] block">Unlock Free Hotel Stays</strong>
+                    <span className="text-[#aaa]">Learn how to leverage the "Fourth Night Free" and companion passes to double your vacation time without doubling your budget.</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <strong className="text-[#fafaf7] block">Build the Perfect Portfolio</strong>
+                    <span className="text-[#aaa]">Follow the "Three-Phase Strategy" to get approved for the highest-value cards in the exact right order.</span>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#e0c87a] mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <strong className="text-[#fafaf7] block">Never Pay Retail Again</strong>
+                    <span className="text-[#aaa]">Master the Cents Per Point (CPP) formula so you instantly know if a redemption is a steal or a scam.</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="border-b border-white/10 bg-[#f4efe7] py-14 text-[#171411] sm:py-20">
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 md:grid-cols-[0.75fr_1.25fr] md:items-start">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#a16d22]">A different way to think about travel</p>
-              <h2 className="mt-4 max-w-sm font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">The best trips start before you book the flight.</h2>
-            </div>
-            <div className="max-w-2xl text-lg leading-8 text-[#514a42]">
-              <p>Most people start with a destination and then accept whatever the cash price happens to be. Travel hacking starts earlier: with a clear points strategy, a shortlist of programs that matter, and a redemption plan that makes premium travel feel possible.</p>
-              <p className="mt-5">This guide is built for beginners who want a system—not a collection of scattered tips.</p>
-            </div>
-          </div>
-        </section>
+      {/* Value Stack Section */}
+      <section className="section bg-[#fafaf7] text-[#1a1a1a]">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="gold-accent-bar" />
+            <h2 className="section-headline text-center mb-12">
+              Everything you need to master luxury travel.
+            </h2>
 
-        <section id="method" className="border-b border-white/10 bg-[#11100f] py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr]">
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#e7bd76]">The OMP travel method</p>
-                <h2 className="mt-5 max-w-md font-serif text-4xl leading-[1.05] tracking-[-0.035em] text-[#f7f1e8] sm:text-5xl">A simple framework for more valuable redemptions.</h2>
-                <p className="mt-6 max-w-md leading-7 text-white/55">No gimmicks. No pressure to carry a wallet full of cards. Just a practical sequence for earning, choosing, and redeeming points with intention.</p>
-              </div>
-              <div className="grid gap-5 md:grid-cols-3">
-                {outcomes.map((outcome) => {
-                  const Icon = outcome.icon;
-                  return (
-                    <article key={outcome.title} className="border-t border-[#c89a49]/55 pt-5">
-                      <Icon className="h-6 w-6 text-[#e7bd76]" strokeWidth={1.5} />
-                      <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.18em] text-[#c89a49]">{outcome.eyebrow}</p>
-                      <h3 className="mt-3 font-serif text-2xl leading-tight text-[#f7f1e8]">{outcome.title}</h3>
-                      <p className="mt-4 text-sm leading-6 text-white/55">{outcome.copy}</p>
-                    </article>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="inside" className="border-b border-white/10 bg-[#171411] py-20 sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.86fr] lg:gap-20">
-              <div className="order-2 lg:order-1">
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#e7bd76]">Inside the 163 pages</p>
-                <h2 className="mt-5 max-w-xl font-serif text-4xl leading-[1.05] tracking-[-0.035em] text-[#f7f1e8] sm:text-5xl">From first points to first-class confidence.</h2>
-                <div className="mt-9 grid gap-4 sm:grid-cols-2">
-                  {chapters.map((chapter) => (
-                    <div key={chapter} className="flex gap-3 border-t border-white/10 pt-4 text-sm leading-6 text-white/65">
-                      <Check className="mt-1 h-4 w-4 shrink-0 text-[#d4a45a]" />
-                      <span>{chapter}</span>
-                    </div>
-                  ))}
-                </div>
-                <PurchaseLink location="inside-section" className="mt-10 inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.14em] text-[#e7bd76] transition-colors hover:text-[#f7f1e8]">
-                  Explore the full guide <ArrowRight className="h-4 w-4" />
-                </PurchaseLink>
-              </div>
-              <div className="relative order-1 lg:order-2">
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full border border-[#c89a49]/35" />
-                <img src={hotelImage} alt="Luxury hotel suite overlooking the ocean" onError={useImageFallback(hotelFallback)} className="relative aspect-[4/3] w-full rounded-[1.2rem] object-cover shadow-2xl" />
-                <div className="absolute -bottom-6 -left-6 max-w-[220px] border border-[#c89a49]/40 bg-[#11100f] p-5 shadow-xl sm:-left-10">
-                  <Gem className="h-5 w-5 text-[#e7bd76]" strokeWidth={1.5} />
-                  <p className="mt-3 font-serif text-xl leading-tight text-[#f7f1e8]">Make the redemption worth the journey.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="border-b border-white/10 bg-[#f4efe7] py-20 text-[#171411] sm:py-28">
-          <div className="mx-auto max-w-7xl px-5 sm:px-8">
-            <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div className="mb-12 flex justify-center">
               <div className="relative">
-                <img src={familyImage} alt="Family walking through an international airport" onError={useImageFallback(familyFallback)} className="aspect-[4/3] w-full rounded-[1.2rem] object-cover shadow-2xl" />
-                <div className="absolute -bottom-6 -right-5 bg-[#c89a49] px-5 py-4 text-[#11100f] shadow-xl sm:-right-10">
-                  <Users className="h-5 w-5" strokeWidth={1.5} />
-                  <p className="mt-2 max-w-[130px] text-xs font-bold uppercase leading-5 tracking-[0.12em]">Travel that includes everyone</p>
-                </div>
-              </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#a16d22]">What changes when you have a plan</p>
-                <h2 className="mt-5 max-w-xl font-serif text-4xl leading-[1.05] tracking-[-0.035em] sm:text-5xl">Luxury is not the point. Freedom of choice is.</h2>
-                <p className="mt-6 max-w-xl text-lg leading-8 text-[#514a42]">The guide helps you understand the mechanics behind the trip: how to choose a strategy, when to hold points, and how to make a redemption decision that fits your real life.</p>
-                <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {[
-                    "Premium flights without premium cash fares",
-                    "Hotel stays that feel like part of the experience",
-                    "A repeatable system for family travel",
-                    "A first-90-days plan you can actually follow",
-                  ].map((item) => (
-                    <div key={item} className="flex gap-3 text-sm leading-6 text-[#514a42]"><Check className="mt-1 h-4 w-4 shrink-0 text-[#a16d22]" />{item}</div>
-                  ))}
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/20 to-transparent rounded-lg transform -rotate-1" />
+                <img
+                  src="/manus-storage/guide_mockup_2a0fdb12.jpg"
+                  alt="Travel Hacking Guide 2026"
+                  onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg")}
+                  className="w-48 h-auto rounded-lg shadow-2xl transform rotate-1 relative z-10 border-4 border-[#1a1a1a]"
+                />
               </div>
             </div>
-          </div>
-        </section>
 
-        <section className="bg-[#11100f] py-20 sm:py-28">
-          <div className="mx-auto max-w-5xl px-5 sm:px-8">
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-[#c89a49]/45 bg-[radial-gradient(circle_at_80%_0%,rgba(200,154,73,0.18),transparent_40%),#171411] p-7 sm:p-12 lg:p-16">
-              <div className="absolute -right-16 -top-20 h-64 w-64 rounded-full border border-[#c89a49]/20" />
-              <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
-                <div>
-                  <div className="inline-flex items-center gap-2 rounded-full border border-[#c89a49]/45 bg-[#c89a49]/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#e7bd76]">
-                    <Sparkles className="h-3.5 w-3.5" /> Limited launch price
-                  </div>
-                  <h2 className="mt-6 max-w-xl font-serif text-4xl leading-[1.05] tracking-[-0.035em] text-[#f7f1e8] sm:text-5xl">Your next premium trip starts with a better points strategy.</h2>
-                  <p className="mt-5 max-w-xl leading-7 text-white/55">Get the complete Travel Hacking Guide 2026 and build your plan before your next booking window opens.</p>
-                </div>
-                <div className="lg:text-right">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/45">Regular price</p>
-                  <div className="mt-2 flex items-center gap-3 lg:justify-end">
-                    <span className="relative text-2xl font-semibold text-white/45 after:absolute after:left-0 after:right-0 after:top-1/2 after:h-1 after:-rotate-6 after:bg-[#d74c45] after:content-['']">$39.99</span>
-                    <span className="rounded-full bg-[#d74c45] px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.12em] text-white">Save 67% today</span>
-                  </div>
-                  <p className="mt-2 font-serif text-5xl text-[#f4d196]">$12.99</p>
-                  <PurchaseLink location="final-offer" className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#c89a49] px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-[#11100f] transition-all hover:bg-[#e7bd76] active:scale-[0.98] sm:w-auto">
-                    Get instant access <ArrowRight className="h-4 w-4" />
-                  </PurchaseLink>
-                </div>
+            <div className="space-y-3 mb-12">
+              <div className="value-stack-card">
+                <h4 className="text-lg mb-2">The Complete 160-Page Master Guide</h4>
+                <p className="text-sm text-[#e0c87a] font-semibold">Value: $39.99</p>
               </div>
-              <div className="relative mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5 text-xs text-white/45">
-                <span className="inline-flex items-center gap-2"><Check className="h-3.5 w-3.5 text-[#c89a49]" /> 163-page guide</span>
-                <span className="inline-flex items-center gap-2"><Check className="h-3.5 w-3.5 text-[#c89a49]" /> Beginner-friendly system</span>
-                <span className="inline-flex items-center gap-2"><Check className="h-3.5 w-3.5 text-[#c89a49]" /> Digital access</span>
+              <div className="value-stack-card">
+                <h4 className="text-lg mb-2">The Step-by-Step Card Application Sequence</h4>
+                <p className="text-sm text-[#e0c87a] font-semibold">Value: $19.99</p>
+              </div>
+              <div className="value-stack-card">
+                <h4 className="text-lg mb-2">The Cents-Per-Point Calculator Formula</h4>
+                <p className="text-sm text-[#e0c87a] font-semibold">Value: $9.99</p>
+              </div>
+              <div className="value-stack-card">
+                <h4 className="text-lg mb-2">Exclusive Canadian Reader Strategies</h4>
+                <p className="text-sm text-[#e0c87a] font-semibold">Value: $14.99</p>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
 
-      <footer className="border-t border-white/10 bg-[#0c0b0a] py-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-7 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#c89a49]/60 text-[#e7bd76]"><Compass className="h-4 w-4" strokeWidth={1.5} /></span>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f7f1e8]">Matthew Varga</p>
-              <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-white/35">Travel Hacking Guide 2026</p>
+            <div className="bg-[#1a1a1a] p-8 rounded-lg text-center mb-12">
+              <p className="text-[#aaa] mb-2">Total Value</p>
+              <p className="text-2xl text-[#fafaf7] font-bold mb-6">$84.96</p>
+              <p className="text-[#aaa] mb-2">Normal Price: $39.99</p>
+              <p className="text-[#aaa] mb-6">Your Price Today:</p>
+              <div className="price-highlight mb-8">$12.99</div>
+              <div className="flex items-center justify-center gap-4 mb-8">
+                <div className="relative inline-block">
+                  <p className="text-2xl font-bold text-[#fafaf7]">$39.99</p>
+                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 30" preserveAspectRatio="none">
+                    <line x1="0" y1="15" x2="100" y2="15" stroke="#cc3333" strokeWidth="2" />
+                  </svg>
+                </div>
+                <div className="bg-red-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
+                  SAVE 67%
+                </div>
+              </div>
+              <button onClick={handleCTA} className="cta-button w-full">
+                Unlock the System for $12.99
+              </button>
             </div>
           </div>
-          <div className="flex flex-wrap gap-5 text-xs text-white/40">
-            <Link href="/" className="transition-colors hover:text-white">MatthewVarga.com</Link>
-            <Link href="/coaching" className="transition-colors hover:text-white">Coaching</Link>
-            <Link href="/contact" className="transition-colors hover:text-white">Contact</Link>
+        </div>
+      </section>
+
+      {/* Guide Preview Section - uses product facts only, no fabricated reviews or testimonials */}
+      <section className="section bg-[#1a1a1a]">
+        <div className="container">
+          <div className="gold-accent-bar" />
+          <h2 className="section-headline text-[#fafaf7] text-center mb-12">
+            Built for the moment you are ready to stop guessing.
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="testimonial-card">
+              <p className="font-montserrat text-xs font-bold tracking-[0.16em] text-[#e0c87a] uppercase mb-4">The Strategy</p>
+              <h3 className="text-[#fafaf7] text-xl mb-3">A clear sequence, not a stack of random cards.</h3>
+              <p className="testimonial-text">
+                Learn where to start, how the Chase 5/24 rule affects your order, and how to build a useful points portfolio without creating avoidable roadblocks.
+              </p>
+            </div>
+            <div className="testimonial-card">
+              <p className="font-montserrat text-xs font-bold tracking-[0.16em] text-[#e0c87a] uppercase mb-4">The Tools</p>
+              <h3 className="text-[#fafaf7] text-xl mb-3">Know where to search before you transfer a single point.</h3>
+              <p className="testimonial-text">
+                Use the linked loyalty programs, award-search platforms, shopping portals, dining programs, and booking resources included throughout the guide.
+              </p>
+            </div>
+            <div className="testimonial-card">
+              <p className="font-montserrat text-xs font-bold tracking-[0.16em] text-[#e0c87a] uppercase mb-4">The Redemptions</p>
+              <h3 className="text-[#fafaf7] text-xl mb-3">Turn point balances into real travel decisions.</h3>
+              <p className="testimonial-text">
+                See practical examples covering premium cabins, hotel programs, family trips, Cents Per Point value, and the decisions behind a high-value redemption.
+              </p>
+            </div>
           </div>
-          <p className="text-xs text-white/30">© {new Date().getFullYear()} Matthew Varga</p>
+
+          <div className="guarantee-box">
+            <h3 className="mb-4">The "No-Brainer" Guarantee</h3>
+            <p>
+              If you don't save at least 10x the cost of this guide on your next trip, I'll refund every penny. No questions asked.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="section bg-gradient-to-r from-[#1a1a1a] to-[#252520]">
+        <div className="container text-center">
+          <h2 className="section-headline text-[#fafaf7] mb-6">
+            The airlines are devaluing points every day.
+          </h2>
+          <p className="text-lg text-[#fafaf7] mb-8 max-w-2xl mx-auto">
+            Every month you wait is another month of everyday spending that could have been earning you a free luxury vacation. The rules change fast, and this 2026 edition has the latest strategies working <em>right now</em>.
+          </p>
+          <p className="text-xl text-[#e0c87a] font-bold mb-8">
+            Stop paying retail. Start traveling like an insider.
+          </p>
+          <button onClick={handleCTA} className="cta-button mb-4">
+            Get Instant Access Now - $12.99
+          </button>
+          <p className="text-muted">
+            Secure Checkout | Instant PDF Download
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-[#0f0f0f] border-t border-[#333] py-8">
+        <div className="container text-center text-muted">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <img src="/manus-storage/compass_logo_4054d509.png" alt="Travel Hacking Logo" onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png")} className="w-6 h-6" />
+            <span className="font-playfair font-bold text-[#e0c87a]">Travel Hacking Guide 2026</span>
+          </div>
+          <p>© 2026 Travel Hacking Guide by Matthew Varga. All rights reserved.</p>
+          <p className="mt-2 text-sm">
+            <a href="https://www.matthewvarga.com" className="text-[#e0c87a] hover:underline">
+              Visit Matthew Varga
+            </a>
+          </p>
         </div>
       </footer>
     </div>
   );
 }
-
-// Extend the global Window type locally for GA4 without introducing a dependency.
-declare global {
-  interface Window {
-    gtag?: (...args: unknown[]) => void;
-  }
-}
-

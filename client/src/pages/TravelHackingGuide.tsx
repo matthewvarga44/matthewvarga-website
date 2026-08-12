@@ -7,12 +7,12 @@ export default function TravelHackingGuide() {
     window.location.href = "https://matthewvarga.gumroad.com/l/travelhackingguidebook?wanted=true";
   };
 
-  // Exact original canonical assets uploaded to the active WebDev asset host
-  const logoUrl = "/manus-storage/compass_logo_117ee988.png";
-  const heroFirstClassUrl = "/manus-storage/hero_firstclass_8d677a0d.jpg";
-  const hotelSuiteUrl = "/manus-storage/hero_hotel_suite_7932d134.jpg";
-  const familyTravelUrl = "/manus-storage/hero_family_travel_7786a691.jpg";
-  const guideMockupUrl = "/manus-storage/guide_mockup_9803c0fb.jpg";
+  // Exact original canonical assets hosted on the public CDN for matthewvarga.com
+  const logoUrl = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663324813106/hdbsajCLNRktDYZh.png";
+  const heroFirstClassUrl = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663324813106/mdvvUXwHjDVfdeil.jpg";
+  const hotelSuiteUrl = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663324813106/toMFdxFrgjqJDqTy.jpg";
+  const familyTravelUrl = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663324813106/KDhaWrZaIREnhorQ.jpg";
+  const guideMockupUrl = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663324813106/GUtlaZhuWinsTVLa.jpg";
 
   return (
     <div className="travel-hacking-page min-h-screen bg-[#1a1a1a] text-[#fafaf7]">

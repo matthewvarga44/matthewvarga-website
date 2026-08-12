@@ -20,6 +20,7 @@ import PodcastEpisode from "./pages/PodcastEpisode";
 import Learn from "./pages/Learn";
 import Placeholder from "./pages/Placeholder";
 import Workbook from "./pages/Workbook";
+import TravelHackingGuide from "./pages/TravelHackingGuide";
 
 function Router() {
   return (
@@ -40,6 +41,8 @@ function Router() {
       <Route path="/learn" component={Learn} />
       <Route path="/courses" component={Learn} />
       <Route path="/workbook" component={Workbook} />
+      <Route path="/travel-hacking-guide" component={TravelHackingGuide} />
+      <Route path="/travel-hacking-guide/" component={TravelHackingGuide} />
       <Route path="/community">
         <Placeholder title="Community" />
       </Route>

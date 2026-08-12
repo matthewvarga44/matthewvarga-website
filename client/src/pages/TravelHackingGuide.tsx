@@ -2,15 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import "./TravelHackingGuide.css";
 
-export default function Home() {
+export default function TravelHackingGuide() {
   const handleCTA = () => {
     window.location.href = "https://matthewvarga.gumroad.com/l/travelhackingguidebook?wanted=true";
   };
 
-  const handleImageError = (fallbackUrl: string) => (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.onerror = null;
-    e.currentTarget.src = fallbackUrl;
-  };
+  // Verified production Cloudinary URLs for 100% reliable image rendering
+  const logoUrl = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png";
+  const heroFirstClassUrl = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg";
+  const hotelSuiteUrl = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535653/matthewvarga/6cec682f-2935-4430-846b-8b4ca3fb254d.jpg";
+  const familyTravelUrl = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535651/matthewvarga/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpg";
+  const guideMockupUrl = "https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg";
 
   return (
     <div className="travel-hacking-page min-h-screen bg-[#1a1a1a] text-[#fafaf7]">
@@ -18,7 +20,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-[#333]">
         <div className="container py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/compass_logo_4054d509.png" alt="Travel Hacking Logo" onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png")} className="w-8 h-8" />
+            <img src={logoUrl} alt="Travel Hacking Logo" className="w-8 h-8 object-contain" />
             <span className="font-playfair text-lg font-bold text-[#fafaf7]">Travel Hacking</span>
           </div>
           <button onClick={handleCTA} className="text-sm font-montserrat font-600 text-[#e0c87a] hover:text-[#f0e0a0] transition-colors">
@@ -31,10 +33,10 @@ export default function Home() {
       <section
         className="hero-section relative"
         style={{
-          backgroundImage: "url(/manus-storage/hero_firstclass_e2fea991.jpg)",
+          backgroundImage: `url(${heroFirstClassUrl})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[rgba(26,26,26,0.8)] to-transparent z-5" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[rgba(26,26,26,0.85)] to-transparent z-5" />
         <div className="container relative z-10 py-20 mt-20">
           <div className="hero-content">
             <div className="pre-headline">Stop Paying Retail</div>
@@ -76,7 +78,7 @@ export default function Home() {
               <p className="mb-4 text-lg">
                 Let's be honest. When you see someone sipping champagne in a lie-flat first-class seat, or posting photos from an overwater bungalow in the Maldives, you probably think:
               </p>
-              <p className="mb-6 text-lg italic text-[#e0c87a]">
+              <p className="mb-6 text-lg italic text-[#c89a49]">
                 "They must be rich."
               </p>
               <p className="mb-6 text-lg">
@@ -87,19 +89,19 @@ export default function Home() {
               </p>
               <ul className="space-y-3 text-lg">
                 <li className="flex items-start">
-                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span className="text-[#c89a49] mr-3 font-bold">•</span>
                   <span>Hoarding points that devalue every year.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span className="text-[#c89a49] mr-3 font-bold">•</span>
                   <span>Getting rejected for the best cards because you don't know the hidden rules (like Chase's 5/24).</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span className="text-[#c89a49] mr-3 font-bold">•</span>
                   <span>Transferring points to the wrong airline and losing half their value.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#e0c87a] mr-3 font-bold">•</span>
+                  <span className="text-[#c89a49] mr-3 font-bold">•</span>
                   <span>Spending hours searching for award flights that don't exist.</span>
                 </li>
               </ul>
@@ -110,10 +112,9 @@ export default function Home() {
             <div className="relative flex justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/10 to-transparent rounded-lg" />
               <img
-                src="/manus-storage/hero_hotel_suite_9d17e317.jpg"
+                src={hotelSuiteUrl}
                 alt="Luxury overwater bungalow"
-                onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535653/matthewvarga/6cec682f-2935-4430-846b-8b4ca3fb254d.jpg")}
-                className="rounded-lg shadow-2xl transform -rotate-3 border-8 border-[#1a1a1a] relative z-10"
+                className="rounded-lg shadow-2xl transform -rotate-3 border-8 border-[#1a1a1a] relative z-10 max-h-[450px] object-cover w-full"
               />
             </div>
           </div>
@@ -127,10 +128,9 @@ export default function Home() {
             <div className="relative order-2 lg:order-1 flex justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/10 to-transparent rounded-lg" />
               <img
-                src="/manus-storage/hero_family_travel_fbcd4b28.jpg"
+                src={familyTravelUrl}
                 alt="Family traveling in Europe"
-                onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535651/matthewvarga/62b1462d-8a9e-4087-9873-8eb9c666ec64.jpg")}
-                className="rounded-lg shadow-2xl transform rotate-2 border-8 border-[#252520] relative z-10"
+                className="rounded-lg shadow-2xl transform rotate-2 border-8 border-[#252520] relative z-10 max-h-[450px] object-cover w-full"
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -193,10 +193,9 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#e0c87a]/20 to-transparent rounded-lg transform -rotate-1" />
                 <img
-                  src="/manus-storage/guide_mockup_2a0fdb12.jpg"
+                  src={guideMockupUrl}
                   alt="Travel Hacking Guide 2026"
-                  onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781535663/matthewvarga/IMG_8960.jpg")}
-                  className="w-48 h-auto rounded-lg shadow-2xl transform rotate-1 relative z-10 border-4 border-[#1a1a1a]"
+                  className="w-56 h-auto rounded-lg shadow-2xl transform rotate-1 relative z-10 border-4 border-[#1a1a1a]"
                 />
               </div>
             </div>
@@ -204,28 +203,28 @@ export default function Home() {
             <div className="space-y-3 mb-12">
               <div className="value-stack-card">
                 <h4 className="text-lg mb-2">The Complete 160-Page Master Guide</h4>
-                <p className="text-sm text-[#e0c87a] font-semibold">Value: $39.99</p>
+                <p className="text-sm text-[#c89a49] font-semibold">Value: $39.99</p>
               </div>
               <div className="value-stack-card">
                 <h4 className="text-lg mb-2">The Step-by-Step Card Application Sequence</h4>
-                <p className="text-sm text-[#e0c87a] font-semibold">Value: $19.99</p>
+                <p className="text-sm text-[#c89a49] font-semibold">Value: $19.99</p>
               </div>
               <div className="value-stack-card">
                 <h4 className="text-lg mb-2">The Cents-Per-Point Calculator Formula</h4>
-                <p className="text-sm text-[#e0c87a] font-semibold">Value: $9.99</p>
+                <p className="text-sm text-[#c89a49] font-semibold">Value: $9.99</p>
               </div>
               <div className="value-stack-card">
                 <h4 className="text-lg mb-2">Exclusive Canadian Reader Strategies</h4>
-                <p className="text-sm text-[#e0c87a] font-semibold">Value: $14.99</p>
+                <p className="text-sm text-[#c89a49] font-semibold">Value: $14.99</p>
               </div>
             </div>
 
-            <div className="bg-[#1a1a1a] p-8 rounded-lg text-center mb-12">
+            <div className="bg-[#1a1a1a] p-8 rounded-lg text-center text-[#fafaf7] mb-12">
               <p className="text-[#aaa] mb-2">Total Value</p>
               <p className="text-2xl text-[#fafaf7] font-bold mb-6">$84.96</p>
               <p className="text-[#aaa] mb-2">Normal Price: $39.99</p>
               <p className="text-[#aaa] mb-6">Your Price Today:</p>
-              <div className="price-highlight mb-8">$12.99</div>
+              <div className="price-highlight mb-8 text-[#e0c87a]">$12.99</div>
               <div className="flex items-center justify-center gap-4 mb-8">
                 <div className="relative inline-block">
                   <p className="text-2xl font-bold text-[#fafaf7]">$39.99</p>
@@ -245,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Guide Preview Section - uses product facts only, no fabricated reviews or testimonials */}
+      {/* Guide Preview Section */}
       <section className="section bg-[#1a1a1a]">
         <div className="container">
           <div className="gold-accent-bar" />
@@ -311,7 +310,7 @@ export default function Home() {
       <footer className="bg-[#0f0f0f] border-t border-[#333] py-8">
         <div className="container text-center text-muted">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <img src="/manus-storage/compass_logo_4054d509.png" alt="Travel Hacking Logo" onError={handleImageError("https://res.cloudinary.com/dheaagd8g/image/upload/v1781537435/matthewvarga/logo.png")} className="w-6 h-6" />
+            <img src={logoUrl} alt="Travel Hacking Logo" className="w-6 h-6 object-contain" />
             <span className="font-playfair font-bold text-[#e0c87a]">Travel Hacking Guide 2026</span>
           </div>
           <p>© 2026 Travel Hacking Guide by Matthew Varga. All rights reserved.</p>

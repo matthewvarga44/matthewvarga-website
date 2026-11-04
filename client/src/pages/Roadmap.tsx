@@ -46,6 +46,8 @@ export default function Roadmap() {
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [signupError, setSignupError] = useState(false);
+  const [website, setWebsite] = useState("");
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -75,7 +77,7 @@ export default function Roadmap() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/xpqlzazz", {
+      const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,24 +85,29 @@ export default function Roadmap() {
         },
         body: JSON.stringify({
           email: email,
-          name: name,
-          source: "roadmap",
-          _subject: "New Money Roadmap signup",
+          first_name: name,
+          website: website,
         }),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-        window.scrollTo(0, 0);
-      } else {
-        toast.error("Something went wrong. Please try again.");
+      if (response.status === 400) {
+        const data = await response.json().catch(() => null);
+        toast.error(data?.error || "Please enter a valid email address.");
+        return;
+      }
+      if (!response.ok) {
+        setSignupError(true);
       }
     } catch (err) {
       console.error("Error submitting roadmap signup:", err);
-      toast.error("Failed to send. Please try again.");
+      setSignupError(true);
     } finally {
       setLoading(false);
     }
+
+    // Always give access to the roadmap, even if the email signup failed.
+    setSubmitted(true);
+    window.scrollTo(0, 0);
   };
 
   if (submitted) {
@@ -118,6 +125,12 @@ export default function Roadmap() {
               <p className="text-lg md:text-xl text-foreground/80 mb-8">
                 Tap the button below to open The Ordinary Millionaire Money Roadmap.
               </p>
+              {signupError && (
+                <div className="mb-6 bg-foreground/5 border border-border rounded-xl p-4 text-sm text-foreground/80">
+                  We couldn't add you to the email list just now, but you can still open the
+                  roadmap below.
+                </div>
+              )}
               <a
                 href={ROADMAP_URL}
                 target="_blank"
@@ -182,6 +195,19 @@ export default function Roadmap() {
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Honeypot field for bots; hidden from people */}
+                  <div aria-hidden="true" className="sr-only">
+                    <label htmlFor="website">Website</label>
+                    <input
+                      type="text"
+                      id="website"
+                      name="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={website}
+                      onChange={(e) => setWebsite(e.target.value)}
+                    />
+                  </div>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       First Name <span className="text-foreground/50 font-normal">(optional)</span>

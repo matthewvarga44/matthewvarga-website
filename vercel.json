@@ -22,6 +22,10 @@
       "destination": "/links.html"
     },
     {
+      "source": "/book",
+      "destination": "/api/book"
+    },
+    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }

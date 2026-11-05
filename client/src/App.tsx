@@ -21,6 +21,7 @@ import Learn from "./pages/Learn";
 import Placeholder from "./pages/Placeholder";
 import Workbook from "./pages/Workbook";
 import TravelHackingGuide from "./pages/TravelHackingGuide";
+import Roadmap from "./pages/Roadmap";
 
 function Router() {
   return (
@@ -36,6 +37,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/apply-mastermind" component={MastermindApplication} />
       <Route path="/newsletter" component={Newsletter} />
+      <Route path="/roadmap" component={Roadmap} />
       <Route path="/podcast" component={Podcast} />
       <Route path="/podcast/:episodeId" component={PodcastEpisode} />
       <Route path="/learn" component={Learn} />

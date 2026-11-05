@@ -362,10 +362,14 @@ export default function Roadmap() {
             <div className="mb-4 flex justify-center">
               <Landmark className="h-10 w-10 text-secondary" />
             </div>
-            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-8">
-              I spent 20 years in banking as a former banker and financial planner. This is the
-              roadmap I wish every one of my clients had: simple steps, in the right order, all
-              in one place.
+            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
+              I spent 20 years as a banker and financial planner, then left at 38 to live off my
+              rentals. This is the roadmap I wish every one of my clients had: simple steps, in the
+              right order, all in one place.
+            </p>
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-8">
+              Real estate is how I hit my freedom number. This roadmap gets your foundation in place
+              first, so you're ready for whatever comes next.
             </p>
             <button
               type="button"

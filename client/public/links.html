@@ -74,6 +74,24 @@ footer{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:cent
 .calc-wrap[open] .plus{transform:rotate(45deg)}
 .plus{transition:transform .15s}
 .calc-wrap .calc{border-top:none;border-color:var(--gold);border-top-left-radius:0;border-top-right-radius:0}
+
+/* imagery */
+.roadmap{flex-direction:column;align-items:stretch;padding:0;overflow:hidden;position:relative}
+.rm-img{display:block;width:100%;height:auto;aspect-ratio:920/483;object-fit:cover;max-width:100%;border-bottom:1px solid var(--line)}
+.rm-body{display:flex;align-items:center;gap:12px;padding:14px 14px 16px}
+.thumb{flex:none;border-radius:3px;box-shadow:0 2px 8px #0008}
+.thumb.app{width:44px;height:44px;border-radius:10px}
+.thumb.wide{width:64px;height:44px;object-fit:cover}
+.thumb.book{width:40px;height:60px;object-fit:cover}
+.has-thumb{padding-block:10px}
+/* shimmer on the start-here card only */
+.roadmap::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 40%,#f5d48a33 50%,transparent 60%);transform:translateX(-100%);animation:shimmer 6s ease-in-out 1.2s infinite}
+@keyframes shimmer{0%{transform:translateX(-100%)}25%,100%{transform:translateX(100%)}}
+/* entrance */
+@keyframes rise{from{opacity:.25;transform:translateY(12px)}to{opacity:1;transform:none}}
+.wrap>*{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.wrap>*:nth-child(2){animation-delay:.06s}.wrap>*:nth-child(3){animation-delay:.12s}.wrap>*:nth-child(4){animation-delay:.18s}.wrap>*:nth-child(5){animation-delay:.24s}.wrap>*:nth-child(6){animation-delay:.3s}.wrap>*:nth-child(7){animation-delay:.36s}
+@media (prefers-reduced-motion:reduce){.wrap>*,.roadmap::after{animation:none!important}}
 </style>
 </head>
 <body>
@@ -95,9 +113,9 @@ footer{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:cent
 
   <section class="tier">
     <div class="tier-head"><span class="num">01</span><h3>Start free</h3><span class="price">$0</span></div>
-    <a class="link feature roadmap" href="https://www.matthewvarga.com/roadmap?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="tag">Start here</span><span class="t">The Ordinary Millionaire Money Roadmap</span><span class="s">Free step-by-step sheet to budget, invest and build toward financial freedom. US and Canada paths.</span></span><span class="arr">→</span></a>
+    <a class="link feature roadmap" href="https://www.matthewvarga.com/roadmap?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><img class="rm-img" src="/images/links/roadmap-card.jpg" alt="The Money Roadmap spreadsheet on a laptop" width="920" height="483"><span class="rm-body"><span class="txt"><span class="tag">Start here</span><span class="t">The Ordinary Millionaire Money Roadmap</span><span class="s">Free step-by-step sheet to budget, invest and build toward financial freedom. US and Canada paths.</span></span><span class="arr">→</span></span></a>
     <a class="link" href="https://matthewvarga.myflodesk.com/airbnbwealthguide?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">100-page Airbnb Beginner's Guide</span><span class="s">Everything I wish I knew before my first listing</span></span><span class="arr">→</span></a>
-    <a class="link" href="https://apps.apple.com/app/id6759016905" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire app</span><span class="s">Free on iPhone · deal calculators, cash-flow tracker, your Freedom Number</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://apps.apple.com/app/id6759016905" target="_blank" rel="noopener"><img class="thumb app" src="/images/links/app-icon.jpg" alt="" width="44" height="44"><span class="txt"><span class="t">The Ordinary Millionaire app</span><span class="s">Free on iPhone · deal calculators, cash-flow tracker, your Freedom Number</span></span><span class="arr">→</span></a>
     <a class="link" href="https://matthewvarga.myflodesk.com/f0v5qilr2y?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Weekly newsletter</span><span class="s">Join 5K+ investors</span></span><span class="arr">→</span></a>
     <details class="calc-wrap" id="calc">
       <summary class="link"><span class="txt"><span class="t">Would your first rental cash flow?</span><span class="s">Free 30-second calculator</span></span><span class="arr plus">+</span></summary>
@@ -118,19 +136,19 @@ footer{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:cent
     <a class="cta" href="https://www.matthewvarga.com/resources?utm_source=ig&utm_medium=social&utm_content=link_in_bio_calc" target="_blank" rel="noopener">Get my full deal calculator, free →</a>
         </div>
     </details>
-    <a class="link" href="https://www.matthewvarga.com/podcast?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire podcast</span><span class="s">Real people who built wealth the slow way</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://www.matthewvarga.com/podcast?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><img class="thumb app" src="/images/links/podcast-icon.jpg" alt="" width="44" height="44"><span class="txt"><span class="t">The Ordinary Millionaire podcast</span><span class="s">Real people who built wealth the slow way</span></span><span class="arr">→</span></a>
   </section>
 
   <section class="tier">
     <div class="tier-head"><span class="num">02</span><h3>Learn on your own</h3><span class="price">self-paced</span></div>
-    <a class="link" href="https://books2read.com/ordinarymillionaire" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire book</span><span class="s">How ordinary people build extraordinary wealth through real estate · Kindle &amp; paperback</span></span><span class="arr">→</span></a>
-    <a class="link" href="https://matthew-varga-real-estate.teachable.com/p/airbnb-wealth-academy?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Airbnb Wealth Academy</span><span class="s">Airbnb course · 30-day guarantee · $997</span></span><span class="arr">→</span></a>
-    <a class="link" href="https://matthew-varga-real-estate.teachable.com/l/pdp/retire-with-rentals?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Retire with Rentals</span><span class="s">Buy-and-hold course · 62 lessons · $949</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://books2read.com/ordinarymillionaire" target="_blank" rel="noopener"><img class="thumb book" src="/images/links/book-cover.jpg" alt="" width="40" height="60"><span class="txt"><span class="t">The Ordinary Millionaire book</span><span class="s">How ordinary people build extraordinary wealth through real estate · Kindle &amp; paperback</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://matthew-varga-real-estate.teachable.com/p/airbnb-wealth-academy?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><img class="thumb wide" src="/images/links/awa-thumb.jpg" alt="" width="64" height="44"><span class="txt"><span class="t">Airbnb Wealth Academy</span><span class="s">Airbnb course · 30-day guarantee · $997</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://matthew-varga-real-estate.teachable.com/l/pdp/retire-with-rentals?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><img class="thumb wide" src="/images/links/rwr-thumb.jpg" alt="" width="64" height="44"><span class="txt"><span class="t">Retire with Rentals</span><span class="s">Buy-and-hold course · 62 lessons · $949</span></span><span class="arr">→</span></a>
   </section>
 
   <section class="tier">
     <div class="tier-head"><span class="num">03</span><h3>Work with me</h3><span class="price">from $250/mo</span></div>
-    <a class="link" href="https://www.matthewvarga.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire Community</span><span class="s">12-month program · weekly live coaching</span></span><span class="arr">→</span></a>
+    <a class="link has-thumb" href="https://www.matthewvarga.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><img class="thumb app" src="/images/links/community-icon.jpg" alt="" width="44" height="44"><span class="txt"><span class="t">The Ordinary Millionaire Community</span><span class="s">12-month program · weekly live coaching</span></span><span class="arr">→</span></a>
     <a class="link" href="https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Book a 1-on-1 coaching call</span><span class="s">Bring your deal, leave with a plan</span></span><span class="arr">→</span></a>
   </section>
 
@@ -149,6 +167,14 @@ footer{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:cent
 <script>
 const $=id=>document.getElementById(id);
 const fmt=n=>(n<0?"−$":"$")+Math.abs(Math.round(n)).toLocaleString("en-CA");
+let shown=null,raf=0;
+function tween(el,to){
+  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(shown===null||reduce){shown=to;el.textContent=fmt(to);return}
+  const from=shown,t0=performance.now(),d=450;cancelAnimationFrame(raf);
+  const step=t=>{const p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3);shown=from+(to-from)*e;el.textContent=fmt(shown);if(p<1)raf=requestAnimationFrame(step)};
+  raf=requestAnimationFrame(step);
+}
 function calc(){
   const price=+$("price").value||0, down=(+$("down").value||0)/100, rate=(+$("rate").value||0)/100,
         rent=+$("rent").value||0, tax=+$("tax").value||0, other=(+$("other").value||0)/100;
@@ -158,7 +184,7 @@ function calc(){
   const pmt=r>0?loan*r/(1-Math.pow(1+r,-n)):loan/n;
   const reserve=rent*other;
   const cf=rent-pmt-tax-reserve;
-  const el=$("cf"); el.textContent=fmt(cf); el.className="big "+(cf>=0?"pos":"neg");
+  const el=$("cf"); el.className="big "+(cf>=0?"pos":"neg"); tween(el,cf);
   $("bd").innerHTML=`<span>Mortgage ${fmt(pmt)}</span><span>Tax+ins ${fmt(tax)}</span><span>Reserve ${fmt(reserve)}</span><span>Cash in ${fmt(price*down)}</span>`;
 }
 document.querySelectorAll("input").forEach(i=>i.addEventListener("input",calc));

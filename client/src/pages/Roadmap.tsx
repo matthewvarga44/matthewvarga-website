@@ -58,7 +58,7 @@ export default function Roadmap() {
     setMeta("property", "og:description", PAGE_DESCRIPTION);
     setMeta("property", "og:type", "website");
     setMeta("property", "og:url", "https://www.matthewvarga.com/roadmap");
-    setMeta("property", "og:image", "https://www.matthewvarga.com/images/roadmap-og.jpg");
+    setMeta("property", "og:image", "https://www.matthewvarga.com/images/roadmap-hero-og.jpg");
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", PAGE_TITLE);
     setMeta("name", "twitter:description", PAGE_DESCRIPTION);
@@ -158,139 +158,136 @@ export default function Roadmap() {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-14 md:py-28">
+      {/* Hero Section: headline, image, form on mobile; two columns on desktop */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-12 md:py-20 lg:py-14">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/50 rounded-full blur-3xl"></div>
         </div>
 
         <div className="container relative z-10">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-secondary/20 rounded-full border border-secondary/30">
-              <span className="text-sm font-semibold text-secondary">Free Google Sheet</span>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-x-12 lg:gap-y-6 lg:items-center">
+            <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:max-w-none lg:text-left lg:col-start-1 lg:row-start-1">
+              <div className="inline-block mb-4 px-4 py-2 bg-secondary/20 rounded-full border border-secondary/30">
+                <span className="text-sm font-semibold text-secondary">Free Google Sheet</span>
+              </div>
+
+              <h1 className="font-heading text-4xl md:text-6xl lg:text-[2.75rem] xl:text-5xl font-extrabold tracking-tight leading-tight mb-6 lg:mb-4">
+                The Ordinary Millionaire Money Roadmap
+              </h1>
+
+              <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                A free, step-by-step Google Sheet to help you budget, invest and build toward
+                financial freedom.
+              </p>
             </div>
 
-            <h1 className="font-heading text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-              The Ordinary Millionaire Money Roadmap
-            </h1>
-
-            <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-2xl mx-auto">
-              A free, step-by-step Google Sheet to help you budget, invest and build toward
-              financial freedom.
-            </p>
-
             <img
-              src="/images/roadmap-mockup.webp"
+              src="/images/roadmap-hero.webp"
               alt="The Ordinary Millionaire Money Roadmap Google Sheet on a laptop, showing the START HERE page and the Compound Interest Calculator chart"
-              width={1000}
-              height={640}
+              width={2048}
+              height={1152}
               fetchPriority="high"
               decoding="async"
-              className="mx-auto mt-10 w-full max-w-2xl h-auto drop-shadow-2xl"
+              className="mx-auto w-full max-w-2xl h-auto rounded-2xl shadow-2xl ring-1 ring-secondary/20 lg:max-w-none lg:col-start-1 lg:row-start-2"
             />
+
+            {/* Signup Form */}
+            <div className="mx-auto w-full max-w-xl lg:col-start-2 lg:row-start-1 lg:row-span-2">
+            <div className="bg-white text-foreground rounded-2xl p-6 md:p-8 shadow-2xl border border-secondary/30">
+              <h2 className="text-2xl font-bold text-primary mb-2">Get the Free Roadmap</h2>
+              <p className="text-foreground/70 mb-6">
+                Enter your email and you'll get instant access to the roadmap.
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Honeypot field for bots; hidden from people */}
+                <div aria-hidden="true" className="sr-only">
+                  <label htmlFor="website">Website</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    First Name <span className="text-foreground/50 font-normal">(optional)</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    autoComplete="given-name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your first name"
+                    className="w-full px-4 py-3 text-base border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 bg-white"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    autoComplete="email"
+                    inputMode="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="your@email.com"
+                    required
+                    className="w-full px-4 py-3 text-base border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 bg-white"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {loading ? "Sending..." : "Send Me the Roadmap"}
+                </button>
+
+                <p className="text-xs text-foreground/60 text-center">
+                  Free. Unsubscribe anytime. General education, not personal financial advice.
+                </p>
+              </form>
+            </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content Section */}
-      <section className="py-14 md:py-28 bg-white">
+      {/* What's Inside */}
+      <section className="py-14 md:py-24 bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-start md:items-center">
-            {/* Signup Form (first on mobile) */}
-            <div className="md:order-2">
-              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-6 md:p-8 border border-primary/10">
-                <h2 className="text-2xl font-bold text-primary mb-2">Get the Free Roadmap</h2>
-                <p className="text-foreground/70 mb-6">
-                  Enter your email and you'll get instant access to the roadmap.
-                </p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-10 text-center">
+            What's Inside
+          </h2>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Honeypot field for bots; hidden from people */}
-                  <div aria-hidden="true" className="sr-only">
-                    <label htmlFor="website">Website</label>
-                    <input
-                      type="text"
-                      id="website"
-                      name="website"
-                      tabIndex={-1}
-                      autoComplete="off"
-                      value={website}
-                      onChange={(e) => setWebsite(e.target.value)}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      First Name <span className="text-foreground/50 font-normal">(optional)</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      autoComplete="given-name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="Your first name"
-                      className="w-full px-4 py-3 text-base border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 bg-white"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      autoComplete="email"
-                      inputMode="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="your@email.com"
-                      required
-                      className="w-full px-4 py-3 text-base border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary/50 bg-white"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {loading ? "Sending..." : "Send Me the Roadmap"}
-                  </button>
-
-                  <p className="text-xs text-foreground/60 text-center">
-                    Free. Unsubscribe anytime. General education, not personal financial advice.
-                  </p>
-                </form>
-              </div>
-            </div>
-
-            {/* What's Inside */}
-            <div className="md:order-1">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8">
-                What's Inside
-              </h2>
-
-              <div className="space-y-6">
-                {insideItems.map((item, index) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={index} className="flex gap-4">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-secondary/10">
-                          <Icon className="h-6 w-6 text-secondary" />
-                        </div>
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
-                        <p className="text-foreground/70">{item.description}</p>
-                      </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {insideItems.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div key={index} className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-secondary/10">
+                      <Icon className="h-6 w-6 text-secondary" />
                     </div>
-                  );
-                })}
-              </div>
-            </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+                    <p className="text-foreground/70">{item.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

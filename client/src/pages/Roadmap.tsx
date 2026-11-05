@@ -58,7 +58,8 @@ export default function Roadmap() {
     setMeta("property", "og:description", PAGE_DESCRIPTION);
     setMeta("property", "og:type", "website");
     setMeta("property", "og:url", "https://www.matthewvarga.com/roadmap");
-    setMeta("name", "twitter:card", "summary");
+    setMeta("property", "og:image", "https://www.matthewvarga.com/images/roadmap-og.jpg");
+    setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", PAGE_TITLE);
     setMeta("name", "twitter:description", PAGE_DESCRIPTION);
     return () => {
@@ -178,6 +179,16 @@ export default function Roadmap() {
               A free, step-by-step Google Sheet to help you budget, invest and build toward
               financial freedom.
             </p>
+
+            <img
+              src="/images/roadmap-mockup.webp"
+              alt="The Ordinary Millionaire Money Roadmap Google Sheet on a laptop, showing the START HERE page and the Compound Interest Calculator chart"
+              width={1000}
+              height={640}
+              fetchPriority="high"
+              decoding="async"
+              className="mx-auto mt-10 w-full max-w-2xl h-auto drop-shadow-2xl"
+            />
           </div>
         </div>
       </section>

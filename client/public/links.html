@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Matthew Varga: ex-bank manager who retired at 38 on rentals. Free Money Roadmap, Airbnb Wealth Academy, The Ordinary Millionaire Community and podcast.">
+<link rel="canonical" href="https://www.matthewvarga.com/links">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+<title>Matthew Varga Links</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one narrow column read top to bottom like a deal sheet — intro, a live cash-flow hook, then the offer ladder in tiers. Single dark look to match matthewvarga.com. */
+:root{
+  --bg:#0c0b09; --panel:#16140f; --line:#2c271c; --fg:#f2ede2; --muted:#a59c88;
+  --gold:#d4a54a; --gold-soft:#d4a54a22; --good:#7fc79a; --bad:#e08a7a;
+  --display:"DM Serif Display", Georgia, serif;
+  --body:"Manrope", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.draft{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--bg);background:var(--gold);padding:6px 10px;border-radius:4px;text-align:center}
+header{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.headshot{width:96px;height:96px;border-radius:50%;border:1.5px solid var(--gold);object-fit:cover;display:block}
+.mono-badge{width:76px;height:76px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;font-family:var(--display);font-size:30px;color:var(--gold);background:var(--panel)}
+h1{font-family:var(--display);font-weight:400;font-size:40px;line-height:1.05;margin:0;text-wrap:balance}
+h1 em{color:var(--gold)}
+.lede{color:var(--muted);margin:0;max-width:40ch}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.facts li{font-family:var(--mono);font-size:12px;border:1px solid var(--line);padding:5px 9px;border-radius:999px;color:var(--fg)}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+/* calculator */
+.calc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.calc h2{font-family:var(--display);font-weight:400;font-size:24px;margin:0;line-height:1.15}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-size:12px;color:var(--muted)}
+.field input{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:9px 10px;font-family:var(--mono);font-size:14px}
+.field input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.result{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line);padding-top:12px;gap:12px}
+.result .big{font-family:var(--mono);font-size:28px;font-weight:600;font-variant-numeric:tabular-nums}
+.result .big.pos{color:var(--good)} .result .big.neg{color:var(--bad)}
+.result small{color:var(--muted);font-size:12px}
+.breakdown{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 14px}
+.cta{display:block;text-align:center;text-decoration:none;font-weight:800;background:var(--gold);color:var(--bg);padding:13px;border-radius:8px}
+.cta:focus-visible,.link:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+/* tiers */
+.tier{display:flex;flex-direction:column;gap:8px}
+.tier-head{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:2px}
+.tier-head .num{font-family:var(--mono);font-size:12px;color:var(--gold)}
+.tier-head h3{font-family:var(--display);font-weight:400;font-size:22px;margin:0}
+.tier-head .price{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg);padding:13px 14px;border:1px solid var(--line);border-radius:8px;transition:border-color .15s,background .15s}
+.link:hover{border-color:var(--gold);background:var(--gold-soft)}
+.link .t{font-weight:700;display:block}
+.link .s{font-size:13px;color:var(--muted);display:block}
+.link .txt{min-width:0;flex:1}
+.link .arr{color:var(--gold);font-size:18px}
+.link.feature{border-color:var(--gold)}
+.roadmap{background:var(--gold-soft);padding-block:18px}
+.roadmap .t{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.15}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:2px 7px;border-radius:3px;margin-bottom:6px}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{flex:1;min-width:90px;text-align:center;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:10px;font-size:13px;font-weight:700}
+.socials a:hover{border-color:var(--gold)}
+footer{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:center;line-height:1.7}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.calc-wrap>summary{list-style:none;cursor:pointer}
+.calc-wrap>summary::-webkit-details-marker{display:none}
+.calc-wrap[open]>summary{border-color:var(--gold);border-bottom-left-radius:0;border-bottom-right-radius:0}
+.calc-wrap[open] .plus{transform:rotate(45deg)}
+.plus{transition:transform .15s}
+.calc-wrap .calc{border-top:none;border-color:var(--gold);border-top-left-radius:0;border-top-right-radius:0}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <img class="headshot" src="data:image/jpeg;base64,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" alt="Matthew Varga" width="96" height="96">
+    <h1>Matthew <em>Varga</em></h1>
+    <p class="lede">Ex-bank manager. Left the corporate world at 38 when my first kid was born, and I've lived off rentals ever since. I teach regular people how to do the same.</p>
+    <ul class="facts">
+      <li>9 properties</li>
+      <li>Airbnb Superhost</li>
+      <li>Former CFP</li>
+      <li>Barrie, ON</li>
+    </ul>
+  </header>
+
+
+  <section class="tier">
+    <div class="tier-head"><span class="num">01</span><h3>Start free</h3><span class="price">$0</span></div>
+    <a class="link feature roadmap" href="https://www.matthewvarga.com/roadmap?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="tag">Start here</span><span class="t">The Ordinary Millionaire Money Roadmap</span><span class="s">Free step-by-step sheet to budget, invest and build toward financial freedom. US and Canada paths.</span></span><span class="arr">→</span></a>
+    <a class="link" href="https://matthewvarga.myflodesk.com/airbnbwealthguide?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">100-page Airbnb Beginner's Guide</span><span class="s">Everything I wish I knew before my first listing</span></span><span class="arr">→</span></a>
+    <a class="link" href="https://matthewvarga.myflodesk.com/f0v5qilr2y?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Weekly newsletter</span><span class="s">Join 5K+ investors</span></span><span class="arr">→</span></a>
+    <details class="calc-wrap" id="calc">
+      <summary class="link"><span class="txt"><span class="t">Would your first rental cash flow?</span><span class="s">Free 30-second calculator</span></span><span class="arr plus">+</span></summary>
+      <div class="calc">
+    <div class="grid">
+      <div class="field"><label for="price">Purchase price ($)</label><input id="price" type="number" inputmode="numeric" value="550000"></div>
+      <div class="field"><label for="down">Down payment (%)</label><input id="down" type="number" inputmode="decimal" value="20"></div>
+      <div class="field"><label for="rate">Mortgage rate (%)</label><input id="rate" type="number" inputmode="decimal" step="0.05" value="4.5"></div>
+      <div class="field"><label for="rent">Monthly rent ($)</label><input id="rent" type="number" inputmode="numeric" value="3200"></div>
+      <div class="field"><label for="tax">Tax + insurance /mo ($)</label><input id="tax" type="number" inputmode="numeric" value="450"></div>
+      <div class="field"><label for="other">Repairs + vacancy (%)</label><input id="other" type="number" inputmode="decimal" value="10"></div>
+    </div>
+    <div class="result">
+      <div><small>Estimated monthly cash flow</small></div>
+      <div class="big" id="cf">$0</div>
+    </div>
+    <div class="breakdown" id="bd"></div>
+    <a class="cta" href="https://www.matthewvarga.com/resources?utm_source=ig&utm_medium=social&utm_content=link_in_bio_calc" target="_blank" rel="noopener">Get my full deal calculator, free →</a>
+        </div>
+    </details>
+    <a class="link" href="https://www.matthewvarga.com/podcast?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire podcast</span><span class="s">Real people who built wealth the slow way</span></span><span class="arr">→</span></a>
+  </section>
+
+  <section class="tier">
+    <div class="tier-head"><span class="num">02</span><h3>Learn on your own</h3><span class="price">$997</span></div>
+    <a class="link" href="https://matthew-varga-real-estate.teachable.com/p/airbnb-wealth-academy?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Airbnb Wealth Academy</span><span class="s">Self-paced course · 30-day guarantee</span></span><span class="arr">→</span></a>
+  </section>
+
+  <section class="tier">
+    <div class="tier-head"><span class="num">03</span><h3>Work with me</h3><span class="price">from $250/mo</span></div>
+    <a class="link" href="https://www.matthewvarga.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">The Ordinary Millionaire Community</span><span class="s">12-month program · weekly live coaching</span></span><span class="arr">→</span></a>
+    <a class="link" href="https://matthew-varga-real-estate.teachable.com/p/matthew-varga-one-on-one-coaching-call?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener"><span class="txt"><span class="t">Book a 1-on-1 coaching call</span><span class="s">Bring your deal, leave with a plan</span></span><span class="arr">→</span></a>
+  </section>
+
+  <section>
+    <p class="label">Watch &amp; follow</p>
+    <div class="socials">
+      <a href="https://www.youtube.com/@MatthewVarga" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.tiktok.com/@matthewpvarga" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/matthew_varga" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+  <footer>matthewvarga.com/links<br>Calculator is an estimate for education, not financial advice.</footer>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>(n<0?"−$":"$")+Math.abs(Math.round(n)).toLocaleString("en-CA");
+function calc(){
+  const price=+$("price").value||0, down=(+$("down").value||0)/100, rate=(+$("rate").value||0)/100,
+        rent=+$("rent").value||0, tax=+$("tax").value||0, other=(+$("other").value||0)/100;
+  const loan=price*(1-down);
+  // Canadian mortgage: semi-annual compounding, 25-year amortization, monthly payments
+  const r=Math.pow(1+rate/2,1/6)-1, n=300;
+  const pmt=r>0?loan*r/(1-Math.pow(1+r,-n)):loan/n;
+  const reserve=rent*other;
+  const cf=rent-pmt-tax-reserve;
+  const el=$("cf"); el.textContent=fmt(cf); el.className="big "+(cf>=0?"pos":"neg");
+  $("bd").innerHTML=`<span>Mortgage ${fmt(pmt)}</span><span>Tax+ins ${fmt(tax)}</span><span>Reserve ${fmt(reserve)}</span><span>Cash in ${fmt(price*down)}</span>`;
+}
+document.querySelectorAll("input").forEach(i=>i.addEventListener("input",calc));
+calc();
+</script>
+
+</body>
+</html>

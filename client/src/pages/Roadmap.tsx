@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { CheckCircle2, LineChart, PiggyBank, TrendingUp } from "lucide-react";
+import {
+  Calculator,
+  CheckCircle2,
+  Compass,
+  CreditCard,
+  Flag,
+  Landmark,
+  PiggyBank,
+  TrendingUp,
+} from "lucide-react";
 import { toast } from "sonner";
 import Layout from "@/components/Layout";
 
@@ -22,24 +31,54 @@ function setMeta(attr: "name" | "property", key: string, content: string) {
 
 const insideItems = [
   {
-    icon: PiggyBank,
-    title: "Build Your Foundation",
+    icon: Compass,
+    title: "Know exactly what to do next",
     description:
-      "Set up a simple budget, build your emergency fund and make a plan to pay off debt.",
+      "Start Here and the Financial Freedom Roadmap lay out every step in order, so you always know your next move.",
+  },
+  {
+    icon: PiggyBank,
+    title: "Tell every dollar where to go",
+    description:
+      "The Budget Sheet, Paycheck Allocation and 50/30/20-style budget splits turn your paycheck into a plan.",
+  },
+  {
+    icon: CreditCard,
+    title: "Get out of debt faster",
+    description:
+      "Debt Snowball and Debt Avalanche calculators show which debt to pay first and how the balance drops month by month.",
+  },
+  {
+    icon: Calculator,
+    title: "See your financial freedom number",
+    description:
+      "The Compound Growth Explorer, Financial Freedom Number and Retirement Timeline show what your savings could grow into.",
   },
   {
     icon: TrendingUp,
-    title: "Invest Step by Step",
+    title: "Start investing with confidence",
     description:
-      "Follow a clear investing order, with separate paths for the US and Canada.",
+      "Account and brokerage guides, fund and ETF comparisons, and a Beginner Portfolio Builder walk you through your first portfolio.",
   },
   {
-    icon: LineChart,
-    title: "Track Your Path to Financial Freedom",
+    icon: Flag,
+    title: "Follow the path for your country",
     description:
-      "Track your net worth and use the FIRE calculators to see when work could become optional.",
+      "A US path (401(k), IRA, HSA) and a Canada path (TFSA, RRSP, FHSA, CPP and OAS, Canadian ETFs and brokerages).",
   },
 ];
+
+const forYouItems = [
+  "You earn a decent income but still aren't sure where it all goes.",
+  "You want to start investing but don't know which account to open first.",
+  "You're paying off debt and want a clear plan to finish it.",
+  "You want to build a better future for yourself and your kids, one step at a time.",
+];
+
+function scrollToForm() {
+  document.getElementById("roadmap-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  window.setTimeout(() => document.getElementById("email")?.focus({ preventScroll: true }), 500);
+}
 
 export default function Roadmap() {
   const [email, setEmail] = useState("");
@@ -177,8 +216,8 @@ export default function Roadmap() {
               </h1>
 
               <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                A free, step-by-step Google Sheet to help you budget, invest and build toward
-                financial freedom.
+                Know exactly what to do with your money next. One free Google Sheet takes you
+                step by step from budgeting and paying off debt to investing and financial freedom.
               </p>
             </div>
 
@@ -193,7 +232,7 @@ export default function Roadmap() {
             />
 
             {/* Signup Form */}
-            <div className="mx-auto w-full max-w-xl lg:col-start-2 lg:row-start-1 lg:row-span-2">
+            <div id="roadmap-form" className="mx-auto w-full max-w-xl scroll-mt-24 lg:col-start-2 lg:row-start-1 lg:row-span-2">
             <div className="bg-white text-foreground rounded-2xl p-6 md:p-8 shadow-2xl border border-secondary/30">
               <h2 className="text-2xl font-bold text-primary mb-2">Get the Free Roadmap</h2>
               <p className="text-foreground/70 mb-6">
@@ -267,27 +306,77 @@ export default function Roadmap() {
       {/* What's Inside */}
       <section className="py-14 md:py-24 bg-white">
         <div className="container">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8 md:mb-10 text-center">
-            What's Inside
-          </h2>
+          <div className="mx-auto max-w-3xl text-center mb-10 md:mb-14">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+              What's Inside (and What's in It for You)
+            </h2>
+            <p className="text-lg text-foreground/70">
+              More than 50 tabs of calculators, guides and checklists, organized into one
+              clear roadmap.
+            </p>
+          </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
-            {insideItems.map((item, index) => {
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {insideItems.map((item) => {
               const Icon = item.icon;
               return (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-secondary/10">
-                      <Icon className="h-6 w-6 text-secondary" />
-                    </div>
+                <div
+                  key={item.title}
+                  className="rounded-2xl border border-primary/10 bg-white p-6 shadow-sm"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
+                    <Icon className="h-6 w-6 text-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
-                    <p className="text-foreground/70">{item.description}</p>
-                  </div>
+                  <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+                  <p className="text-foreground/70">{item.description}</p>
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* This is for you if... */}
+      <section className="py-14 md:py-20 bg-primary/5">
+        <div className="container">
+          <div className="mx-auto max-w-2xl">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+              This Is for You If...
+            </h2>
+            <ul className="space-y-4">
+              {forYouItems.map((item) => (
+                <li key={item} className="flex gap-3 text-lg text-foreground/80">
+                  <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-secondary" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Credibility + second CTA */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container">
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="mb-4 flex justify-center">
+              <Landmark className="h-10 w-10 text-secondary" />
+            </div>
+            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-8">
+              I spent 20 years in banking as a former banker and financial planner. This is the
+              roadmap I wish every one of my clients had: simple steps, in the right order, all
+              in one place.
+            </p>
+            <button
+              type="button"
+              onClick={scrollToForm}
+              className="inline-flex w-full sm:w-auto items-center justify-center bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg py-4 px-10 rounded-lg shadow-lg transition-all duration-200"
+            >
+              Get the Free Roadmap
+            </button>
+            <p className="mt-4 text-xs text-foreground/60">
+              Free. General education, not personal financial advice.
+            </p>
           </div>
         </div>
       </section>

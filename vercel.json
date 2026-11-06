@@ -25,5 +25,12 @@
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/book",
+      "destination": "https://www.amazon.com/dp/B0GXWBXDWG",
+      "permanent": false
+    }
   ]
 }

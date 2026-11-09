@@ -54,6 +54,8 @@ export default function DownloadModal({
         throw new Error("Failed to subscribe");
       }
 
+      (window as any).gtag?.("event", "generate_lead", { lead_source: resourceTitle });
+
       // Show success message
       setSuccess(true);
 

@@ -137,6 +137,8 @@ export default function Roadmap() {
       }
       if (!response.ok) {
         setSignupError(true);
+      } else {
+        (window as any).gtag?.("event", "generate_lead", { lead_source: "money_roadmap" });
       }
     } catch (err) {
       console.error("Error submitting roadmap signup:", err);

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && node scripts/roadmap-head.mjs",
+    "build": "vite build && node scripts/roadmap-head.mjs && node scripts/masterclass-static.mjs",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."

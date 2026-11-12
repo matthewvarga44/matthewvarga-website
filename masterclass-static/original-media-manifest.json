@@ -1,0 +1,132 @@
+[
+  {
+    "relative_path": "fonts/dm-serif-italic.woff2",
+    "sha256": "ed8b291611e32fa2d2900488dd48fc95faf0957b2ef7ddf1527e8d21dd9cf2df",
+    "bytes": 24572
+  },
+  {
+    "relative_path": "fonts/dm-serif.woff2",
+    "sha256": "fdf61e20fd2c0108e0ea28da4daca0035205b4b7fc031a3974b865b704de160a",
+    "bytes": 24744
+  },
+  {
+    "relative_path": "fonts/jetbrains-mono-var.woff2",
+    "sha256": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "bytes": 31432
+  },
+  {
+    "relative_path": "fonts/manrope-var.woff2",
+    "sha256": "8c2def024c1bf31aacf3624ae3c4d701269b4ec3dc765c04830839f0d36b2d9e",
+    "bytes": 24532
+  },
+  {
+    "relative_path": "img/apple-touch-icon.png",
+    "sha256": "9006e7f62b1757fb4bde948bfbb2de40609633eea0b4bcb2ee1fb3c338df823f",
+    "bytes": 12931
+  },
+  {
+    "relative_path": "img/avatar.jpg",
+    "sha256": "505542f0844da19784b5a6499c0c742dcb42ee8147c7aec17a65e45288d8a753",
+    "bytes": 4394
+  },
+  {
+    "relative_path": "img/favicon.png",
+    "sha256": "6fe6957cc2be68978836cc66631cc96dbae7d6a2a653ba7436e6af96d855cff4",
+    "bytes": 14260
+  },
+  {
+    "relative_path": "img/gift-1-cover.jpg",
+    "sha256": "bd3cc36d9ba8a59ef6d366b35e3b5673e3a2e7270067c75a31cff787b7323fa1",
+    "bytes": 162489
+  },
+  {
+    "relative_path": "img/host.jpg",
+    "sha256": "6dc996425ab125408c08cd393e886eb9290d6c4e00732251f304f8c8bd80f885",
+    "bytes": 109480
+  },
+  {
+    "relative_path": "img/om-logo.png",
+    "sha256": "b33dcf00d009384294bbf9303d55844630e75696552d5b4e2b7a5fa1838d3a41",
+    "bytes": 52499
+  },
+  {
+    "relative_path": "img/prep-poster.jpg",
+    "sha256": "895c54d3ccd78332ee14bd85417d28bb08298498a0dd16aeff261e28d80f34a3",
+    "bytes": 103156
+  },
+  {
+    "relative_path": "img/proof/p1-portfolio.jpg",
+    "sha256": "884b824bf013a60f8a03fa8aa04193e8b84483d948d01cd63457da2f6fb23ef9",
+    "bytes": 85688
+  },
+  {
+    "relative_path": "img/proof/p2-onehouse.jpg",
+    "sha256": "663c7bee38279b7a9166f99a04dfd481cd360a6d457f5c498cc830b609fec4bc",
+    "bytes": 94116
+  },
+  {
+    "relative_path": "img/proof/p3-twoproperties.jpg",
+    "sha256": "e75baad901e98e023f5f29dd818db31fd43bafc0965d8138b84dcd4a524dc5d8",
+    "bytes": 107570
+  },
+  {
+    "relative_path": "img/proof/p4-5m.jpg",
+    "sha256": "3ae32ca5b578606c096b585030e2aff9c2ec4d54b06ea35a6d6c2e98bd031a72",
+    "bytes": 129896
+  },
+  {
+    "relative_path": "img/proof/p5-property1.jpg",
+    "sha256": "ddd29ec939e5e11451274b7e2a3750c7fd5a7b02272561daa0394ebb0b211dd0",
+    "bytes": 59051
+  },
+  {
+    "relative_path": "img/proof/p6-property9.jpg",
+    "sha256": "c95dc9f815a2ad9d136f6c2cf4a4a65d64b6240a0b7b23c345430ce4fcab1487",
+    "bytes": 57734
+  },
+  {
+    "relative_path": "img/proof/p7-setup.jpg",
+    "sha256": "87809f1912cfbdab58e66eb403be7bf05e305443f718c5d9a4d4c29cf97d60f4",
+    "bytes": 62620
+  },
+  {
+    "relative_path": "img/proof/p8-carrying.jpg",
+    "sha256": "0addb8e38968d024b0f009355b1b1c34a3a8430c0ef56021d6da06abd9d39c8a",
+    "bytes": 62764
+  },
+  {
+    "relative_path": "img/yt-B7K8h1i6hTw.jpg",
+    "sha256": "e75baad901e98e023f5f29dd818db31fd43bafc0965d8138b84dcd4a524dc5d8",
+    "bytes": 107570
+  },
+  {
+    "relative_path": "img/yt-NhlLoWGA11Y.jpg",
+    "sha256": "cc5a648e8cac299cbed467ae3c3c414716ac9533bb562d53c21fe43bdbcf414a",
+    "bytes": 109126
+  },
+  {
+    "relative_path": "img/yt-Uk8qainYeh0.jpg",
+    "sha256": "c462cf495fc89b02dfbb7626a266a75e3864e79096e12926ff8685409e06a478",
+    "bytes": 101729
+  },
+  {
+    "relative_path": "img/yt-XNMyLH0sdiM.jpg",
+    "sha256": "381a097a301655f26b2535820616d40fc0fef30ec74cef9bcc763e08844d7adc",
+    "bytes": 108376
+  },
+  {
+    "relative_path": "img/yt-djDUHu4xLiY.jpg",
+    "sha256": "884b824bf013a60f8a03fa8aa04193e8b84483d948d01cd63457da2f6fb23ef9",
+    "bytes": 85688
+  },
+  {
+    "relative_path": "img/yt-gf7bTRjlIxA.jpg",
+    "sha256": "8a52bc0d9634d94e69a6f7e8bb0a93c304bdd86e8cfe3e3e1a276c1278bd7730",
+    "bytes": 78330
+  },
+  {
+    "relative_path": "img/yt-yyALXMp2nFM.jpg",
+    "sha256": "a0e5a914d93562fbf7f5bb2ef1075603449f9b9c889f8d5a6f7e428cce523260",
+    "bytes": 95661
+  }
+]
